@@ -43,7 +43,7 @@ export default function CountUp({ end }) {
     */
 
     const targetedCount = toEnglishDigits(end)
-    const incrementBy = Math.floor(targetedCount / 15)
+    const incrementBy = Math.floor(targetedCount / 17)
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -54,7 +54,7 @@ export default function CountUp({ end }) {
             } else {
                 clearInterval(interval);
             }
-        }, 100); // Change the interval as needed
+        }, 50); // Change the interval as needed
 
         return () => clearInterval(interval);
     }, [count]);
