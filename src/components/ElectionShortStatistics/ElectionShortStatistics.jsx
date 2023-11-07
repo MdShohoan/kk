@@ -1,6 +1,6 @@
 import Card from '../Card/Card';
 import Gap from '../Gap/Gap';
-import styles from './ElectionStatistics.module.css';
+import styles from './ElectionShortStatistics.module.css';
 import male_candidate from '../../assets/election/male-candidate.png'
 import female_candidate from '../../assets/election/female-candidate.png'
 import total_voter from '../../assets/election/total-voter.png'
@@ -10,7 +10,7 @@ import political_parties from '../../assets/election/political-parties.png'
 import male_voter from '../../assets/election/male-voter.png'
 import female_voter from '../../assets/election/female-voter.png'
 
-export default function ElectionStatistics() {
+export default function ElectionShortStatistics() {
   const data = [
     { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
     { count: '৫২৫৪৭৩২৯', title: 'পুরুষ ভোটার', image:  male_voter},

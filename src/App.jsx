@@ -2,12 +2,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { useState } from 'react'
-import ElectionStatistics from './components/ElectionStatistics/ElectionStatistics'
+import ElectionShortStatistics from './components/ElectionShortStatistics/ElectionShortStatistics'
+import ElectionInformation from './components/ElectionInformation/ElectionInformation'
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
-    <ElectionStatistics />
+    <>
+      <ElectionShortStatistics />
+      <ElectionInformation />
+    </>
   )
 }
 
