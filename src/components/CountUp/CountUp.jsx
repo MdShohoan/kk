@@ -4,26 +4,29 @@ import { useState, useEffect } from 'react';
 export default function CountUp({ end }) {
     const [count, setCount] = useState(0);
 
+    //Formatting the number by the comma for better readability
     const formatByComma = (number) => {
-        let fromatted = number
+        let formatted = number
             .split('')
             .reverse()
             .map((digit, index) => (index > 0 && index % 2 === 0 ? `,${digit}` : digit))
             .reverse()
             .join('');
 
-        if (fromatted.charAt(0) === ',') {
-            return fromatted.slice(1)
+        if (formatted.charAt(0) === ',') {
+            return formatted.slice(1)
         }
-        return fromatted
+        return formatted
     }
 
+    //Convert english digit to bangla digit
     const toBanglaDigits = (number) => {
         const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
         const converted = number.toString().split('').map(digit => banglaDigits[digit]).join('');
         return converted
     }
 
+    //Convert bangla digit to english digit.
     const toEnglishDigits = (banglaNumber) => {
         const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
         const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -37,7 +40,7 @@ export default function CountUp({ end }) {
     }
 
     /*
-      1. Targeted number divided by 15 will be the increment number.
+      1. Targeted number divided by 17 will be the increment number.
       2. If targeted number minus current counted state less than incrementBy number then set state to the targeted number
       3. interval will be same for all the counter
     */
@@ -45,6 +48,7 @@ export default function CountUp({ end }) {
     const targetedCount = toEnglishDigits(end)
     const incrementBy = Math.floor(targetedCount / 17)
 
+    //Handling counter update
     useEffect(() => {
         const interval = setInterval(() => {
             if (count < targetedCount) { // Change the upper limit as needed
@@ -58,6 +62,7 @@ export default function CountUp({ end }) {
 
         return () => clearInterval(interval);
     }, [count]);
+
     return (
         <p className={styles.data}>{formatByComma(toBanglaDigits(count))}</p>
     )
