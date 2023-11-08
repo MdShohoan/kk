@@ -1,8 +1,7 @@
-import React from 'react'
 import styles from './card.module.css'
-import CountUp from '../CountUp/CountUp';
-import { useRef } from 'react';
-import useIsVisible from '../../hooks/useIsVisible ';
+import CountUp from '../../common/CountUp/CountUp';
+import { useRef} from 'react';
+import useIsVisible from '../../../hooks/useIsVisible ';
 
 export default function Card({ data }) {
     const elemRef = useRef();

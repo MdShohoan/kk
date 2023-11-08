@@ -1,5 +1,5 @@
-import Card from '../Card/Card';
-import Gap from '../Gap/Gap';
+import Card from './Card/Card';
+import Gap from '../common/Gap/Gap';
 import styles from './ElectionShortStatistics.module.css';
 import male_candidate from '../../assets/election/male-candidate.png'
 import female_candidate from '../../assets/election/female-candidate.png'

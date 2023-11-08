@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Title from '../../common/Title/Title'
-import Gap from '../../Gap/Gap'
+import Gap from '../../common/Gap/Gap'
 function SeatInformation() {
 
   const [selected, setSelected] = useState('All')
@@ -108,7 +108,7 @@ function SeatInformation() {
         <div className='grid grid-cols-3 gap-6 h-[580px] overflow-auto overflow-x-hidden'>
           {
             filterSeatByDivision().map((seat) => (
-              <div className='p-3 pt-4 bg-white text-center'>
+              <div key={seat?.to} className='p-3 pt-4 bg-white text-center'>
                 <p className='text-[#5a5a5a] text-sm font-normal leading-normal'>আসন নং: {seat?.number?.inBangla}</p>
                 <h6 className='text-lg text-[#0b47a1] mb-1 font-bold'>{seat?.name}</h6>
                 <p className='text-[#5a5a5a] text-sm font-normal leading-normal'>{seat?.details}</p>
