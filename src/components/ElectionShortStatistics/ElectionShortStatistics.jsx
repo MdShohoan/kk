@@ -9,6 +9,7 @@ import total_candidate from '../../assets/election/total-seat.png'
 import political_parties from '../../assets/election/political-parties.png'
 import male_voter from '../../assets/election/male-voter.png'
 import female_voter from '../../assets/election/female-voter.png'
+import Title from '../common/Title/Title';
 
 export default function ElectionShortStatistics() {
   const data = [
@@ -30,7 +31,8 @@ export default function ElectionShortStatistics() {
         <div className={styles.container}>
           <div className={styles.innerContainer}>
             <div className={styles.headingContainer}>
-              <h3 className={styles.heading}>নির্বাচনের সংক্ষিপ্ত তথ্য</h3>
+              <Title text={'নির্বাচনের সংক্ষিপ্ত তথ্য'} underline='type1'/>
+              <Gap/>
             </div>
             <div className={styles.dataContainer}>
               {

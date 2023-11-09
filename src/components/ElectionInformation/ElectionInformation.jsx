@@ -1,4 +1,3 @@
-import React from 'react'
 import SeatInformation from './SeatInformation/SeatInformation'
 import MapInformation from './MapInformation/MapInformation'
 

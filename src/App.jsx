@@ -1,15 +1,16 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { useState } from 'react'
 import ElectionShortStatistics from './components/ElectionShortStatistics/ElectionShortStatistics'
 import ElectionInformation from './components/ElectionInformation/ElectionInformation'
+import UnofficialResult from './components/UnofficialResult/UnofficialResult'
+import ResultsHistory from './components/ResultsHistory/ResultsHistory'
 
 function App() {
   return (
     <>
       <ElectionShortStatistics />
       <ElectionInformation />
+      <UnofficialResult/>
+      <ResultsHistory/>
     </>
   )
 }

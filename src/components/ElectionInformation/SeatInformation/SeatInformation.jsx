@@ -83,7 +83,7 @@ function SeatInformation() {
   ]
   return (
     <div className='border border-gray-300'>
-      <Title text='জেনে নিন আপনার আসন সম্পর্কে' />
+      <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type2'} />
 
       {/* Division navigator */}
       <div>
@@ -92,7 +92,7 @@ function SeatInformation() {
             navigationOption.map((division, i) => (
               <div
                 onClick={() => setSelected(division.divisionName)}
-                key={division?.to}
+                key={i}
                 className={`text-center border border-l-[#8da2df] border-t-[#8da2df] ${(i + 1) % 3 === 0 ? 'border-r-[#8da2df]' : 'border-r-0'} ${(i + 1) > 6 ? 'border-b-[#8da2df]' : 'border-b-0'} cursor-pointer hover:bg-[#5f7fee] ${division?.divisionName === selected ? 'bg-[#5f7fee]' : 'bg-[#fff]'}`}
               >
                 <span
