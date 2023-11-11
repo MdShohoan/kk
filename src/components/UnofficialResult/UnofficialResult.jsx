@@ -20,20 +20,20 @@ function UnofficialResult() {
       <Gap />
       <div className="max-w-sm mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
         <div>
-          <div className="grid grid-cols-5 mb-1">
+          <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
             <div className={"col-start-1 col-end-4 " + headingCellStyle}>দল / জোট</div>
             <div className={headingCellStyle}>এগিয়ে</div>
             <div className={headingCellStyle}>জয়ী</div>
           </div>
 
           {data?.map((party) => (
-            <div key={party?.name} className="grid grid-cols-5 mb-1">
-              <div className="bg-[#b3d0df] rounded-tl rounded-bl py-2 border border-[#99c0d4]">
+            <div key={party?.name} className="grid grid-cols-5 mb-1 text-base font-semibold [&>*:last-child]:mb-0">
+              <div className="bg-[#b3d0df] rounded-tl rounded-bl py-2 border border-[#99c0d4] flex justify-center items-center">
                 <img src={party?.logo} className="h-7 mx-auto" />
               </div>
-              <div className="col-start-2 col-end-4 bg-[#99c0d4] mr-1 rounded-tr rounded-br py-1">{party?.name}</div>
-              <div className="bg-[#b3d0df] mr-1 rounded py-1">{party?.ahead}</div>
-              <div className="bg-[#99c0d4] rounded py-1">{party?.won}</div>
+              <div className="col-start-2 col-end-4 bg-[#99c0d4] mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
+              <div className="bg-[#b3d0df] mr-1 rounded flex justify-center items-center">{party?.ahead}</div>
+              <div className="bg-[#99c0d4] rounded flex justify-center items-center">{party?.won}</div>
             </div>
           ))}
         </div>
