@@ -1,4 +1,3 @@
-import Gap from "../common/Gap/Gap";
 import Title from "../common/Title/Title";
 import Chart from "react-apexcharts";
 
@@ -55,6 +54,7 @@ export default function ResultsHistory() {
             // width: 200,
             type: 'pie',
         },
+        colors: ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854'],
         labels: ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য'],
         legend: {
             show: false
@@ -70,12 +70,16 @@ export default function ResultsHistory() {
             dropShadow: { enabled: true }
         },
         tooltip: {
+            style: {
+                fontSize: '12px',
+            },
             y: {
                 formatter: function (val) {
                     return convertToBanglaNumber(val)
                 }
             }
         },
+
         responsive: [{
             breakpoint: 480,
             options: {
@@ -91,21 +95,22 @@ export default function ResultsHistory() {
 
 
     return (
-        <div className="container mx-auto">
-            <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
-            <Gap />
-            <div></div>
-            <div className="grid grid-cols-5 gap-8">
-                {
-                    data.map((singleData, i) => (
-                        <div className="border flex flex-col justify-center items-center py-8" key={i}>
-                            <Chart options={options} series={singleData?.series} type="pie" width={200} />
-                            <p className="text-center text-[#1380c5] text-xl font-semibold">{singleData?.year}</p>
-                        </div>
-                    ))
-                }
+        <section className="mb-28">
+            <div className="container mx-auto">
+                <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
+                <div className='mb-5 md:mb-10' />
+                <div></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                    {
+                        data.map((singleData, i) => (
+                            <div className="border flex flex-col justify-center items-center py-8" key={i}>
+                                <Chart options={options} series={singleData?.series} type="pie" width={200} />
+                                <p className="text-center text-[#1380c5] text-xl font-semibold">{singleData?.year}</p>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-            <Gap />
-        </div>
+        </section>
     )
 }

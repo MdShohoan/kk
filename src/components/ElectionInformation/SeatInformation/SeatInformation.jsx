@@ -84,7 +84,7 @@ function SeatInformation() {
   return (
     <div className='border border-gray-300'>
       <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type2'} />
-
+      <div className='mb-5 md:mb-10'/>
       {/* Division navigator */}
       <div>
         <div className='grid grid-cols-3 px-4 my-4 [&>*:nth-child(1)]:rounded-tl [&>*:nth-child(7)]:rounded-bl [&>*:nth-child(3)]:rounded-tr [&>*:nth-child(9)]:rounded-br'>
@@ -105,7 +105,7 @@ function SeatInformation() {
       </div>
       {/* Seat List */}
       <div className='bg-[#f7f7f7] p-4'>
-        <div className='grid grid-cols-3 gap-6 h-[580px] overflow-auto overflow-x-hidden'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-6 h-[580px] overflow-auto overflow-x-hidden'>
           {
             filterSeatByDivision().map((seat) => (
               <div key={seat?.to} className='p-3 pt-4 bg-white text-center'>
