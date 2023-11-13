@@ -1,5 +1,5 @@
-import styles from './card.module.css'
-import CountUp from '../../common/CountUp/CountUp';
+import styles from './CardCountUP.module.css'
+import CountUp from '../CountUp/CountUp';
 import { useRef} from 'react';
 import useIsVisible from '../../../hooks/useIsVisible ';
 

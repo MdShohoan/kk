@@ -1,13 +1,14 @@
-import Card from './Card/Card';
-import male_candidate from '../../assets/election/male-candidate.png'
-import female_candidate from '../../assets/election/female-candidate.png'
+import Card from '../common/CardCountUP/CardCountUP';
+import Title from '../common/Title/Title';
+
 import total_voter from '../../assets/election/total-voter.png'
-import total_seat from '../../assets/election/total-seat.png'
 import total_candidate from '../../assets/election/total-seat.png'
-import political_parties from '../../assets/election/political-parties.png'
 import male_voter from '../../assets/election/male-voter.png'
 import female_voter from '../../assets/election/female-voter.png'
-import Title from '../common/Title/Title';
+import male_candidate from '../../assets/election/male-candidate.png'
+import female_candidate from '../../assets/election/female-candidate.png'
+import total_seat from '../../assets/election/total-seat.png'
+import political_parties from '../../assets/election/political-parties.png'
 
 export default function ElectionShortStatistics() {
   const data = [
