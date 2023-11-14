@@ -3,10 +3,12 @@ import ElectionShortStatistics from './components/ElectionShortStatistics/Electi
 import ElectionInformation from './components/ElectionInformation/ElectionInformation'
 import UnofficialResult from './components/UnofficialResult/UnofficialResult'
 import ResultsHistory from './components/ResultsHistory/ResultsHistory'
+import Hero from './components/Hero/Hero'
 
 function App() {
   return (
     <>
+      <Hero/>
       <ElectionShortStatistics />
       <ElectionInformation />
       <UnofficialResult/>
