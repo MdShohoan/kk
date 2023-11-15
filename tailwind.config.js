@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import { colors } from './src/theme'
 export default {
   content: [
     "./index.html",
@@ -8,10 +9,16 @@ export default {
     extend: {
       colors: {
         primary:{
-          light:'#F0ECF9',
+          light:colors?.primary?.light,
           dark:'',
-          DEFAULT: '#6F42C1',
-          'contrast': 'rgba(111, 66, 193, 0.60)'
+          DEFAULT: colors?.primary?.default,
+          'contrast': colors?.primary?.contrast,
+        },
+        secondary:{
+          light:'#CAD7FA',
+          dark:'',
+          DEFAULT: '',
+          'contrast': ''
         },
         'gray1':'#808081'
       },
