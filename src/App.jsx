@@ -5,6 +5,7 @@ import UnofficialResult from './components/UnofficialResult/UnofficialResult'
 import ResultsHistory from './components/ResultsHistory/ResultsHistory'
 import Hero from './components/Hero/Hero'
 import QuickLinks from './components/QuickLinks/QuickLinks'
+import Video from './components/Video/Video'
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
       <div className='h-[250px] w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
         ads: 970*250
       </div>
-      <QuickLinks />
-      <ElectionInformation />
-      <UnofficialResult />
-      <ResultsHistory />
+      <QuickLinks/>
+      <Video/>
+      <ElectionInformation/>
+      <UnofficialResult/>
+      <ResultsHistory/>
     </>
   )
 }

@@ -30,20 +30,6 @@ function Hero() {
                                 ))
                             }
                         </div>
-                        {/* <div className='grid grid-cols-3 gap-16'>
-                            {
-                                electionDate.map((data, i)=>(
-                                    <div key={i} className='bg-secondary-light h-20 rounded-xl w-48 font-normal text-3xl flex justify-center items-center'>{data}</div>
-                                ))
-                            }
-                        </div>
-                        <div className='grid grid-cols-3 gap-16'>
-                            {
-                                electionDate.map((data, i)=>(
-                                    <div key={i} className='border-4 text-primary border-primary h-20 rounded-xl w-48 font-normal text-3xl flex justify-center items-center'>{data}</div>
-                                ))
-                            }
-                        </div> */}
                     </div>
                     <div>
                         <img src={ECLogo}/>

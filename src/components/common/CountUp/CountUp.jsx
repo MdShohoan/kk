@@ -1,4 +1,3 @@
-import styles from './CountUp.module.css';
 import { useState, useEffect } from 'react';
 
 export default function CountUp({ end }) {
@@ -64,6 +63,8 @@ export default function CountUp({ end }) {
     }, [count]);
 
     return (
-        <p className={styles.data}>{formatByComma(toBanglaDigits(count))}</p>
+        <p className='md:text-2xl text-xl mb-2 text-primary font-bold'>{formatByComma(toBanglaDigits(count))}</p>
     )
 }
+
+

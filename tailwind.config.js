@@ -20,7 +20,10 @@ export default {
           DEFAULT: '',
           'contrast': ''
         },
-        'gray1':'#808081'
+        'gray1':'#808081',
+        'gray2': '#040404',
+        'gray3': '#666666',
+        'gray4': '#00000033',
       },
       fontFamily:{
         'arvo': ['Arvo'],
