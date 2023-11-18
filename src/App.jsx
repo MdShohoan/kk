@@ -6,6 +6,8 @@ import ResultsHistory from './components/ResultsHistory/ResultsHistory'
 import Hero from './components/Hero/Hero'
 import QuickLinks from './components/QuickLinks/QuickLinks'
 import Video from './components/Video/Video'
+import LatestNews from './components/LatestNews/LatestNews'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -18,11 +20,13 @@ function App() {
       <div className='h-[250px] w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
         ads: 970*250
       </div>
-      <QuickLinks/>
-      <Video/>
-      <ElectionInformation/>
-      <UnofficialResult/>
-      <ResultsHistory/>
+      <QuickLinks />
+      <Video />
+      <LatestNews />
+      <ElectionInformation />
+      <UnofficialResult />
+      <ResultsHistory />
+      <Footer/>
     </>
   )
 }

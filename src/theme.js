@@ -5,4 +5,5 @@ export const colors = {
         default: '#6F42C1',
         contrast: 'rgba(111, 66, 193, 0.60)',
     },
+    gray5:'#989898'
 }
