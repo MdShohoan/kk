@@ -21,7 +21,7 @@ function Video() {
                 <Title text={'ভিডিও'} underline='type1' />
                 <div className='mb-5 md:m-10' />
                 <div className="grid grid-cols-3 gap-8">
-                    <div>
+                    <div className='flex flex-col'>
                         <div
                             className='h-full mb-3 rounded flex justify-center items-center'
                             style={{
@@ -51,7 +51,6 @@ function Video() {
                                         <FaPlay color='white' size={20} />
                                     </div>
                                     <h6 className='text-sm text-gray2 font-normal'>{info?.title}</h6>
-
                                 </div>
                             ))
                         }
