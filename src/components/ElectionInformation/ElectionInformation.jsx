@@ -1,9 +1,9 @@
 // import SeatInformation from './SeatInformation/SeatInformation'
 // import MapInformation from './MapInformation/MapInformation'
 
-import { useEffect, useState } from "react";
+// import { useEffect } from "react";
 import Title from "../common/Title/Title"
-import { MdOutlineArrowDropDown } from "react-icons/md";
+// import { MdOutlineArrowDropDown } from "react-icons/md";
 import Card from "../common/CardCountUP/CardCountUP";
 
 import candidat1 from '../../assets/candidatePhoto/asaduzzaman.webp'
@@ -15,9 +15,9 @@ import female_voter from '../../assets/election/female-voter.png'
 function ElectionInformation() {
   // const dorpdownRef = useRef()
 
-  const [selectedSeat, setSelectedSeat] = useState('')
-  const [clicked, setClicked] = useState('')
-  const [seatList, setSeatList] = useState([])
+  // const [selectedSeat, setSelectedSeat] = useState('')
+  // const [clicked, setClicked] = useState('')
+  // const [seatList, setSeatList] = useState([])
 
 
   // useEffect(() => {
@@ -33,89 +33,89 @@ function ElectionInformation() {
   //   }
   // });
 
-  const handleDivisionClick = (divisionName) => {
-    if (clicked) {
-      if (clicked === divisionName) {
-        setClicked('')
-      }
-      else {
-        setClicked(divisionName)
-      }
-    }
-    else {
-      setClicked(divisionName)
-    }
-  }
+  // const handleDivisionClick = (divisionName) => {
+  //   if (clicked) {
+  //     if (clicked === divisionName) {
+  //       setClicked('')
+  //     }
+  //     else {
+  //       setClicked(divisionName)
+  //     }
+  //   }
+  //   else {
+  //     setClicked(divisionName)
+  //   }
+  // }
 
-  const handleItemClick = (seat) => {
-    setClicked('')
-    setSelectedSeat(seat)
-  }
+  // const handleItemClick = (seat) => {
+  //   setClicked('')
+  //   setSelectedSeat(seat)
+  // }
 
   //Make mock data
-  const makeMockData = () => {
-    const list = []
-    for (let i = 1; i < 17; i++) {
-      list.push({ number: { inEnglish: '174', inBangla: '১৭৪' }, name: 'ঢাকা-১', details: 'দোহার এবং নবাবগঞ্জ উপজেলা', division: 'Dhaka' })
-    }
-    for (let i = 1; i < 17; i++) {
-      list.push({ number: { inEnglish: '278', inBangla: '২৭৮' }, name: 'চট্টগ্রাম-১', details: 'মিরশরাই উপজেলা', division: 'Chittagong' })
-    }
-    return list
-  }
-  const list = makeMockData()
+  // const makeMockData = () => {
+  //   const list = []
+  //   for (let i = 1; i < 17; i++) {
+  //     list.push({ number: { inEnglish: '174', inBangla: '১৭৪' }, name: 'ঢাকা-১', details: 'দোহার এবং নবাবগঞ্জ উপজেলা', division: 'Dhaka' })
+  //   }
+  //   for (let i = 1; i < 17; i++) {
+  //     list.push({ number: { inEnglish: '278', inBangla: '২৭৮' }, name: 'চট্টগ্রাম-১', details: 'মিরশরাই উপজেলা', division: 'Chittagong' })
+  //   }
+  //   return list
+  // }
+  // const list = makeMockData()
 
-  useEffect(() => {
-    setSeatList(list)
-  }, [])
+  // useEffect(() => {
+  //   setSeatList(list)
+  // }, [])
 
   //Filter data
-  const filterSeatByDivision = () => {
-    return seatList.filter((seat) => seat?.division === clicked)
-  }
+  // const filterSeatByDivision = () => {
+  //   return seatList.filter((seat) => seat?.division === clicked)
+  // }
 
-  const navigationOption = [
-    {
-      divisionName: 'Dhaka',
-      text: 'ঢাকা',
-      to: 'dhaka'
-    },
-    {
-      divisionName: 'Chittagong',
-      text: 'চট্টগ্রাম',
-      to: 'chittagong'
-    },
-    {
-      divisionName: 'Sylhet',
-      text: 'সিলেট',
-      to: 'sylhet'
-    },
-    {
-      divisionName: 'Barisal',
-      text: 'বরিশাল',
-      to: 'barisal'
-    },
-    {
-      divisionName: 'Rajshahi',
-      text: 'রাজশাহী',
-      to: 'rajshahi'
-    },
-    {
-      divisionName: 'Khulna',
-      text: 'খুলনা',
-      to: 'Khulna'
-    },
-    {
-      divisionName: 'Rangpur',
-      text: 'রংপুর',
-      to: 'Rangpur'
-    },
-    {
-      divisionName: 'Mymensingh',
-      text: 'ময়মনসিংহ',
-      to: 'mymensingh'
-    },
-  ]
+  // const navigationOption = [
+  //   {
+  //     divisionName: 'Dhaka',
+  //     text: 'ঢাকা',
+  //     to: 'dhaka'
+  //   },
+  //   {
+  //     divisionName: 'Chittagong',
+  //     text: 'চট্টগ্রাম',
+  //     to: 'chittagong'
+  //   },
+  //   {
+  //     divisionName: 'Sylhet',
+  //     text: 'সিলেট',
+  //     to: 'sylhet'
+  //   },
+  //   {
+  //     divisionName: 'Barisal',
+  //     text: 'বরিশাল',
+  //     to: 'barisal'
+  //   },
+  //   {
+  //     divisionName: 'Rajshahi',
+  //     text: 'রাজশাহী',
+  //     to: 'rajshahi'
+  //   },
+  //   {
+  //     divisionName: 'Khulna',
+  //     text: 'খুলনা',
+  //     to: 'Khulna'
+  //   },
+  //   {
+  //     divisionName: 'Rangpur',
+  //     text: 'রংপুর',
+  //     to: 'Rangpur'
+  //   },
+  //   {
+  //     divisionName: 'Mymensingh',
+  //     text: 'ময়মনসিংহ',
+  //     to: 'mymensingh'
+  //   },
+  // ]
 
   const candidates = [
     {
@@ -156,11 +156,20 @@ function ElectionInformation() {
       <div className='container m-auto'>
         <div className='mb-5 md:mb-10'>
           <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
-          <h3 className="text-center mt-2 text-[#666] text-base">নির্বাচিত: {selectedSeat || 'নীলফামারী-২'}</h3>
+          {/* <h3 className="text-center mt-2 text-[#666] text-base">নির্বাচিত: {selectedSeat || 'নীলফামারী-২'}</h3> */}
         </div>
 
-        {/* Division navigator start*/}
-        <div className='grid grid-cols-8 mb-12 [&>*:nth-child(8)]:border [&>*:nth-child(8)]:border-r-[#8da2df] [&>*:nth-child(8)]:border-l-0 [&>*:nth-child(8)]:border-t-0 [&>*:nth-child(8)]:border-b-0'>
+        {/* -------Division navigator start--------- */}
+        <div className="form-group">
+        <select className="form-control">
+          <option value="select">Select an Option</option>
+          <option value="First">First</option>
+          <option value="Second">Second</option>
+          <option value="Third">Third</option>
+        </select>
+      </div>
+
+        {/* <div className='grid grid-cols-8 mb-12 [&>*:nth-child(8)]:border [&>*:nth-child(8)]:border-r-[#8da2df] [&>*:nth-child(8)]:border-l-0 [&>*:nth-child(8)]:border-t-0 [&>*:nth-child(8)]:border-b-0'>
           {
             navigationOption.map((division, i) => (
               <div key={i}>
@@ -176,7 +185,7 @@ function ElectionInformation() {
                   </div>
 
                 </div>
-                {/* Dropdown */}
+                
                 <ul className={`min-w-[200px] h-52 overflow-auto absolute z-10 border bg-white border-[#8da2df] text-[#5f7fee] mt-1 rounded ${clicked === division.divisionName ? 'block' : 'hidden'}`}>
                   {
                     filterSeatByDivision().map((seat, i) => (
@@ -193,8 +202,8 @@ function ElectionInformation() {
               </div>
             ))
           }
-        </div>
-        {/* Division navigator end*/}
+        </div> */}
+        {/* ---------Division navigator end--------- */}
 
         {/* Seat information counter start */}
         <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-7 mb-12'>
