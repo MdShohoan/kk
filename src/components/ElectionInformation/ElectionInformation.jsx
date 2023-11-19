@@ -1,23 +1,25 @@
 // import SeatInformation from './SeatInformation/SeatInformation'
 // import MapInformation from './MapInformation/MapInformation'
 
-// import { useEffect } from "react";
+import { useEffect, useState} from "react";
 import Title from "../common/Title/Title"
-// import { MdOutlineArrowDropDown } from "react-icons/md";
-import Card from "../common/CardCountUP/CardCountUP";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
-import candidat1 from '../../assets/candidatePhoto/asaduzzaman.webp'
-import total_voter from '../../assets/election/total-voter.png'
-import total_candidate from '../../assets/election/total-seat.png'
-import male_voter from '../../assets/election/male-voter.png'
-import female_voter from '../../assets/election/female-voter.png'
+// import { MdOutlineArrowDropDown } from "react-icons/md";
+// import Card from "../common/CardCountUP/CardCountUP";
+
+// import candidat1 from '../../assets/candidatePhoto/asaduzzaman.webp'
+// import total_voter from '../../assets/election/total-voter.png'
+// import total_candidate from '../../assets/election/total-seat.png'
+// import male_voter from '../../assets/election/male-voter.png'
+// import female_voter from '../../assets/election/female-voter.png'
 
 function ElectionInformation() {
   // const dorpdownRef = useRef()
 
   // const [selectedSeat, setSelectedSeat] = useState('')
   // const [clicked, setClicked] = useState('')
-  // const [seatList, setSeatList] = useState([])
+  const [seatList, setSeatList] = useState([])
 
 
   // useEffect(() => {
@@ -52,104 +54,105 @@ function ElectionInformation() {
   //   setSelectedSeat(seat)
   // }
 
-  //Make mock data
-  // const makeMockData = () => {
-  //   const list = []
-  //   for (let i = 1; i < 17; i++) {
-  //     list.push({ number: { inEnglish: '174', inBangla: '১৭৪' }, name: 'ঢাকা-১', details: 'দোহার এবং নবাবগঞ্জ উপজেলা', division: 'Dhaka' })
-  //   }
-  //   for (let i = 1; i < 17; i++) {
-  //     list.push({ number: { inEnglish: '278', inBangla: '২৭৮' }, name: 'চট্টগ্রাম-১', details: 'মিরশরাই উপজেলা', division: 'Chittagong' })
-  //   }
-  //   return list
-  // }
-  // const list = makeMockData()
+  //-----------Make mock data-----------
+  const makeMockData = () => {
+    const list = []
+    for (let i = 1; i < 17; i++) {
+      list.push({ number: { inEnglish: '174', inBangla: '১৭৪' }, name: 'ঢাকা-১', details: 'দোহার এবং নবাবগঞ্জ উপজেলা', division: 'Dhaka' })
+    }
+    for (let i = 1; i < 17; i++) {
+      list.push({ number: { inEnglish: '278', inBangla: '২৭৮' }, name: 'চট্টগ্রাম-১', details: 'মিরশরাই উপজেলা', division: 'Chittagong' })
+    }
+    return list
+  }
+  const list = makeMockData()
 
-  // useEffect(() => {
-  //   setSeatList(list)
-  // }, [])
+  useEffect(() => {
+    setSeatList(list)
+  }, [])
 
-  //Filter data
-  // const filterSeatByDivision = () => {
-  //   return seatList.filter((seat) => seat?.division === clicked)
-  // }
+  // --------Filter data-------------
 
-  // const navigationOption = [
+  const filterSeatByDivision = (filterBy) => {
+    return seatList.filter((seat) => seat?.division === filterBy)
+  }
+
+  const navigationOption = [
+    {
+      divisionName: 'Dhaka',
+      text: 'ঢাকা',
+      to: 'dhaka'
+    },
+    {
+      divisionName: 'Chittagong',
+      text: 'চট্টগ্রাম',
+      to: 'chittagong'
+    },
+    {
+      divisionName: 'Sylhet',
+      text: 'সিলেট',
+      to: 'sylhet'
+    },
+    {
+      divisionName: 'Barisal',
+      text: 'বরিশাল',
+      to: 'barisal'
+    },
+    {
+      divisionName: 'Rajshahi',
+      text: 'রাজশাহী',
+      to: 'rajshahi'
+    },
+    {
+      divisionName: 'Khulna',
+      text: 'খুলনা',
+      to: 'Khulna'
+    },
+    {
+      divisionName: 'Rangpur',
+      text: 'রংপুর',
+      to: 'Rangpur'
+    },
+    {
+      divisionName: 'Mymensingh',
+      text: 'ময়মনসিংহ',
+      to: 'mymensingh'
+    },
+  ]
+
+  // const candidates = [
   //   {
-  //     divisionName: 'Dhaka',
-  //     text: 'ঢাকা',
-  //     to: 'dhaka'
+  //     name: 'আসাদুজ্জামান নূর',
+  //     party: 'আওয়ামী লীগ',
+  //     symbol: 'নৌকা',
+  //     photo: candidat1,
   //   },
   //   {
-  //     divisionName: 'Chittagong',
-  //     text: 'চট্টগ্রাম',
-  //     to: 'chittagong'
+  //     name: 'আসাদুজ্জামান নূর',
+  //     party: 'আওয়ামী লীগ',
+  //     symbol: 'নৌকা',
+  //     photo: candidat1,
   //   },
   //   {
-  //     divisionName: 'Sylhet',
-  //     text: 'সিলেট',
-  //     to: 'sylhet'
+  //     name: 'আসাদুজ্জামান নূর',
+  //     party: 'আওয়ামী লীগ',
+  //     symbol: 'নৌকা',
+  //     photo: candidat1,
   //   },
   //   {
-  //     divisionName: 'Barisal',
-  //     text: 'বরিশাল',
-  //     to: 'barisal'
-  //   },
-  //   {
-  //     divisionName: 'Rajshahi',
-  //     text: 'রাজশাহী',
-  //     to: 'rajshahi'
-  //   },
-  //   {
-  //     divisionName: 'Khulna',
-  //     text: 'খুলনা',
-  //     to: 'Khulna'
-  //   },
-  //   {
-  //     divisionName: 'Rangpur',
-  //     text: 'রংপুর',
-  //     to: 'Rangpur'
-  //   },
-  //   {
-  //     divisionName: 'Mymensingh',
-  //     text: 'ময়মনসিংহ',
-  //     to: 'mymensingh'
+  //     name: 'আসাদুজ্জামান নূর',
+  //     party: 'আওয়ামী লীগ',
+  //     symbol: 'নৌকা',
+  //     photo: candidat1,
   //   },
   // ]
 
-  const candidates = [
-    {
-      name: 'আসাদুজ্জামান নূর',
-      party: 'আওয়ামী লীগ',
-      symbol: 'নৌকা',
-      photo: candidat1,
-    },
-    {
-      name: 'আসাদুজ্জামান নূর',
-      party: 'আওয়ামী লীগ',
-      symbol: 'নৌকা',
-      photo: candidat1,
-    },
-    {
-      name: 'আসাদুজ্জামান নূর',
-      party: 'আওয়ামী লীগ',
-      symbol: 'নৌকা',
-      photo: candidat1,
-    },
-    {
-      name: 'আসাদুজ্জামান নূর',
-      party: 'আওয়ামী লীগ',
-      symbol: 'নৌকা',
-      photo: candidat1,
-    },
-  ]
-
-  const data = [
-    { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
-    { count: '৫২৫৪৭৩২৯', title: 'পুরুষ ভোটার', image: male_voter },
-    { count: '৫১৬৪৩১৫১', title: 'নারী ভোটার ', image: female_voter },
-    { count: '১৮৪৮', title: 'মোট প্রার্থী', image: total_candidate },
-  ]
+  // const data = [
+  //   { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
+  //   { count: '৫২৫৪৭৩২৯', title: 'পুরুষ ভোটার', image: male_voter },
+  //   { count: '৫১৬৪৩১৫১', title: 'নারী ভোটার ', image: female_voter },
+  //   { count: '১৮৪৮', title: 'মোট প্রার্থী', image: total_candidate },
+  // ]
 
   return (
     <section className='mb-28'>
@@ -160,14 +163,28 @@ function ElectionInformation() {
         </div>
 
         {/* -------Division navigator start--------- */}
-        <div className="form-group">
-        <select className="form-control">
-          <option value="select">Select an Option</option>
-          <option value="First">First</option>
-          <option value="Second">Second</option>
-          <option value="Third">Third</option>
-        </select>
-      </div>
+        <div className="grid grid-cols-4 gap-8">
+          {
+            navigationOption?.map((option, i) => (
+              <div key={i} className="relative">
+                <select
+                  className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-4 text-2xl font-normal appearance-none"
+                >
+                  <option value="select">{option?.text}</option>
+                  {
+                    filterSeatByDivision(option.divisionName)?.map((option, i)=>(
+                      <option key={i} value={option?.name?.inEnglish}>{option?.name}</option>
+                    ))
+                  }
+                </select>
+                <span className="absolute right-0 top-1/2 -translate-y-1/2">
+                  <RiArrowDropDownLine size={28} />
+                </span>
+              </div>
+            ))
+          }
+        </div>
+
 
         {/* <div className='grid grid-cols-8 mb-12 [&>*:nth-child(8)]:border [&>*:nth-child(8)]:border-r-[#8da2df] [&>*:nth-child(8)]:border-l-0 [&>*:nth-child(8)]:border-t-0 [&>*:nth-child(8)]:border-b-0'>
           {
@@ -205,21 +222,25 @@ function ElectionInformation() {
         </div> */}
         {/* ---------Division navigator end--------- */}
 
-        {/* Seat information counter start */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-7 mb-12'>
+
+        {/* ------------Seat information counter start---------- */}
+        {/* <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-7 mb-12'>
           {
             data.map((singleData, i) => (
               <Card key={i} data={singleData} />
             ))
           }
-        </div>
-        {/* Seat information counter end */}
+        </div> */}
+        {/* -----------Seat information counter end------- */}
+
 
         {/* Candidates information start */}
         {/* <div className="mb-8">
           <Title text={'প্রার্থী'} underline="type2" />
         </div> */}
-        <div className="grid grid-cols-4 gap-8">
+
+
+        {/* <div className="grid grid-cols-4 gap-8">
           {
             candidates.map((candidate, i) => (
               <div key={i} className="text-center cursor-pointer">
@@ -232,7 +253,8 @@ function ElectionInformation() {
               </div>
             ))
           }
-        </div>
+        </div> */}
+
         {/* Candidates information start */}
 
         {/* Copy of Prothom-alo */}
