@@ -18,7 +18,7 @@ function UnofficialResult() {
       <div className="container mx-auto">
         <Title text={'নির্বাচনের বেসরকারি ফলাফল'} underline="type1" />
         <div className='mb-5 md:mb-10'/>
-        <div className="max-w-[300px] mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
+        <div className="max-w-[300px] md:max-w-[500px] mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
           <div>
             <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
               <div className={"col-start-1 col-end-4 " + headingCellStyle}>দল / জোট</div>
