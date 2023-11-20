@@ -16,11 +16,11 @@ function Video() {
     ]
 
     return (
-        <section className='mb-24'>
+        <section className='mb-12 md:mb-24'>
             <div className="container mx-auto">
                 <Title text={'ভিডিও'} underline='type1' />
                 <div className='mb-5 md:m-10' />
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div className='flex flex-col'>
                         <div
                             className='h-full mb-3 rounded flex justify-center items-center'

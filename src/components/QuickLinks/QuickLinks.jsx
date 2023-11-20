@@ -14,14 +14,14 @@ function QuickLinks() {
     ]
 
     return (
-        <section className="mb-24 bg-primary-light p-8">
+        <section className="mb-12 md:mb-24 bg-primary-light p-8">
             <div className="container mx-auto">
-                <div className="grid grid-cols-4 gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16">
                     {
                         quickLinks.map((link, i) => {
                             let Icon = link?.icon || MdOutlineEventSeat 
                             return (
-                                <div key={i} className="flex justify-center items-center gap-3">
+                                <div key={i} className="flex justify-start lg:justify-center items-center gap-3">
                                     <div><Icon size={32} style={{color: colors?.primary?.default}}/></div>
                                     <div>
                                         <span className="block text-primary font-bold text-base mb-1">{link.title}</span>

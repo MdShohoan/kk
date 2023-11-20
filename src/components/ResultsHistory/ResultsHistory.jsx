@@ -51,7 +51,7 @@ export default function ResultsHistory() {
 
     const options = {
         chart: {
-            // width: 200,
+            width: 200,
             type: 'pie',
         },
         colors: ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854'],
@@ -95,7 +95,7 @@ export default function ResultsHistory() {
 
 
     return (
-        <section className="mb-28">
+        <section className="mb-12 md:mb-24">
             <div className="container mx-auto">
                 <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
                 <div className='mb-5 md:mb-10' />
@@ -104,7 +104,7 @@ export default function ResultsHistory() {
                     {
                         data.map((singleData, i) => (
                             <div className="border flex flex-col justify-center items-center py-8" key={i}>
-                                <Chart options={options} series={singleData?.series} type="pie" width={200} />
+                                <Chart options={options} series={singleData?.series} type="pie" width={180} />
                                 <p className="text-center text-[#1380c5] text-xl font-semibold">{singleData?.year}</p>
                             </div>
                         ))

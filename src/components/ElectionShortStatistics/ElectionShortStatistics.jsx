@@ -24,7 +24,7 @@ export default function ElectionShortStatistics() {
   ]
 
   return (
-    <section className='bg-white mb-28'>
+    <section className='bg-white mb-12 md:mb-24'>
       <div className='container mx-auto'>
         <div>
           <div>

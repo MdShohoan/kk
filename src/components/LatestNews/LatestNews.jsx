@@ -17,11 +17,12 @@ export default function LatestNews() {
     ]
 
     return (
-        <section className="mb-24">
+        <section className="mb-12 md:mb-24">
             <div className="container mx-auto">
-                <Title text={'নির্বাচনের সর্বশেষ খবর'} underline="type1" />
-                <div className="mb-5 md:mb-10" />
-                <div className="grid grid-cols-3 gap-8 mb-16">
+                <div className="mb-5 md:mb-10">
+                    <Title text={'নির্বাচনের সর্বশেষ খবর'} underline="type1" />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {
                         data?.slice(0, 2).map((news, i) => (
                             <Card news={news} key={i} />
@@ -31,10 +32,10 @@ export default function LatestNews() {
                         ads: 300*250
                     </div>
                 </div>
-                <div className='h-[90px] w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px] mb-9'>
+                {/* <div className='w-[300px] h-[250px] lg:h-[90px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px] mb-9'>
                     ADS 970*90
-                </div>
-                <div className="grid grid-cols-3 gap-8">
+                </div> */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                     {
                         data?.slice(3).map((news, i) => (
                             <Card news={news} key={i} />

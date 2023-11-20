@@ -63,7 +63,7 @@ export default function CountUp({ end }) {
     }, [count]);
 
     return (
-        <p className='md:text-2xl text-xl mb-2 text-primary font-bold'>{formatByComma(toBanglaDigits(count))}</p>
+        <p className='md:text-xl lg:text-2xl text-base mb-2 text-primary font-bold'>{formatByComma(toBanglaDigits(count))}</p>
     )
 }
 
