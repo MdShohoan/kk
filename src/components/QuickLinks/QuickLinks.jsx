@@ -4,12 +4,12 @@ import { IoMdGitCompare } from "react-icons/io";
 import { MdOutlineAddReaction } from "react-icons/md";
 import { colors } from "../../theme";
 import { useState } from "react";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function QuickLinks() {
     const [hoverLink, setHoverLink] = useState(null)
 
-    const setSubtitleHoverColor = (link)=>{
+    const setSubtitleHoverColor = (link) => {
         return hoverLink === link.id ? 'text-blue-500' : 'text-gray1'
     }
 
@@ -39,12 +39,26 @@ function QuickLinks() {
                                             size={32}
                                             style={{
                                                 color: hoverLink === link.id ? colors.primary.contrast : colors?.primary?.default,
-                                                transition:'all 300ms'
+                                                transition: 'all 300ms'
                                             }}
                                         />
                                     </div>
                                     <div>
-                                        <span className={`transition-all duration-300 block text-${hoverLink === link.id ? 'primary-contrast' : 'primary'} font-bold text-base mb-1`}>{link.title}</span>
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span
+                                                className={`transition-all duration-300 block text-${hoverLink === link.id ? 'primary-contrast' : 'primary'} font-bold text-base`}>{link.title}
+                                            </span>
+                                            <div className="md:hidden">
+                                                <FaExternalLinkAlt
+                                                    size={12}
+                                                    style={{
+                                                        color: hoverLink === link.id ? colors.primary.contrast : colors?.primary?.default,
+                                                        transition: 'all 300ms',
+                                                        fontWeight: 700,
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
                                         <span className={`transition-all duration-300 block text-xs ${setSubtitleHoverColor(link)} font-normal`}>{link.subtitle}</span>
                                     </div>
                                 </div>
