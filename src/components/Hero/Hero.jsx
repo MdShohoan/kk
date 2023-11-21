@@ -14,7 +14,7 @@ function Hero() {
                         <ul className="flex justify-between items-center gap-7">
                             {
                                 navList.map((item, i) => (
-                                    <li key={i} className='text-base font-normal capitalize text-gray1 font-arvo'>{item}</li>
+                                    <li key={i} className='text-base font-normal capitalize text-gray1 font-arvo cursor-pointer'>{item}</li>
                                 ))
                             }
                         </ul>

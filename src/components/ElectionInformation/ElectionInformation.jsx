@@ -168,7 +168,7 @@ function ElectionInformation() {
             navigationOption?.map((option, i) => (
               <div key={i} className="relative">
                 <select
-                  className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-4 text-xl md:text-2xl font-normal appearance-none"
+                  className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-4 text-xl md:text-2xl font-normal appearance-none cursor-pointer"
                 >
                   <option value="select">{option?.text}</option>
                   {
