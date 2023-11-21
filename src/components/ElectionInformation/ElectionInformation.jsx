@@ -168,9 +168,9 @@ function ElectionInformation() {
             navigationOption?.map((option, i) => (
               <div key={i} className="relative">
                 <select
-                  className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-4 text-xl md:text-2xl font-normal appearance-none cursor-pointer"
+                  className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer overflow-scroll"
                 >
-                  <option value="select">{option?.text}</option>
+                  <option className="cursor-pointer" value="select">{option?.text}</option>
                   {
                     filterSeatByDivision(option.divisionName)?.map((option, i)=>(
                       <option key={i} value={option?.name?.inEnglish}>{option?.name}</option>
