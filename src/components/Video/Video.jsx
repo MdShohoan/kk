@@ -21,9 +21,9 @@ function Video() {
                 <Title text={'ভিডিও'} underline='type1' />
                 <div className='mb-5 md:m-10' />
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div className='flex flex-col'>
+                    <div className='h-full md:flex flex-col'>
                         <div
-                            className='h-full mb-3 rounded flex justify-center items-center'
+                            className='md:h-full mb-3 rounded flex justify-center items-center'
                             style={{
                                 backgroundImage: `url(${data[0]?.thumbnail})`,
                                 backgroundRepeat: 'no-repeat',
@@ -31,7 +31,9 @@ function Video() {
                                 backgroundPosition: 'center'
                             }}
                         >
-                            <FaYoutube color='#FF0000' size={68}/>
+                            <span className='inline-block py-16 md:p-0'>
+                                <FaYoutube color='#FF0000' size={68} />
+                            </span>
                         </div>
                         <h6 className='text-primary font-extrabold text-2xl'>{data[0]?.title}</h6>
                     </div>
@@ -48,7 +50,7 @@ function Video() {
                                             backgroundPosition: 'center',
                                         }}
                                     >
-                                        <FaPlay color='white' size={20} />
+                                        <FaPlay color='white' size={16} />
                                     </div>
                                     <h6 className='text-sm text-gray2 font-normal'>{info?.title}</h6>
                                 </div>
