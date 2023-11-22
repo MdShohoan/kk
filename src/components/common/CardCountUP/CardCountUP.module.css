@@ -1,5 +1,5 @@
 .card {
-    padding: 30px;
+
     border: 1px solid lightgray;
     border-radius: 6px;
     text-align: center;
@@ -30,7 +30,6 @@
         font-size: 0.75rem;
     }
     .card {
-        padding: 15px;
         border: 1px solid lightgray;
         border-radius: 6px;
         text-align: center;

@@ -73,7 +73,7 @@ function SeatInfoPage() {
                     <div className="mb-8">
                         <Title text={'প্রার্থী'} underline="type2" />
                     </div>
-                    <div className="grid grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {
                             candidates.map((candidate, i) => (
                                 <div key={i} className="text-center cursor-pointer bg-[#b9b9b969] py-5 rounded-xl">

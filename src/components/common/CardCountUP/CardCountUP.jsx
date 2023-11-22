@@ -9,13 +9,15 @@ export default function Card({ data, type = 'type1' }) {
 
     const type1 = (
         <div className={styles.card}>
-            <div className='bg-primary-background'>
+            <div className='bg-primary-background py-4'>
                 <img className={styles.cardImage} src={data?.image} alt={data?.title + 'image'} />
             </div>
-            <div ref={elemRef}>
-                {isVisible && <CountUp end={data?.count} />}
+            <div className='px-4 py-8'>
+                <div ref={elemRef}>
+                    {isVisible && <CountUp end={data?.count} />}
+                </div>
+                <h6 className={styles.title}>{data?.title}</h6>
             </div>
-            <h6 className={styles.title}>{data?.title}</h6>
         </div>
     )
 
