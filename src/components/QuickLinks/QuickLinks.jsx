@@ -5,6 +5,7 @@ import { MdOutlineAddReaction } from "react-icons/md";
 import { colors } from "../../theme";
 import { useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import clsx from "clsx";
 
 function QuickLinks() {
     const [hoverLink, setHoverLink] = useState(null)
@@ -46,7 +47,13 @@ function QuickLinks() {
                                     <div>
                                         <div className="flex items-center gap-2 mb-1">
                                             <span
-                                                className={`transition-all duration-300 block text-${hoverLink === link.id ? 'primary-contrast' : 'primary'} font-bold text-base`}>{link.title}
+                                                className={clsx(
+                                                    `transition-all duration-300 block font-bold text-base text-primary`,
+                                                    {
+                                                        'text-primary-contrast': hoverLink === link.id
+                                                    }
+                                                )}>
+                                                {link.title}
                                             </span>
                                             <div className="md:hidden">
                                                 <FaExternalLinkAlt

@@ -1,25 +1,17 @@
 // import SeatInformation from './SeatInformation/SeatInformation'
 // import MapInformation from './MapInformation/MapInformation'
 
-import { useEffect, useState} from "react";
-import Title from "../common/Title/Title"
-import { RiArrowDropDownLine } from "react-icons/ri";
+import DivisionNavigator from "../common/DivisionNavigator/DivisionNavigator"
 
 // import { MdOutlineArrowDropDown } from "react-icons/md";
 // import Card from "../common/CardCountUP/CardCountUP";
-
-// import candidat1 from '../../assets/candidatePhoto/asaduzzaman.webp'
-// import total_voter from '../../assets/election/total-voter.png'
-// import total_candidate from '../../assets/election/total-seat.png'
-// import male_voter from '../../assets/election/male-voter.png'
-// import female_voter from '../../assets/election/female-voter.png'
 
 function ElectionInformation() {
   // const dorpdownRef = useRef()
 
   // const [selectedSeat, setSelectedSeat] = useState('')
   // const [clicked, setClicked] = useState('')
-  const [seatList, setSeatList] = useState([])
+
 
 
   // useEffect(() => {
@@ -53,72 +45,6 @@ function ElectionInformation() {
   //   setClicked('')
   //   setSelectedSeat(seat)
   // }
-
-  //-----------Make mock data-----------
-  const makeMockData = () => {
-    const list = []
-    for (let i = 1; i < 17; i++) {
-      list.push({ number: { inEnglish: '174', inBangla: '১৭৪' }, name: 'ঢাকা-১', details: 'দোহার এবং নবাবগঞ্জ উপজেলা', division: 'Dhaka' })
-    }
-    for (let i = 1; i < 17; i++) {
-      list.push({ number: { inEnglish: '278', inBangla: '২৭৮' }, name: 'চট্টগ্রাম-১', details: 'মিরশরাই উপজেলা', division: 'Chittagong' })
-    }
-    return list
-  }
-  const list = makeMockData()
-
-  useEffect(() => {
-    setSeatList(list)
-  }, [])
-
-  // --------Filter data-------------
-
-  const filterSeatByDivision = (filterBy) => {
-    return seatList.filter((seat) => seat?.division === filterBy)
-  }
-
-  const navigationOption = [
-    {
-      divisionName: 'Dhaka',
-      text: 'ঢাকা',
-      to: 'dhaka'
-    },
-    {
-      divisionName: 'Chittagong',
-      text: 'চট্টগ্রাম',
-      to: 'chittagong'
-    },
-    {
-      divisionName: 'Sylhet',
-      text: 'সিলেট',
-      to: 'sylhet'
-    },
-    {
-      divisionName: 'Barisal',
-      text: 'বরিশাল',
-      to: 'barisal'
-    },
-    {
-      divisionName: 'Rajshahi',
-      text: 'রাজশাহী',
-      to: 'rajshahi'
-    },
-    {
-      divisionName: 'Khulna',
-      text: 'খুলনা',
-      to: 'Khulna'
-    },
-    {
-      divisionName: 'Rangpur',
-      text: 'রংপুর',
-      to: 'Rangpur'
-    },
-    {
-      divisionName: 'Mymensingh',
-      text: 'ময়মনসিংহ',
-      to: 'mymensingh'
-    },
-  ]
 
   // const candidates = [
   //   {
@@ -157,33 +83,9 @@ function ElectionInformation() {
   return (
     <section className='mb-12 md:mb-24'>
       <div className='container m-auto'>
-        <div className='mb-5 md:mb-10'>
-          <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
-          {/* <h3 className="text-center mt-2 text-[#666] text-base">নির্বাচিত: {selectedSeat || 'নীলফামারী-২'}</h3> */}
-        </div>
-
+        
         {/* -------Division navigator start--------- */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-          {
-            navigationOption?.map((option, i) => (
-              <div key={i} className="relative">
-                <select
-                  className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer overflow-scroll"
-                >
-                  <option className="cursor-pointer" value="select">{option?.text}</option>
-                  {
-                    filterSeatByDivision(option.divisionName)?.map((option, i)=>(
-                      <option key={i} value={option?.name?.inEnglish}>{option?.name}</option>
-                    ))
-                  }
-                </select>
-                <span className="absolute right-0 top-1/2 -translate-y-1/2">
-                  <RiArrowDropDownLine size={28} />
-                </span>
-              </div>
-            ))
-          }
-        </div>
+        <DivisionNavigator/>
 
 
         {/* <div className='grid grid-cols-8 mb-12 [&>*:nth-child(8)]:border [&>*:nth-child(8)]:border-r-[#8da2df] [&>*:nth-child(8)]:border-l-0 [&>*:nth-child(8)]:border-t-0 [&>*:nth-child(8)]:border-b-0'>
@@ -255,7 +157,7 @@ function ElectionInformation() {
           }
         </div> */}
 
-        {/* Candidates information start */}
+        {/* Candidates information end */}
 
         {/* Copy of Prothom-alo */}
         {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>

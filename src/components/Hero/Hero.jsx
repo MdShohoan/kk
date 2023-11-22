@@ -1,8 +1,11 @@
+import { useLocation } from 'react-router-dom';
 import ECLogo from '../../assets/EC/ECLogo.png'
 import kkLogo from '../../assets/kkLogo.png/'
 import { MdMenu } from "react-icons/md";
 
 function Hero() {
+    const currentLocation = useLocation()
+    const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
     const navList = ['আসন', 'জেলা', 'খবর', 'ফলাফল', 'কালেরকণ্ঠ ']
     const electionDate = ['৩', 'জানুয়ারি', '২০২৪']
     return (
@@ -27,22 +30,36 @@ function Hero() {
                 <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start pb-5 md:pb-0 gap-8 md:gap-0">
                     <div>
                         <p className='mb-3 text-base text-primary-contrast font-bold uppercase'>জাতীয় সংসদ নির্বাচন </p>
-                        <h3 className='text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-relaxed lg:leading-relaxed font-black tracking-[1.93px] mb-5'>দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪</h3>
-                        <span className='block text-sm font-normal text-gray1 mb-8 md:mb-10'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
-                        <div className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[40%]'>
+                        <h3
+                            className='text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-relaxed lg:leading-relaxed font-black tracking-[1.93px] mb-5'
+                        >
                             {
-                                electionDate.map((data, i) => (
-                                    
-                                        <div
-                                            key={i}
-                                            className='text-primary-light bg-primary rounded font-normal py-2 text-sm md:text-lg flex justify-center items-center'
-                                        >
-                                            {data}
-                                        </div>
-                                    
-                                ))
+                                isInSeatInfoPage
+                                    ? 'নিজ আসন সম্পর্কে জানুন '
+                                    : 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪'
                             }
-                        </div>
+                        </h3>
+                        <span className='block text-sm font-normal text-gray1 mb-8 md:mb-10'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
+                        {
+                            !isInSeatInfoPage && (
+                                <div
+                                    className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[40%]'
+                                >
+                                    {
+                                        electionDate.map((data, i) => (
+
+                                            <div
+                                                key={i}
+                                                className='text-primary-light bg-primary rounded font-normal py-2 text-sm md:text-lg flex justify-center items-center'
+                                            >
+                                                {data}
+                                            </div>
+
+                                        ))
+                                    }
+                                </div>
+                            )
+                        }
                     </div>
                     <div>
                         <img src={ECLogo} className='w-[220px] md:w-auto' />

@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
+import SeatInfoPage from "./pages/SeatInfoPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,8 +15,8 @@ function App() {
       ),
     },
     {
-      path: "about",
-      element: <div>About</div>,
+      path: "/seat/:id",
+      element: <SeatInfoPage/>,
     },
   ]);
   return (

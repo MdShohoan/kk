@@ -13,6 +13,7 @@ export default {
           dark:'',
           DEFAULT: colors?.primary?.default,
           'contrast': colors?.primary?.contrast,
+          'background': colors?.primary?.background
         },
         secondary:{
           light:'#CAD7FA',
