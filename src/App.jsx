@@ -11,16 +11,18 @@ function App() {
     {
       path: "/",
       element: (
-        <HomePage/>
+        <HomePage />
       ),
     },
     {
       path: "/seat/:id",
-      element: <SeatInfoPage/>,
+      element: <SeatInfoPage />,
     },
   ]);
   return (
-    <RouterProvider router={router}/>
+    <RouterProvider router={router}>
+    </RouterProvider>
+
   )
 }
 

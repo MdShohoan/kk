@@ -7,22 +7,26 @@ import ResultsHistory from '../components/ResultsHistory/ResultsHistory'
 import LatestNews from '../components/LatestNews/LatestNews'
 import Sponsor from '../components/Sponsor/Sponsor'
 import Layout from '../components/common/Layout/Layout'
+import { ScrollRestoration } from 'react-router-dom'
 
 function HomePage() {
     return (
-        <Layout>
-            <Sponsor />
-            <ElectionShortStatistics />
-            <div className='w-[300px] h-[250px] lg:h-[250px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
-                ads: 970*250
-            </div>
-            <QuickLinks />
-            <Video />
-            <ElectionInformation />
-            <LatestNews />
-            <UnofficialResult />
-            <ResultsHistory />
-        </Layout>
+        <>
+            <ScrollRestoration/>
+            <Layout>
+                <Sponsor />
+                <ElectionShortStatistics />
+                <div className='w-[300px] h-[250px] lg:h-[250px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
+                    ads: 970*250
+                </div>
+                <QuickLinks />
+                <Video />
+                <ElectionInformation />
+                <LatestNews />
+                <UnofficialResult />
+                <ResultsHistory />
+            </Layout>
+        </>
     )
 }
 

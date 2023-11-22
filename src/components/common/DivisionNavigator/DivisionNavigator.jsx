@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Title from "../../common/Title/Title"
+import { useNavigate } from "react-router-dom";
 
 function DivisionNavigator() {
     const [seatList, setSeatList] = useState([])
+    const navigate = useNavigate()
+
+    const handleDivisionChange = (e)=>{
+        console.log(e.target.value)
+        navigate('/seat/123')
+    }
 
     // --------Filter data-------------
     const filterSeatByDivision = (filterBy) => {
@@ -71,7 +78,6 @@ function DivisionNavigator() {
     ]
 
     return (
-
         <>
             <div className='mb-5 md:mb-10'>
                 <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
@@ -81,7 +87,8 @@ function DivisionNavigator() {
                     navigationOption?.map((option, i) => (
                         <div key={i} className="relative">
                             <select
-                                className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer overflow-scroll"
+                                onChange={handleDivisionChange}
+                                className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer"
                             >
                                 <option className="cursor-pointer" value="select">{option?.text}</option>
                                 {
