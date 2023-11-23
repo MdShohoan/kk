@@ -2,9 +2,14 @@ import { useLocation } from 'react-router-dom';
 import ECLogo from '../../assets/EC/ECLogo.png'
 import kkLogo from '../../assets/kkLogo.png/'
 import { MdMenu } from "react-icons/md";
+import { useState } from 'react';
+import { MdClose } from "react-icons/md";
+
+import clsx from 'clsx';
 
 function Hero() {
     const currentLocation = useLocation()
+    const [isOpenNav, seIsOpenNav] = useState(false)
     const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
     const navList = ['আসন', 'জেলা', 'খবর', 'ফলাফল', 'কালেরকণ্ঠ ']
     const electionDate = ['৩', 'জানুয়ারি', '২০২৪']
@@ -23,8 +28,35 @@ function Hero() {
                         </ul>
                     </nav>
                     <span className='md:hidden'>
-                        <MdMenu size={32} />
+                        <MdMenu size={32} onClick={() => seIsOpenNav(true)} />
                     </span>
+                    {/*------------Drawer start----------*/}
+                    <div
+                        className={clsx(
+                            'fixed w-full h-screen bg-white z-50 ease-in duration-300',
+                            {
+                                'right-0 top-0': isOpenNav === true,
+                                'right-[-100%] top-0': isOpenNav === false,
+                            }
+                        )}
+                    >
+                        <div className="flex justify-between items-center md:mb-24 p-4">
+                            <img src={kkLogo} className='h-[30px] w-40' />
+                            <span className='md:hidden'>
+                                <MdClose size={32} onClick={() => seIsOpenNav(false)} />
+                            </span>
+                        </div>
+                        <ul className='px-4'>
+                            {
+                                navList.map((navItem, i) => (
+                                    <li key={i} className='text-left py-2 px-4 text-sm font-semibold border-b-2'>
+                                        {navItem}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    {/*------------Drawer end----------*/}
                 </header>
 
                 <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start pb-5 md:pb-0 gap-8 md:gap-0">
