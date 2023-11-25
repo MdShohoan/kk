@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { MdClose } from "react-icons/md";
 
 import clsx from 'clsx';
+import SeatMap from '../common/SeatMap/SeatMap';
 
 function Hero() {
     const currentLocation = useLocation()
@@ -94,7 +95,11 @@ function Hero() {
                         }
                     </div>
                     <div>
-                        <img src={ECLogo} className='w-[220px] md:w-auto' />
+                        {
+                            isInSeatInfoPage ? <SeatMap /> : (
+                                <img src={ECLogo} className='w-[220px] md:w-auto' />
+                            )
+                        }
                     </div>
                 </div>
             </div>

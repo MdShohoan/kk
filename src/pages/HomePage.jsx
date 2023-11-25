@@ -12,7 +12,7 @@ import { ScrollRestoration } from 'react-router-dom'
 function HomePage() {
     return (
         <>
-            <ScrollRestoration/>
+            <ScrollRestoration />
             <Layout>
                 <Sponsor />
                 <ElectionShortStatistics />
