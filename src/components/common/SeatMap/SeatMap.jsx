@@ -18,13 +18,23 @@ function SeatMap() {
                 xmlSpace="preserve"
             >
                 {
-                    mapData[9]?.data?.map((seat) => (
+                    mapData[11]?.data?.map((seat) => (
                         <Link to="/" key={seat?.id}>
+                            {
+                                seat.seatNo === '222' | '223' && (
+                                    <path
+                                        id={`seat_${seat?.id}`}
+                                        className=" fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000"
+                                        style={{ strokeMiterlimit: 10 }}
+                                        d={seat?.points}
+                                    />
+                                )
+                            }
                             <polyline
                                 id={`seat_${seat?.id}`}
                                 className=" fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000"
                                 style={{ strokeMiterlimit: 10 }}
-                                points= {seat?.points}
+                                points={seat?.points}
                             />
                             <text transform={seat?.transform} className="fill-black text-base font-bold pointer-events-none">
                                 {seat?.text}
