@@ -16,6 +16,14 @@ import bhola from './bhola'
 import barishal from './barishal'
 import jhalokathi from './jhalokathi'
 import pirojpur from './pirojpur'
+import panchagarh from './panchagarh'
+import thakurgaon from './thakurgaon'
+import dinajpur from './dinajpur'
+import nilphamari from './nilphamari'
+import lalmonirhat from './lalmonirhat'
+import rangpur from './rangpur'
+import kurigram from './kurigram'
+import gaibandha from './gaibandha'
 
 const mapData = [
     //Start of Dhaka Division
@@ -43,9 +51,16 @@ const mapData = [
     pirojpur,
     //End of Barishal Division
 
-
-
-
+    //Start of Rangpur Division
+    panchagarh,
+    thakurgaon,
+    dinajpur,
+    nilphamari,
+    lalmonirhat,
+    rangpur,
+    kurigram,
+    gaibandha,
+    //End of Rangpur Division
 ]
 
 export default mapData

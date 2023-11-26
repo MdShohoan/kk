@@ -18,7 +18,7 @@ function SeatMap() {
                 xmlSpace="preserve"
             >
                 {
-                    mapData[17]?.data?.map((seat) => (
+                    mapData[25]?.data?.map((seat) => (
                         <Link to="/" key={seat?.id}>
                             {
                                 seat.seatNo === '222' | '223' | '110' && (
