@@ -10,8 +10,15 @@ import faridpur from './faridpur'
 import gopalganj from './gopalganj'
 import madaripur from './madaripur '
 import shariatpur from './shariatpur'
+import barguna from './barguna'
+import patuakhali from './patuakhali'
+import bhola from './bhola'
+import barishal from './barishal'
+import jhalokathi from './jhalokathi'
+import pirojpur from './pirojpur'
 
 const mapData = [
+    //Start of Dhaka Division
     tangail,
     kishoreganj,
     manikganj,
@@ -27,7 +34,16 @@ const mapData = [
     shariatpur,
     //End of Dhaka Division
 
-    
+    //Start of Barishal Division
+    barguna,
+    patuakhali,
+    bhola,
+    barishal,
+    jhalokathi,
+    pirojpur,
+    //End of Barishal Division
+
+
 
 
 ]

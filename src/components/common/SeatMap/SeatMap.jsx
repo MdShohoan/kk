@@ -18,10 +18,10 @@ function SeatMap() {
                 xmlSpace="preserve"
             >
                 {
-                    mapData[11]?.data?.map((seat) => (
+                    mapData[17]?.data?.map((seat) => (
                         <Link to="/" key={seat?.id}>
                             {
-                                seat.seatNo === '222' | '223' && (
+                                seat.seatNo === '222' | '223' | '110' && (
                                     <path
                                         id={`seat_${seat?.id}`}
                                         className=" fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000"
