@@ -28,6 +28,14 @@ import sunamganj from './sunamganj'
 import sylhet from './sylhet'
 import moulvibazar from './moulvibazar'
 import habiganj from './habiganj'
+import meherpur from './meherpur'
+import kushtia from './kushtia'
+import jhenaidah from './jhenaidah'
+import chuadanga from './chuadanga'
+import jessore from './jessore'
+import magura from './magura'
+import narail from './narail'
+import bagerhat from './bagerhat'
 
 const mapData = [
     //Start of Dhaka Division
@@ -72,6 +80,18 @@ const mapData = [
     moulvibazar,
     habiganj,
     //End of Sylhet Division
+
+    //Start khulna division
+    meherpur,
+    kushtia,
+    chuadanga,
+    jhenaidah,
+    jessore,
+    magura,
+    narail,
+    bagerhat,
+    
+    //End khulna division
 ]
 
 export default mapData

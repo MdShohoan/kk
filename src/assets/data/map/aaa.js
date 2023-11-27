@@ -1,6 +1,6 @@
 const data = {
-    district: 'sunamganj',
-    division: 'sylhet',
+    district: 'kushtia',
+    division: 'khulna',
     containedSeats: ['229', '230', '231', '232', '233', '234'],
     data: [
         {
