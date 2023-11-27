@@ -38,6 +38,11 @@ import narail from './narail'
 import bagerhat from './bagerhat'
 import khulna from './khulna'
 import satkhira from './satkhira'
+import jamalpur from './jamalpur'
+import sherpur from './sherpur'
+import mymensingh from './mymensingh'
+import netrokona from './netrokona'
+
 const mapData = [
     //Start of Dhaka Division
     tangail,
@@ -94,6 +99,13 @@ const mapData = [
     khulna,
     satkhira,
     //End khulna division
+
+    //Start of Mymensingh division
+    jamalpur,
+    sherpur,
+    mymensingh,
+    netrokona,
+    //End of Mymensingh division
 ]
 
 export default mapData
