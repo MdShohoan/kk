@@ -24,6 +24,10 @@ import lalmonirhat from './lalmonirhat'
 import rangpur from './rangpur'
 import kurigram from './kurigram'
 import gaibandha from './gaibandha'
+import sunamganj from './sunamganj'
+import sylhet from './sylhet'
+import moulvibazar from './moulvibazar'
+import habiganj from './habiganj'
 
 const mapData = [
     //Start of Dhaka Division
@@ -61,6 +65,13 @@ const mapData = [
     kurigram,
     gaibandha,
     //End of Rangpur Division
+
+    //Start of Sylhet Division
+    sunamganj,
+    sylhet,
+    moulvibazar,
+    habiganj,
+    //End of Sylhet Division
 ]
 
 export default mapData
