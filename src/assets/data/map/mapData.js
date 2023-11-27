@@ -36,7 +36,8 @@ import jessore from './jessore'
 import magura from './magura'
 import narail from './narail'
 import bagerhat from './bagerhat'
-
+import khulna from './khulna'
+import satkhira from './satkhira'
 const mapData = [
     //Start of Dhaka Division
     tangail,
@@ -90,7 +91,8 @@ const mapData = [
     magura,
     narail,
     bagerhat,
-    
+    khulna,
+    satkhira,
     //End khulna division
 ]
 
