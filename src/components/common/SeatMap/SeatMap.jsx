@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import mapData from '../../../assets/data/map/mapData'
+import clsx from "clsx"
 function SeatMap() {
+    const { seatNo } = useParams()
+    const district = mapData.find((district) => district?.containedSeats?.includes(seatNo))
     return (
         <div>
+            <h1 className="capitalize text-center">{district?.district}</h1>
             <svg
                 version="1.1"
                 id="Layer_1"
@@ -18,21 +22,32 @@ function SeatMap() {
                 xmlSpace="preserve"
             >
                 {
-                    mapData[25]?.data?.map((seat) => (
-                        <Link to="/" key={seat?.id}>
+                    district?.data?.map((seat) => (
+                        <Link to={`/seat/${seat.seatNo}`} key={seat?.seatNo}>
                             {
                                 seat.seatNo === '222' | '223' | '110' && (
                                     <path
-                                        id={`seat_${seat?.id}`}
-                                        className=" fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000"
+                                        id={`seat_${seat?.seatNo}`}
                                         style={{ strokeMiterlimit: 10 }}
                                         d={seat?.points}
+                                        className={clsx(
+                                            "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000",
+                                            {
+                                                'fill-[#ffd740]': seatNo === seat?.seatNo,
+                                            }
+                                        )}
                                     />
                                 )
                             }
                             <polyline
-                                id={`seat_${seat?.id}`}
-                                className=" fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000"
+                                id={`seat_${seat?.seatNo}`}
+                                className={clsx(
+                                    "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000",
+                                    {
+                                        'fill-[#ffd740]': seatNo === seat?.seatNo,
+                                        
+                                    }
+                                )}
                                 style={{ strokeMiterlimit: 10 }}
                                 points={seat?.points}
                             />

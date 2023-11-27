@@ -15,7 +15,7 @@ function App() {
       ),
     },
     {
-      path: "/seat/:id",
+      path: "/seat/:seatNo",
       element: <SeatInfoPage />,
     },
   ]);
