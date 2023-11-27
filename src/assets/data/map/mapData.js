@@ -42,6 +42,14 @@ import jamalpur from './jamalpur'
 import sherpur from './sherpur'
 import mymensingh from './mymensingh'
 import netrokona from './netrokona'
+import joypurhat from './joypurhat'
+import bogura from './bogura'
+import chapainawabganj from './chapainawabganj'
+import nagaon from './nagaon'
+import rajshahi from './rajshahi'
+import natore from './natore'
+import sirajganj from './sirajganj'
+import pabna from './pabna'
 
 const mapData = [
     //Start of Dhaka Division
@@ -106,6 +114,17 @@ const mapData = [
     mymensingh,
     netrokona,
     //End of Mymensingh division
+
+    //Start of Rajshahi division
+    joypurhat,
+    bogura,
+    chapainawabganj ,
+    nagaon,
+    rajshahi,
+    natore,
+    sirajganj,
+    pabna,
+    //End of Rajshahi division
 ]
 
 export default mapData
