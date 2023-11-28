@@ -50,6 +50,17 @@ import rajshahi from './rajshahi'
 import natore from './natore'
 import sirajganj from './sirajganj'
 import pabna from './pabna'
+import brahmanbaria  from './brahmanbaria'
+import comilla from './comilla'
+import chandpur from './chandpur'
+import feni from './feni'
+import noakhali from './noakhali'
+import lakshmipur from './lakshmipur'
+import chattogram from './chattogram'
+import coxsbazar from './coxsbazar'
+import khagrachari from './khagrachari'
+import rangamati from './rangamati'
+import bandarban from './bandarban'
 
 const mapData = [
     //Start of Dhaka Division
@@ -125,6 +136,20 @@ const mapData = [
     sirajganj,
     pabna,
     //End of Rajshahi division
+
+    //Start of Chattogram division
+    brahmanbaria,
+    comilla,
+    chandpur,
+    feni,
+    noakhali,
+    lakshmipur,
+    chattogram,
+    coxsbazar,
+    khagrachari,
+    rangamati,
+    bandarban,
+    //End of Chattogram division
 ]
 
 export default mapData
