@@ -61,6 +61,7 @@ import coxsbazar from './coxsbazar'
 import khagrachari from './khagrachari'
 import rangamati from './rangamati'
 import bandarban from './bandarban'
+import dhaka from './dhaka'
 
 const mapData = [
     //Start of Dhaka Division
@@ -68,7 +69,7 @@ const mapData = [
     kishoreganj,
     manikganj,
     munshiganj,
-    //dhaka
+    dhaka,
     gazipur,
     narsingdi,
     narayanganj,
