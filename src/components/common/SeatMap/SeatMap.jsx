@@ -45,7 +45,7 @@ function SeatMap() {
                                         className={clsx(
                                             "fill-black text-base font-bold pointer-events-none",
                                             {
-                                                'text-[8px]': parseInt(seat?.seatNo) > 176 && parseInt(seat?.seatNo) < 192
+                                                'text-[7px]': parseInt(seat?.seatNo) > 176 && parseInt(seat?.seatNo) < 192
                                             }
                                         )}>
                                         {seat?.text}
