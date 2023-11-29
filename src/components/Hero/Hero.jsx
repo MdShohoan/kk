@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ECLogo from '../../assets/EC/ECLogo.png'
 import kkLogo from '../../assets/kkLogo.png/'
 import { MdMenu } from "react-icons/md";
@@ -12,7 +12,28 @@ function Hero() {
     const currentLocation = useLocation()
     const [isOpenNav, seIsOpenNav] = useState(false)
     const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
-    const navList = ['আসন', 'জেলা', 'খবর', 'ফলাফল', 'কালেরকণ্ঠ ']
+    const navList = [
+        {
+            text: 'আসন',
+            to: '/'
+        },
+        {
+            text: 'জেলা',
+            to: '/'
+        },
+        {
+            text: 'খবর',
+            to: '/'
+        },
+        {
+            text: 'ফলাফল',
+            to: '/election-result'
+        },
+        {
+            text: 'কালেরকণ্ঠ',
+            to: '/'
+        },
+    ]
     const electionDate = ['৩', 'জানুয়ারি', '২০২৪']
     return (
         <section className='bg-primary-light h-auto md:h-[520px] md:rounded-br-[300px] mb-12 md:mb-24'>
@@ -23,7 +44,11 @@ function Hero() {
                         <ul className="flex justify-between items-center gap-7">
                             {
                                 navList.map((item, i) => (
-                                    <li key={i} className='text-base font-normal capitalize text-gray1 font-arvo cursor-pointer'>{item}</li>
+                                    <Link key={i} to={`${item?.to}`}>
+                                        <li className='text-base font-normal capitalize text-gray1 font-arvo cursor-pointer'>
+                                            {item?.text}
+                                        </li>
+                                    </Link>
                                 ))
                             }
                         </ul>
@@ -50,9 +75,11 @@ function Hero() {
                         <ul className='px-4'>
                             {
                                 navList.map((navItem, i) => (
-                                    <li key={i} className='text-left py-2 px-4 text-sm font-semibold border-b-2'>
-                                        {navItem}
-                                    </li>
+                                    <Link key={i} to={`/${navItem?.to}`}>
+                                        <li className='text-left py-2 px-4 text-sm font-semibold border-b-2'>
+                                            {navItem?.text}
+                                        </li>
+                                    </Link>
                                 ))
                             }
                         </ul>

@@ -5,6 +5,7 @@ import {
 
 import HomePage from "./pages/HomePage";
 import SeatInfoPage from "./pages/SeatInfoPage";
+import ElectionResult from "./pages/ElectionResult";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +13,12 @@ function App() {
       path: "/",
       element: (
         <HomePage />
+      ),
+    },
+    {
+      path: "/election-result",
+      element: (
+        <ElectionResult/>
       ),
     },
     {
