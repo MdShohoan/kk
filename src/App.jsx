@@ -5,7 +5,7 @@ import {
 
 import HomePage from "./pages/HomePage";
 import SeatInfoPage from "./pages/SeatInfoPage";
-import ElectionResult from "./pages/ElectionResult";
+import ElectionResultPage from "./pages/ElectionResultPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,7 +18,7 @@ function App() {
     {
       path: "/election-result",
       element: (
-        <ElectionResult/>
+        <ElectionResultPage/>
       ),
     },
     {

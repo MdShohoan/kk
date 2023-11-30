@@ -1,6 +1,8 @@
 import Layout from "../components/common/Layout/Layout"
 import Chart from "react-apexcharts";
 import Title from "../components/common/Title/Title";
+import ResultsHistory from "../components/ResultsHistory/ResultsHistory";
+import SeatMap from "../components/common/SeatMap/SeatMap";
 
 function convertToBanglaNumber(number) {
     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
@@ -20,7 +22,7 @@ function convertToBanglaNumber(number) {
     return banglaNumber;
 }
 
-function ElectionResult() {
+function ElectionResultPage() {
     const options = {
         chart: {
             height: 500,
@@ -29,10 +31,11 @@ function ElectionResult() {
                 enabled: true
             }
         },
+        colors: ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854'],
         dataLabels: {
             enabled: true,
             // textAnchor: "middle",
-            // style: { colors: ["#000"] },
+            // style: { colors: ["#333"] },
             formatter: function (val) {
                 let valueFormatted = convertToBanglaNumber(val)
                 return valueFormatted;
@@ -54,6 +57,7 @@ function ElectionResult() {
         },
         yaxis: {
             show: true,
+            max: 300,
             labels: {
                 formatter: (value) => { return convertToBanglaNumber(value) },
             }
@@ -62,12 +66,12 @@ function ElectionResult() {
 
     const series = [
         {
-            name: "বিএনপি",
-            data: [0, 30, 189, 104, 134]
-        },
-        {
             name: "আ. লীগ",
             data: [234, 230, 59, 140, 85]
+        },
+        {
+            name: "বিএনপি",
+            data: [0, 30, 189, 104, 134]
         },
         {
             name: "জাতীয় পার্টি",
@@ -84,7 +88,7 @@ function ElectionResult() {
             <section className="mb-12 md:mb-24">
                 <div className="container mx-auto">
                     <div className="mb-8">
-                        <Title text={'কার ভাগে কত আসন (১৯৯১-২০১৪'} underline="type2"/>
+                        <Title text={'কার ভাগে কত আসন (১৯৯১-২০১৪'} underline="type2" />
                     </div>
                     <Chart
                         options={options}
@@ -95,8 +99,13 @@ function ElectionResult() {
                     />
                 </div>
             </section>
+            <ResultsHistory />
+            <div className="mb-4">
+                <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type2"/>
+            </div>
+            <SeatMap/>
         </Layout>
     )
 }
 
-export default ElectionResult
+export default ElectionResultPage

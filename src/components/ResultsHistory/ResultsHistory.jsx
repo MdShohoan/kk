@@ -62,7 +62,7 @@ export default function ResultsHistory() {
         dataLabels: {
             enabled: true,
             textAnchor: "middle",
-            style: { colors: ["#000"] },
+            style: { colors: ["#333"] },
             formatter: function (val) {
                 let valueFormatted = convertToBanglaNumber(val.toFixed(1))
                 return valueFormatted + '%';
