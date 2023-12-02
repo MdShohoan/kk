@@ -2,9 +2,14 @@
   fill: none;
 }
 
-/* .st2 {
-  fill: #f36d21;
-} */
+.st2 {
+  fill: red;
+}
+
+.st3, .st4, .st5{
+  font-size: 10px;
+  font-weight: 700;
+}
 
 /* .st0{
     fill: yellow;

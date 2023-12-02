@@ -1,14 +1,33 @@
 import './SeatMap.css'
 import seatPaths from '../../../assets/data/seatPaths/seatPaths'
-const SeatMap = () => {
+const SeatMap = ({selectedParty, selectedYear}) => {
+	console.log(selectedParty, selectedYear)
+
+	//  const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
+	const data = [
+        {
+            seatNo: '1',
+            year: '2018',
+            win: 'bal'
+        }
+    ]
+
+	
+
+	const setFillColor = (seatNo) =>{
+		if(data.find((seat)=>seat.seatNo === seatNo)){
+			return  "fill-[#8da0cb] stroke-red-600 stroke-3"
+		}
+		else return `fill-[#66c2a5] stroke-red-600 stroke-3`
+	}
 	return (
 		<div style={{ width: '75%' }} className='mx-auto'>
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1500 1800" style={{ enableBackground: "new 0 0 1500 1800" }} xmlSpace="preserve">
 				{
-					seatPaths.map((seat) => {
+					seatPaths.map((seat, i) => {
 						if (seat?.seatNo === '101') {
 							return (
-								<polygon key={seat?.seatNo} id="st_101" className="fill-green-900" points={seat?.paths[0]} />
+								<polygon key={i} id="st_101" className={setFillColor(seat?.seatNo)} points={seat?.paths[0]} />
 							)
 						}
 						else if (seat?.paths.length > 1) {
@@ -16,7 +35,7 @@ const SeatMap = () => {
 								<g key={seat.seatNo}>
 									{
 										seat?.paths.map((path, i) => (
-											<path key={i} className="fill-green-900" d={path} />
+											<path key={i} className={setFillColor(seat?.seatNo)} d={path} />
 										))
 									}
 								</g>
@@ -24,7 +43,7 @@ const SeatMap = () => {
 						}
 						else {
 							return (
-								<path key={seat?.seatNo} id="st_57" className="fill-green-900" d={seat.paths[0]} />
+								<path key={seat?.seatNo} id="st_57" className={setFillColor(seat?.seatNo)} d={seat.paths[0]} />
 							)
 						}
 					})

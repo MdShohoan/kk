@@ -3,6 +3,8 @@ import Chart from "react-apexcharts";
 import Title from "../components/common/Title/Title";
 import ResultsHistory from "../components/ResultsHistory/ResultsHistory";
 import SeatMap from "../components/common/SeatMap/SeatMap";
+import { useState } from "react";
+import clsx from "clsx";
 
 function convertToBanglaNumber(number) {
     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
@@ -23,6 +25,44 @@ function convertToBanglaNumber(number) {
 }
 
 function ElectionResultPage() {
+
+    const [selectedYear, setSelectedYear] = useState('2018')
+    const [selectedParty, setSelectedParty] = useState('')
+
+    const years = [
+        { inEnglish: '2018', inBangla: '২০১৮' },
+        { inEnglish: '2014', inBangla: '২০১৪' },
+        { inEnglish: '2008', inBangla: '২০০৮' },
+        { inEnglish: '2001', inBangla: '২০০১' },
+        { inEnglish: '1996', inBangla: '১৯৯৬' },
+        { inEnglish: '1991', inBangla: '১৯৯১' }
+    ]
+    const parties = [
+        {
+            partyName: 'আ. লীগ',
+            color: '#66c2a5',
+            partyCode: 'bal'
+        },
+        {
+            partyName: 'বিএনপি',
+            color: '#8da0cb',
+            partyCode: 'bnp'
+        },
+        {
+            partyName: 'জাপা',
+            color: '#e78ac3',
+            partyCode: 'jp'
+        },
+        {
+            partyName: 'অন্যান্য',
+            color: '#a6d854',
+            partyCode: 'ao'
+        },
+
+    ]
+
+    // const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
+
     const options = {
         chart: {
             height: 500,
@@ -100,10 +140,73 @@ function ElectionResultPage() {
                 </div>
             </section>
             <ResultsHistory />
-            <div className="mb-4">
-                <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type2"/>
-            </div>
-            <SeatMap/>
+            <section>
+                <div className=" container mx-auto">
+                    <div className="mb-8">
+                        <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type2" />
+                    </div>
+                    <div>
+
+                        {/* -----Year selection button start---- */}
+                        <div className='grid grid-cols-3 sm:flex justify-center gap-5 mb-5'>
+                            {
+                                years.map((year, i) => (
+                                    <a
+                                        onClick={() => setSelectedYear(year.inEnglish)}
+                                        className={clsx(
+                                            'border border-gray3 inline-block px-2 rounded text-sm font-medium cursor-pointer hover:bg-gray3 hover:text-white transition-all duration-300 text-center',
+                                            {
+                                                'bg-gray3 text-white': selectedYear === year?.inEnglish,
+                                                'text-gray3': selectedYear !== year?.inEnglish
+
+                                            }
+                                        )}
+                                        key={i}
+                                    >
+                                        {year?.inBangla}
+                                    </a>
+                                ))
+                            }
+                        </div>
+                        {/* -----Year selection button end---- */}
+
+                        {/* -----Party selection button start---- */}
+                        <div className="grid grid-cols-3 sm:flex justify-center gap-6">
+                            {
+                                parties?.map((party) => (
+                                    <div
+                                        key={party?.partyCode}
+                                        onClick={() => setSelectedParty(party?.partyCode)}
+                                        className="flex gap-2 items-center cursor-pointer"
+                                    >
+                                        <span
+                                            style={{ background: party.color }}
+                                            className="inline-block w-4 h-4"
+                                        ></span>
+                                        <span
+                                            className={
+                                                clsx('text-sm hover:text-gray3 transition-all duration-300',
+                                                    {
+                                                        'text-[#66c2a5]': 'bal' === selectedParty && party.partyCode === selectedParty,
+                                                        'text-[#8da0cb]': 'bnp' === selectedParty && party.partyCode === selectedParty,
+                                                        'text-[#e78ac3]': 'jp' === selectedParty && party.partyCode === selectedParty,
+                                                        'text-[#a6d854]': 'ao' === selectedParty && party.partyCode === selectedParty,
+                                                    }
+                                                )
+                                            }
+
+                                        >
+                                            {party?.partyName}
+                                        </span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                        {/* -----Party selection button end---- */}
+                    </div>
+                </div>
+            </section>
+            <SeatMap selectedParty= {selectedParty} selectedYear= {selectedYear} />
         </Layout>
     )
 }
