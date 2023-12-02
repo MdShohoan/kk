@@ -19,7 +19,7 @@ function Hero() {
         },
         {
             text: 'জেলা',
-            to: '/'
+            to: '/districts'
         },
         {
             text: 'খবর',

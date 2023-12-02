@@ -7,7 +7,7 @@ function DivisionNavigator() {
     const [seatList, setSeatList] = useState([])
     const navigate = useNavigate()
 
-    const handleDivisionChange = (e)=>{
+    const handleDivisionChange = (e) => {
         console.log(e.target.value)
         navigate('/seat/123')
     }
@@ -98,7 +98,7 @@ function DivisionNavigator() {
                                 }
                             </select>
                             <span className="absolute right-0 top-1/2 -translate-y-1/2">
-                                <RiArrowDropDownLine size={28} />
+                                <RiArrowDropDownLine size={28} style={{cursor: "pointer"}} />
                             </span>
                         </div>
                     ))

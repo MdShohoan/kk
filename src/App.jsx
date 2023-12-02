@@ -6,6 +6,7 @@ import {
 import HomePage from "./pages/HomePage";
 import SeatInfoPage from "./pages/SeatInfoPage";
 import ElectionResultPage from "./pages/ElectionResultPage";
+import DistrictNavigationPage from "./pages/DistrictNavigationPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,12 @@ function App() {
       path: "/",
       element: (
         <HomePage />
+      ),
+    },
+    {
+      path: "/districts",
+      element: (
+        <DistrictNavigationPage/>
       ),
     },
     {
