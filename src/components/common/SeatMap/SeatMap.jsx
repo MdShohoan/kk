@@ -1,25 +1,86 @@
 import './SeatMap.css'
 import seatPaths from '../../../assets/data/seatPaths/seatPaths'
+import { useEffect, useState } from 'react';
 const SeatMap = ({selectedParty, selectedYear}) => {
-	console.log(selectedParty, selectedYear)
+	const [oneYearData, setOneYearData] = useState([])
 
-	//  const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
+	const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
+
 	const data = [
         {
             seatNo: '1',
             year: '2018',
             win: 'bal'
-        }
+        },
+        {
+            seatNo: '1',
+            year: '2014',
+            win: 'bnp'
+        },
+		{
+            seatNo: '1',
+            year: '2001',
+            win: 'ao'
+        },
+        {
+            seatNo: '2',
+            year: '2018',
+            win: 'jp'
+        },
+        {
+            seatNo: '3',
+            year: '2018',
+            win: 'bnp'
+        },
+        {
+            seatNo: '4',
+            year: '2018',
+            win: 'bal'
+        },
+        {
+            seatNo: '5',
+            year: '2018',
+            win: 'bal'
+        },
+        {
+            seatNo: '6',
+            year: '2018',
+            win: 'bal'
+        },
+        {
+            seatNo: '6',
+            year: '2014',
+            win: 'bal'
+        },
     ]
 
-	
-
-	const setFillColor = (seatNo) =>{
-		if(data.find((seat)=>seat.seatNo === seatNo)){
-			return  "fill-[#8da0cb] stroke-red-600 stroke-3"
+	const filter= ()=>{
+		let filtered
+		if(selectedParty){
+			filtered =  data?.filter((seat)=>seat.year === selectedYear && seat?.win === selectedParty)
 		}
-		else return `fill-[#66c2a5] stroke-red-600 stroke-3`
+		else{
+			filtered =  data?.filter((seat)=>seat.year === selectedYear)
+		}
+		setOneYearData(filtered)
 	}
+
+	useEffect(()=>{
+		filter()
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	},[selectedYear, selectedParty])
+
+	const setFillColor = (currentSeat) =>{
+		const found = oneYearData.find((e)=>e?.seatNo === currentSeat)
+		if(found){
+			return `fill-[${colors[found?.win]}] stroke-white stroke-3`
+		}
+		else{
+			return `fill-[#ddd] stroke-white stroke-3`
+		}
+	}
+
 	return (
 		<div style={{ width: '75%' }} className='mx-auto'>
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1500 1800" style={{ enableBackground: "new 0 0 1500 1800" }} xmlSpace="preserve">
@@ -27,7 +88,7 @@ const SeatMap = ({selectedParty, selectedYear}) => {
 					seatPaths.map((seat, i) => {
 						if (seat?.seatNo === '101') {
 							return (
-								<polygon key={i} id="st_101" className={setFillColor(seat?.seatNo)} points={seat?.paths[0]} />
+								<polygon key={i} id="st_101" className={setFillColor(seat)} points={seat?.paths[0]} />
 							)
 						}
 						else if (seat?.paths.length > 1) {
