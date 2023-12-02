@@ -82,7 +82,7 @@ const SeatMap = ({selectedParty, selectedYear}) => {
 	}
 
 	return (
-		<div style={{ width: '75%' }} className='mx-auto'>
+		<div style={{ width: '100%' }} className='mx-auto'>
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1500 1800" style={{ enableBackground: "new 0 0 1500 1800" }} xmlSpace="preserve">
 				{
 					seatPaths.map((seat, i) => {

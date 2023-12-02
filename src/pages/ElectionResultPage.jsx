@@ -140,73 +140,79 @@ function ElectionResultPage() {
                 </div>
             </section>
             <ResultsHistory />
-            <section>
+            <section className="mb-12">
                 <div className=" container mx-auto">
                     <div className="mb-8">
                         <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type2" />
                     </div>
-                    <div>
-
-                        {/* -----Year selection button start---- */}
-                        <div className='grid grid-cols-3 sm:flex justify-center gap-5 mb-5'>
-                            {
-                                years.map((year, i) => (
-                                    <a
-                                        onClick={() => setSelectedYear(year.inEnglish)}
-                                        className={clsx(
-                                            'border border-gray3 inline-block px-2 rounded text-sm font-medium cursor-pointer hover:bg-gray3 hover:text-white transition-all duration-300 text-center',
-                                            {
-                                                'bg-gray3 text-white': selectedYear === year?.inEnglish,
-                                                'text-gray3': selectedYear !== year?.inEnglish
-
-                                            }
-                                        )}
-                                        key={i}
-                                    >
-                                        {year?.inBangla}
-                                    </a>
-                                ))
-                            }
-                        </div>
-                        {/* -----Year selection button end---- */}
-
-                        {/* -----Party selection button start---- */}
-                        <div className="grid grid-cols-3 sm:flex justify-center gap-6">
-                            {
-                                parties?.map((party) => (
-                                    <div
-                                        key={party?.partyCode}
-                                        onClick={() => setSelectedParty(party?.partyCode)}
-                                        className="flex gap-2 items-center cursor-pointer"
-                                    >
-                                        <span
-                                            style={{ background: party.color }}
-                                            className="inline-block w-4 h-4"
-                                        ></span>
-                                        <span
-                                            className={
-                                                clsx('text-sm hover:text-gray3 transition-all duration-300',
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                        <div className="col-span-full lg:col-span-1">
+                            <div className="border p-5">
+                                {/* -----Year selection button start---- */}
+                                <div className='grid grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-5 mb-8'>
+                                    {
+                                        years.map((year, i) => (
+                                            <a
+                                                onClick={() => setSelectedYear(year.inEnglish)}
+                                                className={clsx(
+                                                    'border border-gray3 block px-2 py-1 rounded text-sm font-medium cursor-pointer hover:bg-gray3 hover:text-white transition-all duration-300 text-center',
                                                     {
-                                                        'text-[#66c2a5]': 'bal' === selectedParty && party.partyCode === selectedParty,
-                                                        'text-[#8da0cb]': 'bnp' === selectedParty && party.partyCode === selectedParty,
-                                                        'text-[#e78ac3]': 'jp' === selectedParty && party.partyCode === selectedParty,
-                                                        'text-[#a6d854]': 'ao' === selectedParty && party.partyCode === selectedParty,
-                                                    }
-                                                )
-                                            }
+                                                        'bg-gray3 text-white': selectedYear === year?.inEnglish,
+                                                        'text-gray3': selectedYear !== year?.inEnglish
 
-                                        >
-                                            {party?.partyName}
-                                        </span>
-                                    </div>
-                                ))
-                            }
+                                                    }
+                                                )}
+                                                key={i}
+                                            >
+                                                {year?.inBangla}
+                                            </a>
+                                        ))
+                                    }
+                                </div>
+                                {/* -----Year selection button end---- */}
+
+                                {/* -----Party selection button start---- */}
+                                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
+                                    {
+                                        parties?.map((party) => (
+                                            <div
+                                                key={party?.partyCode}
+                                                onClick={() => setSelectedParty(party?.partyCode)}
+                                                className="flex gap-2 items-center cursor-pointer"
+                                            >
+                                                <span
+                                                    style={{ background: party.color }}
+                                                    className="inline-block w-4 h-4"
+                                                ></span>
+                                                <span
+                                                    className={
+                                                        clsx('text-sm hover:text-gray3 transition-all duration-300',
+                                                            {
+                                                                'text-[#66c2a5]': 'bal' === selectedParty && party.partyCode === selectedParty,
+                                                                'text-[#8da0cb]': 'bnp' === selectedParty && party.partyCode === selectedParty,
+                                                                'text-[#e78ac3]': 'jp' === selectedParty && party.partyCode === selectedParty,
+                                                                'text-[#a6d854]': 'ao' === selectedParty && party.partyCode === selectedParty,
+                                                            }
+                                                        )
+                                                    }
+
+                                                >
+                                                    {party?.partyName}
+                                                </span>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                                {/* -----Party selection button end---- */}
+                            </div>
+
                         </div>
-                        {/* -----Party selection button end---- */}
+                        <div className="border col-span-full lg:col-start-2 lg:col-end-5">
+                            <SeatMap selectedParty={selectedParty} selectedYear={selectedYear} />
+                        </div>
                     </div>
                 </div>
             </section>
-            <SeatMap selectedParty= {selectedParty} selectedYear= {selectedYear} />
         </Layout>
     )
 }
