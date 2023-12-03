@@ -21,14 +21,19 @@ function BangladeshMap() {
 					districtPaths.map((district) => {
 						return (
 							<Link to={`/districts/${district?.districtCode}`} key={district?.districtCode}>
-								<g className='hover:fill-green-400 fill-green-900 transition-all duration-500'>
+								<g className='hover:fill-[#a8baad] fill-[#d2e9d8] transition-all duration-500 stroke-[#a8baad] stroke-2'>
 									{
 										district.paths.map((path, i) => (
 											<path key={i} d={path} className='' />
 										))
 									}
 								</g>
-								<text transform={district?.transform} className="pointer-events-none">{district?.districtName}</text>
+								<text
+									transform={district?.transform}
+									className="pointer-events-none text-xs"
+								>
+									{district?.districtName}
+								</text>
 							</Link>
 						)
 					})
