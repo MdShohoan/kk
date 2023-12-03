@@ -9,11 +9,11 @@ function DistrictNavigationPage() {
       <section className="mb-12">
         <div className="container">
           <div className="mb-8">
-            <Title text={'জেলা ভিত্তিক নির্বাচনী তথ্য'} underline="type2"/>
+            <Title text={'জেলা ভিত্তিক নির্বাচনী তথ্য'} underline="type2" />
           </div>
           <div className="grid grid-cols-2 gap-8">
             <div className="col-start-1 col-end-2 border p-8">
-              <DivisionNavigator/>
+              <DivisionNavigator />
             </div>
             <div className="col-start-2 col-end-3 border">
               <BangladeshMap />
