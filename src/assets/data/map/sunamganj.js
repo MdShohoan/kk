@@ -1,5 +1,6 @@
 const data = {
     district: 'sunamganj',
+    districtCode: '50',
     division: 'sylhet',
     containedSeats: ['224', '225', '226', '227', '228'],
     data: [

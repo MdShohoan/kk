@@ -1,6 +1,7 @@
 const data = {
     district: "lalmonirhat",
     division: "rangpur",
+    districtCode: '6',
     containedSeats: ["19", "20", "21", "22", "23", "24"],
     data: [
       {

@@ -1,5 +1,6 @@
 const data = {
     district: 'bagerhat',
+    districtCode: '26',
     division: 'khulna',
     containedSeats: ['95', '96', '97', '98'],
     data: [

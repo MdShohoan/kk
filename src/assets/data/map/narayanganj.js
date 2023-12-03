@@ -1,5 +1,6 @@
 const data = {
     district: "narayanganj",
+    districtCode: '43',
     division: "dhaka",
     containedSeats: ['204', '205', '206', '207', '208'],
     data: [

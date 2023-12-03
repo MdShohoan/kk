@@ -1,5 +1,6 @@
 const data = {
     district: 'noakhali',
+    districtCode: '58',
     division: 'chattogram',
     containedSeats: ['268', '269', '270', '271', '272', '273'],
     data: [

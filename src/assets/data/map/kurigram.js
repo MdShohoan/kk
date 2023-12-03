@@ -1,5 +1,6 @@
 const data = {
     district: "kurigram",
+    districtCode: '7',
     division: "rangpur",
     containedSeats: ["25", "26", "27", "28"],
     data: [

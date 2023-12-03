@@ -1,5 +1,6 @@
 const data = {
     district: 'narail',
+    districtCode: '22',
     division: 'khulna',
     containedSeats: ['93', '94'],
     data: [

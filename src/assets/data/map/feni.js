@@ -1,5 +1,6 @@
 const data = {
     district: 'feni',
+    districtCode: '59',
     division: 'chattogram',
     containedSeats: ['265', '266', '267'],
     data: [

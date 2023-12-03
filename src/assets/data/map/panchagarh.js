@@ -1,5 +1,6 @@
 const data = {
     district: "panchagarh",
+    districtCode: '1',
     division: "rangpur",
     containedSeats: ['1', '2'],
     data: [

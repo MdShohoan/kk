@@ -1,5 +1,6 @@
 const data = {
   district: "gazipur",
+  districtCode: '41',
   division: "dhaka",
   containedSeats: ['194', '195', '196', '197', '198'],
   data: [

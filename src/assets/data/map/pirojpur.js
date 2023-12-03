@@ -1,5 +1,6 @@
 const data = {
     district: "pirojpur",
+    districtCode: '27',
     division: "barishal",
     containedSeats: ['127', '128', '129'],
     data: [

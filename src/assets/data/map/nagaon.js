@@ -1,5 +1,6 @@
 const data = {
     district: 'nagaon',
+    districtCode: '11',
     division: 'rajshahi',
     containedSeats: ['46', '47', '48', '49', '50', '51'],
     data: [

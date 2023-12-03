@@ -1,5 +1,6 @@
 const data = {
     district: 'lakshmipur',
+    districtCode: '57',
     division: 'chattogram',
     containedSeats: ['274', '275', '276', '277'],
     data: [

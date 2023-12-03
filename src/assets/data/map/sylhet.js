@@ -1,5 +1,6 @@
 const data = {
     district: 'sylhet',
+    districtCode: '51',
     division: 'sylhet',
     containedSeats: ['229', '230', '231', '232', '233', '234'],
     data: [

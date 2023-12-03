@@ -1,5 +1,6 @@
 const data = {
     district: 'moulvibazar',
+    districtCode: '52',
     division: 'sylhet',
     containedSeats: ['235', '236', '237', '238'],
     data: [

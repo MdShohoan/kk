@@ -1,5 +1,6 @@
 const data = {
     district: 'jamalpur',
+    districtCode: '36',
     division: 'mymensingh',
     containedSeats: ['138', '139', '140', '141', '142'],
     data: [

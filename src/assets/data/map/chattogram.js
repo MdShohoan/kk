@@ -1,5 +1,6 @@
 const data = {
     district: 'chattogram ',
+    districtCode: '60',
     division: 'chattogram',
     containedSeats: ['278', '279', '280', '281', '282', '283', '284', '285', '286', '287', '288', '289', '290', '291', '292','293'],
     data: [

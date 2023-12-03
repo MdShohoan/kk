@@ -1,5 +1,6 @@
 const data = {
     district: 'comilla',
+    districtCode: '55',
     division: 'chattogram',
     containedSeats: ['249', '250', '251', '252', '253', '254', '255', '256', '257', '258', '259'],
     data: [

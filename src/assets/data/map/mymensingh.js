@@ -1,5 +1,6 @@
 const data = {
     district: 'mymensingh',
+    districtCode: '34',
     division: 'mymensingh',
     containedSeats: ['146', '147', '148', '149', '150', '151', '152', '153', '154', '155', '156'],
     data: [

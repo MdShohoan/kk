@@ -1,5 +1,6 @@
 const data = {
     district: 'habiganj',
+    districtCode: '53',
     division: 'sylhet',
     containedSeats: ['239', '240', '241', '242'],
     data: [

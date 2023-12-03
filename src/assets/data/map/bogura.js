@@ -1,5 +1,6 @@
 const data = {
     district: 'bogura',
+    districtCode: '10',
     division: 'rajshahi',
     containedSeats: ['36', '37', '38', '39', '40', '41', '42'],
     data: [

@@ -1,5 +1,6 @@
 const data = {
     district: 'pabna',
+    districtCode: '16',
     division: 'rajshahi',
     containedSeats: ['68', '69', '70', '71', '72'],
     data: [

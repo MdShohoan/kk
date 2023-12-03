@@ -1,5 +1,6 @@
 const data = {
   district: "narsingdi",
+  districtCode: '42',
   division: "dhaka",
   containedSeats: ["199", "200", "201", "202", "203"],
   data: [

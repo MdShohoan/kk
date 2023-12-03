@@ -1,5 +1,6 @@
 const data = {
     district: 'rangamati',
+    districtCode: '63',
     division: 'chattogram',
     containedSeats: ['299'],
     data: [

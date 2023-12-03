@@ -1,5 +1,6 @@
 const data = {
     district: 'joypurhat',
+    districtCode: '9',
     division: 'rajshahi',
     containedSeats: ['34', '35'],
     data: [

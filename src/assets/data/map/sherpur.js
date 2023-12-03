@@ -1,5 +1,6 @@
 const data = {
     district: 'sherpur',
+    districtCode: '35',
     division: 'mymensingh',
     containedSeats: ['143', '144', '145'],
     data: [

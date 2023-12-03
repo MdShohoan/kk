@@ -1,5 +1,6 @@
 const data = {
   district: "manikganj",
+  districtCode: '39',
   division: "dhaka",
   containedSeats: ['168', '169', '170'],
   data: [

@@ -1,5 +1,6 @@
 const data = {
     district: 'netrokona',
+    districtCode: '33',
     division: 'mymensingh',
     containedSeats: ['157', '158', '159', '160', '161'],
     data: [

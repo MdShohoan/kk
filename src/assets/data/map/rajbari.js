@@ -1,5 +1,6 @@
 const data = {
     district: "rajbari",
+    districtCode: '46',
     division: "dhaka",
     containedSeats: ["209", "210"],
     data: [

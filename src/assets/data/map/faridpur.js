@@ -1,5 +1,6 @@
 const data = {
     district: "faridpur",
+    districtCode: '45',
     division: "dhaka",
     containedSeats: ['211', '212', '213', '214'],
     data: [

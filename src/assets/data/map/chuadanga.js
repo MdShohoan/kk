@@ -1,5 +1,6 @@
 const data = {
     district: 'chuadanga',
+    districtCode: '19',
     division: 'khulna',
     containedSeats: ['79', '80'],
     data: [

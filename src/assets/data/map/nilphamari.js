@@ -1,5 +1,6 @@
 const data = {
     district: "nilphamari",
+    districtCode: '4',
     division: "rangpur",
     containedSeats: ["12", "13", "14", "15"],
     data: [

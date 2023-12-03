@@ -1,5 +1,6 @@
 const data = {
     district: 'meherpur',
+    districtCode: '18',
     division: 'khulna',
     containedSeats: ['73', '74'],
     data: [

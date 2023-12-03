@@ -1,5 +1,6 @@
 const data = {
     district: 'coxsbazar',
+    districtCode: '61',
     division: 'chattogram',
     containedSeats: ['294', '295', '296', '297'],
     data: [

@@ -1,5 +1,6 @@
 const data = {
     district: 'bandarban',
+    districtCode: '64',
     division: 'chattogram',
     containedSeats: ['300'],
     data: [

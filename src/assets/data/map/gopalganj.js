@@ -1,5 +1,6 @@
 const data = {
     district: "gopalganj",
+    districtCode: '47',
     division: "dhaka",
     containedSeats: ['215', '216', '217'],
     data: [

@@ -1,5 +1,6 @@
 const data = {
     district: 'chandpur',
+    districtCode: '56',
     division: 'chattogram',
     containedSeats: ['260', '261', '262', '263', '264'],
 

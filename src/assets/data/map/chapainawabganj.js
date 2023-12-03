@@ -1,6 +1,7 @@
 const data = {
     district: 'chapainawabganj',
     division: 'rajshahi',
+    districtCode: '13',
     containedSeats: ['43', '44', '45'],
     data: [
         {

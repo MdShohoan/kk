@@ -1,5 +1,6 @@
 const data = {
     district: "madaripur",
+    districtCode: '48',
     division: "dhaka",
     containedSeats: ['218', '219', '220'],
     data: [

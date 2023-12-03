@@ -1,5 +1,6 @@
 const data = {
     district: 'jessore',
+    districtCode: '23',
     division: 'khulna',
     containedSeats: ['85', '86', '87', '88', '89', '90'],
     data: [

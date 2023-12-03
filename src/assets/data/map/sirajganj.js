@@ -1,5 +1,6 @@
 const data = {
     district: 'sirajganj',
+    districtCode: '15',
     division: 'rajshahi',
     containedSeats: ['62', '63', '64', '65', '66', '67'],
     data: [

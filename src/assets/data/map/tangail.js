@@ -1,5 +1,6 @@
 const data = {
     district: 'tangail',
+    districtCode: '37',
     division: 'dhaka',
     containedSeats: ['130', '131', '132', '133', '134', '135', '136', '137'],
     data: [

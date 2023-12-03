@@ -1,5 +1,6 @@
 const data = {
     district: 'brahmanbaria ',
+    districtCode: '54',
     division: 'chattogram',
     containedSeats: ['243', '244', '245', '246', '247', '248'],
     data: [

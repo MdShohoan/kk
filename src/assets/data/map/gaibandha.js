@@ -1,5 +1,6 @@
 const data = {
     district: "gaibandha",
+    districtCode: '8',
     division: "rangpur",
     containedSeats: ["29", "30", "31", "32", "33"],
     data: [

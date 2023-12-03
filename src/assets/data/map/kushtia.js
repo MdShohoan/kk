@@ -1,5 +1,6 @@
 const data = {
     district: 'kushtia',
+    districtCode: '17',
     division: 'khulna',
     containedSeats: ['75', '76', '77', '78'],
     data: [

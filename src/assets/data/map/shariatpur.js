@@ -1,5 +1,6 @@
 const data = {
     district: "shariatpur",
+    districtCode: '49',
     division: "dhaka",
     containedSeats: ['221', '222', '223'],
     data: [

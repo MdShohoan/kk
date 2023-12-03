@@ -1,5 +1,6 @@
 const kishoreganjData = {
   district: "kishoreganj ",
+  districtCode: '38',
   division: "dhaka",
   containedSeats: ['162','163','164','165', '166', '167'],
   data: [

@@ -1,5 +1,6 @@
 const data = {
   district: "munshiganj",
+  districtCode: '44',
   division: "dhaka",
   containedSeats: ['171', '172', '173'],
   data: [

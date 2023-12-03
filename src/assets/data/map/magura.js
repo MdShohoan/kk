@@ -1,5 +1,6 @@
 const data = {
     district: 'magura',
+    districtCode: '21',
     division: 'khulna',
     containedSeats: ['91', '92'],
     data: [

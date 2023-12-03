@@ -1,5 +1,6 @@
 const data = {
     district: 'natore',
+    districtCode: '12',
     division: 'rajshahi',
     containedSeats: ['58', '59', '60', '61'],
     data: [

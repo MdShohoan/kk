@@ -1,5 +1,6 @@
 const data = {
   district: "thakurgaon",
+  districtCode: '2',
   division: "rangpur",
   containedSeats: ["3", "4", "5"],
   data: [

@@ -1,5 +1,6 @@
 const data = {
     district: 'khagrachari',
+    districtCode: '62',
     division: 'chattogram',
     containedSeats: ['298'],
     data: [
