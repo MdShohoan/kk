@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const SeatMap = ({selectedParty, selectedYear}) => {
 	const [oneYearData, setOneYearData] = useState([])
 
-	const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
+	// const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
 
 	const data = [
         {
@@ -73,8 +73,17 @@ const SeatMap = ({selectedParty, selectedYear}) => {
 
 	const setFillColor = (currentSeat) =>{
 		const found = oneYearData.find((e)=>e?.seatNo === currentSeat)
-		if(found){
-			return `fill-[${colors[found?.win]}] stroke-white stroke-3`
+		if(found?.win === 'bal'){
+			return `fill-[#66c2a5] stroke-white stroke-3`		
+		}
+		else if(found?.win === 'bnp'){
+			return `fill-[#8da0cb] stroke-white stroke-3`		
+		}
+		else if(found?.win === 'jp'){
+			return `fill-[#e78ac3] stroke-white stroke-3`		
+		}
+		else if(found?.win === 'ao'){
+			return `fill-[#a6d854] stroke-white stroke-3`		
 		}
 		else{
 			return `fill-[#ddd] stroke-white stroke-3`
