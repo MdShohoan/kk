@@ -54,8 +54,11 @@ function SeatInfoPage() {
             <Layout>
                 <section className='mb-12 md:mb-24'>
                     <div className='container'>
+                        <div className='mb-5 md:mb-10'>
+                            <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
+                        </div>
                         <div className='mb-8'>
-                            <DivisionNavigator />
+                            <DivisionNavigator/>
                         </div>
                     </div>
                 </section>

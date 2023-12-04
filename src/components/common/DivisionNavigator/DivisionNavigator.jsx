@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import Title from "../../common/Title/Title"
 import { useNavigate } from "react-router-dom";
 
 function DivisionNavigator() {
@@ -78,33 +77,28 @@ function DivisionNavigator() {
     ]
 
     return (
-        <>
-            <div className='mb-5 md:mb-10'>
-                <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-                {
-                    navigationOption?.map((option, i) => (
-                        <div key={i} className="relative">
-                            <select
-                                onChange={handleDivisionChange}
-                                className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer"
-                            >
-                                <option className="cursor-pointer" value="select">{option?.text}</option>
-                                {
-                                    filterSeatByDivision(option.divisionName)?.map((option, i) => (
-                                        <option key={i} value={option?.name?.inEnglish}>{option?.name}</option>
-                                    ))
-                                }
-                            </select>
-                            <span className="absolute right-0 top-1/2 -translate-y-1/2">
-                                <RiArrowDropDownLine size={28} style={{cursor: "pointer"}} />
-                            </span>
-                        </div>
-                    ))
-                }
-            </div>
-        </>
+        <div className={`grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8`}>
+            {
+                navigationOption?.map((option, i) => (
+                    <div key={i} className="relative">
+                        <select
+                            onChange={handleDivisionChange}
+                            className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer"
+                        >
+                            <option className="cursor-pointer" value="select">{option?.text}</option>
+                            {
+                                filterSeatByDivision(option.divisionName)?.map((option, i) => (
+                                    <option key={i} value={option?.name?.inEnglish}>{option?.name}</option>
+                                ))
+                            }
+                        </select>
+                        <span className="absolute right-0 top-1/2 -translate-y-1/2">
+                            <RiArrowDropDownLine size={28} style={{ cursor: "pointer" }} />
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
     )
 }
 

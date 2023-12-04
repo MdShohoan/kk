@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import SeatInfoPage from "./pages/SeatInfoPage";
 import ElectionResultPage from "./pages/ElectionResultPage";
 import DistrictNavigationPage from "./pages/DistrictNavigationPage";
+import DistrictInfoPage from "./pages/DistrictInfoPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,12 @@ function App() {
       ),
     },
     {
+      path: "/districts/:districtNo",
+      element: (
+        <DistrictInfoPage/>
+      ),
+    },
+    {
       path: "/election-result",
       element: (
         <ElectionResultPage/>
@@ -33,6 +40,7 @@ function App() {
       element: <SeatInfoPage />,
     },
   ]);
+
   return (
     <RouterProvider router={router}>
     </RouterProvider>

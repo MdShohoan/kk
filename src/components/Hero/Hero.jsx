@@ -12,6 +12,7 @@ function Hero() {
     const currentLocation = useLocation()
     const [isOpenNav, seIsOpenNav] = useState(false)
     const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
+    const isInDistrictInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'districts'
     const navList = [
         {
             text: 'আসন',
@@ -36,16 +37,18 @@ function Hero() {
     ]
     const electionDate = ['৩', 'জানুয়ারি', '২০২৪']
     return (
-        <section className='bg-primary-light h-auto md:h-[520px] md:rounded-br-[300px] mb-12 md:mb-24'>
+        <section className='bg-primary-light h-auto md:h-fit pb-24 md:rounded-br-[300px] mb-12 md:mb-24'>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
                 <header className="pt-4 flex justify-between items-center mb-16 md:mb-24">
-                    <img src={kkLogo} className='h-[30px] w-40' />
+                    <Link to={'/'}>
+                        <img src={kkLogo} className='h-[30px] w-40' />
+                    </Link>
                     <nav className='hidden md:block'>
                         <ul className="flex justify-between items-center gap-7">
                             {
                                 navList.map((item, i) => (
                                     <Link key={i} to={`${item?.to}`}>
-                                        <li className='text-base font-normal capitalize text-gray1 font-arvo cursor-pointer'>
+                                        <li className='text-base font-medium capitalize hover:text-primary transition-all duration-300 text-gray1 font-arvo cursor-pointer'>
                                             {item?.text}
                                         </li>
                                     </Link>
@@ -75,7 +78,7 @@ function Hero() {
                         <ul className='px-4'>
                             {
                                 navList.map((navItem, i) => (
-                                    <Link key={i} to={`/${navItem?.to}`}>
+                                    <Link key={i} to={`${navItem?.to}`}>
                                         <li className='text-left py-2 px-4 text-sm font-semibold border-b-2'>
                                             {navItem?.text}
                                         </li>
@@ -96,21 +99,23 @@ function Hero() {
                             {
                                 isInSeatInfoPage
                                     ? 'নিজ আসন সম্পর্কে জানুন '
-                                    : 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪'
+                                    : isInDistrictInfoPage ?
+                                        'নিজ জেলা সম্পর্কে জানুন '
+                                        : 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪'
                             }
                         </h3>
                         <span className='block text-sm font-normal text-gray1 mb-8 md:mb-10'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
                         {
-                            !isInSeatInfoPage && (
+                            !isInSeatInfoPage && !isInDistrictInfoPage && (
                                 <div
-                                    className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[40%]'
+                                    className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[50%]'
                                 >
                                     {
                                         electionDate.map((data, i) => (
 
                                             <div
                                                 key={i}
-                                                className='text-primary-light bg-primary rounded font-normal py-2 text-sm md:text-lg flex justify-center items-center'
+                                                className='text-primary-light bg-primary rounded font-normal py-2 px-3 text-sm md:text-lg flex justify-center items-center'
                                             >
                                                 {data}
                                             </div>
@@ -123,7 +128,7 @@ function Hero() {
                     </div>
                     <div>
                         {
-                            isInSeatInfoPage ? <DistrictMap /> : (
+                            isInSeatInfoPage | isInDistrictInfoPage ? <DistrictMap /> : (
                                 <img src={ECLogo} className='w-[220px] md:w-auto' />
                             )
                         }
