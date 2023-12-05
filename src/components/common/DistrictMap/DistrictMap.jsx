@@ -1,20 +1,36 @@
 import { Link, useParams } from "react-router-dom"
 import mapData from '../../../assets/data/map/mapData'
 import clsx from "clsx"
+import districtList from '../../../assets/data/districtsList/districtsList'
 function DistrictMap() {
     const { seatNo } = useParams()
     const { districtNo } = useParams()
 
-    let district
+
+    let currentDistrict
     if (seatNo) {
-        district = mapData.find((district) => district?.containedSeats?.includes(seatNo))
+        currentDistrict = mapData.find((district) => district?.containedSeats?.includes(seatNo))
     }
     else if (districtNo) {
-        district = mapData?.find((district) => district?.districtCode === districtNo)
+        currentDistrict = mapData?.find((district) => district?.districtCode === districtNo)
     }
+
+    console.log('====district', currentDistrict)
+
+    //Find district by id
+    function findDistrictById() {
+        for (const division of districtList) {
+            const foundDistrict = division.districts.find(district => district?.districtCode === currentDistrict?.districtCode);
+
+            if (foundDistrict) {
+                return foundDistrict.districtName;
+            }
+        }
+    }
+
     return (
         <>
-            <h1 className="capitalize text-center">{district?.district}</h1>
+            <h1 className="capitalize text-center font-semibold text-gray1 text-lg mb-2">{findDistrictById()} জেলা</h1>
             <div>
                 <svg
                     version="1.1"
@@ -23,16 +39,16 @@ function DistrictMap() {
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     x="0px"
                     y="0px"
-                    viewBox={district?.district === 'dhaka' ? "0 0 624 385.9" : "0 0 300 430"}
+                    viewBox={currentDistrict?.district === 'dhaka' ? "0 0 624 385.9" : "0 0 300 430"}
                     style={{
-                        enableBackground: `${district?.district === 'dhaka' ? 'new 0 0 624 385.9' : 'new 0 0 300 430'}`,
+                        enableBackground: `${currentDistrict?.district === 'dhaka' ? 'new 0 0 624 385.9' : 'new 0 0 300 430'}`,
                         width: '300px',
                         height: '300px'
                     }}
                     xmlSpace="preserve"
                 >
                     {
-                        district?.data?.map((seat) => {
+                        currentDistrict?.data?.map((seat) => {
                             //For Dhaka District
                             if (parseInt(seat?.seatNo) >= 174 && parseInt(seat?.seatNo) <= 193) {
                                 return (
@@ -115,11 +131,11 @@ function DistrictMap() {
 
                     {/* Zoom section for Dhaka District start here */}
                     {
-                        district?.district === 'dhaka' && (
+                        currentDistrict?.district === 'dhaka' && (
                             <>
                                 <rect style={{ strokeMiterlimit: 10 }} x="187.8" y="91.5" className="fill-none stroke-red-600 stroke-2" width="105.7" height="147.2" />
                                 {
-                                    district?.zoom.map((seat) => (
+                                    currentDistrict?.zoom.map((seat) => (
                                         <g key={seat.seatNo}>
                                             <Link to={`/seat/${seat?.seatNo}`}>
                                                 <polyline
