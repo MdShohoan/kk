@@ -18,7 +18,7 @@ function Hero() {
     const navList = [
         {
             text: 'আসন',
-            to: '/'
+            to: '/seats'
         },
         {
             text: 'জেলা',
