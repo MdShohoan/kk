@@ -7,12 +7,14 @@ import { MdClose } from "react-icons/md";
 
 import clsx from 'clsx';
 import DistrictMap from '../common/DistrictMap/DistrictMap';
+import CountdownTimer from '../common/CountdownTimer/CountdownTimer';
 
 function Hero() {
     const currentLocation = useLocation()
     const [isOpenNav, seIsOpenNav] = useState(false)
     const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
     const isInDistrictInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'districts'
+
     const navList = [
         {
             text: 'আসন',
@@ -35,9 +37,9 @@ function Hero() {
             to: '/'
         },
     ]
-    const electionDate = ['৩', 'জানুয়ারি', '২০২৪']
+    const electionDate = ['৭', 'জানুয়ারি', '২০২৪']
     return (
-        <section className='bg-primary-light h-auto md:h-fit pb-24 md:rounded-br-[300px] mb-12 md:mb-24'>
+        <section className='bg-primary-light h-auto md:h-fit pb-12 md:rounded-br-[300px] mb-12 md:mb-24'>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
                 <header className="pt-4 flex justify-between items-center mb-16 md:mb-24">
                     <Link to={'/'}>
@@ -90,6 +92,7 @@ function Hero() {
                     {/*------------Drawer end----------*/}
                 </header>
 
+                {/* --------Hero start------- */}
                 <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start pb-5 md:pb-0 gap-8 md:gap-0">
                     <div>
                         <p className='mb-3 text-base text-primary-contrast font-bold uppercase'>জাতীয় সংসদ নির্বাচন </p>
@@ -104,11 +107,13 @@ function Hero() {
                                         : 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪'
                             }
                         </h3>
-                        <span className='block text-sm font-normal text-gray1 mb-8 md:mb-10'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
+                        <span className='block text-sm font-normal text-gray1 mb-8 md:mb-6'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
+
+                        {/* -----Deadline Start---- */}
                         {
                             !isInSeatInfoPage && !isInDistrictInfoPage && (
                                 <div
-                                    className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[50%]'
+                                    className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[50%] mb-10'
                                 >
                                     {
                                         electionDate.map((data, i) => (
@@ -125,6 +130,16 @@ function Hero() {
                                 </div>
                             )
                         }
+                        {/* -----Deadline End---- */}
+
+                        {/* -----Sponsor Start----- */}
+                        <div className='bg-white w-fit p-4 rounded-md mx-auto md:mx-0 border border-primary-background'>
+                            <CountdownTimer electionDate={'2024-01-07T00:00:00'} />
+                            <div className='mt-4 w-[300px] h-[90px] flex justify-center items-center bg-primary-light'>
+                                ads
+                            </div>
+                        </div>
+                        {/* -----Sponsor End----- */}
                     </div>
                     <div>
                         {
@@ -134,6 +149,8 @@ function Hero() {
                         }
                     </div>
                 </div>
+                {/* --------Hero end------- */}
+
             </div>
         </section>
     )
