@@ -20,11 +20,11 @@ function HomePage() {
                     ads: 970*250
                 </div>
                 <QuickLinks />
-                <Video />
                 <ElectionInformation />
-                <LatestNews />
                 <UnofficialResult />
                 <ResultsHistory />
+                <Video />
+                <LatestNews />
             </Layout>
         </>
     )

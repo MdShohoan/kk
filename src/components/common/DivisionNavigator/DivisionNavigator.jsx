@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 function DivisionNavigator() {
@@ -83,7 +82,7 @@ function DivisionNavigator() {
                     <div key={i} className="relative">
                         <select
                             onChange={handleDivisionChange}
-                            className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer"
+                            className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 text-base font-normal cursor-pointer"
                         >
                             <option className="cursor-pointer" value="select">{option?.text}</option>
                             {
@@ -92,9 +91,6 @@ function DivisionNavigator() {
                                 ))
                             }
                         </select>
-                        <span className="absolute right-0 top-1/2 -translate-y-1/2">
-                            <RiArrowDropDownLine size={28} style={{ cursor: "pointer" }} />
-                        </span>
                     </div>
                 ))
             }

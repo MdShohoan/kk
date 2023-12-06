@@ -2,6 +2,7 @@
 // import MapInformation from './MapInformation/MapInformation'
 
 import DivisionNavigator from "../common/DivisionNavigator/DivisionNavigator"
+import Title from "../common/Title/Title"
 
 // import { MdOutlineArrowDropDown } from "react-icons/md";
 // import Card from "../common/CardCountUP/CardCountUP";
@@ -83,9 +84,12 @@ function ElectionInformation() {
   return (
     <section className='mb-12 md:mb-24'>
       <div className='container m-auto'>
-        
+
         {/* -------Division navigator start--------- */}
-        <DivisionNavigator/>
+        <div className="mb-5 md:mb-10">
+          <Title text={'আপনার আসন সম্পর্কে জেনে নিন'} underline="type1" />
+        </div>
+        <DivisionNavigator />
 
 
         {/* <div className='grid grid-cols-8 mb-12 [&>*:nth-child(8)]:border [&>*:nth-child(8)]:border-r-[#8da2df] [&>*:nth-child(8)]:border-l-0 [&>*:nth-child(8)]:border-t-0 [&>*:nth-child(8)]:border-b-0'>
