@@ -2,7 +2,6 @@ import BangladeshMap from "../components/common/BangladeshMap/BangladeshMap"
 import Layout from "../components/common/Layout/Layout"
 import Title from "../components/common/Title/Title"
 import districtList from '../assets/data/districtsList/districtsList'
-import { RiArrowDropDownLine } from "react-icons/ri"
 import { useNavigate } from "react-router-dom"
 
 function DistrictNavigationPage() {
@@ -26,18 +25,15 @@ function DistrictNavigationPage() {
                     <div key={i} className="relative">
                       <select
                         onChange={handleDivisionChange}
-                        className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 md:p-3 text-base font-normal appearance-none cursor-pointer"
+                        className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 text-base font-normal cursor-pointer"
                       >
                         <option className="cursor-pointer" value="select">{division?.text}</option>
                         {
                           division?.districts?.map((district, i) => (
-                            <option key={i} value={district?.districtCode}>{district?.districtName}</option>
+                            <option className="cursor-pointer" key={i} value={district?.districtCode}>{district?.districtName}</option>
                           ))
                         }
                       </select>
-                      <span className="absolute right-0 top-1/2 -translate-y-1/2">
-                        <RiArrowDropDownLine size={28} style={{ cursor: "pointer" }} />
-                      </span>
                     </div>
                   ))
                 }
