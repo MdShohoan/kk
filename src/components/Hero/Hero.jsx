@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import ECLogo from '../../assets/EC/ECLogo.png'
 import kkLogo from '../../assets/kkLogo.png/'
 import { MdMenu } from "react-icons/md";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MdClose } from "react-icons/md";
 
 import clsx from 'clsx';
@@ -11,7 +11,29 @@ import CountdownTimer from '../common/CountdownTimer/CountdownTimer';
 
 function Hero() {
     const currentLocation = useLocation()
+
     const [isOpenNav, seIsOpenNav] = useState(false)
+    const [isSticky, setSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          // Check if the scroll position is greater than or equal to 60px
+          if (window.scrollY >= 62) {
+            setSticky(true);
+          } else {
+            setSticky(false);
+          }
+        };
+    
+        // Attach the scroll event listener when the component mounts
+        window.addEventListener('scroll', handleScroll);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
     const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
     const isInDistrictInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'districts'
 
@@ -39,9 +61,14 @@ function Hero() {
     ]
     const electionDate = ['৭', 'জানুয়ারি', '২০২৪']
     return (
-        <section className='bg-primary-light h-auto md:h-fit pb-12 md:rounded-br-[300px] mb-12 md:mb-24'>
-            <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
-                <header className="pt-4 flex justify-between items-center mb-16 md:mb-24">
+        <>
+            <header className={clsx(
+                'py-4 bg-primary-light border-b border-primary-background transition-all duration-300',
+                {
+                    'sticky top-0 z-[1000] shadow-lg translate-y-0': isSticky === true,
+                }
+            )}>
+                <div className='flex justify-between items-center container px-0'>
                     <Link to={'/'}>
                         <img src={kkLogo} className='h-[30px] w-40' />
                     </Link>
@@ -90,69 +117,72 @@ function Hero() {
                         </ul>
                     </div>
                     {/*------------Drawer end----------*/}
-                </header>
-
-                {/* --------Hero start------- */}
-                <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start pb-5 md:pb-0 gap-8 md:gap-0">
-                    <div>
-                        <p className='mb-3 text-base text-primary-contrast font-bold uppercase'>জাতীয় সংসদ নির্বাচন </p>
-                        <h3
-                            className='text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-relaxed lg:leading-relaxed font-black tracking-[1.93px] mb-5'
-                        >
-                            {
-                                isInSeatInfoPage
-                                    ? 'নিজ আসন সম্পর্কে জানুন '
-                                    : isInDistrictInfoPage ?
-                                        'নিজ জেলা সম্পর্কে জানুন '
-                                        : 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪'
-                            }
-                        </h3>
-                        <span className='block text-sm font-normal text-gray1 mb-8 md:mb-6'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
-
-                        {/* -----Deadline Start---- */}
-                        {
-                            !isInSeatInfoPage && !isInDistrictInfoPage && (
-                                <div
-                                    className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[50%] mb-10'
-                                >
-                                    {
-                                        electionDate.map((data, i) => (
-
-                                            <div
-                                                key={i}
-                                                className='text-primary-light bg-primary rounded font-normal py-2 px-3 text-sm md:text-lg flex justify-center items-center'
-                                            >
-                                                {data}
-                                            </div>
-
-                                        ))
-                                    }
-                                </div>
-                            )
-                        }
-                        {/* -----Deadline End---- */}
-
-                        {/* -----Sponsor Start----- */}
-                        <div className='bg-white w-fit p-4 rounded-md mx-auto md:mx-0 border border-primary-background'>
-                            <CountdownTimer electionDate={'2024-01-07T00:00:00'} />
-                            <div className='mt-4 w-[300px] h-[90px] flex justify-center items-center bg-primary-light'>
-                                ads
-                            </div>
-                        </div>
-                        {/* -----Sponsor End----- */}
-                    </div>
-                    <div>
-                        {
-                            isInSeatInfoPage | isInDistrictInfoPage ? <DistrictMap /> : (
-                                <img src={ECLogo} className='w-[220px] md:w-auto' />
-                            )
-                        }
-                    </div>
                 </div>
-                {/* --------Hero end------- */}
+            </header>
+            <section className='bg-primary-light h-auto md:h-fit py-12 md:rounded-br-[300px] mb-12 md:mb-24'>
+                <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
+                    {/* --------Hero start------- */}
+                    <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start pb-5 md:pb-0 gap-8 md:gap-0">
+                        <div>
+                            <p className='mb-3 text-base text-primary-contrast font-bold uppercase'>জাতীয় সংসদ নির্বাচন </p>
+                            <h3
+                                className='text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-relaxed lg:leading-relaxed font-black tracking-[1.93px] mb-5'
+                            >
+                                {
+                                    isInSeatInfoPage
+                                        ? 'নিজ আসন সম্পর্কে জানুন '
+                                        : isInDistrictInfoPage ?
+                                            'নিজ জেলা সম্পর্কে জানুন '
+                                            : 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪'
+                                }
+                            </h3>
+                            <span className='block text-sm font-normal text-gray1 mb-8 md:mb-6'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
 
-            </div>
-        </section>
+                            {/* -----Deadline Start---- */}
+                            {
+                                !isInSeatInfoPage && !isInDistrictInfoPage && (
+                                    <div
+                                        className='grid grid-cols-3 gap-4 md:gap-8 lg-4 md:w-[80%] lg:w-1/2 xl:w-[50%] mb-10'
+                                    >
+                                        {
+                                            electionDate.map((data, i) => (
+
+                                                <div
+                                                    key={i}
+                                                    className='text-primary-light bg-primary rounded font-normal py-2 px-3 text-sm md:text-lg flex justify-center items-center'
+                                                >
+                                                    {data}
+                                                </div>
+
+                                            ))
+                                        }
+                                    </div>
+                                )
+                            }
+                            {/* -----Deadline End---- */}
+
+                            {/* -----Sponsor Start----- */}
+                            <div className='bg-white w-fit p-4 rounded-md mx-auto md:mx-0 border border-primary-background'>
+                                <CountdownTimer electionDate={'2024-01-07T00:00:00'} />
+                                <div className='mt-4 w-[300px] h-[90px] flex justify-center items-center bg-primary-light'>
+                                    ads
+                                </div>
+                            </div>
+                            {/* -----Sponsor End----- */}
+                        </div>
+                        <div>
+                            {
+                                isInSeatInfoPage | isInDistrictInfoPage ? <DistrictMap /> : (
+                                    <img src={ECLogo} className='w-[220px] md:w-auto' />
+                                )
+                            }
+                        </div>
+                    </div>
+                    {/* --------Hero end------- */}
+
+                </div>
+            </section>
+        </>
     )
 }
 
