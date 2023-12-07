@@ -50,7 +50,7 @@ function Hero() {
                             {
                                 navList.map((item, i) => (
                                     <Link key={i} to={`${item?.to}`}>
-                                        <li className='text-base font-medium capitalize hover:text-primary transition-all duration-300 text-gray1 font-arvo cursor-pointer'>
+                                        <li className='text-base font-medium capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer'>
                                             {item?.text}
                                         </li>
                                     </Link>

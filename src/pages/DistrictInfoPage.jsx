@@ -88,13 +88,13 @@ function DistrictInfoPage() {
     dataLabels: {
       enabled: true,
       textAnchor: "middle",
-      style: { colors: ["#333"] },
+      style: { colors: ["white"], fontWeight:'400'},
       formatter: function (val, opt) {
         const key = opt?.seriesIndex
         const series = opt?.w?.config?.series
         return convertToBanglaNumber(series[key])
       },
-      dropShadow: { enabled: true }
+      // dropShadow: { enabled: true }
     },
     tooltip: {
       style: {

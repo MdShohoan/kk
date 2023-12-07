@@ -33,7 +33,7 @@ function QuickLinks() {
                                     onMouseEnter={() => setHoverLink(link?.id)}
                                     onMouseLeave={() => setHoverLink(null)}
                                     key={i}
-                                    className="flex justify-start lg:justify-center items-center gap-3 cursor-pointer"
+                                    className="flex flex-col sm:flex-row justify-center md:justify-start lg:justify-center items-center gap-3 cursor-pointer"
                                 >
                                     <div>
                                         <Icon
@@ -45,7 +45,7 @@ function QuickLinks() {
                                         />
                                     </div>
                                     <div>
-                                        <div className="flex items-center gap-2 mb-1">
+                                        <div className="flex items-center justify-center md:justify-start gap-x-2 gap-y-4 mb-1">
                                             <span
                                                 className={clsx(
                                                     `transition-all duration-300 block font-bold text-base text-primary`,
@@ -66,7 +66,9 @@ function QuickLinks() {
                                                 />
                                             </div>
                                         </div>
-                                        <span className={`transition-all duration-300 block text-xs ${setSubtitleHoverColor(link)} font-normal`}>{link.subtitle}</span>
+                                        <span className={`transition-all duration-300 text-center md:text-left block text-xs ${setSubtitleHoverColor(link)} font-normal`}>
+                                            {link.subtitle}
+                                        </span>
                                     </div>
                                 </div>
                             )

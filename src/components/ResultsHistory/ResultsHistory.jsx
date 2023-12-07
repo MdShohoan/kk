@@ -25,6 +25,11 @@ export default function ResultsHistory() {
         {
             year: '২০১৪',
             electionNo: '',
+            series: [293, 7]
+        },
+        {
+            year: '২০১৪',
+            electionNo: '',
             series: [44, 55, 13, 43]
         },
         {
@@ -51,8 +56,15 @@ export default function ResultsHistory() {
 
     const options = {
         chart: {
-            width: 200,
             type: 'pie',
+        },
+        plotOptions: {
+            pie: {
+                customScale: 0.7,
+                dataLabels: {
+                    offset: 35,
+                },
+            },
         },
         colors: ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854'],
         labels: ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য'],
@@ -61,13 +73,13 @@ export default function ResultsHistory() {
         },
         dataLabels: {
             enabled: true,
-            textAnchor: "middle",
-            style: { colors: ["#333"], fontWeight:'600' },
+            textAnchor: "right",
+            style: { colors: ["#333"], fontWeight: '500', fontSize: '16px' },
             formatter: function (val) {
                 let valueFormatted = convertToBanglaNumber(val.toFixed(1))
                 return valueFormatted + '%';
             },
-            dropShadow: { enabled: true }
+            dropShadow: { enabled: true },
         },
         tooltip: {
             style: {
@@ -83,12 +95,27 @@ export default function ResultsHistory() {
         responsive: [{
             breakpoint: 480,
             options: {
-                chart: {
-                    width: 150
+                plotOptions: {
+                    pie: {
+                        customScale: 0.8,
+                        dataLabels: {
+                            offset: 20,
+                        },
+                    },
+                },
+                dataLabels: {
+                    enabled: true,
+                    textAnchor: "right",
+                    style: { colors: ["#333"], fontWeight: '500', fontSize: '10px' },
+                    formatter: function (val) {
+                        let valueFormatted = convertToBanglaNumber(val.toFixed(1))
+                        return valueFormatted + '%';
+                    },
+                    dropShadow: { enabled: true },
                 },
                 legend: {
                     position: 'bottom'
-                }
+                },
             }
         }]
     }
@@ -99,12 +126,12 @@ export default function ResultsHistory() {
             <div className="container mx-auto">
                 <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
                 <div className='mb-5 md:mb-10' />
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2 md:gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {
                         data.map((singleData, i) => (
-                            <div className="border flex flex-col justify-center items-center py-8" key={i}>
-                                <Chart options={options} series={singleData?.series} type="pie" width={200} />
-                                <p className="text-center text-[#1380c5] text-xl font-semibold">{singleData?.year}</p>
+                            <div className="border flex flex-col justify-center items-center py-4 md:py-6" key={i}>
+                                <Chart options={options} series={singleData?.series} type="pie" />
+                                <p className="text-center text-[#1380c5] text-lg mt-4 font-semibold">{singleData?.year}</p>
                             </div>
                         ))
                     }
