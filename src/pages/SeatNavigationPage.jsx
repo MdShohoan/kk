@@ -16,7 +16,10 @@ export default function SeatNavigationPage() {
                         <Title text={'আসন ভিত্তিক নির্বাচনী তথ্য'} underline="type1" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="col-span-full md:col-start-1 md:col-end-2 border p-2 md:p-8">
+                        <div className="col-span-full md:col-start-1 md:col-end-2 border p-2 md:p-4">
+                            <div className='text-center font-medium text-lg text-[#333]'>
+                                নির্বাচনের তথ্য জানতে আসনের উপর ক্লিক করুন
+                            </div>
                             {/* <div className={`grid grid-cols-2 lg:grid-cols-2} gap-4 md:gap-8`}>
                                 {
                                     districtList?.map((division, i) => (
@@ -37,8 +40,11 @@ export default function SeatNavigationPage() {
                                 }
                             </div> */}
                         </div>
-                        <div className="col-span-full md:col-start-2 md:col-end-4 border">
-                            <SeatNavigationMap/>
+                        <div className="col-span-full md:col-start-2 md:col-end-4 border p-2 md:p-4">
+                            <div className='text-center font-medium text-lg text-[#333]'>
+                                নির্বাচনের তথ্য জানতে আসনের উপর ক্লিক করুন
+                            </div>
+                            <SeatNavigationMap />
                         </div>
                     </div>
                 </div>

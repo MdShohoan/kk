@@ -21,7 +21,7 @@ function BangladeshMap() {
 					districtPaths.map((district) => {
 						return (
 							<Link to={`/districts/${district?.districtCode}`} key={district?.districtCode}>
-								<g className='hover:fill-[#a8baad] fill-[#d2e9d8] transition-all duration-500 stroke-[#a8baad] stroke-2'>
+								<g className='hover:fill-[#a8baad] fill-[#d2e9d8] transition-all duration-500 stroke-[#a8baad] stroke-1'>
 									{
 										district.paths.map((path, i) => (
 											<path key={i} d={path} className='' />
@@ -30,7 +30,7 @@ function BangladeshMap() {
 								</g>
 								<text
 									transform={district?.transform}
-									className="pointer-events-none text-xs"
+									className="pointer-events-none text-sm font-semibold text-[#333]"
 								>
 									{district?.districtName}
 								</text>
@@ -39,7 +39,7 @@ function BangladeshMap() {
 					})
 				}
 
-				{/* <path className="st0 fill-red-600" d="M453.9,472.5c0-0.1,0.1-0.1,0.1-0.2c0,0-0.1,0-0.1-0.1C453.9,472.3,453.9,472.4,453.9,472.5z" />
+				<path className="st0 fill-red-600" d="M453.9,472.5c0-0.1,0.1-0.1,0.1-0.2c0,0-0.1,0-0.1-0.1C453.9,472.3,453.9,472.4,453.9,472.5z" />
 
 				<path className="st0" d="M491.7,429.9c0.4-0.4,0.8-0.8,1-1.3c0.2-0.7,0.2-1.5,0.1-2.2c-0.1,0.2-0.1,0.4-0.2,0.7
 	C492.4,427.9,492.2,429,491.7,429.9z" />
@@ -62,7 +62,7 @@ function BangladeshMap() {
 	C294.2,222.7,295,227,294.1,229.2z" />
 				<path className="st0" d="M463.4,471.2c0,0.5,0.1,1,0.2,1.4C464,472.6,463.5,472.1,463.4,471.2z" />
                 <path className="st0" d="M299.1,192c0,0.6,0,1.1-0.1,1.7C299.1,193.2,299.2,192.6,299.1,192z" />
-                <path className="st0" d="M294.5,210.7c0.6-1,0.8-2.1,1-3.3c-0.8,1.1-1.7,2.1-2.3,3.2C293.7,210.6,294.1,210.6,294.5,210.7z" /> */}
+                <path className="st0" d="M294.5,210.7c0.6-1,0.8-2.1,1-3.3c-0.8,1.1-1.7,2.1-2.3,3.2C293.7,210.6,294.1,210.6,294.5,210.7z" />
 
 			</svg>
 		</div>

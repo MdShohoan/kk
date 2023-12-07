@@ -170,7 +170,7 @@ function DistrictInfoPage() {
       <section className="mb-12 md:mb-24">
         <div className="container">
           <div className="mb-12">
-            <Title text={'বিগত নির্বাচনে জেলার দলীয় অবস্থান'} />
+            <Title text={'বিগত নির্বাচনে জেলার দলীয় অবস্থান'} underline="type1" />
           </div>
           <div className="flex justify-center flex-col	md:flex-row gap-6 mb-16">
             {

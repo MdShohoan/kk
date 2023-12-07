@@ -83,7 +83,7 @@ function SeatInfoPage() {
                 <section className='mb-12 md:mb-24'>
                     <div className='container'>
                         <div className="mb-8">
-                            <Title text={'প্রার্থী'} underline="type2" />
+                            <Title text={'প্রার্থী'} underline="type1" />
                         </div>
                         {/* -----------Candidates information start-------- */}
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -106,7 +106,7 @@ function SeatInfoPage() {
                 <section className='mb-12 md:mb-24'>
                     <div className="container">
                         <div className="mb-8">
-                            <Title text={'নির্বাচন ১৯৯১ থেকে ২০১৮'} underline="type2" />
+                            <Title text={'নির্বাচন ১৯৯১ থেকে ২০১৮'} underline="type1" />
                         </div>
                         <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 md:[&>*:nth-child(odd)]:border-r'>
                             {

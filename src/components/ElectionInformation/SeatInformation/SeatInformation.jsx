@@ -83,7 +83,7 @@ function SeatInformation() {
   ]
   return (
     <div className='border border-gray-300'>
-      <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type2'} />
+      <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
       <div className='mb-5 md:mb-10'/>
       {/* Division navigator */}
       <div>

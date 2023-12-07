@@ -62,7 +62,7 @@ export default function ResultsHistory() {
             pie: {
                 customScale: 0.7,
                 dataLabels: {
-                    offset: 35,
+                    offset: 40,
                 },
             },
         },

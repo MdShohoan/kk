@@ -128,7 +128,7 @@ function ElectionResultPage() {
             <section className="mb-12 md:mb-24">
                 <div className="container mx-auto">
                     <div className="mb-8">
-                        <Title text={'কার ভাগে কত আসন (১৯৯১-২০১৪'} underline="type2" />
+                        <Title text={'কার ভাগে কত আসন (১৯৯১-২০১৪'} underline="type1" />
                     </div>
                     <Chart
                         options={options}
@@ -143,7 +143,7 @@ function ElectionResultPage() {
             <section className="mb-12">
                 <div className=" container mx-auto">
                     <div className="mb-8">
-                        <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type2" />
+                        <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type1" />
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                         <div className="col-span-full lg:col-span-1">
