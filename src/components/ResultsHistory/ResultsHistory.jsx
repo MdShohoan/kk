@@ -62,7 +62,7 @@ export default function ResultsHistory() {
         dataLabels: {
             enabled: true,
             textAnchor: "middle",
-            style: { colors: ["#333"] },
+            style: { colors: ["#333"], fontWeight:'600' },
             formatter: function (val) {
                 let valueFormatted = convertToBanglaNumber(val.toFixed(1))
                 return valueFormatted + '%';
@@ -84,7 +84,7 @@ export default function ResultsHistory() {
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: 150
                 },
                 legend: {
                     position: 'bottom'
@@ -99,12 +99,11 @@ export default function ResultsHistory() {
             <div className="container mx-auto">
                 <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
                 <div className='mb-5 md:mb-10' />
-                <div></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2 md:gap-8">
                     {
                         data.map((singleData, i) => (
                             <div className="border flex flex-col justify-center items-center py-8" key={i}>
-                                <Chart options={options} series={singleData?.series} type="pie" width={180} />
+                                <Chart options={options} series={singleData?.series} type="pie" width={200} />
                                 <p className="text-center text-[#1380c5] text-xl font-semibold">{singleData?.year}</p>
                             </div>
                         ))
