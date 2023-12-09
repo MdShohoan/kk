@@ -7,7 +7,7 @@ function DivisionNavigator() {
 
     const handleDivisionChange = (e) => {
         console.log(e.target.value)
-        navigate('/seat/123')
+        navigate('/seats/123')
     }
 
     // --------Filter data-------------

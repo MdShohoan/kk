@@ -38,7 +38,7 @@ const SeatNavigationMap = () => {
                         }
                         else {
                             return (
-                                <Link key={i} to={`/seat/${seat.seatNo}`}>
+                                <Link key={i} to={`/seats/${seat.seatNo}`}>
                                     <path
                                         key={seat?.seatNo}
                                         id="st_57"

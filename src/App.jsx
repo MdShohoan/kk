@@ -41,7 +41,7 @@ function App() {
       element: <SeatNavigationPage/>,
     },
     {
-      path: "/seat/:seatNo",
+      path: "/seats/:seatNo",
       element: <SeatInfoPage />,
     },
   ]);

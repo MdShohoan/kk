@@ -34,7 +34,7 @@ function Hero() {
         };
       }, []);
 
-    const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seat'
+    const isInSeatInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'seats'
     const isInDistrictInfoPage = currentLocation?.pathname?.split('/')?.at(1) === 'districts'
 
     const navList = [
