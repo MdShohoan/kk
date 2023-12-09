@@ -59,7 +59,8 @@ function Hero() {
     return (
         <section className={
             clsx(
-                'bg-primary-light h-auto md:h-fit pt-12 pb-12 md:rounded-br-[250px] mb-12', page === 'districtDetails' && 'pt-0', page ==='seatDetails' && 'pt-0',
+                'bg-primary-light h-auto md:h-fit pt-12 pb-12 md:rounded-br-[250px] mb-12', 
+                (page ==='seatDetails' || page === 'districtDetails') && 'pt-0',
             )
         }>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
@@ -69,7 +70,8 @@ function Hero() {
                     page === 'home' && 'flex-col-reverse'
                 )}>
                     <div className={clsx(
-                        'mt:0', page === 'districtDetails' && 'mt-2 md:mt-16', page ==='seatDetails' && 'mt-2 md:mt-16'
+                        'mt:0', 
+                        (page ==='seatDetails' || page === 'districtDetails') && 'mt-2 md:mt-16'
                         
                     )}>
                         <p className='mb-3 text-base text-primary-contrast font-bold uppercase'>জাতীয় সংসদ নির্বাচন </p>
