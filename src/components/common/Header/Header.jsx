@@ -54,9 +54,9 @@ function Header() {
 
     return (
         <header className={clsx(
-            'py-4 bg-primary-light border-b border-primary-background transition-all duration-300',
+            'py-4 px-2 bg-primary-light border-b border-primary-background transition-all duration-300',
             {
-                'sticky top-0 z-[1000] shadow-lg translate-y-0': isSticky === true,
+                'fixed top-0 left-0 right-0 z-[1000] shadow-lg translate-y-0': isSticky === true,
             }
         )}>
             <div className='flex justify-between items-center container px-0'>
