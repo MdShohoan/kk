@@ -6,8 +6,10 @@ import { colors } from "../../theme";
 import { useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
 
 function QuickLinks() {
+    const navigate = useNavigate()
     const [hoverLink, setHoverLink] = useState(null)
 
     const setSubtitleHoverColor = (link) => {
@@ -15,10 +17,10 @@ function QuickLinks() {
     }
 
     const quickLinks = [
-        { id: 'seat', title: 'আসন', subtitle: 'জেনে নিন আপনার আসন সম্পর্কে', icon: MdOutlineEventSeat },
-        { id: 'map', title: 'ম্যাপ ', subtitle: 'নির্বাচনের তথ্য জানতে ম্যাপ উপর ক্লিক করুন', icon: FaMapMarkerAlt },
-        { id: 'result', title: 'ফলাফল', subtitle: ' নির্বাচনের  ফলাফল', icon: MdOutlineAddReaction },
-        { id: 'win-lose', title: 'হার-জিত', subtitle: 'দেখুন কে কোথায় জিতেছিল', icon: IoMdGitCompare },
+        { id: 'seat', link:'seats', title: 'আসন', subtitle: 'জেনে নিন আপনার আসন সম্পর্কে', icon: MdOutlineEventSeat },
+        { id: 'map', link:'districts', title: 'ম্যাপ ', subtitle: 'নির্বাচনের তথ্য জানতে ম্যাপ উপর ক্লিক করুন', icon: FaMapMarkerAlt },
+        { id: 'result', link: 'election-result', title: 'ফলাফল', subtitle: ' নির্বাচনের  ফলাফল', icon: MdOutlineAddReaction },
+        { id: 'win-lose', link:'election-result', title: 'হার-জিত', subtitle: 'দেখুন কে কোথায় জিতেছিল', icon: IoMdGitCompare },
     ]
 
     return (
@@ -32,8 +34,9 @@ function QuickLinks() {
                                 <div
                                     onMouseEnter={() => setHoverLink(link?.id)}
                                     onMouseLeave={() => setHoverLink(null)}
+                                    onClick={()=>navigate(`/${link?.link}`)}
                                     key={i}
-                                    className="flex flex-col sm:flex-row justify-center md:justify-start lg:justify-center items-center gap-3 cursor-pointer"
+                                    className="flex flex-col sm:flex-row justify-center md:justify-start lg:justify-center items-center gap-3 cursor-pointer border-b border-primary-background sm:border-none pb-3 sm:pb-0"
                                 >
                                     <div>
                                         <Icon
