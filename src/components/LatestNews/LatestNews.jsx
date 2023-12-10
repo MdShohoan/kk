@@ -32,9 +32,6 @@ export default function LatestNews() {
                         ads: 300*250
                     </div>
                 </div>
-                {/* <div className='w-[300px] h-[250px] lg:h-[90px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px] mb-9'>
-                    ADS 970*90
-                </div> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                     {
                         data?.slice(3).map((news, i) => (
