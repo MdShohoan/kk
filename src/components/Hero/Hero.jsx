@@ -85,7 +85,7 @@ function Hero() {
                         <span className='block text-sm font-normal text-gray1'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
                         {
                             page === 'home' && (
-                                <div className='w-fit mt-8 md:mt-6'>
+                                <div className='w-fit mt-8 md:mt-6 mx-auto sm:mx-0'>
                                     {/* -----Election Date Start---- */}
                                     <div
                                         className='grid grid-cols-3 gap-4 md:gap-8 mb-10'
