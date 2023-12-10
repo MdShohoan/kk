@@ -128,7 +128,7 @@ export default function ResultsHistory() {
                 <div className="mb-5 md:mb-10">
                     <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
                 </div>
-                <div className="mb-4 md:mb-5">
+                <div className="mb-5">
                     <ColorBoxes />
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">

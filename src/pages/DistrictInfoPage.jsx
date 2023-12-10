@@ -8,6 +8,7 @@ import districtList from '../assets/data/districtsList/districtsList'
 import { ScrollRestoration, useParams } from "react-router-dom"
 import Title from "../components/common/Title/Title"
 import Chart from "react-apexcharts";
+import ColorBoxes from "../components/common/ColorBoxes/ColorBoxes"
 
 function DistrictInfoPage() {
   const { districtNo } = useParams()
@@ -88,7 +89,7 @@ function DistrictInfoPage() {
     dataLabels: {
       enabled: true,
       textAnchor: "middle",
-      style: { colors: ["white"], fontWeight:'400'},
+      style: { colors: ["white"], fontWeight: '400' },
       formatter: function (val, opt) {
         const key = opt?.seriesIndex
         const series = opt?.w?.config?.series
@@ -98,14 +99,14 @@ function DistrictInfoPage() {
     },
     tooltip: {
       style: {
-          fontSize: '12px',
+        fontSize: '12px',
       },
       y: {
-          formatter: function (val) {
-              return convertToBanglaNumber(val)
-          }
+        formatter: function (val) {
+          return convertToBanglaNumber(val)
+        }
       }
-  },
+    },
     plotOptions: {
       pie: {
         donut: {
@@ -173,15 +174,8 @@ function DistrictInfoPage() {
           <div className="mb-12">
             <Title text={'বিগত নির্বাচনে জেলার দলীয় অবস্থান'} underline="type1" />
           </div>
-          <div className="flex justify-center flex-col	md:flex-row gap-6 mb-16">
-            {
-              ['', '', '', ''].map((_, i) => (
-                <div key={i} className="flex justify-center items-center gap-2">
-                  <span style={{ background: colors[i] }} className="inline-block h-3 w-3 text-xs" />
-                  <span className="text-xs">{labels[i]}</span>
-                </div>
-              ))
-            }
+          <div className="mb-5">
+            <ColorBoxes />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-8">
             {
