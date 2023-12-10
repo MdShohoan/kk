@@ -26,6 +26,7 @@ function Video() {
                 <Title text={'ভিডিও'} underline='type1' />
                 <div className='mb-5 md:m-10' />
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    {/* ----Big video Start---- */}
                     <div
                         className='h-full md:flex flex-col cursor-pointer'
                         onMouseEnter={() => handleVideoHover(data[0])}
@@ -53,6 +54,7 @@ function Video() {
                             {data[0]?.title}
                         </h6>
                     </div>
+                    {/* ----Big video End---- */}
                     <div className='flex flex-col gap-4'>
                         {
                             data?.slice(1, 5).map((info, i) => (
