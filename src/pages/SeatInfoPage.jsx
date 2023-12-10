@@ -54,16 +54,6 @@ function SeatInfoPage() {
             <Layout>
                 <section className='mb-12 md:mb-24'>
                     <div className='container'>
-                        <div className='mb-5 md:mb-10'>
-                            <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
-                        </div>
-                        <div className='mb-8'>
-                            <DivisionNavigator/>
-                        </div>
-                    </div>
-                </section>
-                <section className='mb-12 md:mb-24'>
-                    <div className='container'>
                         <div className='mb-4'>
                             <span className='inline-block rounded-lg bg-primary-light text-2xl py-[6px] px-4 mb-2'>ঢাকা-১</span>
                             <div className='bg-gray1 h-[2px]' />
@@ -140,6 +130,16 @@ function SeatInfoPage() {
                                     </div>
                                 ))
                             }
+                        </div>
+                    </div>
+                </section>
+                <section className='mb-12 md:mb-24'>
+                    <div className='container'>
+                        <div className='mb-5 md:mb-10'>
+                            <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
+                        </div>
+                        <div className='mb-8'>
+                            <DivisionNavigator />
                         </div>
                     </div>
                 </section>
