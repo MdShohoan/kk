@@ -20,7 +20,7 @@ function DistrictNavigationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="col-span-full md:col-start-1 md:col-end-2 border p-2 md:p-8 md:pt-4">
               <div className='text-center font-medium text-lg text-[#333] mb-8'>
-                নির্বাচনের তথ্য জানতে জেলার উপর ক্লিক করুন
+                নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে জেলার উপর ক্লিক করুন
               </div>
               <div className={`grid grid-cols-2 lg:grid-cols-2} gap-4 md:gap-8`}>
                 {
