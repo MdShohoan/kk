@@ -51,6 +51,32 @@ function Header() {
             to: '/'
         },
     ]
+    const mobileNavList = [
+        {
+            text: 'হোম',
+            to: '/'
+        },
+        {
+            text: 'আসন',
+            to: '/seats'
+        },
+        {
+            text: 'জেলা',
+            to: '/districts'
+        },
+        {
+            text: 'খবর',
+            to: '/'
+        },
+        {
+            text: 'ফলাফল',
+            to: '/election-result'
+        },
+        {
+            text: 'কালেরকণ্ঠ',
+            to: '/'
+        },
+    ]
 
     return (
         <header className={clsx(
@@ -90,14 +116,19 @@ function Header() {
                     )}
                 >
                     <div className="flex justify-between items-center md:mb-24 p-4">
-                        <img src={kkLogo} className='h-[30px] w-40' />
+                        <Link to={'/'}>
+                            <img
+                                src={kkLogo}
+                                className='h-[30px] w-40'
+                            />
+                        </Link>
                         <span className='md:hidden'>
                             <MdClose size={32} onClick={() => setIsOpenNav(false)} />
                         </span>
                     </div>
                     <ul className='px-4'>
                         {
-                            navList.map((navItem, i) => (
+                            mobileNavList?.map((navItem, i) => (
                                 <Link key={i} to={`${navItem?.to}`}>
                                     <li className='text-left py-2 px-4 text-sm font-semibold border-b-2'>
                                         {navItem?.text}
