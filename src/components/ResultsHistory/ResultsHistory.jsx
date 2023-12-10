@@ -1,3 +1,4 @@
+import ColorBoxes from "../common/ColorBoxes/ColorBoxes";
 import Title from "../common/Title/Title";
 import Chart from "react-apexcharts";
 
@@ -124,8 +125,12 @@ export default function ResultsHistory() {
     return (
         <section className="mb-12 md:mb-24">
             <div className="container mx-auto">
-                <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
-                <div className='mb-5 md:mb-10' />
+                <div className="mb-5 md:mb-10">
+                    <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
+                </div>
+                <div className="mb-2 md:mb-5">
+                    <ColorBoxes />
+                </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {
                         data.map((singleData, i) => (

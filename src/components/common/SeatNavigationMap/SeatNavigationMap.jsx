@@ -12,7 +12,7 @@ const SeatNavigationMap = () => {
                                 <Link key={i} to={`/seat/${seat?.seatNo}`}>
                                     <polygon
                                         id="st_101"
-                                        className='cursor-pointer hover:fill-[#a8baad] fill-[#d2e9d8] transition-all duration-500 stroke-[#a8baad] stroke-2'
+                                        className='cursor-pointer hover:fill-[#98c5e2] fill-[#a9dbfb] transition-all duration-500 stroke-[#a8baad] stroke-2'
                                         points={seat?.paths[0]}
                                     />
                                 </Link>
@@ -22,7 +22,7 @@ const SeatNavigationMap = () => {
                             return (
 
                                 <Link key={i} to={`/seat/${seat?.seatNo}`}>
-                                    <g key={seat.seatNo} className='cursor-pointer hover:fill-[#a8baad] fill-[#d2e9d8] transition-all duration-500 stroke-[#a8baad] stroke-2'>
+                                    <g key={seat.seatNo} className='cursor-pointer hover:fill-[#98c5e2] fill-[#a9dbfb] transition-all duration-500 stroke-[#a8baad] stroke-2'>
                                         {
                                             seat?.paths.map((path, i) => (
                                                 <path
@@ -42,7 +42,7 @@ const SeatNavigationMap = () => {
                                     <path
                                         key={seat?.seatNo}
                                         id="st_57"
-                                        className='cursor-pointer hover:fill-[#a8baad] fill-[#d2e9d8] transition-all duration-500 stroke-[#a8baad] stroke-2'
+                                        className='cursor-pointer hover:fill-[#98c5e2] fill-[#a9dbfb] transition-all duration-500 stroke-[#a8baad] stroke-2'
                                         d={seat.paths[0]}
                                     />
                                 </Link>

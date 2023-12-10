@@ -38,9 +38,9 @@ function UnofficialResult() {
                 <div style={{ background: colors[i]?.light }} className="rounded-tl rounded-bl py-2 flex justify-center items-center">
                   <img src={party?.logo} className="h-7 mx-auto" />
                 </div>
-                <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 bg-[#99c0d4] mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
+                <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
                 <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.ahead}</div>
-                <div style={{ background: colors[i]?.dark }} className="bg-[#99c0d4] rounded flex justify-center items-center">{party?.won}</div>
+                <div style={{ background: colors[i]?.dark }} className="rounded flex justify-center items-center">{party?.won}</div>
               </div>
             ))}
           </div>
