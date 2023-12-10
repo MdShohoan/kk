@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function DivisionNavigator() {
+function DivisionNavigator({page}) {
     const [seatList, setSeatList] = useState([])
     const navigate = useNavigate()
 
@@ -76,7 +76,7 @@ function DivisionNavigator() {
     ]
 
     return (
-        <div className={`grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8`}>
+        <div className={`grid grid-cols-2 lg:${page==='seatNavigation'?'grid-cols-2':'grid-cols-4'} gap-4 md:gap-8 p-2`}>
             {
                 navigationOption?.map((option, i) => (
                     <div key={i} className="relative">
@@ -84,7 +84,7 @@ function DivisionNavigator() {
                             onChange={handleDivisionChange}
                             className="w-full border rounded-lg border-[#0000003D] bg-primary-light p-2 text-base font-normal cursor-pointer"
                         >
-                            <option className="cursor-pointer" value="select">{option?.text}</option>
+                            <option className="cursor-pointer" value="select">{option?.text} বিভাগ</option>
                             {
                                 filterSeatByDivision(option.divisionName)?.map((option, i) => (
                                     <option key={i} value={option?.name?.inEnglish}>{option?.name}</option>
