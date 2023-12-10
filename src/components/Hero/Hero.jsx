@@ -65,7 +65,7 @@ function Hero() {
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
                 {/* --------Hero start------- */}
                 <div className={clsx(
-                    "flex md:flex-row flex-col justify-between items-center md:items-start pb-5 md:pb-0 gap-8 md:gap-0",
+                    "flex md:flex-row flex-col justify-between items-center md:items-start md:gap-8 gap-0",
                     page === 'home' && 'flex-col-reverse'
                 )}>
                     <div className={clsx(
