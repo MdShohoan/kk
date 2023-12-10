@@ -3,6 +3,7 @@ import Layout from "../components/common/Layout/Layout";
 import Title from "../components/common/Title/Title";
 import SeatNavigationMap from "../components/common/SeatNavigationMap/SeatNavigationMap";
 import DivisionNavigator from "../components/common/DivisionNavigator/DivisionNavigator";
+import { ScrollRestoration } from "react-router-dom";
 
 export default function SeatNavigationPage() {
     // const navigate = useNavigate()
@@ -11,6 +12,7 @@ export default function SeatNavigationPage() {
     // }
     return (
         <Layout>
+            <ScrollRestoration/>
             <section className="mb-12">
                 <div className="container">
                     <div className="mb-8">

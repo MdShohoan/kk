@@ -5,7 +5,7 @@ import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
 import Card from '../components/common/CardCountUP/CardCountUP'
 import districtList from '../assets/data/districtsList/districtsList'
-import { useParams } from "react-router-dom"
+import { ScrollRestoration, useParams } from "react-router-dom"
 import Title from "../components/common/Title/Title"
 import Chart from "react-apexcharts";
 
@@ -144,6 +144,7 @@ function DistrictInfoPage() {
 
   return (
     <Layout>
+      <ScrollRestoration />
       <section className='mb-12 md:mb-24'>
         <div className='container'>
           <div className='mb-4'>

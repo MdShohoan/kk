@@ -2,7 +2,7 @@ import BangladeshMap from "../components/common/BangladeshMap/BangladeshMap"
 import Layout from "../components/common/Layout/Layout"
 import Title from "../components/common/Title/Title"
 import districtList from '../assets/data/districtsList/districtsList'
-import { useNavigate } from "react-router-dom"
+import { ScrollRestoration, useNavigate } from "react-router-dom"
 
 function DistrictNavigationPage() {
   const navigate = useNavigate()
@@ -12,6 +12,7 @@ function DistrictNavigationPage() {
 
   return (
     <Layout>
+      <ScrollRestoration />
       <section className="mb-12">
         <div className="container">
           <div className="mb-8">

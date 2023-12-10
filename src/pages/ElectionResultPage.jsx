@@ -5,6 +5,7 @@ import ResultsHistory from "../components/ResultsHistory/ResultsHistory";
 import SeatMap from "../components/common/SeatMap/SeatMap";
 import { useState } from "react";
 import clsx from "clsx";
+import { ScrollRestoration } from "react-router-dom";
 
 function convertToBanglaNumber(number) {
     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
@@ -125,6 +126,7 @@ function ElectionResultPage() {
 
     return (
         <Layout>
+            <ScrollRestoration />
             <section className="mb-12 md:mb-24">
                 <div className="container mx-auto">
                     <div className="mb-8">

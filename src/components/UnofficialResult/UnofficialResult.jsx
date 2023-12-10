@@ -12,12 +12,19 @@ function UnofficialResult() {
     { name: 'অন্যান্য', logo: '', ahead: '০', won: '৪' },
   ]
 
+  const colors = [
+    { light: '#85ceb7', dark: '#66c2a5' },
+    { light: '#a4b3d5', dark: '#8da0cb' },
+    { light:'#eca1cf', dark:'#e78ac3'},
+    {light: '#b8e076', dark:'#a6d854'}
+  ]
+
   const headingCellStyle = `text-sm leading-4 text-[#000] font-normal bg-[#f0f0ed] rounded py-2 border-b border-gray-300 mr-1`
   return (
     <section className="mb-12 md:mb-24">
       <div className="container mx-auto">
         <Title text={'১১তম নির্বাচনের বেসরকারি ফলাফল'} underline="type1" />
-        <div className='mb-5 md:mb-10'/>
+        <div className='mb-5 md:mb-10' />
         <div className="max-w-[300px] md:max-w-[500px] mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
           <div>
             <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
@@ -26,14 +33,14 @@ function UnofficialResult() {
               <div className={headingCellStyle}>জয়ী</div>
             </div>
 
-            {data?.map((party) => (
-              <div key={party?.name} className="grid grid-cols-5 mb-1 text-sm md:text-base font-semibold [&>*:last-child]:mb-0">
-                <div className="bg-[#b3d0df] rounded-tl rounded-bl py-2 border border-[#99c0d4] flex justify-center items-center">
+            {data?.map((party, i) => (
+              <div key={party?.name} className="grid grid-cols-5 mb-1 text-sm md:text-base font-semibold text-[#333] [&>*:last-child]:mb-0">
+                <div style={{ background: colors[i]?.light }} className="rounded-tl rounded-bl py-2 flex justify-center items-center">
                   <img src={party?.logo} className="h-7 mx-auto" />
                 </div>
-                <div className="col-start-2 col-end-4 bg-[#99c0d4] mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
-                <div className="bg-[#b3d0df] mr-1 rounded flex justify-center items-center">{party?.ahead}</div>
-                <div className="bg-[#99c0d4] rounded flex justify-center items-center">{party?.won}</div>
+                <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 bg-[#99c0d4] mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
+                <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.ahead}</div>
+                <div style={{ background: colors[i]?.dark }} className="bg-[#99c0d4] rounded flex justify-center items-center">{party?.won}</div>
               </div>
             ))}
           </div>
