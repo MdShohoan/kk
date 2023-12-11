@@ -7,14 +7,14 @@ import Section from "../common/Section/Section";
 
 export default function LatestNews() {
     const data = [
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard1 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard2 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard1 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard2 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard1 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard2 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard1 },
-        { title: 'ধ্বংসের নীলনকশা বাস্তবায়ন করছে', image: newsCard2 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
+        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
     ]
 
     return (
