@@ -11,6 +11,8 @@ import Chart from "react-apexcharts";
 import ColorBoxes from "../components/common/ColorBoxes/ColorBoxes"
 import districtData from '../assets/data/districts.json'
 
+import Section from '../components/common/Section/Section'
+
 function DistrictInfoPage() {
   const { districtNo } = useParams()
 
@@ -184,7 +186,7 @@ function DistrictInfoPage() {
   return (
     <Layout>
       <ScrollRestoration />
-      <section className='mb-12 md:mb-24'>
+      <Section>
         <div className='container'>
           <div className='mb-4'>
             <span
@@ -205,9 +207,9 @@ function DistrictInfoPage() {
           </div>
           {/* -----------Seat information counter end------- */}
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12 md:mb-24">
+      <Section>
         <div className="container">
           <div className="mb-12">
             <Title text={'বিগত নির্বাচনে জেলার দলীয় অবস্থান'} underline="type1" />
@@ -232,7 +234,7 @@ function DistrictInfoPage() {
             }
           </div>
         </div>
-      </section>
+      </Section>
     </Layout>
   )
 }

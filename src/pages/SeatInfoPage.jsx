@@ -1,6 +1,7 @@
 import Card from '../components/common/CardCountUP/CardCountUP'
 import DivisionNavigator from '../components/common/DivisionNavigator/DivisionNavigator'
 import Layout from '../components/common/Layout/Layout'
+import Section from '../components/common/Section/Section'
 
 import candidat1 from '../assets/candidatePhoto/asaduzzaman.webp'
 import total_voter from '../assets/election/total-voter.png'
@@ -55,7 +56,7 @@ function SeatInfoPage() {
         <>
             <ScrollRestoration />
             <Layout>
-                <section className='mb-12 md:mb-24'>
+                <Section>
                     <div className='container'>
                         <div className='mb-4'>
                             <span className='inline-block rounded-lg bg-primary-light text-2xl py-[6px] px-4 mb-2'>ঢাকা-১</span>
@@ -72,9 +73,9 @@ function SeatInfoPage() {
                         </div>
                         {/* -----------Seat information counter end------- */}
                     </div>
-                </section>
+                </Section>
 
-                <section className='mb-12 md:mb-24'>
+                <Section className='mb-12 md:mb-24'>
                     <div className='container'>
                         <div className="mb-8">
                             <Title text={'প্রার্থী'} underline="type1" />
@@ -99,8 +100,8 @@ function SeatInfoPage() {
                         </div>
                         {/* ------------Candidates information end-------------- */}
                     </div>
-                </section>
-                <section className='mb-12 md:mb-24'>
+                </Section>
+                <Section className='mb-12 md:mb-24'>
                     <div className="container">
                         <div className="mb-8">
                             <Title text={'নির্বাচন ১৯৯১ থেকে ২০১৮'} underline="type1" />
@@ -139,8 +140,8 @@ function SeatInfoPage() {
                             }
                         </div>
                     </div>
-                </section>
-                <section className='mb-12 md:mb-24'>
+                </Section>
+                <Section className='mb-12 md:mb-24'>
                     <div className='container'>
                         <div className='mb-5 md:mb-10'>
                             <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
@@ -149,7 +150,7 @@ function SeatInfoPage() {
                             <DivisionNavigator />
                         </div>
                     </div>
-                </section>
+                </Section>
             </Layout>
         </>
     )
