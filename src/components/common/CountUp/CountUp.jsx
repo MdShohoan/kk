@@ -51,8 +51,6 @@ export default function CountUp({ end }) {
     useEffect(() => {
         const interval = setInterval(() => {
             if (count < targetedCount) { // Change the upper limit as needed
-
-                // setCount(count + incrementBy);
                 setCount(prev => targetedCount - prev < incrementBy ? targetedCount : prev + incrementBy)
             } else {
                 clearInterval(interval);
@@ -63,7 +61,10 @@ export default function CountUp({ end }) {
     }, [count]);
 
     return (
-        <p className='md:text-xl lg:text-2xl text-base mb-2 text-primary font-bold'>{formatByComma(toBanglaDigits(count))}</p>
+        <p className='md:text-xl lg:text-2xl text-base mb-2 text-primary font-bold'>
+            {count === 0? formatByComma(toBanglaDigits(targetedCount)) : formatByComma(toBanglaDigits(count))}
+        </p>
+
     )
 }
 

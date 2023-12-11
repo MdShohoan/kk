@@ -9,11 +9,12 @@ import { ScrollRestoration, useParams } from "react-router-dom"
 import Title from "../components/common/Title/Title"
 import Chart from "react-apexcharts";
 import ColorBoxes from "../components/common/ColorBoxes/ColorBoxes"
+import districtData from '../assets/data/districts.json'
 
 function DistrictInfoPage() {
   const { districtNo } = useParams()
 
-  //Find district by id
+  //Find district by districtNo
   function findDistrictById() {
     for (const division of districtList) {
       const foundDistrict = division.districts.find(district => district?.districtCode === districtNo);
@@ -24,6 +25,18 @@ function DistrictInfoPage() {
     }
   }
 
+  //Find current district data by districtNO
+  const getDistrictDataByDistrictNo = ()=>{
+    return districtData?.data?.filter((district)=>district?.districtNo == districtNo)
+  }
+
+  //11th election data of current district
+  const eleventhData = getDistrictDataByDistrictNo()?.find((element)=>element.ElectionNo === 11)
+
+  console.log(eleventhData.totalSeat)
+  
+
+  //Convert english to bangla number
   function convertToBanglaNumber(number) {
     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
 
@@ -44,10 +57,10 @@ function DistrictInfoPage() {
 
 
   const seatData = [
-    { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
-    { count: '৫২৫৪৭৩২৯', title: 'পুরুষ ভোটার', image: male_voter },
-    { count: '৫১৬৪৩১৫১', title: 'নারী ভোটার ', image: female_voter },
-    { count: '১৮৪৮', title: 'মোট প্রার্থী', image: total_candidate },
+    { count: eleventhData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
+    { count: eleventhData?.maleVoter, title: 'পুরুষ ভোটার', image: male_voter },
+    { count: eleventhData?.femaleVoter, title: 'নারী ভোটার ', image: female_voter },
+    { count: eleventhData?.totalSeat, title: 'মোট আসন', image: total_candidate },
   ]
 
   const colors = ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854']
