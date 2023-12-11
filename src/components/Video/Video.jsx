@@ -55,6 +55,9 @@ function Video() {
                         </h6>
                     </div>
                     {/* ----Big video End---- */}
+
+
+                    {/* ----Video List Start---*/}
                     <div className='flex flex-col gap-4'>
                         {
                             data?.slice(1, 5).map((info, i) => (
@@ -85,6 +88,8 @@ function Video() {
                             ))
                         }
                     </div>
+                    {/* ----Video List End---*/}
+                    
                     <div className='h-[250px] w-[300px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
                         300*250
                     </div>
