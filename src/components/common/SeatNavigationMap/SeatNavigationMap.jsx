@@ -9,7 +9,7 @@ const SeatNavigationMap = () => {
                     seatPaths.map((seat, i) => {
                         if (seat?.seatNo === '101') {
                             return (
-                                <Link key={i} to={`/seat/${seat?.seatNo}`}>
+                                <Link key={i} to={`/seats/${seat?.seatNo}`}>
                                     <polygon
                                         id="st_101"
                                         className='cursor-pointer hover:fill-[#98c5e2] fill-[#a9dbfb] transition-all duration-500 stroke-[#a8baad] stroke-2'
@@ -21,7 +21,7 @@ const SeatNavigationMap = () => {
                         else if (seat?.paths.length > 1) {
                             return (
 
-                                <Link key={i} to={`/seat/${seat?.seatNo}`}>
+                                <Link key={i} to={`/seats/${seat?.seatNo}`}>
                                     <g key={seat.seatNo} className='cursor-pointer hover:fill-[#98c5e2] fill-[#a9dbfb] transition-all duration-500 stroke-[#a8baad] stroke-2'>
                                         {
                                             seat?.paths.map((path, i) => (
