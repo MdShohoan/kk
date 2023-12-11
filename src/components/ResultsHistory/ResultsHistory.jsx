@@ -135,7 +135,7 @@ export default function ResultsHistory() {
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {
                         data.map((singleData, i) => (
-                            <div className="border flex flex-col justify-center items-center py-4 md:py-6" key={i}>
+                            <div className="border flex flex-col justify-center items-center py-4 md:py-6 bg-[#F0F8FF]" key={i}>
                                 <Chart options={options} series={singleData?.series} type="pie" />
                                 <p className="text-center text-[#1380c5] text-lg mt-4 font-semibold">{singleData?.year}</p>
                             </div>
