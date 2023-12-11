@@ -1,7 +1,8 @@
+import Section from '../common/Section/Section'
 function Sponsor() {
     const data = ['', '', '', '']
     return (
-        <section className="mb-12 md:mb-24">
+        <Section className="mb-12 md:mb-24">
             <div className='container'>
                 <div className="bg-primary-light p-8">
                     <h6 className="text-center mb-5 text-base font-bold text-primary">সহযোগিতায় </h6>
@@ -14,7 +15,7 @@ function Sponsor() {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }
 

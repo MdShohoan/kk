@@ -3,6 +3,7 @@ import newsCard1 from '../../assets/newsCard/newsCard1.png'
 import newsCard2 from '../../assets/newsCard/newsCard2.png'
 import Card from "./Card/Card";
 import List from "./List/List";
+import Section from "../common/Section/Section";
 
 export default function LatestNews() {
     const data = [
@@ -17,7 +18,7 @@ export default function LatestNews() {
     ]
 
     return (
-        <section className="mb-12 md:mb-24">
+        <Section>
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-10">
                     <Title text={'নির্বাচনের সর্বশেষ খবর'} underline="type1" />
@@ -55,6 +56,6 @@ export default function LatestNews() {
                 </div>
                 {/* ----News List end (visible in mobile screen)---- */}
             </div>
-        </section>
+        </Section>
     )
 }

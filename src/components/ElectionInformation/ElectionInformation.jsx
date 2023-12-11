@@ -2,6 +2,7 @@
 // import MapInformation from './MapInformation/MapInformation'
 
 import DivisionNavigator from "../common/DivisionNavigator/DivisionNavigator"
+import Section from "../common/Section/Section"
 import Title from "../common/Title/Title"
 
 // import { MdOutlineArrowDropDown } from "react-icons/md";
@@ -82,7 +83,7 @@ function ElectionInformation() {
   // ]
 
   return (
-    <section className='mb-12 md:mb-24'>
+    <Section>
       <div className='container m-auto'>
 
         {/* -------Division navigator start--------- */}
@@ -169,7 +170,7 @@ function ElectionInformation() {
           <SeatInformation />
         </div> */}
       </div>
-    </section>
+    </Section>
   )
 }
 

@@ -3,6 +3,7 @@ import thumbnail1 from '../../assets/videoThumbnail/thumbnail1.png'
 import thumbnail2 from '../../assets/videoThumbnail/thumbnail2.png'
 import Title from './../common/Title/Title';
 import { GoPlay } from "react-icons/go";
+import Section from '../common/Section/Section';
 
 function Video() {
     const [hoverElement, setHoverElement] = useState(null)
@@ -21,7 +22,7 @@ function Video() {
     ]
 
     return (
-        <section className='mb-12 md:mb-24'>
+        <Section>
             <div className="container mx-auto">
                 <Title text={'ভিডিও'} underline='type1' />
                 <div className='mb-5 md:m-10' />
@@ -95,7 +96,7 @@ function Video() {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }
 

@@ -9,6 +9,7 @@ import male_candidate from '../../assets/election/male-candidate.png'
 import female_candidate from '../../assets/election/female-candidate.png'
 import total_seat from '../../assets/election/total-seat.png'
 import political_parties from '../../assets/election/political-parties.png'
+import Section from '../common/Section/Section';
 
 export default function ElectionShortStatistics() {
   const data = [
@@ -24,7 +25,7 @@ export default function ElectionShortStatistics() {
   ]
 
   return (
-    <section className='bg-white mb-12 md:mb-24'>
+    <Section>
       <div className='container mx-auto'>
         <div>
           <div>
@@ -40,6 +41,6 @@ export default function ElectionShortStatistics() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

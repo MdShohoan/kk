@@ -1,4 +1,5 @@
 import ColorBoxes from "../common/ColorBoxes/ColorBoxes";
+import Section from "../common/Section/Section";
 import Title from "../common/Title/Title";
 import Chart from "react-apexcharts";
 
@@ -123,7 +124,7 @@ export default function ResultsHistory() {
 
 
     return (
-        <section className="mb-12 md:mb-24">
+        <Section>
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-10">
                     <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
@@ -142,6 +143,6 @@ export default function ResultsHistory() {
                     }
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }

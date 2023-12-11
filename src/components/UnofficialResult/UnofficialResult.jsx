@@ -2,6 +2,7 @@ import Title from "../common/Title/Title"
 import AwamiLeagueLogo from '../../assets/partyLogo/AwamiLeagueLogo.webp'
 import BNPLogo from '../../assets/partyLogo/BNPLogo.webp'
 import JatiyoPartyLogo from '../../assets/partyLogo/JatioyoPartyLogo.webp'
+import Section from "../common/Section/Section"
 
 function UnofficialResult() {
 
@@ -21,7 +22,7 @@ function UnofficialResult() {
 
   const headingCellStyle = `text-sm leading-4 text-[#000] font-normal bg-[#f0f0ed] rounded py-2 border-b border-gray-300 mr-1`
   return (
-    <section className="mb-12 md:mb-24">
+    <Section>
       <div className="container mx-auto">
         <Title text={'১১তম নির্বাচনের বেসরকারি ফলাফল'} underline="type1" />
         <div className='mb-5 md:mb-10' />
@@ -46,7 +47,7 @@ function UnofficialResult() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 
