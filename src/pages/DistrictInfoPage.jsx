@@ -26,17 +26,16 @@ function DistrictInfoPage() {
   }
 
   //Find current district data by districtNO
-  const getDistrictDataByDistrictNo = ()=>{
-    return districtData?.data?.filter((district)=>district?.districtNo == districtNo)
+  const getDistrictDataByDistrictNo = () => {
+    return districtData?.data?.filter((district) => district?.districtNo == districtNo)
   }
 
   //11th election data of current district
-  const eleventhData = getDistrictDataByDistrictNo()?.find((element)=>element.ElectionNo === 11)
+  const eleventhData = getDistrictDataByDistrictNo()?.find((element) => element.ElectionNo === 11)
 
-  console.log(eleventhData.totalSeat)
-  
 
-  //Convert english to bangla number
+
+  //------Convert english to bangla number---------
   function convertToBanglaNumber(number) {
     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
 
@@ -55,6 +54,19 @@ function DistrictInfoPage() {
     return banglaNumber;
   }
 
+  //-------Convert bangla digit to english digit-----.
+  const toEnglishDigits = (banglaNumber) => {
+    const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+    const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+    const converted = banglaNumber.toString().split('').map(digit => {
+      const digitIndex = banglaDigits.indexOf(digit);
+      return digitIndex !== -1 ? englishDigits[digitIndex] : digit;
+    }).join('');
+
+    return parseInt(converted)
+  }
+
 
   const seatData = [
     { count: eleventhData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
@@ -66,28 +78,41 @@ function DistrictInfoPage() {
   const colors = ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854']
   const labels = ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য']
 
-  const data = [
-    {
-      series: [4, 1, 1]
-    },
-    {
-      series: [2, 2, 2]
-    },
-    {
-      series: [5, 1]
-    },
-    {
-      series: [0, 4, 2]
-    },
-    {
-      series: [4, 1, 1]
-    },
-    {
-      series: [2, 2, 2]
-    },
+  // const chartData = [
+  //   {
+  //     series: [4, 1, 1]
+  //   },
+  //   {
+  //     series: [2, 2, 2]
+  //   },
+  //   {
+  //     series: [5, 1]
+  //   },
+  //   {
+  //     series: [0, 4, 2]
+  //   },
+  //   {
+  //     series: [4, 1, 1]
+  //   },
+  //   {
+  //     series: [2, 2, 2]
+  //   },
 
-  ]
+  // ]
 
+  const chartData = [...getDistrictDataByDistrictNo()]?.map((district) => {
+    return {
+      electionNo: district?.ElectionNo,
+      series: [
+        toEnglishDigits(district?.bal || 0),
+        toEnglishDigits(district?.bnp || 0),
+        toEnglishDigits(district?.jp || 0),
+        toEnglishDigits(district?.ao || 0),
+      ]
+    }
+  })
+
+  console.log(getDistrictDataByDistrictNo())
 
   const options = {
     chart: {
@@ -192,19 +217,16 @@ function DistrictInfoPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-8">
             {
-              data.map((element, i) => (
+              chartData.map((element, i) => (
                 <div key={i}>
                   <div key={i} className="relative flex justify-center items-center border rounded">
                     <Chart options={options} series={element?.series} type="donut" width={'300px'} />
                     <span
                       className="block absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/4"
                     >
-                      ১০ম
+                      {convertToBanglaNumber(element.electionNo)}ম
                     </span>
                   </div>
-                  {/* <div className="border h-4">
-
-                  </div> */}
                 </div>
               ))
             }
