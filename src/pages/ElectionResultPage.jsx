@@ -6,6 +6,7 @@ import SeatMap from "../components/common/SeatMap/SeatMap";
 import { useState } from "react";
 import clsx from "clsx";
 import { ScrollRestoration } from "react-router-dom";
+import Section from "../components/common/Section/Section";
 
 function convertToBanglaNumber(number) {
     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
@@ -127,7 +128,7 @@ function ElectionResultPage() {
     return (
         <Layout>
             <ScrollRestoration />
-            <section className="mb-12 md:mb-24">
+            <Section>
                 <div className="container mx-auto">
                     <div className="mb-8">
                         <Title text={'কার ভাগে কত আসন (১৯৯১-২০১৪'} underline="type1" />
@@ -140,9 +141,9 @@ function ElectionResultPage() {
                         height={420}
                     />
                 </div>
-            </section>
+            </Section>
             <ResultsHistory />
-            <section className="mb-12">
+            <Section>
                 <div className=" container mx-auto">
                     <div className="mb-8">
                         <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type1" />
@@ -214,7 +215,7 @@ function ElectionResultPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </Section>
         </Layout>
     )
 }
