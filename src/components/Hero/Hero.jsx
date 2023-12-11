@@ -59,7 +59,7 @@ function Hero() {
     return (
         <section className={
             clsx(
-                'bg-primary-light h-auto md:h-fit py-12 md:rounded-br-[250px] mb-12', page ==='seatDetails' && 'pt-0', page === 'districtDetails' && 'pt-0', page === 'home' && 'pb-1'
+                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12', page ==='seatDetails' && 'pt-0 pb-1 md:pb-12', page === 'districtDetails' && 'pt-0 pb-1 md:pb-12', page === 'home' && 'pb-1'
             )
         }>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
