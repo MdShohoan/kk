@@ -10,13 +10,32 @@ import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
 import Title from '../components/common/Title/Title'
 import jatipartySymbol from '../assets/partyLogo/JatioyoPartyLogo.webp'
-import { ScrollRestoration } from 'react-router-dom'
+import { ScrollRestoration, useParams } from 'react-router-dom'
 
 import seatsData from '../assets/data/seats.json'
+import seatList from '../assets/data/seatsList/seatsList'
 
 console.log('===seat', seatsData)
 
 function SeatInfoPage() {
+
+    const { seatNo } = useParams()
+
+    //Find seat by districtNo
+    function findSeatById() {
+        for (const division of seatList) {
+            const foundSeat = division?.seats?.find(seat => seat?.seatNo === seatNo);
+           
+            if (foundSeat) {
+                return foundSeat.seatName;
+            }
+        }
+
+        return 'not found'
+    }
+
+    console.log(seatNo, 'from params')
+
 
     const seatData = [
         { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
@@ -59,7 +78,9 @@ function SeatInfoPage() {
                 <Section>
                     <div className='container'>
                         <div className='mb-4'>
-                            <span className='inline-block rounded-lg bg-primary-light text-2xl py-[6px] px-4 mb-2'>ঢাকা-১</span>
+                            <span className='inline-block rounded-lg bg-primary-light text-2xl py-[6px] px-4 mb-2'>
+                               {findSeatById()}
+                            </span>
                             <div className='bg-gray1 h-[2px]' />
                         </div>
 
