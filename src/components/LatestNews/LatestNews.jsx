@@ -56,7 +56,7 @@ export default function LatestNews() {
                 </div>
                 {/* ----News List end (visible in mobile screen)---- */}
                 <span
-                    className="block md:hidden text-center rounded-md border border-primary mt-4 p-1 text-xl"
+                    className="block md:hidden text-center rounded-md border border-primary mt-4 py-[6px] text-xl"
                 >
                     আরও
                 </span>
