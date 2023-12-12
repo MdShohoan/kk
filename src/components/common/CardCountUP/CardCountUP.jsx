@@ -11,7 +11,7 @@ export default function Card({ data, type = 'type1' }) {
         <div className={styles.card}>
             <div className='bg-primary-background py-4'>
                 <img
-                    className='m-auto mb-4 rounded-full border-[2px] border-primary-light p-4 block h-20 w-20' src={data?.image}
+                    className='m-auto mb-4 rounded-full border-[2px] border-primary-light p-4 block h-24 w-24' src={data?.image}
                     alt={data?.title + 'image'}
                 />
             </div>
