@@ -8,7 +8,7 @@ function Card({ news }) {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className="overflow-clip rounded mb-4">
+            <div className="overflow-clip rounded-lg mb-4">
                 <img
                     src={news?.image}
                     alt="News image"

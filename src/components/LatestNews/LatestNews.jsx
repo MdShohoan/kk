@@ -47,7 +47,7 @@ export default function LatestNews() {
                 {/* ----News Card End (visible in big screen)---- */}
 
                 {/* ----News List Start (visible in mobile screen)---- */}
-                <div className='flex md:hidden flex-col gap-4'>
+                <div className='flex md:hidden flex-col gap-4 '>
                     {
                         data?.slice(3).map((info, i) => (
                             <List key={i} info={info} />
@@ -55,6 +55,11 @@ export default function LatestNews() {
                     }
                 </div>
                 {/* ----News List end (visible in mobile screen)---- */}
+                <span
+                    className="block md:hidden text-center rounded-md border border-primary mt-4 p-1 text-xl"
+                >
+                    আরও
+                </span>
             </div>
         </Section>
     )
