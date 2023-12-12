@@ -5,7 +5,7 @@ import Section from '../components/common/Section/Section'
 
 import candidat1 from '../assets/candidatePhoto/asaduzzaman.webp'
 import total_voter from '../assets/election/total-voter.png'
-import total_candidate from '../assets/election/total-seat.png'
+import total_candidate from '../assets/election/total-candidate.png'
 import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
 import Title from '../components/common/Title/Title'

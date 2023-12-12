@@ -59,7 +59,7 @@ function Hero() {
     return (
         <section className={
             clsx(
-                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12', page ==='seatDetails' && 'pt-0 pb-1 md:pb-12', page === 'districtDetails' && 'pt-0 pb-1 md:pb-12', page === 'home' && 'pb-1'
+                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12', page === 'seatDetails' && 'pt-0 pb-1 md:pb-12', page === 'districtDetails' && 'pt-0 pb-1 md:pb-12', page === 'home' && 'pb-1'
             )
         }>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
@@ -69,11 +69,15 @@ function Hero() {
                     page === 'home' && 'flex-col-reverse'
                 )}>
                     <div className={clsx(
-                        'mt:0', 
-                        (page ==='seatDetails' || page === 'districtDetails') && 'mt-2 md:mt-16'
-                        
+                        'mt:0',
+                        (page === 'seatDetails' || page === 'districtDetails') && 'mt-2 md:mt-16'
+
                     )}>
-                        <p className='mb-3 text-base text-primary-contrast font-bold uppercase'>জাতীয় সংসদ নির্বাচন </p>
+                        <p className={clsx(
+                            'mb-3 text-base text-primary-contrast font-bold uppercase', (page === 'seatDetails' || page === 'districtDetails') && 'hidden md:block'
+                        )}>
+                            জাতীয় সংসদ নির্বাচন
+                        </p>
                         <h3
                             className='text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-relaxed lg:leading-relaxed font-black tracking-[1.93px] mb-5'
                         >
@@ -81,7 +85,13 @@ function Hero() {
                                 heroTitle[page]
                             }
                         </h3>
-                        <span className='block text-sm font-normal text-gray1'>নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি </span>
+                        <span
+                            className={
+                                clsx('block text-sm font-normal text-gray1', (page === 'seatDetails' || page === 'districtDetails') && 'hidden md:block') 
+                            }
+                        >
+                            নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি
+                        </span>
                         {
                             page === 'home' && (
                                 <div className='w-fit mt-8 md:mt-6 mx-auto sm:mx-0'>

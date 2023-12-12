@@ -2,7 +2,7 @@ import Card from '../common/CardCountUP/CardCountUP';
 import Title from '../common/Title/Title';
 
 import total_voter from '../../assets/election/total-voter.png'
-import total_candidate from '../../assets/election/total-seat.png'
+import total_candidate from '../../assets/election/total-candidate.png'
 import male_voter from '../../assets/election/male-voter.png'
 import female_voter from '../../assets/election/female-voter.png'
 import male_candidate from '../../assets/election/male-candidate.png'

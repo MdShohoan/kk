@@ -10,7 +10,10 @@ export default function Card({ data, type = 'type1' }) {
     const type1 = (
         <div className={styles.card}>
             <div className='bg-primary-background py-4'>
-                <img className={styles.cardImage} src={data?.image} alt={data?.title + 'image'} />
+                <img
+                    className='m-auto mb-4 rounded-full border-[2px] border-primary-light p-4 block h-20 w-20' src={data?.image}
+                    alt={data?.title + 'image'}
+                />
             </div>
             <div className='px-4 py-8'>
                 <div ref={elemRef}>

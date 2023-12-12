@@ -55,9 +55,9 @@ function DistrictMap() {
                                             <polyline
                                                 id={`seat_${seat?.seatNo}`}
                                                 className={clsx(
-                                                    "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000",
+                                                    "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000",
                                                     {
-                                                        'fill-[#ffd740]': seatNo === seat?.seatNo,
+                                                        'fill-[#B9A37E]': seatNo === seat?.seatNo,
 
                                                     }
                                                 )}
@@ -89,9 +89,9 @@ function DistrictMap() {
                                                     style={{ strokeMiterlimit: 10 }}
                                                     d={seat?.points}
                                                     className={clsx(
-                                                        "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000",
+                                                        "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000",
                                                         {
-                                                            'fill-[#ffd740]': seatNo === seat?.seatNo,
+                                                            'fill-[#B9A37E]': seatNo === seat?.seatNo,
                                                         }
                                                     )}
                                                 />
@@ -100,9 +100,9 @@ function DistrictMap() {
                                         <polyline
                                             id={`seat_${seat?.seatNo}`}
                                             className={clsx(
-                                                "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000",
+                                                "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000",
                                                 {
-                                                    'fill-[#ffd740]': seatNo === seat?.seatNo,
+                                                    'fill-[#B9A37E]': seatNo === seat?.seatNo,
 
                                                 }
                                             )}
