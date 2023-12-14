@@ -30,11 +30,8 @@ function SeatInfoPage() {
                 return foundSeat.seatName;
             }
         }
-
         return 'not found'
     }
-
-    console.log(seatNo, 'from params')
 
 
     const seatData = [

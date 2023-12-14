@@ -4,6 +4,9 @@ import DistrictMap from '../common/DistrictMap/DistrictMap';
 import CountdownTimer from '../common/CountdownTimer/CountdownTimer';
 import { useEffect, useState } from 'react';
 import clsx from 'clsx';
+import seatList from '../../assets/data/seatsList/seatsList'
+import districtList from '../../assets/data/districtsList/districtsList'
+import Title from '../common/Title/Title';
 
 function Hero() {
     const [page, setPage] = useState(null)
@@ -12,30 +15,66 @@ function Hero() {
     const { seatNo } = useParams()
     const path = currentLocation?.pathname
 
-    {/* section mb-12, text-mt-64px, border-radious: 250px */ }
+    const pages = {
+        districtDetails: 'districtDetails',
+        home: 'home',
+        districts: 'districts',
+        seatDetails: 'seatDetails',
+        seats: 'seats',
+        results: 'results',
+    }
 
     useEffect(() => {
         if (path === '/') {
-            setPage('home')
+            setPage(pages?.home)
         }
         else if (path.startsWith('/districts') && districtNo) {
-            setPage('districtDetails')
+            setPage(pages?.districtDetails)
         }
         else if (path.startsWith('/districts')) {
-            setPage('districts')
+            setPage(pages?.districts)
         }
         else if (path.startsWith('/seats') && seatNo) {
-            setPage('seatDetails')
+            setPage(pages?.seatDetails)
         }
         else if (path.startsWith('/seats')) {
-            setPage('seats')
+            setPage(pages.seats)
         }
         else if (path.startsWith('/election-result')) {
-            setPage('results')
+            setPage(pages.results)
         }
     }, [districtNo, path, seatNo])
 
-    console.log('current page', page)
+    //Find seat by districtNo
+    function findSeatNameById() {
+        for (const division of seatList) {
+            const foundSeat = division?.seats?.find(seat => seat?.seatNo === seatNo);
+
+            if (foundSeat) {
+                return foundSeat.seatName;
+            }
+        }
+        return 'not found'
+    }
+
+    //Find district by districtNo
+    function findDistrictById() {
+        for (const division of districtList) {
+            const foundDistrict = division.districts.find(district => district?.districtCode === districtNo);
+
+            if (foundDistrict) {
+                return foundDistrict.districtName;
+            }
+        }
+    }
+
+    //Convert english digit to bangla digit
+    const toBanglaDigits = (number) => {
+        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+        const converted = number.toString().split('').map(digit => banglaDigits[digit]).join('');
+        return converted
+    }
+
     const electionDate = ['৭', 'জানুয়ারি', '২০২৪']
 
     const heroTitle = {
@@ -87,7 +126,7 @@ function Hero() {
                         </h3>
                         <span
                             className={
-                                clsx('block text-sm font-normal text-gray1', (page === 'seatDetails' || page === 'districtDetails') && 'hidden md:block') 
+                                clsx('block text-sm font-normal text-gray1', (page === 'seatDetails' || page === 'districtDetails') && 'hidden md:block')
                             }
                         >
                             নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালেরকণ্ঠে, আংশিক নয় পুরো সত্যি
@@ -126,11 +165,80 @@ function Hero() {
                             )
                         }
                     </div>
+                    {
+                        (page === pages?.seatDetails || page === pages?.districtDetails) && (
+                            <div className='self-center w-fit hidden md:block'>
+                                <div>
+                                    {
+                                        page === pages.seatDetails && (
+                                            <Title
+                                                text={findSeatNameById()}
+                                                underline='type2' />
+                                        )
+                                    }
+                                    {
+                                        page === pages.districtDetails && (
+                                            <Title
+                                                text={findDistrictById()}
+                                                underline='type2' />
+                                        )
+                                    }
+                                </div>
+                                {
+                                    page === pages?.seatDetails && <div
+                                        className='mx-auto mt-4 rounded-full border-[4px] w-24 h-24 flex justify-center items-center text-primary font-semibold text-lg bg-primary-background border-[#cbc3db]'
+                                    >
+
+                                        <div>
+                                            <div className='text-center font-[600] text-2xl'>{toBanglaDigits(seatNo)}</div>
+                                            <div className='text-sm font-[600] text-center text-primary'>আসন নং</div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        )
+                    }
                     <div>
                         {
                             heroImage[page]
                         }
                     </div>
+                    {
+                        (page === pages?.seatDetails || page === pages?.districtDetails) && (
+                            <div className='self-center w-fit md:hidden my-4'>
+                                <div>
+                                    {
+                                        page === pages.seatDetails && (
+                                            <Title
+                                                text={findSeatNameById()}
+                                                underline='type2' />
+                                        )
+                                    }
+                                    {
+                                        page === pages.districtDetails && (
+                                            <Title
+                                                text={findDistrictById()}
+                                                underline='type2' />
+                                        )
+                                    }
+                                </div>
+
+                                {
+                                    page === pages?.seatDetails && (
+                                        <div
+                                            className='mx-auto rounded-full border-[4px] mt-4 w-24 h-24 flex justify-center items-center text-primary font-semibold text-lg bg-primary-background border-[#cbc3db]'
+                                        >
+
+                                            <div>
+                                                <div className='text-center font-[600] text-2xl'>{toBanglaDigits(seatNo)}</div>
+                                                <div className='text-sm font-[600] text-center text-primary'>আসন নং</div>
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                            </div>
+                        )
+                    }
                 </div>
                 {/* --------Hero end------- */}
 
