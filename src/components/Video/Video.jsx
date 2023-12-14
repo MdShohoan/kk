@@ -33,7 +33,7 @@ function Video() {
                         onMouseEnter={() => handleVideoHover(data[0])}
                         onMouseLeave={() => setHoverElement(null)}
                     >
-                        <div
+                        {/* <div
                             className='md:h-full rounded flex justify-center items-center relative'
                             style={{
                                 backgroundImage: `url(${data[0]?.thumbnail})`,
@@ -43,6 +43,15 @@ function Video() {
                             }}
                         >
                             <span className='inline-block py-16 md:p-0'>
+                                <GoPlay
+                                    color={hoverElement === 1 ? 'red' : 'white'} size={48}
+                                    style={{ transition: 'all 300ms' }}
+                                />
+                            </span>
+                        </div> */}
+                        <div className='relative'>
+                            <img src={data[0]?.thumbnail} className='w-full h-auto md:h-[250px] object-cover md:w-full xl:w-full xl:h-auto rounded-lg' />
+                            <span className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 <GoPlay
                                     color={hoverElement === 1 ? 'red' : 'white'} size={48}
                                     style={{ transition: 'all 300ms' }}
@@ -64,7 +73,7 @@ function Video() {
                             data?.slice(1, 5).map((info, i) => (
                                 <div
                                     key={i}
-                                    className='flex gap-2 border-b border-gray4 pb-2 cursor-pointer'
+                                    className='flex gap-2 border-b last:border-0 border-gray4 pb-2 cursor-pointer'
                                     onMouseEnter={() => handleVideoHover(info)}
                                     onMouseLeave={() => setHoverElement(null)}
                                 >
@@ -90,7 +99,7 @@ function Video() {
                         }
                     </div>
                     {/* ----Video List End---*/}
-                    
+
                     <div className='h-[250px] w-[300px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
                         300*250
                     </div>
