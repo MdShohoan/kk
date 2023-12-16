@@ -164,7 +164,7 @@ function Header() {
                             mobileNavList?.map((navItem, i) => (
                                 <Link key={i} to={`/${navItem?.to}`}>
                                     <li className={cn(
-                                        'text-left py-2 px-4 text-sm font-semibold border-b-2',
+                                        'text-left py-[2px] px-2 mb-3 text-sm font-semibold border-b-2',
                                         currentPage === navItem?.page && 'text-primary border-primary-contrast'
                                     )}>
                                         {navItem?.text}
