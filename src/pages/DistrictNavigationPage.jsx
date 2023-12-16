@@ -23,7 +23,7 @@ function DistrictNavigationPage() {
               <div className='text-center font-medium text-lg text-[#333] mb-8'>
                 নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে জেলার উপর ক্লিক করুন
               </div>
-              <div className={`grid grid-cols-2 lg:grid-cols-2} gap-4 md:gap-8`}>
+              <div className={`grid grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8`}>
                 {
                   districtList?.map((division, i) => (
                     <div key={i} className="relative">

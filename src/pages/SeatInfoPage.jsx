@@ -1,5 +1,5 @@
 import Card from '../components/common/CardCountUP/CardCountUP'
-import DivisionNavigator from '../components/common/DivisionNavigator/DivisionNavigator'
+import SeatNavigator from '../components/common/SeatNavigator/SeatNavigator'
 import Layout from '../components/common/Layout/Layout'
 import Section from '../components/common/Section/Section'
 
@@ -165,7 +165,7 @@ function SeatInfoPage() {
                             <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
                         </div>
                         <div className='mb-8'>
-                            <DivisionNavigator />
+                            <SeatNavigator />
                         </div>
                     </div>
                 </Section>

@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import seatsList from '../../../assets/data/seatsList/seatsList'
-function DivisionNavigator({page}) {
+import cn from "../../../lib/cn";
+
+function SeatNavigator({className}) {
     const navigate = useNavigate()
 
     const handleDivisionChange = (e) => {
@@ -8,7 +10,7 @@ function DivisionNavigator({page}) {
     }
 
     return (
-        <div className={`grid grid-cols-2 lg:${page==='seatNavigation'?'grid-cols-2':'grid-cols-4'} gap-4 md:gap-8 p-2`}>
+        <div className={cn(`grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 p-2`, className)}>
             {
                 seatsList?.map((division, i) => (
                     <div key={i} className="relative">
@@ -30,4 +32,4 @@ function DivisionNavigator({page}) {
     )
 }
 
-export default DivisionNavigator
+export default SeatNavigator

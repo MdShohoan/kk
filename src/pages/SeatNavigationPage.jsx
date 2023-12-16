@@ -2,7 +2,7 @@
 import Layout from "../components/common/Layout/Layout";
 import Title from "../components/common/Title/Title";
 import SeatNavigationMap from "../components/common/SeatNavigationMap/SeatNavigationMap";
-import DivisionNavigator from "../components/common/DivisionNavigator/DivisionNavigator";
+import SeatNavigator from "../components/common/SeatNavigator/SeatNavigator";
 import { ScrollRestoration } from "react-router-dom";
 
 export default function SeatNavigationPage() {
@@ -23,7 +23,7 @@ export default function SeatNavigationPage() {
                             <div className='text-center font-medium text-lg text-[#333] mb-5'>
                                 নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে আসনের উপর ক্লিক করুন
                             </div>
-                            <DivisionNavigator page = 'seatNavigation'/>
+                            <SeatNavigator className='lg:grid-cols-2'/>
                         </div>
                         <div className="col-span-full md:col-start-2 md:col-end-4 border p-2 md:p-4">
                             <div className='text-center font-medium text-lg text-[#333]'>

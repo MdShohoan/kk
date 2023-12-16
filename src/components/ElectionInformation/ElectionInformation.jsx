@@ -1,7 +1,7 @@
 // import SeatInformation from './SeatInformation/SeatInformation'
 // import MapInformation from './MapInformation/MapInformation'
 
-import DivisionNavigator from "../common/DivisionNavigator/DivisionNavigator"
+import SeatNavigator from "../common/SeatNavigator/SeatNavigator"
 import Section from "../common/Section/Section"
 import Title from "../common/Title/Title"
 
@@ -90,7 +90,7 @@ function ElectionInformation() {
         <div className="mb-5 md:mb-10">
           <Title text={'আপনার আসন সম্পর্কে জেনে নিন'} underline="type1" />
         </div>
-        <DivisionNavigator />
+        <SeatNavigator />
 
 
         {/* <div className='grid grid-cols-8 mb-12 [&>*:nth-child(8)]:border [&>*:nth-child(8)]:border-r-[#8da2df] [&>*:nth-child(8)]:border-l-0 [&>*:nth-child(8)]:border-t-0 [&>*:nth-child(8)]:border-b-0'>

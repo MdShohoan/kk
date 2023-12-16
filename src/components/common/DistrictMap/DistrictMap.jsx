@@ -136,14 +136,11 @@ function DistrictMap() {
                                     currentDistrict?.zoom.map((seat) => (
                                         <g key={seat.seatNo}>
                                             <Link to={`/seats/${seat?.seatNo}`}>
+                                                {console.log(seatNo === seat?.seatNo, 'Matches')}
                                                 <polyline
                                                     id={`seat_${seat?.seatNo}`}
                                                     className={clsx(
-                                                        "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#ffd740] transition-all duration-1000",
-                                                        {
-                                                            'fill-[#ffd740]': seatNo === seat?.seatNo,
-
-                                                        }
+                                                        "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000", seatNo === seat?.seatNo && 'fill-[#B9A37E]'
                                                     )}
                                                     points={seat?.points} />
                                                 <g>
