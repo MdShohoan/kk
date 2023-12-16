@@ -13,6 +13,7 @@ import districtData from '../assets/data/districts.json'
 
 import Section from '../components/common/Section/Section'
 import DistrictNavigator from "../components/common/DistrictNavigator/DistrictNavigator"
+import toBengaliDigits from "../lib/toBanglaDigits"
 
 function DistrictInfoPage() {
   const { districtNo } = useParams()
@@ -38,24 +39,24 @@ function DistrictInfoPage() {
 
 
 
-  //------Convert english to bangla number---------
-  function convertToBanglaNumber(number) {
-    const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+  // //------Convert english to bangla number---------
+  // function convertToBanglaNumber(number) {
+  //   const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
 
-    // Function to convert each digit of the number
-    function convertDigit(digit) {
-      if (digit >= 0 && digit <= 9) {
-        return banglaDigits[digit];
-      } else {
-        return digit; // If not a digit, return as is (for decimal point, etc.)
-      }
-    }
+  //   // Function to convert each digit of the number
+  //   function convertDigit(digit) {
+  //     if (digit >= 0 && digit <= 9) {
+  //       return banglaDigits[digit];
+  //     } else {
+  //       return digit; // If not a digit, return as is (for decimal point, etc.)
+  //     }
+  //   }
 
-    // Convert the number to a string and then convert each digit
-    const banglaNumber = number.toString().split('').map(convertDigit).join('');
+  //   // Convert the number to a string and then convert each digit
+  //   const banglaNumber = number.toString().split('').map(convertDigit).join('');
 
-    return banglaNumber;
-  }
+  //   return banglaNumber;
+  // }
 
   //-------Convert bangla digit to english digit-----.
   const toEnglishDigits = (banglaNumber) => {
@@ -134,7 +135,7 @@ function DistrictInfoPage() {
       formatter: function (val, opt) {
         const key = opt?.seriesIndex
         const series = opt?.w?.config?.series
-        return convertToBanglaNumber(series[key])
+        return toBengaliDigits(series[key])
       },
       // dropShadow: { enabled: true }
     },
@@ -144,7 +145,7 @@ function DistrictInfoPage() {
       },
       y: {
         formatter: function (val) {
-          return convertToBanglaNumber(val)
+          return toBengaliDigits(val)
         }
       }
     },
@@ -156,7 +157,7 @@ function DistrictInfoPage() {
             total: {
               show: true,
               label: 'মোট',
-              formatter: (value) => convertToBanglaNumber(value?.config?.series.reduce((acc, curr) => acc + curr))
+              formatter: (value) => toBengaliDigits(value?.config?.series.reduce((acc, curr) => acc + curr))
             }
           }
         },
@@ -227,7 +228,7 @@ function DistrictInfoPage() {
                     <span
                       className="block absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/4"
                     >
-                      {convertToBanglaNumber(element.electionNo)}ম
+                      {toBengaliDigits(element.electionNo)}ম
                     </span>
                   </div>
                 </div>
