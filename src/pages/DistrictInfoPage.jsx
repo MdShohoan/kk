@@ -179,9 +179,9 @@ function DistrictInfoPage() {
 
       <Section>
         <div className="container">
-          <div className="mb-12">
-            <Title text={'বিগত নির্বাচনে জেলার দলীয় অবস্থান'} underline="type1" />
-          </div>
+          <Title>
+            বিগত নির্বাচনে জেলার দলীয় অবস্থান
+          </Title>
           <div className="mb-5">
             <ColorBoxes />
           </div>
@@ -205,9 +205,9 @@ function DistrictInfoPage() {
       </Section>
       <Section>
         <div className="container">
-          <div className="mb-12">
-            <Title text={'জেনে নিন আপনার জেলা সম্পর্কে'} underline="type1" />
-          </div>
+          <Title>
+            জেনে নিন আপনার জেলা সম্পর্কে
+          </Title>
           <DistrictNavigator className='lg:grid-cols-4' />
         </div>
       </Section>
