@@ -1,22 +1,10 @@
 import { useState, useEffect } from 'react';
 import toBengaliDigits from '../../../lib/toBanglaDigits';
 import formatByComma from '../../../lib/formatByComma';
+import toEnglishDigits from '../../../lib/toEnglishDigits';
 
 export default function CountUp({ end }) {
     const [count, setCount] = useState(0);
-
-    //Convert bangla digit to english digit.
-    const toEnglishDigits = (banglaNumber) => {
-        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-        const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
-        const converted = banglaNumber.toString().split('').map(digit => {
-            const digitIndex = banglaDigits.indexOf(digit);
-            return digitIndex !== -1 ? englishDigits[digitIndex] : digit;
-        }).join('');
-
-        return parseInt(converted)
-    }
 
     /*
       1. Targeted number divided by 17 will be the increment number.

@@ -14,6 +14,7 @@ import districtData from '../assets/data/districts.json'
 import Section from '../components/common/Section/Section'
 import DistrictNavigator from "../components/common/DistrictNavigator/DistrictNavigator"
 import toBengaliDigits from "../lib/toBanglaDigits"
+import toEnglishDigits from "../lib/toEnglishDigits"
 
 function DistrictInfoPage() {
   const { districtNo } = useParams()
@@ -36,41 +37,6 @@ function DistrictInfoPage() {
 
   //11th election data of current district
   const eleventhData = getDistrictDataByDistrictNo()?.find((element) => element.ElectionNo === 11)
-
-
-
-  // //------Convert english to bangla number---------
-  // function convertToBanglaNumber(number) {
-  //   const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-
-  //   // Function to convert each digit of the number
-  //   function convertDigit(digit) {
-  //     if (digit >= 0 && digit <= 9) {
-  //       return banglaDigits[digit];
-  //     } else {
-  //       return digit; // If not a digit, return as is (for decimal point, etc.)
-  //     }
-  //   }
-
-  //   // Convert the number to a string and then convert each digit
-  //   const banglaNumber = number.toString().split('').map(convertDigit).join('');
-
-  //   return banglaNumber;
-  // }
-
-  //-------Convert bangla digit to english digit-----.
-  const toEnglishDigits = (banglaNumber) => {
-    const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-    const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
-    const converted = banglaNumber.toString().split('').map(digit => {
-      const digitIndex = banglaDigits.indexOf(digit);
-      return digitIndex !== -1 ? englishDigits[digitIndex] : digit;
-    }).join('');
-
-    return parseInt(converted)
-  }
-
 
   const seatData = [
     { count: eleventhData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
