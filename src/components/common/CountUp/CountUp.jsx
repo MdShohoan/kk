@@ -1,23 +1,9 @@
 import { useState, useEffect } from 'react';
 import toBengaliDigits from '../../../lib/toBanglaDigits';
+import formatByComma from '../../../lib/formatByComma';
 
 export default function CountUp({ end }) {
     const [count, setCount] = useState(0);
-
-    //Formatting the number by the comma for better readability
-    const formatByComma = (number) => {
-        let formatted = number
-            .split('')
-            .reverse()
-            .map((digit, index) => (index > 0 && index % 2 === 0 ? `,${digit}` : digit))
-            .reverse()
-            .join('');
-
-        if (formatted.charAt(0) === ',') {
-            return formatted.slice(1)
-        }
-        return formatted
-    }
 
     //Convert bangla digit to english digit.
     const toEnglishDigits = (banglaNumber) => {
