@@ -7,24 +7,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import { ScrollRestoration } from "react-router-dom";
 import Section from "../components/common/Section/Section";
-
-function convertToBanglaNumber(number) {
-    const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-
-    // Function to convert each digit of the number
-    function convertDigit(digit) {
-        if (digit >= 0 && digit <= 9) {
-            return banglaDigits[digit];
-        } else {
-            return digit; // If not a digit, return as is (for decimal point, etc.)
-        }
-    }
-
-    // Convert the number to a string and then convert each digit
-    const banglaNumber = number.toString().split('').map(convertDigit).join('');
-
-    return banglaNumber;
-}
+import toBengaliDigits from "../lib/toBanglaDigits";
 
 function ElectionResultPage() {
 
@@ -79,7 +62,7 @@ function ElectionResultPage() {
             // textAnchor: "middle",
             // style: { colors: ["#333"] },
             formatter: function (val) {
-                let valueFormatted = convertToBanglaNumber(val)
+                let valueFormatted = toBengaliDigits(val)
                 return valueFormatted;
             },
             dropShadow: { enabled: true }
@@ -90,7 +73,7 @@ function ElectionResultPage() {
             },
             y: {
                 formatter: function (val) {
-                    return convertToBanglaNumber(val)
+                    return toBengaliDigits(val)
                 }
             }
         },
@@ -101,7 +84,7 @@ function ElectionResultPage() {
             show: true,
             max: 300,
             labels: {
-                formatter: (value) => { return convertToBanglaNumber(value) },
+                formatter: (value) => { return toBengaliDigits(value) },
             }
         }
     }
@@ -130,9 +113,9 @@ function ElectionResultPage() {
             <ScrollRestoration />
             <Section>
                 <div className="container mx-auto">
-                    <div className="mb-8">
-                        <Title text={'কার ভাগে কত আসন (১৯৯১-২০১৪'} underline="type1" />
-                    </div>
+                    <Title>
+                        কার ভাগে কত আসন (১৯৯১-২০১৪)
+                    </Title>
                     <Chart
                         options={options}
                         series={series}
@@ -146,7 +129,9 @@ function ElectionResultPage() {
             <Section>
                 <div className=" container mx-auto">
                     <div className="mb-8">
-                        <Title text={'দেখুন কে কোথায় জিতেছিল'} underline="type1" />
+                        <Title>
+                            দেখুন কে কোথায় জিতেছিল
+                        </Title>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                         <div className="col-span-full lg:col-span-1">
