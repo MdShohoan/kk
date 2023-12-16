@@ -2,7 +2,7 @@ import Section from '../common/Section/Section'
 function Sponsor() {
     const data = ['', '', '', '']
     return (
-        <Section className="mb-12 md:mb-24">
+        <Section>
             <div className='container'>
                 <div className="bg-primary-light p-8">
                     <h6 className="text-center mb-5 text-base font-bold text-primary">সহযোগিতায় </h6>
