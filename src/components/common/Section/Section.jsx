@@ -1,6 +1,8 @@
-function Section({children}) {
+import cn from "../../../lib/cn"
+
+function Section({children, className}) {
   return (
-    <section className="mb-12 md:mb-16">
+    <section className={cn("mb-12 md:mb-16", className)}>
         {children}
     </section>
   )
