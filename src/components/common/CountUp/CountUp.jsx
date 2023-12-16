@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import toBengaliDigits from '../../../lib/toBanglaDigits';
 
 export default function CountUp({ end }) {
     const [count, setCount] = useState(0);
@@ -16,13 +17,6 @@ export default function CountUp({ end }) {
             return formatted.slice(1)
         }
         return formatted
-    }
-
-    //Convert english digit to bangla digit
-    const toBanglaDigits = (number) => {
-        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-        const converted = number.toString().split('').map(digit => banglaDigits[digit]).join('');
-        return converted
     }
 
     //Convert bangla digit to english digit.
@@ -62,7 +56,7 @@ export default function CountUp({ end }) {
 
     return (
         <p className='md:text-xl lg:text-2xl text-base mb-2 text-primary font-bold'>
-            {count === 0? formatByComma(toBanglaDigits(targetedCount)) : formatByComma(toBanglaDigits(count))}
+            {count === 0? formatByComma(toBengaliDigits(targetedCount)) : formatByComma(toBengaliDigits(count))}
         </p>
 
     )

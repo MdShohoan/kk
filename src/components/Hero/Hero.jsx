@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import seatList from '../../assets/data/seatsList/seatsList'
 import districtList from '../../assets/data/districtsList/districtsList'
 import Title from '../common/Title/Title';
+import toBengaliDigits from '../../lib/toBanglaDigits';
 
 function Hero() {
     const [page, setPage] = useState(null)
@@ -66,13 +67,6 @@ function Hero() {
                 return foundDistrict.districtName;
             }
         }
-    }
-
-    //Convert english digit to bangla digit
-    const toBanglaDigits = (number) => {
-        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-        const converted = number.toString().split('').map(digit => banglaDigits[digit]).join('');
-        return converted
     }
 
     const electionDate = ['৭', 'জানুয়ারি', '২০২৪']
@@ -190,7 +184,7 @@ function Hero() {
                                     >
 
                                         <div>
-                                            <div className='text-center font-[600] text-2xl'>{toBanglaDigits(seatNo)}</div>
+                                            <div className='text-center font-[600] text-2xl'>{toBengaliDigits(seatNo)}</div>
                                             <div className='text-sm font-[600] text-center text-primary'>আসন নং</div>
                                         </div>
                                     </div>
@@ -230,7 +224,7 @@ function Hero() {
                                         >
 
                                             <div>
-                                                <div className='text-center font-[600] text-2xl'>{toBanglaDigits(seatNo)}</div>
+                                                <div className='text-center font-[600] text-2xl'>{toBengaliDigits(seatNo)}</div>
                                                 <div className='text-sm font-[600] text-center text-primary'>আসন নং</div>
                                             </div>
                                         </div>

@@ -1,3 +1,4 @@
+import toBengaliDigits from "../../lib/toBanglaDigits";
 import ColorBoxes from "../common/ColorBoxes/ColorBoxes";
 import Section from "../common/Section/Section";
 import Title from "../common/Title/Title";
@@ -5,23 +6,23 @@ import Chart from "react-apexcharts";
 
 export default function ResultsHistory() {
 
-    function convertToBanglaNumber(number) {
-        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+    // function convertToBanglaNumber(number) {
+    //     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
 
-        // Function to convert each digit of the number
-        function convertDigit(digit) {
-            if (digit >= 0 && digit <= 9) {
-                return banglaDigits[digit];
-            } else {
-                return digit; // If not a digit, return as is (for decimal point, etc.)
-            }
-        }
+    //     // Function to convert each digit of the number
+    //     function convertDigit(digit) {
+    //         if (digit >= 0 && digit <= 9) {
+    //             return banglaDigits[digit];
+    //         } else {
+    //             return digit; // If not a digit, return as is (for decimal point, etc.)
+    //         }
+    //     }
 
-        // Convert the number to a string and then convert each digit
-        const banglaNumber = number.toString().split('').map(convertDigit).join('');
+    //     // Convert the number to a string and then convert each digit
+    //     const banglaNumber = number.toString().split('').map(convertDigit).join('');
 
-        return banglaNumber;
-    }
+    //     return banglaNumber;
+    // }
 
     const data = [
         {
@@ -78,7 +79,7 @@ export default function ResultsHistory() {
             textAnchor: "right",
             style: { colors: ["#333"], fontWeight: '500', fontSize: '16px' },
             formatter: function (val) {
-                let valueFormatted = convertToBanglaNumber(val.toFixed(1))
+                let valueFormatted = toBengaliDigits(val.toFixed(1))
                 return valueFormatted + '%';
             },
             dropShadow: { enabled: true },
@@ -89,7 +90,7 @@ export default function ResultsHistory() {
             },
             y: {
                 formatter: function (val) {
-                    return convertToBanglaNumber(val)
+                    return toBengaliDigits(val)
                 }
             }
         },
@@ -110,7 +111,7 @@ export default function ResultsHistory() {
                     textAnchor: "right",
                     style: { colors: ["#333"], fontWeight: '500', fontSize: '10px' },
                     formatter: function (val) {
-                        let valueFormatted = convertToBanglaNumber(val.toFixed(1))
+                        let valueFormatted = toBengaliDigits(val.toFixed(1))
                         return valueFormatted + '%';
                     },
                     dropShadow: { enabled: true },
