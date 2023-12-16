@@ -12,6 +12,7 @@ import ColorBoxes from "../components/common/ColorBoxes/ColorBoxes"
 import districtData from '../assets/data/districts.json'
 
 import Section from '../components/common/Section/Section'
+import DistrictNavigator from "../components/common/DistrictNavigator/DistrictNavigator"
 
 function DistrictInfoPage() {
   const { districtNo } = useParams()
@@ -233,6 +234,14 @@ function DistrictInfoPage() {
               ))
             }
           </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="container">
+          <div className="mb-12">
+            <Title text={'জেনে নিন আপনার জেলা সম্পর্কে'} underline="type1" />
+          </div>
+          <DistrictNavigator className='lg:grid-cols-4' />
         </div>
       </Section>
     </Layout>
