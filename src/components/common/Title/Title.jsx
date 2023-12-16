@@ -17,7 +17,5 @@ function Title({children, underline = 'type1', className }) {
             </h4>
         )
     }
-
-    // for hero text-base sm:text-xl
 }
 export default Title

@@ -8,6 +8,7 @@ import seatList from '../../assets/data/seatsList/seatsList'
 import districtList from '../../assets/data/districtsList/districtsList'
 import Title from '../common/Title/Title';
 import toBengaliDigits from '../../lib/toBanglaDigits';
+import SeatNoCard from '../common/SeatNoCard/SeatNoCard';
 
 function Hero() {
     const [page, setPage] = useState(null)
@@ -89,6 +90,26 @@ function Hero() {
         results: <></>
     }
 
+    const heading = (
+        <>
+            {
+                page === pages.seatDetails && (
+                    <Title className={'text-base sm:text-xl'}>
+                        {findSeatNameById()}
+                    </Title>
+                )
+            }
+
+            {
+                page === pages.districtDetails && (
+                    <Title className={'text-base sm:text-xl'}>
+                        {findDistrictById()}
+                    </Title>
+                )
+            }
+        </>
+    )
+
     return (
         <section className={
             clsx(
@@ -162,32 +183,9 @@ function Hero() {
                     {
                         (page === pages?.seatDetails || page === pages?.districtDetails) && (
                             <div className='self-center w-fit hidden md:block'>
-                                <div>
-                                    {
-                                        page === pages.seatDetails && (
-                                            <Title
-                                                text={findSeatNameById()}
-                                                underline='type2' />
-                                        )
-                                    }
-                                    {
-                                        page === pages.districtDetails && (
-                                            <Title
-                                                text={findDistrictById()}
-                                                underline='type2' />
-                                        )
-                                    }
-                                </div>
+                                <div>{heading}</div>
                                 {
-                                    page === pages?.seatDetails && <div
-                                        className='mx-auto mt-4 rounded-full border-[4px] w-24 h-24 flex justify-center items-center text-primary font-semibold text-lg bg-primary-background border-[#cbc3db]'
-                                    >
-
-                                        <div>
-                                            <div className='text-center font-[600] text-2xl'>{toBengaliDigits(seatNo)}</div>
-                                            <div className='text-sm font-[600] text-center text-primary'>আসন নং</div>
-                                        </div>
-                                    </div>
+                                    page === pages?.seatDetails && <SeatNoCard seatNo={toBengaliDigits(seatNo)}/>
                                 }
                             </div>
                         )
@@ -200,35 +198,10 @@ function Hero() {
                     {
                         (page === pages?.seatDetails || page === pages?.districtDetails) && (
                             <div className='self-center w-fit md:hidden my-4'>
-                                <div>
-                                    {
-                                        page === pages.seatDetails && (
-                                            <Title
-                                                text={findSeatNameById()}
-                                                underline='type2' />
-                                        )
-                                    }
-                                    {
-                                        page === pages.districtDetails && (
-                                            <Title
-                                                text={findDistrictById()}
-                                                underline='type2' />
-                                        )
-                                    }
-                                </div>
+                                <div>{heading}</div>
 
                                 {
-                                    page === pages?.seatDetails && (
-                                        <div
-                                            className='mx-auto rounded-full border-[4px] mt-4 w-24 h-24 flex justify-center items-center text-primary font-semibold text-lg bg-primary-background border-[#cbc3db]'
-                                        >
-
-                                            <div>
-                                                <div className='text-center font-[600] text-2xl'>{toBengaliDigits(seatNo)}</div>
-                                                <div className='text-sm font-[600] text-center text-primary'>আসন নং</div>
-                                            </div>
-                                        </div>
-                                    )
+                                    page === pages?.seatDetails && <SeatNoCard seatNo={toBengaliDigits(seatNo)}/>
                                 }
                             </div>
                         )

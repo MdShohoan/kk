@@ -1,13 +1,18 @@
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import kkLogo from '../../../assets//kkLogo.png'
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
+import cn from '../../../lib/cn';
 
 function Header() {
     const [isOpenNav, setIsOpenNav] = useState(false)
     const [isSticky, setSticky] = useState(false);
+    const [currentPage, setCurrentPage] = useState()
+
+    const currentLocation = useLocation()
+    const path = currentLocation?.pathname
 
     //Apply style for the header when page scroll more then 62 pixel
     useEffect(() => {
@@ -29,57 +34,82 @@ function Header() {
         };
     }, []);
 
+
+    useEffect(() => {
+
+        if (path.startsWith('/districts')) {
+            setCurrentPage('districts')
+        }
+        else if (path.startsWith('/seats')) {
+            setCurrentPage('seats')
+        }
+        else if (path.startsWith('/election-result')) {
+            setCurrentPage('election-result')
+        }
+        else{
+            setCurrentPage('home')
+        }
+    }, [path])
+
     const navList = [
         {
             text: 'আসন',
-            to: '/seats'
+            to: 'seats',
+            page: 'seats'
         },
         {
             text: 'জেলা',
-            to: '/districts'
+            to: 'districts',
+            page: 'districts'
         },
         {
             text: 'খবর',
-            to: '/'
+            to: ''
         },
         {
             text: 'ফলাফল',
-            to: '/election-result'
+            to: 'election-result',
+            page: 'election-result'
         },
         {
             text: 'কালেরকণ্ঠ',
-            to: '/'
+            to: ''
         },
     ]
     const mobileNavList = [
         {
             text: 'হোম',
-            to: '/'
+            to: '',
+            page: 'home'
         },
         {
             text: 'আসন',
-            to: '/seats'
+            to: 'seats',
+            page: 'seats'
+
         },
         {
             text: 'জেলা',
-            to: '/districts'
+            to: 'districts',
+            page: 'districts'
         },
         {
             text: 'খবর',
-            to: '/'
+            to: ''
         },
         {
             text: 'ফলাফল',
-            to: '/election-result'
+            to: 'election-result',
+            page: 'election-result',
         },
         {
             text: 'কালেরকণ্ঠ',
-            to: '/'
+            to: ''
         },
     ]
 
     return (
-        <header className={clsx(
+        <header className={cn(
             'py-4 px-2 bg-primary-light border-b border-primary-background transition-all duration-300',
             {
                 'fixed top-0 left-0 right-0 z-[1000] shadow-lg translate-y-0': isSticky === true,
@@ -93,8 +123,11 @@ function Header() {
                     <ul className="flex justify-between items-center gap-7">
                         {
                             navList.map((item, i) => (
-                                <Link key={i} to={`${item?.to}`}>
-                                    <li className='text-base font-medium capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer'>
+                                <Link key={i} to={`/${item?.to}`}>
+                                    <li className={cn(
+                                        'text-base font-medium capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                        currentPage === item?.page && 'text-primary'
+                                    )}>
                                         {item?.text}
                                     </li>
                                 </Link>
@@ -129,8 +162,11 @@ function Header() {
                     <ul className='px-4'>
                         {
                             mobileNavList?.map((navItem, i) => (
-                                <Link key={i} to={`${navItem?.to}`}>
-                                    <li className='text-left py-2 px-4 text-sm font-semibold border-b-2'>
+                                <Link key={i} to={`/${navItem?.to}`}>
+                                    <li className={cn(
+                                        'text-left py-2 px-4 text-sm font-semibold border-b-2',
+                                        currentPage === navItem?.page && 'text-primary border-primary-contrast'
+                                    )}>
                                         {navItem?.text}
                                     </li>
                                 </Link>
