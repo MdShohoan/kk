@@ -24,8 +24,9 @@ function Video() {
     return (
         <Section>
             <div className="container mx-auto">
-                <Title text={'ভিডিও'} underline='type1' />
-                <div className='mb-5 md:m-10' />
+                <Title>
+                    ভিডিও
+                </Title>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* ----Big video Start---- */}
                     <div

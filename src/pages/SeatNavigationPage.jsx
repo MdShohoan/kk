@@ -6,24 +6,20 @@ import SeatNavigator from "../components/common/SeatNavigator/SeatNavigator";
 import { ScrollRestoration } from "react-router-dom";
 
 export default function SeatNavigationPage() {
-    // const navigate = useNavigate()
-    // const handleDivisionChange = (e) => {
-    //     navigate(`/districts/${e.target.value}`)
-    // }
     return (
         <Layout>
-            <ScrollRestoration/>
+            <ScrollRestoration />
             <section className="mb-12">
                 <div className="container">
-                    <div className="mb-8">
-                        <Title text={'আসন ভিত্তিক নির্বাচনী তথ্য'} underline="type1" />
-                    </div>
+                    <Title>
+                        আসন ভিত্তিক নির্বাচনী তথ্য
+                    </Title>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="col-span-full md:col-start-1 md:col-end-2 border p-2 md:p-4">
                             <div className='text-center font-medium text-lg text-[#333] mb-5'>
                                 নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে আসনের উপর ক্লিক করুন
                             </div>
-                            <SeatNavigator className='lg:grid-cols-2'/>
+                            <SeatNavigator className='lg:grid-cols-2' />
                         </div>
                         <div className="col-span-full md:col-start-2 md:col-end-4 border p-2 md:p-4">
                             <div className='text-center font-medium text-lg text-[#333]'>

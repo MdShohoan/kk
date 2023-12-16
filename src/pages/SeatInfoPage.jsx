@@ -25,7 +25,7 @@ function SeatInfoPage() {
     function findSeatById() {
         for (const division of seatList) {
             const foundSeat = division?.seats?.find(seat => seat?.seatNo === seatNo);
-           
+
             if (foundSeat) {
                 return foundSeat.seatName;
             }
@@ -76,7 +76,7 @@ function SeatInfoPage() {
                     <div className='container'>
                         <div className='mb-4'>
                             <span className='inline-block rounded-lg bg-primary-light text-2xl py-[6px] px-4 mb-2'>
-                               {findSeatById()}
+                                {findSeatById()}
                             </span>
                             <div className='bg-gray1 h-[2px]' />
                         </div>
@@ -93,11 +93,11 @@ function SeatInfoPage() {
                     </div>
                 </Section>
 
-                <Section className='mb-12 md:mb-24'>
+                <Section>
                     <div className='container'>
-                        <div className="mb-8">
-                            <Title text={'প্রার্থী'} underline="type1" />
-                        </div>
+                        <Title>
+                            প্রার্থী
+                        </Title>
                         {/* -----------Candidates information start-------- */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8">
                             {
@@ -119,11 +119,11 @@ function SeatInfoPage() {
                         {/* ------------Candidates information end-------------- */}
                     </div>
                 </Section>
-                <Section className='mb-12 md:mb-24'>
+                <Section>
                     <div className="container">
-                        <div className="mb-8">
-                            <Title text={'নির্বাচন ১৯৯১ থেকে ২০১৮'} underline="type1" />
-                        </div>
+                        <Title>
+                            নির্বাচন ১৯৯১ থেকে ২০১৮
+                        </Title>
                         <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 md:[&>*:nth-child(odd)]:border-r'>
                             {
                                 ['', '', '', '', '', ''].map((_, i) => (
@@ -159,14 +159,12 @@ function SeatInfoPage() {
                         </div>
                     </div>
                 </Section>
-                <Section className='mb-12 md:mb-24'>
+                <Section>
                     <div className='container'>
-                        <div className='mb-5 md:mb-10'>
-                            <Title text='জেনে নিন আপনার আসন সম্পর্কে' underline={'type1'} />
-                        </div>
-                        <div className='mb-8'>
-                            <SeatNavigator />
-                        </div>
+                        <Title>
+                            জেনে নিন আপনার আসন সম্পর্কে
+                        </Title>
+                        <SeatNavigator />
                     </div>
                 </Section>
             </Layout>

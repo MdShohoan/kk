@@ -20,9 +20,9 @@ export default function LatestNews() {
     return (
         <Section>
             <div className="container mx-auto">
-                <div className="mb-5 md:mb-10">
-                    <Title text={'নির্বাচনের সর্বশেষ খবর'} underline="type1" />
-                </div>
+                <Title>
+                    নির্বাচনের সর্বশেষ খবর
+                </Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4 md:mb-16">
                     <Card news={data[0]} />
                     <div className="hidden md:block">

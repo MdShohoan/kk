@@ -6,24 +6,6 @@ import Chart from "react-apexcharts";
 
 export default function ResultsHistory() {
 
-    // function convertToBanglaNumber(number) {
-    //     const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-
-    //     // Function to convert each digit of the number
-    //     function convertDigit(digit) {
-    //         if (digit >= 0 && digit <= 9) {
-    //             return banglaDigits[digit];
-    //         } else {
-    //             return digit; // If not a digit, return as is (for decimal point, etc.)
-    //         }
-    //     }
-
-    //     // Convert the number to a string and then convert each digit
-    //     const banglaNumber = number.toString().split('').map(convertDigit).join('');
-
-    //     return banglaNumber;
-    // }
-
     const data = [
         {
             year: '২০১৪',
@@ -127,9 +109,9 @@ export default function ResultsHistory() {
     return (
         <Section>
             <div className="container mx-auto">
-                <div className="mb-5 md:mb-10">
-                    <Title text={'ফলাফল (১৯৯১-২০১৪)'} underline="type1" />
-                </div>
+                <Title>
+                    ফলাফল (১৯৯১-২০১৪)
+                </Title>
                 <div className="mb-5">
                     <ColorBoxes />
                 </div>

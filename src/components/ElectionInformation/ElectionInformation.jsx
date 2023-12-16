@@ -85,11 +85,10 @@ function ElectionInformation() {
   return (
     <Section>
       <div className='container m-auto'>
-
         {/* -------Division navigator start--------- */}
-        <div className="mb-5 md:mb-10">
-          <Title text={'আপনার আসন সম্পর্কে জেনে নিন'} underline="type1" />
-        </div>
+        <Title>
+          আপনার আসন সম্পর্কে জেনে নিন
+        </Title>
         <SeatNavigator />
 
 

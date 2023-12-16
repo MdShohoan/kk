@@ -28,10 +28,9 @@ export default function ElectionShortStatistics() {
     <Section>
       <div className='container mx-auto'>
         <div>
-          <div>
-            <Title text={'নির্বাচনের সংক্ষিপ্ত তথ্য'} underline='type1' />
-            <div className='mb-5 md:mb-10'/>
-          </div>
+          <Title>
+            নির্বাচনের সংক্ষিপ্ত তথ্য
+          </Title>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-7'>
             {
               data.map((singleData, i) => (

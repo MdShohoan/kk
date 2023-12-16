@@ -16,16 +16,17 @@ function UnofficialResult() {
   const colors = [
     { light: '#85ceb7', dark: '#66c2a5' },
     { light: '#a4b3d5', dark: '#8da0cb' },
-    { light:'#eca1cf', dark:'#e78ac3'},
-    {light: '#b8e076', dark:'#a6d854'}
+    { light: '#eca1cf', dark: '#e78ac3' },
+    { light: '#b8e076', dark: '#a6d854' }
   ]
 
   const headingCellStyle = `text-sm leading-4 text-[#000] font-normal bg-[#f0f0ed] rounded py-2 border-b border-gray-300 mr-1`
   return (
     <Section>
       <div className="container mx-auto">
-        <Title text={'১১তম নির্বাচনের বেসরকারি ফলাফল'} underline="type1" />
-        <div className='mb-5 md:mb-10' />
+        <Title>
+          ১১তম নির্বাচনের বেসরকারি ফলাফল
+        </Title>
         <div className="max-w-[300px] md:max-w-[500px] mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
           <div>
             <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
