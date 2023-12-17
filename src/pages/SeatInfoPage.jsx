@@ -9,19 +9,28 @@ import total_candidate from '../assets/election/total-candidate.png'
 import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
 import Title from '../components/common/Title/Title'
+
 import jatipartySymbol from '../assets/partyLogo/JatioyoPartyLogo.webp'
+// import AwamiLeagueLogo from '../assets/partyLogo/AwamiLeagueLogo.webp'
+// import BNPLogo from '../assets/partyLogo/BNPLogo.webp'
 import { ScrollRestoration, useParams } from 'react-router-dom'
 
-import seatsData from '../assets/data/seats.json'
+import seatPreviousResult from '../assets/data/seatPreviousResult.json'
 import seatList from '../assets/data/seatsList/seatsList'
+import { useEffect, useState } from 'react'
+import toBengaliDigits from '../lib/toBanglaDigits'
 
-console.log('===seat', seatsData)
+console.log('===seat previous result', seatPreviousResult)
 
 function SeatInfoPage() {
-
     const { seatNo } = useParams()
+    const [previousResult, setPreviousResult] = useState([])
 
-    //Find seat by districtNo
+    useEffect(() => {
+        setPreviousResult([...filterResultByIdAndElectionNineToLatest(), ...filterResultByNameAndElectionEightToPrevious()])
+    }, [seatNo])
+
+    //Find seat by seatNo
     function findSeatById() {
         for (const division of seatList) {
             const foundSeat = division?.seats?.find(seat => seat?.seatNo === seatNo);
@@ -30,7 +39,16 @@ function SeatInfoPage() {
                 return foundSeat.seatName;
             }
         }
-        return 'not found'
+        return 'পাওয়া যায়নি'
+    }
+
+    //Filter result by seatNo and election 9 to latest
+    function filterResultByIdAndElectionNineToLatest() {
+        return seatPreviousResult?.data?.filter((sr) => sr?.seatNo == seatNo && sr.electionNoEn >= 9)
+    }
+    //Filter result by seatName and election 9 to latest
+    function filterResultByNameAndElectionEightToPrevious() {
+        return seatPreviousResult?.data?.filter((sr) => sr?.seatName === findSeatById() && sr.electionNoEn <= 8)
     }
 
 
@@ -67,6 +85,12 @@ function SeatInfoPage() {
             photo: candidat1,
         },
     ]
+
+    // const symbols = [
+    //     {
+    //         symbol: ''
+    //     }
+    // ]
 
     return (
         <>
@@ -119,6 +143,7 @@ function SeatInfoPage() {
                         {/* ------------Candidates information end-------------- */}
                     </div>
                 </Section>
+
                 <Section>
                     <div className="container">
                         <Title>
@@ -126,31 +151,37 @@ function SeatInfoPage() {
                         </Title>
                         <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 md:[&>*:nth-child(odd)]:border-r'>
                             {
-                                ['', '', '', '', '', ''].map((_, i) => (
+                                previousResult.map((result, i) => (
                                     <div key={i} className='border md:border-0 md:border-t p-3 md:p-4 lg:p-8 xl:p-16'>
                                         <div className='bg-primary-light h-36 w-36 rounded-full mx-auto mb-8 text-center flex justify-center items-center flex-col'>
-                                            <span className='block mb-2 text-2xl font-bold text-primary'>১২ ম</span>
+                                            <span className='block mb-2 text-2xl font-bold text-primary'>
+                                                {toBengaliDigits(result?.electionNoEn)} ম
+                                            </span>
                                             <span className='block text-gray-700 font-bold text-sm'>
-                                                সংসদ নির্বাচন <br /> ২০১৪
+                                                সংসদ নির্বাচন <br /> {toBengaliDigits(result?.electionYearEn)}
                                             </span>
                                         </div>
                                         <div className='flex justify-between mb-8'>
                                             <div>
-                                                <span className='block text-xl font-bold text-gray-700 mb-1'>৩,৭৫,৯৫৮</span>
+                                                <span className='block text-xl font-bold text-gray-700 mb-1'>{result?.totalVoter}</span>
                                                 <span className='block text-gray1 text-sm font-semibold'>মোট ভোটার</span>
                                             </div>
                                             <div>
-                                                <span className='block text-right text-xl font-bold mb-1 text-gray-700'>১৭৭</span>
+                                                <span className='block text-right text-xl font-bold mb-1 text-gray-700'>{result?.totalCenter}</span>
                                                 <span className='block text-right text-gray1 text-sm font-semibold'>মোট কেন্দ্র</span>
                                             </div>
                                         </div>
                                         <div className='flex flex-col md:flex-row items-center justify-center md:justify-between bg-primary-light p-8 rounded-md gap-6 md:gap-0'>
-                                            <img className='w-14 md:w-[75px]' src={jatipartySymbol} alt="" />
+                                            <img
+                                                className='w-14 md:w-[75px]'
+                                                src={jatipartySymbol}
+                                                alt=""
+                                            />
                                             <div className='text-center md:text-right'>
-                                                <div className='text-gray-700 font-bold mb-2'>সালমা ইসলাম</div>
-                                                <div className='text-gray-700 text-sm mb-1'>দল: জাতীয় পার্টি </div>
-                                                <div className='text-gray-700 text-sm mb-1'>প্রতীক: লাঙল </div>
-                                                <div className='text-gray-700 text-sm mb-1'>প্রাপ্ত ভোট: ৫৩,৩৪১</div>
+                                                <div className='text-gray-700 font-bold mb-2'>{result?.WinningCandidate}</div>
+                                                <div className='text-gray-700 text-sm mb-1'>দল: {result?.partyName} </div>
+                                                <div className='text-gray-700 text-sm mb-1'>প্রতীক: {result?.symbol} </div>
+                                                <div className='text-gray-700 text-sm mb-1'>প্রাপ্ত ভোট: {result?.winningVote}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -159,6 +190,7 @@ function SeatInfoPage() {
                         </div>
                     </div>
                 </Section>
+
                 <Section>
                     <div className='container'>
                         <Title>
