@@ -11,8 +11,12 @@ import female_voter from '../assets/election/female-voter.png'
 import Title from '../components/common/Title/Title'
 
 import jatipartySymbol from '../assets/partyLogo/JatioyoPartyLogo.webp'
-// import AwamiLeagueLogo from '../assets/partyLogo/AwamiLeagueLogo.webp'
-// import BNPLogo from '../assets/partyLogo/BNPLogo.webp'
+import AwamiLeagueLogo from '../assets/partyLogo/AwamiLeagueLogo.webp'
+import BNPLogo from '../assets/partyLogo/BNPLogo.webp'
+import dariPalla from '../assets/partyLogo/dari-palla.webp'
+import masal from '../assets/partyLogo/masal.webp'
+
+
 import { ScrollRestoration, useParams } from 'react-router-dom'
 
 import seatPreviousResult from '../assets/data/seatPreviousResult.json'
@@ -21,6 +25,37 @@ import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
 
 console.log('===seat previous result', seatPreviousResult)
+
+const symbols = [
+    {
+        symbolName: 'নৌকা',
+        symbolImage: AwamiLeagueLogo
+    },
+    {
+        symbolName: 'ধানের শীষ',
+        symbolImage: BNPLogo,
+    },
+    {
+        symbolName: 'দাঁড়িপাল্লা',
+        symbolImage: dariPalla,
+    },
+    {
+        symbolName: 'লাঙল',
+        symbolImage: jatipartySymbol,
+    },
+    // {
+    //     symbolName: 'হাতুড়ি',
+    //     symbolImage: '',
+    // },
+    // {
+    //     symbolName: 'কাস্তে',
+    //     symbolImage: '',
+    // },
+    {
+        symbolName: 'মশাল',
+        symbolImage: masal,
+    },
+]
 
 function SeatInfoPage() {
     const { seatNo } = useParams()
@@ -46,9 +81,20 @@ function SeatInfoPage() {
     function filterResultByIdAndElectionNineToLatest() {
         return seatPreviousResult?.data?.filter((sr) => sr?.seatNo == seatNo && sr.electionNoEn >= 9)
     }
-    //Filter result by seatName and election 9 to latest
+
+    //Filter result by seatName and election 8 to previous
     function filterResultByNameAndElectionEightToPrevious() {
         return seatPreviousResult?.data?.filter((sr) => sr?.seatName === findSeatById() && sr.electionNoEn <= 8)
+    }
+
+    //Set Party Symbol
+    function setPartySymbol(result){
+        const found =  symbols.find((symbol)=>symbol.symbolName === result.symbol)
+        if(found){
+            return found?.symbolImage
+        }
+
+        return ''
     }
 
 
@@ -85,12 +131,6 @@ function SeatInfoPage() {
             photo: candidat1,
         },
     ]
-
-    // const symbols = [
-    //     {
-    //         symbol: ''
-    //     }
-    // ]
 
     return (
         <>
@@ -152,7 +192,7 @@ function SeatInfoPage() {
                         <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 md:[&>*:nth-child(odd)]:border-r'>
                             {
                                 previousResult.map((result, i) => (
-                                    <div key={i} className='border md:border-0 md:border-t p-3 md:p-4 lg:p-8 xl:p-16'>
+                                    <div key={i} className='border md:border-0 md:border-t border-primary-background p-3 md:p-4 lg:p-8 xl:p-16'>
                                         <div className='bg-primary-light h-36 w-36 rounded-full mx-auto mb-8 text-center flex justify-center items-center flex-col'>
                                             <span className='block mb-2 text-2xl font-bold text-primary'>
                                                 {toBengaliDigits(result?.electionNoEn)} ম
@@ -174,7 +214,7 @@ function SeatInfoPage() {
                                         <div className='flex flex-col md:flex-row items-center justify-center md:justify-between bg-primary-light p-8 rounded-md gap-6 md:gap-0'>
                                             <img
                                                 className='w-14 md:w-[75px]'
-                                                src={jatipartySymbol}
+                                                src={`${setPartySymbol(result)}`}
                                                 alt=""
                                             />
                                             <div className='text-center md:text-right'>
