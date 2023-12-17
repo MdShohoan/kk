@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import mapData from '../../../assets/data/map/mapData'
-import clsx from "clsx"
+import cn from "../../../lib/cn"
 // import districtList from '../../../assets/data/districtsList/districtsList'
 function DistrictMap() {
     const { seatNo } = useParams()
@@ -37,9 +37,13 @@ function DistrictMap() {
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     x="0px"
                     y="0px"
-                    viewBox={currentDistrict?.district === 'dhaka' ? "0 0 624 385.9" : "0 0 300 430"}
+                    viewBox={
+                        currentDistrict?.district === 'dhaka' ? "0 0 624 385.9" : currentDistrict.district ==='kurigram'? "0 0 300 600": "0 0 300 430"
+                    }
                     style={{
-                        enableBackground: `${currentDistrict?.district === 'dhaka' ? 'new 0 0 624 385.9' : 'new 0 0 300 430'}`,
+                        enableBackground: `
+                        ${currentDistrict?.district === 'dhaka' ? 'new 0 0 624 385.9' : currentDistrict.district ==='kurigram'? "new 0 0 300 600": 'new 0 0 300 430'}
+                        `,
                         width: '300px',
                         height: '300px'
                     }}
@@ -54,10 +58,10 @@ function DistrictMap() {
                                         <Link key={seat?.seatNo} to={`/seats/${seat?.seatNo}`}>
                                             <polyline
                                                 id={`seat_${seat?.seatNo}`}
-                                                className={clsx(
-                                                    "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000",
+                                                className={cn(
+                                                    "fill-[#B9A37E] stroke-white stroke-1 hover:fill-[#82A775] transition-all duration-1000",
                                                     {
-                                                        'fill-[#B9A37E]': seatNo === seat?.seatNo,
+                                                        'fill-[#82A775]': seatNo === seat?.seatNo,
 
                                                     }
                                                 )}
@@ -66,7 +70,7 @@ function DistrictMap() {
                                             />
                                             <text
                                                 transform={seat?.transform}
-                                                className={clsx(
+                                                className={cn(
                                                     "fill-black text-base font-bold pointer-events-none",
                                                     {
                                                         'text-[6px]': parseInt(seat?.seatNo) > 176 && parseInt(seat?.seatNo) < 192
@@ -88,10 +92,10 @@ function DistrictMap() {
                                                     id={`seat_${seat?.seatNo}`}
                                                     style={{ strokeMiterlimit: 10 }}
                                                     d={seat?.points}
-                                                    className={clsx(
-                                                        "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000",
+                                                    className={cn(
+                                                        "fill-[#B9A37E] stroke-white stroke-1 hover:fill-[#82A775] transition-all duration-1000",
                                                         {
-                                                            'fill-[#B9A37E]': seatNo === seat?.seatNo,
+                                                            'fill-[#82A775]': seatNo === seat?.seatNo,
                                                         }
                                                     )}
                                                 />
@@ -99,10 +103,10 @@ function DistrictMap() {
                                         }
                                         <polyline
                                             id={`seat_${seat?.seatNo}`}
-                                            className={clsx(
-                                                "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000",
+                                            className={cn(
+                                                "fill-[#B9A37E] stroke-white stroke-1 hover:fill-[#82A775] transition-all duration-1000",
                                                 {
-                                                    'fill-[#B9A37E]': seatNo === seat?.seatNo,
+                                                    'fill-[#82A775]': seatNo === seat?.seatNo,
 
                                                 }
                                             )}
@@ -111,11 +115,12 @@ function DistrictMap() {
                                         />
                                         <text
                                             transform={seat?.transform}
-                                            className={clsx(
+                                            className={cn(
                                                 "fill-black text-base font-bold pointer-events-none",
                                                 {
-                                                    'text-[8px]': parseInt(seat?.seatNo) > 176 && parseInt(seat?.seatNo) < 192
-                                                }
+                                                    'text-[8px]': parseInt(seat?.seatNo) > 176 && parseInt(seat?.seatNo) < 192,
+                                                },
+
                                             )}>
                                             {seat?.text}
                                         </text>
@@ -139,8 +144,8 @@ function DistrictMap() {
                                                 {console.log(seatNo === seat?.seatNo, 'Matches')}
                                                 <polyline
                                                     id={`seat_${seat?.seatNo}`}
-                                                    className={clsx(
-                                                        "fill-[#9db3f6] stroke-white stroke-1 hover:fill-[#B9A37E] transition-all duration-1000", seatNo === seat?.seatNo && 'fill-[#B9A37E]'
+                                                    className={cn(
+                                                        "fill-[#B9A37E] stroke-white stroke-1 hover:fill-[#82A775] transition-all duration-1000", seatNo === seat?.seatNo && 'fill-[#82A775]'
                                                     )}
                                                     points={seat?.points} />
                                                 <g>
