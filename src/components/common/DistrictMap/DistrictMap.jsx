@@ -39,12 +39,12 @@ function DistrictMap() {
                     y="0px"
                     viewBox={
                         currentDistrict?.district === 'dhaka' ? "0 0 624 385.9" : 
-                        (currentDistrict.district ==='kurigram'||currentDistrict.district ==='bhola' || currentDistrict.district ==='noakhali') ? "0 0 300 600": "0 0 300 430"
+                        (currentDistrict.district ==='kurigram'||currentDistrict.district ==='bhola' || currentDistrict.district ==='noakhali' || currentDistrict.district ==='pirojpur' || currentDistrict.district ==='feni') ? "0 0 300 600": "0 0 300 430"
                     }
                     style={{
                         enableBackground: `
                         ${currentDistrict?.district === 'dhaka' ? 'new 0 0 624 385.9' :
-                        ( currentDistrict.district ==='kurigram'||currentDistrict.district ==='bhola' || currentDistrict.district ==='noakhali') ? "new 0 0 300 600": 'new 0 0 300 430'}
+                        ( currentDistrict.district ==='kurigram'||currentDistrict.district ==='bhola' || currentDistrict.district ==='noakhali' || currentDistrict.district ==='pirojpur' || currentDistrict.district ==='feni') ? "new 0 0 300 600": 'new 0 0 300 430'}
                         `,
                         width: '300px',
                         height: '300px'

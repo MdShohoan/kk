@@ -8,6 +8,7 @@ import LatestNews from '../components/LatestNews/LatestNews'
 import Sponsor from '../components/Sponsor/Sponsor'
 import Layout from '../components/common/Layout/Layout'
 import { ScrollRestoration } from 'react-router-dom'
+import Maps from '../components/Maps/Maps'
 
 function HomePage() {
     return (
@@ -21,6 +22,7 @@ function HomePage() {
                 </div>
                 <QuickLinks />
                 <ElectionInformation />
+                <Maps/>
                 <UnofficialResult />
                 <ResultsHistory />
                 <Video />
