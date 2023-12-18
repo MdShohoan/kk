@@ -23,6 +23,7 @@ import seatPreviousResult from '../assets/data/seatPreviousResult.json'
 import seatList from '../assets/data/seatsList/seatsList'
 import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
+import cn from '../lib/cn'
 
 console.log('===seat previous result', seatPreviousResult)
 
@@ -205,12 +206,21 @@ function SeatInfoPage() {
                                                 সংসদ নির্বাচন <br /> {toBengaliDigits(result?.electionYearEn)}
                                             </span>
                                         </div>
-                                        <div className='flex justify-between mb-8'>
-                                            <div>
+                                        <div className={cn(
+                                            `flex justify-between mb-8 relative 
+                                            after:absolute after:w-full after:h-[4px] after:bg-primary-light after:top-1/2 after:-translate-y-1/2
+                                            before:absolute before:w-5 before:h-5 before:z-40 before:bg-white before:rounded-full before:border-2 before:border-primary-light before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2
+                                            `,
+                                            !result?.totalCenter && 'invisible', !result?.totalVoter && 'invisible'
+                                        )}>
+                                            <div className={
+                                                cn('bg-primary-light py-2 px-4 rounded')
+                                            }
+                                            >
                                                 <span className='block text-xl font-bold text-gray-700 mb-1'>{result?.totalVoter || '০'}</span>
                                                 <span className='block text-gray1 text-sm font-semibold'>মোট ভোটার</span>
                                             </div>
-                                            <div>
+                                            <div className={cn('bg-primary-light py-2 px-4 rounded')}>
                                                 <span className='block text-right text-xl font-bold mb-1 text-gray-700'>{result?.totalCenter || '০'}</span>
                                                 <span className='block text-right text-gray1 text-sm font-semibold'>মোট কেন্দ্র</span>
                                             </div>
