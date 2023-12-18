@@ -35,7 +35,7 @@ function QuickLinks() {
                                     <div
                                         onMouseEnter={() => setHoverLink(link?.id)}
                                         onMouseLeave={() => setHoverLink(null)}
-                                        onClick={() => navigate(`/${link?.link}`)}
+                                        onClick={() => navigate(`/${link?.link}`, { state: { from: link?.id} })}
                                         key={i}
                                         className="flex flex-col sm:flex-row justify-center md:justify-start lg:justify-center items-center gap-3 cursor-pointer border-b border-primary-background sm:border-none pb-3 sm:pb-0"
                                     >
