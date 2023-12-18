@@ -2,13 +2,14 @@ import ElectionShortStatistics from '../components/ElectionShortStatistics/Elect
 import QuickLinks from '../components/QuickLinks/QuickLinks'
 import Video from '../components/Video/Video'
 import ElectionInformation from '../components/ElectionInformation/ElectionInformation'
-import UnofficialResult from '../components/UnofficialResult/UnofficialResult'
+// import UnofficialResult from '../components/UnofficialResult/UnofficialResult'
 import ResultsHistory from '../components/ResultsHistory/ResultsHistory'
 import LatestNews from '../components/LatestNews/LatestNews'
 import Sponsor from '../components/Sponsor/Sponsor'
 import Layout from '../components/common/Layout/Layout'
 import { ScrollRestoration } from 'react-router-dom'
 import Maps from '../components/Maps/Maps'
+// import Section from '../components/common/Section/Section'
 
 function HomePage() {
     return (
@@ -22,8 +23,12 @@ function HomePage() {
                 </div>
                 <QuickLinks />
                 <ElectionInformation />
-                <Maps/>
-                <UnofficialResult />
+                <Maps />
+                {/* <Section>
+                    <div className='container'>
+                        <UnofficialResult />
+                    </div>
+                </Section> */}
                 <ResultsHistory />
                 <Video />
                 <LatestNews />
