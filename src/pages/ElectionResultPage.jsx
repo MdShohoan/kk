@@ -17,22 +17,22 @@ function ElectionResultPage() {
     const resultSectionRef = useRef(null);
     const compareSectionRef = useRef(null);
     const { state } = useLocation();
-    
+
     useEffect(() => {
         const scrollToSection = (sectionRef) => {
-          const sectionTop = sectionRef.current.getBoundingClientRect().top + window.scrollY;
-          window.scrollTo({
-            top: sectionTop - 90,
-            behavior: 'smooth',
-          });
+            const sectionTop = sectionRef.current.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: sectionTop - 90,
+                behavior: 'smooth',
+            });
         };
-    
+
         if (state?.from === 'result') {
-          scrollToSection(resultSectionRef);
+            scrollToSection(resultSectionRef);
         } else if (state?.from === 'win-lose') {
-          scrollToSection(compareSectionRef);
+            scrollToSection(compareSectionRef);
         }
-      }, [state]);
+    }, [state]);
 
     const years = [
         { inEnglish: '2018', inBangla: '২০১৮' },
@@ -42,11 +42,17 @@ function ElectionResultPage() {
         { inEnglish: '1996', inBangla: '১৯৯৬' },
         { inEnglish: '1991', inBangla: '১৯৯১' }
     ]
+
     const parties = [
+        {
+            partyName: 'সব দল',
+            color: '',
+            partyCode: ''
+        },
         {
             partyName: 'আ. লীগ',
             color: '#66c2a5',
-            partyCode: 'bal'
+            partyCode: 'al'
         },
         {
             partyName: 'বিএনপি',
@@ -66,7 +72,7 @@ function ElectionResultPage() {
 
     ]
 
-    // const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
+    // const colors = {al: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
 
     const options = {
         chart: {
@@ -183,7 +189,7 @@ function ElectionResultPage() {
                                     {/* -----Year selection button end---- */}
 
                                     {/* -----Party selection button start---- */}
-                                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-6">
+                                    <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 gap-6">
                                         {
                                             parties?.map((party) => (
                                                 <div
@@ -191,15 +197,26 @@ function ElectionResultPage() {
                                                     onClick={() => setSelectedParty(party?.partyCode)}
                                                     className="flex gap-2 items-center cursor-pointer"
                                                 >
-                                                    <span
-                                                        style={{ background: party.color }}
-                                                        className="inline-block w-4 h-4"
-                                                    ></span>
+                                                    {
+                                                        party?.color ? (
+                                                            <span
+                                                                style={{ background: party?.color }}
+                                                                className="inline-block w-4 h-4"
+                                                            />
+                                                        ) : (
+                                                            <span className="w-4 h-4 grid grid-cols-2 grid-rows-2">
+                                                                <span style={{background:'#66c2a5'}}/>
+                                                                <span style={{background:'#8da0cb'}}/>
+                                                                <span style={{background:'#e78ac3'}}/>
+                                                                <span style={{background:'#a6d854'}}/>
+                                                            </span>
+                                                        )
+                                                    }
                                                     <span
                                                         className={
                                                             clsx('text-sm hover:text-gray3 transition-all duration-300',
                                                                 {
-                                                                    'text-[#66c2a5]': 'bal' === selectedParty && party.partyCode === selectedParty,
+                                                                    'text-[#66c2a5]': 'al' === selectedParty && party.partyCode === selectedParty,
                                                                     'text-[#8da0cb]': 'bnp' === selectedParty && party.partyCode === selectedParty,
                                                                     'text-[#e78ac3]': 'jp' === selectedParty && party.partyCode === selectedParty,
                                                                     'text-[#a6d854]': 'ao' === selectedParty && party.partyCode === selectedParty,
