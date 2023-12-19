@@ -6,7 +6,7 @@ function Timeline() {
         <Section>
             <div className='container'>
                 <Title>
-                    সময়সূচি
+                নির্বাচনের সময়সূচি
                 </Title>
                 <div className="line_box stav_projektu">
                     <div className="text_circle done">
