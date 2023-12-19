@@ -27,7 +27,7 @@
 }
 
 .line_box h4 {
-  color: #189599;
+  color: var(--primaryDefault);
   font-weight: bold;
 }
 
@@ -51,7 +51,7 @@
   width: 15px;
   bottom: 14px;
   right: 15px;
-  background-color: #189599;
+  background-color: var(--primaryDefault);
   border-radius: 50%;
   top: -25px;
 }
@@ -66,11 +66,11 @@
 .text_circle.done + .text_circle:before,
 .stav_projektu .text_circle.done:after,
 .stav_projektu .text_circle.done + .text_circle:before {
-  background-color: #189599;
+  background-color: var(--primaryDefault);
 }
 
 .text_circle.sub:after {
-  background-color: #189599;
+  background-color: var(--primaryDefault);
 }
 
 .text_circle:not(:first-child):before {
@@ -99,7 +99,7 @@
 .tvar {
   height: 40px;
   width: 40px;
-  border: 2px solid #189599;
+  border: 2px solid var(--primaryDefault);
   display: flex;
   position: relative;
   border-radius: 100%;
@@ -112,7 +112,7 @@
   margin: 25% auto;
   height: 20px;
   width: 20px;
-  background-color: #189599;
+  background-color: var(--primaryDefault);
   border-radius: 100%;
   color: #fff;
 }
@@ -123,11 +123,11 @@
 
 .stav_projektu .done .tvar,
 .stav_projektu .sub .tvar {
-  border: 2px solid #189599;
+  border: 2px solid var(--primaryDefault);
 }
 
 .subline h6 {
-  color: #189599;
+  color: var(--primaryDefault);
 }
 
 .timeline .card-header:hover {
@@ -139,37 +139,42 @@
 
 
 /* iPhone X ----------------------------------- */
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .subline:before {
     top: -43px;
   }
 }
+
 @media only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .subline:before {
     top: -31px;
   }
-}
+} */
+
 /* iPad portrait ----------------------------------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .subline:before {
     top: -29px;
   }
-}
+} */
 /* mobile width till 767px ----------------------------------- */
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
   .subline:before {
     top: -30px;
   }
-}
+} */
 /* Portrait iPad Pro */
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+/* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .subline:before {
     top: -23px;
   }
-}
+} */
+
 /* mobile width till 480px ----------------------------------- */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .subline:before {
     top: -43px;
   }
-}
+} */
