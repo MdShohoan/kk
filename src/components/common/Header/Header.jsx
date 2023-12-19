@@ -72,7 +72,7 @@ function Header() {
             page: 'election-result'
         },
         {
-            text: 'কালেরকণ্ঠ',
+            text: 'কালের কণ্ঠ',
             to: ''
         },
     ]
