@@ -8,6 +8,7 @@ import total_voter from '../assets/election/total-voter.png'
 import total_candidate from '../assets/election/total-candidate.png'
 import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
+import common_gender from '../assets/election/common-gender.png'
 import Title from '../components/common/Title/Title'
 
 import jatipartySymbol from '../assets/partyLogo/JatioyoPartyLogo.webp'
@@ -103,6 +104,7 @@ function SeatInfoPage() {
         { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
         { count: '৫২৫৪৭৩২৯', title: 'পুরুষ ভোটার', image: male_voter },
         { count: '৫১৬৪৩১৫১', title: 'নারী ভোটার ', image: female_voter },
+        { count: '৫', title: 'হিজড়া ভোটার ', image: common_gender },
         { count: '১৮৪৮', title: 'মোট প্রার্থী', image: total_candidate },
     ]
 
@@ -147,7 +149,7 @@ function SeatInfoPage() {
                         </div>
 
                         {/* ------------Seat information counter start---------- */}
-                        <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8'>
+                        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-8'>
                             {
                                 seatData.map((singleData, i) => (
                                     <Card key={i} type='type1' data={singleData} />

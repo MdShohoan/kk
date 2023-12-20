@@ -1,10 +1,11 @@
 import { clsx } from 'clsx';
 import { useState } from "react";
-function Card({ news }) {
+import cn from '../../../lib/cn';
+function Card({ news, className }) {
     const [isHovered, setIsHovered] = useState(false)
     return (
         <div
-            className="cursor-pointer"
+            className={cn('cursor-pointer', className)}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

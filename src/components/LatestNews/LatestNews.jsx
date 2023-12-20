@@ -14,7 +14,6 @@ export default function LatestNews() {
         { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
         { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
         { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
     ]
 
     return (
@@ -23,23 +22,26 @@ export default function LatestNews() {
                 <Title>
                     নির্বাচনের সর্বশেষ খবর
                 </Title>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4 md:mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 md:gap-8 mb-4 md:mb-16">
                     <Card news={data[0]} />
-                    <div className="hidden md:block">
-                        <Card news={data[1]} />
-                    </div>
-                    <div className="block md:hidden">
-                        <List info={data[1]} />
-                    </div>
+                    {
+                        data?.slice(2, 4).map((news, i) => (
+                            <>
+                                <Card news={news} key={i} className={'hidden md:block'} />
+                                <List key={i} info={news} className={'flex md:hidden'} />
+                            </>
+                        ))
+                    }
+
                     <div className='h-[250px] w-[300px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
                         ads: 300*250
                     </div>
                 </div>
 
                 {/* ----News Card Start (visible in big screen)---- */}
-                <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+                <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
                     {
-                        data?.slice(2).map((news, i) => (
+                        data?.slice(3).map((news, i) => (
                             <Card news={news} key={i} />
                         ))
                     }
