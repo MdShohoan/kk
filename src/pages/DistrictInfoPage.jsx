@@ -15,11 +15,25 @@ import Section from '../components/common/Section/Section'
 import DistrictNavigator from "../components/common/DistrictNavigator/DistrictNavigator"
 import toBengaliDigits from "../lib/toBanglaDigits"
 import toEnglishDigits from "../lib/toEnglishDigits"
+import { useEffect, useState } from "react"
 
 function DistrictInfoPage() {
+  const [latestData, setLatestData] = useState({})
   const { districtNo } = useParams()
+  const [update, setUpdate] = useState(0)
 
-  //Find district by districtNo
+  console.log(update)
+  useEffect(() => {
+    //11th election data of current district
+    const eleventhData = getDistrictDataByDistrictNo(districtNo)?.find((element) => element.ElectionNo === 11)
+    setLatestData(eleventhData)
+  }, [districtNo])
+
+  useEffect(()=>{
+    setUpdate((prev)=>prev+1)
+  }, [districtNo])
+
+  //Find district name by districtNo
   function findDistrictById() {
     for (const division of districtList) {
       const foundDistrict = division.districts.find(district => district?.districtCode === districtNo);
@@ -31,44 +45,23 @@ function DistrictInfoPage() {
   }
 
   //Find current district data by districtNO
-  const getDistrictDataByDistrictNo = () => {
+  function getDistrictDataByDistrictNo(districtNo){
     return districtData?.data?.filter((district) => district?.districtNo == districtNo)
   }
 
-  //11th election data of current district
-  const eleventhData = getDistrictDataByDistrictNo()?.find((element) => element.ElectionNo === 11)
 
-  const seatData = [
-    { count: eleventhData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
-    { count: eleventhData?.maleVoter, title: 'পুরুষ ভোটার', image: male_voter },
-    { count: eleventhData?.femaleVoter, title: 'নারী ভোটার ', image: female_voter },
-    { count: eleventhData?.totalSeat, title: 'মোট আসন', image: total_candidate },
+
+  const districtCounterData = [
+    { count: latestData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
+    { count: latestData?.maleVoter, title: 'পুরুষ ভোটার', image: male_voter },
+    { count: latestData?.femaleVoter, title: 'নারী ভোটার ', image: female_voter },
+    { count: latestData?.totalSeat, title: 'মোট আসন', image: total_candidate },
   ]
+
+  console.log(districtCounterData, 'District counter data')
 
   const colors = ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854']
   const labels = ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য']
-
-  // const chartData = [
-  //   {
-  //     series: [4, 1, 1]
-  //   },
-  //   {
-  //     series: [2, 2, 2]
-  //   },
-  //   {
-  //     series: [5, 1]
-  //   },
-  //   {
-  //     series: [0, 4, 2]
-  //   },
-  //   {
-  //     series: [4, 1, 1]
-  //   },
-  //   {
-  //     series: [2, 2, 2]
-  //   },
-
-  // ]
 
   const chartData = [...getDistrictDataByDistrictNo()]?.map((district) => {
     return {
@@ -81,8 +74,6 @@ function DistrictInfoPage() {
       ]
     }
   })
-
-  console.log(getDistrictDataByDistrictNo())
 
   const options = {
     chart: {
@@ -165,15 +156,15 @@ function DistrictInfoPage() {
             <div className='bg-gray1 h-[2px]' />
           </div>
 
-          {/* ------------Seat information counter start---------- */}
+          {/* ------------District information counter start---------- */}
           <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8'>
             {
-              seatData.map((singleData, i) => (
+              districtCounterData.map((singleData, i) => (
                 <Card key={i} type='type1' data={singleData} />
               ))
             }
           </div>
-          {/* -----------Seat information counter end------- */}
+          {/* -----------District information counter end------- */}
         </div>
       </Section>
 
