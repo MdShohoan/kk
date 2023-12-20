@@ -6,57 +6,77 @@ function Timeline() {
         <Section>
             <div className='container'>
                 <Title>
-                নির্বাচনের সময়সূচি
+                    নির্বাচনের সময়সূচি
                 </Title>
-                <div className="line_box stav_projektu">
-                    <div className="text_circle done">
-                        <div className="circle">
-                            <h4>মনোনয়নপত্র জমা দেওয়ার শেষ দিন</h4>
-                            <p>৩০ নভেম্বর ২০২৩</p>
+                <ul className='mx-auto w-fit'>
+                    <li>
+                        {/* <i className="icon uil uil-capture"></i> */}
+                        <span className="icon">
+
+                        </span>
+                        <div className="progress one active">
+                            <p>1</p>
+                            <i className="uil uil-check"></i>
                         </div>
-                        <a href="javascript:void(0)" className="tvar">
-                            <span data-toggle="popover" title="Sample text" data-trigger="hover" data-placement="top" data-content="Ukázkový text při hover"></span>
-                        </a>
-                    </div>
-                    <div className="text_circle done">
-                        <div className="circle">
-                            <h4>মনোনয়নপত্র বাছাই</h4>
-                            <p>০১ থেকে ০৪ ডিসেম্বর ২০২৩</p>
-                            {/* <div className="subline">
-                            <h6>Říjen</h6>
-                            <p>2019</p>
-                        </div> */}
+                        <div>
+                            <p className='text-sm font-bold text-[#333] mb-2'>৩০ নভেম্বর ২০২৩</p>
+                            <p className="text text-center hidden md:block">মনোনয়নপত্র <br />জমা দেওয়ার শেষ দিন</p>
+                            <p className="text block md:hidden">মনোনয়নপত্র <br />জমা দেওয়ার শেষ দিন</p>
                         </div>
-                        <a href="" className="tvar">
-                            <span data-toggle="popover" title="Sample text" data-trigger="hover" data-placement="top" data-content="Ukázkový text při hover"></span>
-                        </a>
-                    </div>
-                    <div className="text_circle sub">
-                        <div className="circle">
-                            <h4>মনোনয়নপত্র প্রত্যাহারের শেষ দিন</h4>
-                            <p>১৭ ডিসেম্বর ২০২৩</p>
+                    </li>
+                    <li>
+                        {/* <i className="icon uil uil-clipboard-notes"></i> */}
+                        <span className="icon"></span>
+                        <div className="progress two active">
+                            <p>2</p>
+                            <i className="uil uil-check"></i>
                         </div>
-                        <a href="" className="tvar">
-                            <span data-toggle="popover" title="Sample text" data-trigger="hover" data-placement="top" data-content="Ukázkový text při hover"></span>
-                        </a>
-                    </div>
-                    <div className="text_circle">
-                        <div className="circle">
-                            <h4>নির্বাচনী প্রচারের শেষ সময়</h4>
-                            <p>০৫ জানুয়ারি ২০২৪</p>
+                        <div>
+                            <p className='text-sm font-bold text-[#333] mb-2'>০১ - ০৪ ডিসেম্বর ২০২৩</p>
+                            <p className="text text-center hidden md:block">মনোনয়নপত্র বাছাই</p>
+                            <p className="text block md:hidden">মনোনয়নপত্র বাছাই</p>
                         </div>
-                        <a href="" className="tvar">
-                            {/* <span data-toggle="popover" title="Sample text" data-trigger="hover" data-placement="top" data-content="Ukázkový text při hover"></span> */}
-                        </a>
-                    </div>
-                    <div className="text_circle">
-                        <div className="circle">
-                            <h4>ভোট গ্রহণ</h4>
-                            <p>০৭ জানুয়ারি ২০২৪</p>
+                    </li>
+                    <li>
+                        {/* <i className="icon uil uil-credit-card"></i> */}
+                        <span className="icon"></span>
+                        <div className="progress three active">
+                            <p>3</p>
+                            <i className="uil uil-check"></i>
                         </div>
-                        <a href="" className="tvar"></a>
-                    </div>
-                </div>
+                        <div>
+                            <p className='text-sm font-bold text-[#333] mb-2'>১৭ ডিসেম্বর ২০২৩</p>
+                            <p className="text text-center hidden md:block">মনোনয়নপত্র<br /> প্রত্যাহারের শেষ দিন</p>
+                            <p className="text block md:hidden">মনোনয়নপত্র প্রত্যাহারের শেষ দিন</p>
+                        </div>
+                    </li>
+                    <li>
+                        {/* <i className="icon uil uil-exchange"></i> */}
+                        <span className="icon"></span>
+                        <div className="progress four">
+                            <p>4</p>
+                            <i className="uil uil-check"></i>
+                        </div>
+                        <div>
+                            <p className='text-sm font-bold text-[#333] mb-2'>০৫ জানুয়ারি ২০২৪</p>
+                            <p className="text text-center hidden md:block">নির্বাচনী<br /> প্রচারের শেষ সময়</p>
+                            <p className="text block md:hidden">নির্বাচনী প্রচারের শেষ সময়</p>
+                        </div>
+                    </li>
+                    <li>
+                        {/* <i className="icon uil uil-map-marker"></i> */}
+                        <span className="icon"></span>
+                        <div className="progress five">
+                            <p>5</p>
+                            <i className="uil uil-check"></i>
+                        </div>
+                        <div>
+                            <p className='text-sm font-bold text-[#333] mb-2'>০৭ জানুয়ারি ২০২৪</p>
+                            <p className="text text-center hidden md:block">ভোট গ্রহণ</p>
+                            <p className="text block md:hidden">ভোট গ্রহণ</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </Section>
     )

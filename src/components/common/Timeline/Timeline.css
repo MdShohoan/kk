@@ -1,180 +1,113 @@
-.line_box {
+ul{
   display: flex;
-  margin-bottom: 40px;
 }
-
-.text_circle {
-  flex: 1;
-  text-align: center;
-  position: relative;
+ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.text_circle:after {
-  background-color: grey;
-  bottom: 1.25em;
-  content: "";
-  display: block;
-  height: 3px;
-  position: absolute;
-  right: 0;
-  width: 50%;
-  z-index: -1;
-}
-
-.stav_projektu .text_circle:after,
-.stav_projektu .text_circle:before {
-  background-color: grey;
-}
-
-.line_box h4 {
+/* ul li .icon{
+  font-size: 35px;
   color: var(--primaryDefault);
-  font-weight: bold;
-}
-
-.line_box h4,
-.line_box p {
-  font-size: 12px;
-  margin-bottom: 0;
-  padding: 0 5px;
-}
-
-.subline {
-  position: absolute;
-  right: -25px;
-  bottom: -43%;
-}
-
-.subline:before {
-  content: "";
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  bottom: 14px;
-  right: 15px;
-  background-color: var(--primaryDefault);
-  border-radius: 50%;
-  top: -25px;
-}
-.subline h6 {
-  margin-bottom: 0;
-}
-/* .timeline {
-  margin: 40px 0;
+  margin: 0 60px;
 } */
-
-.text_circle.done:after,
-.text_circle.done + .text_circle:before,
-.stav_projektu .text_circle.done:after,
-.stav_projektu .text_circle.done + .text_circle:before {
-  background-color: var(--primaryDefault);
-}
-
-.text_circle.sub:after {
-  background-color: var(--primaryDefault);
-}
-
-.text_circle:not(:first-child):before {
-  bottom: 1.25em;
-  content: "";
+ul li .icon{
   display: block;
-  height: 3px;
-  position: absolute;
-  left: 0;
-  width: 50%;
-  z-index: -1;
-  background-color: grey;
+  height: 34px;
+  width: 34px;
+  margin: 0 60px;
 }
-.stav_projektu .text_circle:not(:first-child):before {
-  background-color: grey;
-}
-
-.text_circle:last-child:after {
-  width: 0;
+ul li .text{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primaryDefault);;
 }
 
-.circle {
-  height: 100%;
-}
+/* Progress Div Css  */
 
-.tvar {
-  height: 40px;
-  width: 40px;
-  border: 2px solid var(--primaryDefault);
-  display: flex;
-  position: relative;
-  border-radius: 100%;
-  top: -43px;
-  margin: 3px auto;
-  background-color: #fff;
-}
-
-.tvar span {
-  margin: 25% auto;
-  height: 20px;
-  width: 20px;
-  background-color: var(--primaryDefault);
-  border-radius: 100%;
+ul li .progress{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(68, 68, 68, 0.781);
+  margin: 14px 0;
+  display: grid;
+  place-items: center;
   color: #fff;
-}
-
-.stav_projektu .tvar {
-  border: 2px solid grey;
-}
-
-.stav_projektu .done .tvar,
-.stav_projektu .sub .tvar {
-  border: 2px solid var(--primaryDefault);
-}
-
-.subline h6 {
-  color: var(--primaryDefault);
-}
-
-.timeline .card-header:hover {
-  background-color: #ececec;
+  position: relative;
   cursor: pointer;
 }
+.progress::after{
+  content: " ";
+  position: absolute;
+  width: 125px;
+  height: 5px;
+  background-color: rgba(68, 68, 68, 0.781);
+  right: 30px;
+}
+.one::after{
+  width: 0;
+  height: 0;
+}
+ul li .progress .uil{
+  display: none;
+}
+ul li .progress p{
+  font-size: 13px;
+}
 
+/* Active Css  */
 
+ul li .active{
+  background-color: var(--primaryDefault);
+  display: grid;
+  place-items: center;
+}
+li .active::after{
+  background-color: var(--primaryDefault);
+}
+ul li .active p{
+  display: none;
+}
+ul li .active .uil{
+  font-size: 20px;
+  display: flex;
+}
 
+/* Responsive Css  */
 
-/* iPhone X ----------------------------------- */
-/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .subline:before {
-    top: -43px;
+@media (max-width: 980px) {
+  ul{
+      flex-direction: column;
+  }
+  ul li{
+      flex-direction: row;
+  }
+  ul li .progress{
+      margin: 0 30px;
+  }
+  .progress::after{
+      width: 5px;
+      height: 55px;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+  }
+  .one::after{
+      height: 0;
+  }
+  ul li .icon{
+      margin: 15px 0;
   }
 }
 
-@media only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  .subline:before {
-    top: -31px;
+@media (max-width:600px) {
+  .head .head_1{
+      font-size: 24px;
   }
-} */
-
-/* iPad portrait ----------------------------------- */
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .subline:before {
-    top: -29px;
+  .head .head_2{
+      font-size: 16px;
   }
-} */
-/* mobile width till 767px ----------------------------------- */
-
-/* @media (max-width: 767px) {
-  .subline:before {
-    top: -30px;
-  }
-} */
-/* Portrait iPad Pro */
-
-/* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .subline:before {
-    top: -23px;
-  }
-} */
-
-/* mobile width till 480px ----------------------------------- */
-/* @media (max-width: 480px) {
-  .subline:before {
-    top: -43px;
-  }
-} */
+}

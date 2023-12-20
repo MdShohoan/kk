@@ -21,7 +21,7 @@ function Card({ news }) {
                 />
             </div>
 
-            <h3
+            <h1
                 className={
                     clsx(
                         "font-semibold text-lg transition-all duration-300",
@@ -33,7 +33,7 @@ function Card({ news }) {
                 }
             >
                 {news?.title}
-            </h3>
+            </h1>
         </div>
     )
 }

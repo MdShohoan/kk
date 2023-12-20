@@ -59,11 +59,11 @@ function Video() {
                                 />
                             </span>
                         </div>
-                        <h6
+                        <h1
                             className={`text-${hoverElement === 1 ? 'primary-contrast' : 'primary'} font-extrabold text-2xl pt-3 transition-all duration-300`}
                         >
                             {data[0]?.title}
-                        </h6>
+                        </h1>
                     </div>
                     {/* ----Big video End---- */}
 
@@ -94,7 +94,7 @@ function Video() {
 
                                         />
                                     </div>
-                                    <h6 className={`text-sm text-${hoverElement === info?.id ? 'blue-500' : '[#666]'} font-normal transition-all duration-300`}>{info?.title}</h6>
+                                    <h1 className={`text-sm text-${hoverElement === info?.id ? 'blue-500' : '[#666]'} font-normal transition-all duration-300`}>{info?.title}</h1>
                                 </div>
                             ))
                         }
