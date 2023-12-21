@@ -72,7 +72,7 @@ function Timeline() {
                         timeLineData?.map((data, i) => (
                             <div key={i} className={
                                 clsx(
-                                    `h-full relative 
+                                    `h-full relative
                                 
                                 after:w-[3px] after:h-full after:bg-gray-500 after:block after:-z-10 after:absolute last:after:h-0 after:top-0 after:left-[1.25em]
                                 `, currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'after:bg-primary'
