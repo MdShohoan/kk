@@ -8,6 +8,7 @@ import clsx from "clsx";
 import { ScrollRestoration, useLocation } from "react-router-dom";
 import Section from "../components/common/Section/Section";
 import toBengaliDigits from "../lib/toBanglaDigits";
+import result from '../assets/data/result.json'
 
 function ElectionResultPage() {
 
@@ -34,6 +35,11 @@ function ElectionResultPage() {
         }
     }, [state]);
 
+    //Pie Chart Data
+    const pieChartData = result.data.map((item) => {
+        return { year: item.year, series: [item?.alSeat, item?.bnpSeat, item?.jpSeat, item?.aoSeat] }
+    })
+
     const years = [
         { inEnglish: '2018', inBangla: '২০১৮' },
         { inEnglish: '2014', inBangla: '২০১৪' },
@@ -44,6 +50,34 @@ function ElectionResultPage() {
     ]
 
     const parties = [
+        {
+            name: "আ. লীগ",
+            key:'alSeat',
+        },
+        {
+            name: "বিএনপি",
+            key: 'bnpSeat',
+        },
+        {
+            name: "জাতীয় পার্টি",
+            key: 'jpSeat',
+        },
+        {
+            name: "অন্যান্য",
+            key: 'aoSeat',
+        },
+    ]
+
+    //Compare chart data
+    const compareChartData = parties.map((party)=>{
+        return {
+            name: party?.name,
+            data:result?.data?.map((singleResult)=>singleResult[party?.key])
+            
+        }
+    })
+
+    const partiesColor = [
         {
             partyName: 'সব দল',
             color: '',
@@ -71,8 +105,6 @@ function ElectionResultPage() {
         },
 
     ]
-
-    // const colors = {al: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
 
     const options = {
         chart: {
@@ -104,7 +136,7 @@ function ElectionResultPage() {
             }
         },
         xaxis: {
-            categories: ['২০১৪', '২০০৮', '২০০১', '১৯৯৬', '১৯৯১']
+            categories: ['২০১৮', '২০১৪', '২০০৮', '২০০১', '১৯৯৬', '১৯৯১']
         },
         yaxis: {
             show: true,
@@ -115,24 +147,6 @@ function ElectionResultPage() {
         }
     }
 
-    const series = [
-        {
-            name: "আ. লীগ",
-            data: [234, 230, 59, 140, 85]
-        },
-        {
-            name: "বিএনপি",
-            data: [0, 30, 189, 104, 134]
-        },
-        {
-            name: "জাতীয় পার্টি",
-            data: [34, 27, 14, 29, 34]
-        },
-        {
-            name: "অন্যান্য",
-            data: [32, 13, 28, 6, 36]
-        },
-    ]
 
     return (
         <Layout>
@@ -140,11 +154,11 @@ function ElectionResultPage() {
             <Section>
                 <div className="container mx-auto">
                     <Title>
-                        কার ভাগে কত আসন (১৯৯১-২০১৪)
+                        কার ভাগে কত আসন (১৯৯১-২০১৮)
                     </Title>
                     <Chart
                         options={options}
-                        series={series}
+                        series={compareChartData}
                         type="line"
                         width="100%"
                         height={420}
@@ -152,7 +166,7 @@ function ElectionResultPage() {
                 </div>
             </Section>
             <div ref={resultSectionRef}>
-                <ResultsHistory />
+                <ResultsHistory data={pieChartData} />
             </div>
             <div ref={compareSectionRef}>
                 <Section>
@@ -191,7 +205,7 @@ function ElectionResultPage() {
                                     {/* -----Party selection button start---- */}
                                     <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 gap-6">
                                         {
-                                            parties?.map((party) => (
+                                            partiesColor?.map((party) => (
                                                 <div
                                                     key={party?.partyCode}
                                                     onClick={() => setSelectedParty(party?.partyCode)}
@@ -205,10 +219,10 @@ function ElectionResultPage() {
                                                             />
                                                         ) : (
                                                             <span className="w-4 h-4 grid grid-cols-2 grid-rows-2">
-                                                                <span style={{background:'#66c2a5'}}/>
-                                                                <span style={{background:'#8da0cb'}}/>
-                                                                <span style={{background:'#e78ac3'}}/>
-                                                                <span style={{background:'#a6d854'}}/>
+                                                                <span style={{ background: '#66c2a5' }} />
+                                                                <span style={{ background: '#8da0cb' }} />
+                                                                <span style={{ background: '#e78ac3' }} />
+                                                                <span style={{ background: '#a6d854' }} />
                                                             </span>
                                                         )
                                                     }

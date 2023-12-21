@@ -11,8 +11,12 @@ import { ScrollRestoration } from 'react-router-dom'
 import Maps from '../components/Maps/Maps'
 import Schedule from '../components/common/Schedule/Schedule'
 // import Section from '../components/common/Section/Section'
+import result from '../assets/data/result.json'
 
 function HomePage() {
+    const chartData = result.data.map((item)=>{
+        return {year: item.year, series: [item?.alSeat, item?.bnpSeat, item?.jpSeat, item?.aoSeat]}
+    })
     return (
         <>
             <ScrollRestoration />
@@ -31,7 +35,7 @@ function HomePage() {
                         <UnofficialResult />
                     </div>
                 </Section> */}
-                <ResultsHistory />
+                <ResultsHistory data={chartData}/>
                 <Video />
                 <LatestNews />
             </Layout>

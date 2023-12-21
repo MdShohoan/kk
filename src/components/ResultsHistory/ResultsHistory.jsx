@@ -4,40 +4,40 @@ import Section from "../common/Section/Section";
 import Title from "../common/Title/Title";
 import Chart from "react-apexcharts";
 
-export default function ResultsHistory() {
+export default function ResultsHistory({data}) {
 
-    const data = [
-        {
-            year: '২০১৪',
-            electionNo: '',
-            series: [293, 7]
-        },
-        {
-            year: '২০১৪',
-            electionNo: '',
-            series: [44, 55, 13, 43]
-        },
-        {
-            year: '২০০৮',
-            electionNo: '',
-            series: [44, 55, 13, 43]
-        },
-        {
-            year: '২০০১',
-            electionNo: '',
-            series: [44, 55, 13, 43]
-        },
-        {
-            year: '১৯৯৬',
-            electionNo: '',
-            series: [44, 55, 13, 43]
-        },
-        {
-            year: '১৯৯১',
-            electionNo: '',
-            series: [150, 100, 40, 10]
-        },
-    ]
+    // const data = [
+    //     {
+    //         year: '২০১৪',
+    //         electionNo: '',
+    //         series: [293, 7]
+    //     },
+    //     {
+    //         year: '২০১৪',
+    //         electionNo: '',
+    //         series: [44, 55, 13, 43]
+    //     },
+    //     {
+    //         year: '২০০৮',
+    //         electionNo: '',
+    //         series: [44, 55, 13, 43]
+    //     },
+    //     {
+    //         year: '২০০১',
+    //         electionNo: '',
+    //         series: [44, 55, 13, 43]
+    //     },
+    //     {
+    //         year: '১৯৯৬',
+    //         electionNo: '',
+    //         series: [44, 55, 13, 43]
+    //     },
+    //     {
+    //         year: '১৯৯১',
+    //         electionNo: '',
+    //         series: [150, 100, 40, 10]
+    //     },
+    // ]
 
     const options = {
         chart: {
@@ -110,7 +110,7 @@ export default function ResultsHistory() {
         <Section>
             <div className="container mx-auto">
                 <Title>
-                    ফলাফল (১৯৯১-২০১৪)
+                    ফলাফল (১৯৯১-২০১৮)
                 </Title>
                 <div className="mb-5">
                     <ColorBoxes />
