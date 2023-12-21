@@ -63,7 +63,7 @@ function DistrictInfoPage() {
   const colors = ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854']
   const labels = ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য']
 
-  const chartData = [...getDistrictDataByDistrictNo()]?.map((district) => {
+  const chartData = [...getDistrictDataByDistrictNo(districtNo)]?.map((district) => {
     return {
       electionNo: district?.ElectionNo,
       series: [
