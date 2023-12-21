@@ -4,7 +4,7 @@ import Title from '../Title/Title'
 import moment from 'moment';
 import cn from '../../../lib/cn';
 
-function Timeline() {
+function Schedule() {
     const currentDate = moment()
     const timeLineData = [
         {
@@ -100,4 +100,4 @@ function Timeline() {
     )
 }
 
-export default Timeline
+export default Schedule
