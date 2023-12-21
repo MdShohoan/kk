@@ -1,6 +1,7 @@
 import Section from "../Section/Section"
-
+import './TimeLine2.css'
 function TimeLine2() {
+
     return (
         <Section>
             <div className="container">
@@ -52,22 +53,6 @@ function TimeLine2() {
                         </div>
                         <a href="" className="tvar"></a>
                     </div>
-                </div>
-                <div className='flex'>
-                    {
-                        ['', '', '', '', ''].map((_, i) => (
-                            <div key={i} className={
-                                `flex-1 relative 
-                                before:w-1/2 before:h-[3px] before:bg-gray-500 before:block before:-z-10 before:absolute before:top-1/2 before:-translate-1/2 first:before:w-0
-                                after:right-0 after:w-1/2 after:h-[3px] after:bg-gray-500 after:block after:-z-10 after:absolute after:top-1/2 after:-translate-1/2 last:after:w-0
-                                `
-                            }>
-                                <div className='w-10 h-10 bg-white relative border-2 mx-auto border-primary rounded-full'>
-                                    <span className='w-5 h-5 block rounded-full bg-primary mx-auto my-[25%]' />
-                                </div>
-                            </div>
-                        ))
-                    }
                 </div>
             </div>
         </Section>
