@@ -39,21 +39,22 @@ function Schedule() {
                 <Title>
                     নির্বাচনের সময়সূচি
                 </Title>
-                <div className='md:flex border rounded py-7 hidden'>
+                {/* All device except mobile */}
+                <div className='md:flex border rounded pb-7 pt-16 hidden'>
                     {
                         timeLineData?.map((data, i) => (
                             <div key={i} className={
                                 clsx(
-                                    `flex-1 relative 
+                                    `flex-1 relative
                                 before:w-1/2 before:h-[3px] before:bg-gray-500 before:block before:-z-10 before:absolute before:bottom-[1.25em] first:before:w-0
                                 after:right-0 after:w-1/2 after:h-[3px] after:bg-gray-500 after:block after:-z-10 after:absolute after:bottom-[1.25em] last:after:w-0
                                 `, currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'after:bg-primary'
                                 )
                             }>
-                                <div className="mb-2">
+                                {/* <div className="mb-2">
                                     <p className="text-center text-primary font-bold text-xs">{data?.title}</p>
                                     <p className="text-center text-[#333] font-bold text-xs">{data.date}</p>
-                                </div>
+                                </div> */}
                                 <div className={cn(
                                     'w-10 h-10 bg-white relative border-2 mx-auto border-gray-500 rounded-full',
                                     currentDate.diff(data?.dateEn, 'days') >= 0 && 'border-primary'
@@ -62,17 +63,22 @@ function Schedule() {
                                         cn('w-5 h-5 hidden rounded-full bg-primary mx-auto my-[25%]', currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'block')
                                     } />
                                 </div>
+                                <div className="absolute bottom-12 w-full">
+                                    <p className="text-center text-primary font-bold text-xs">{data?.title}</p>
+                                    <p className="text-center text-[#333] font-bold text-xs">{data.date}</p>
+                                </div>
                             </div>
                         ))
                     }
                 </div>
+                {/* Mobile device */}
                 {/* before:w-[3px] before:h-1/2 before:bg-gray-500 before:block before:-z-10 before:absolute first:before:h-0 */}
                 <div className='flex flex-col md:hidden h-[500px]'>
                     {
                         timeLineData?.map((data, i) => (
                             <div key={i} className={
                                 clsx(
-                                    `h-full relative
+                                    `h-full relative last:h-fit
                                 
                                 after:w-[3px] after:h-full after:bg-gray-500 after:block after:-z-10 after:absolute last:after:h-0 after:top-0 after:left-[1.25em]
                                 `, currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'after:bg-primary'
