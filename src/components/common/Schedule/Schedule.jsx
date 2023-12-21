@@ -85,11 +85,15 @@ function Schedule() {
                                     <span className={
                                         cn('w-5 h-5 hidden rounded-full bg-primary mx-auto my-[25%]', currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'block')
                                     } />
-                                    <div className="mb-2 absolute left-[50px] top-0 w-[200px] bg-primary-light py-2 rounded">
+                                    {/* <div className="mb-2 absolute left-[50px] top-0 w-[280px] bg-primary-light py-2 rounded">
                                         <p className="text-center text-primary font-bold text-xs">{data?.title}</p>
                                         <p className="text-center text-[#333] font-bold text-xs">{data.date}</p>
-                                    </div>
+                                    </div> */}
 
+                                </div>
+                                <div className="mb-2 absolute  w-[80%] top-0 left-[20%] bg-primary-light py-2 rounded">
+                                    <p className="text-center text-primary font-bold text-xs">{data?.title}</p>
+                                    <p className="text-center text-[#333] font-bold text-xs">{data.date}</p>
                                 </div>
                             </div>
                         ))
