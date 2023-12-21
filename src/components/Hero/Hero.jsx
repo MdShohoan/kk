@@ -9,6 +9,7 @@ import districtList from '../../assets/data/districtsList/districtsList'
 import Title from '../common/Title/Title';
 import toBengaliDigits from '../../lib/toBanglaDigits';
 import SeatNoCard from '../common/SeatNoCard/SeatNoCard';
+import cn from '../../lib/cn';
 
 function Hero() {
     const [page, setPage] = useState(null)
@@ -24,11 +25,15 @@ function Hero() {
         seatDetails: 'seatDetails',
         seats: 'seats',
         results: 'results',
+        news: 'news'
     }
 
     useEffect(() => {
         if (path === '/') {
             setPage(pages?.home)
+        }
+        else if (path.startsWith('/news')) {
+            setPage(pages?.news)
         }
         else if (path.startsWith('/districts') && districtNo) {
             setPage(pages?.districtDetails)
@@ -112,8 +117,12 @@ function Hero() {
 
     return (
         <section className={
-            clsx(
-                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12', page === 'seatDetails' && 'pt-0 pb-1 md:pb-12', page === 'districtDetails' && 'pt-0 pb-1 md:pb-12', page === 'home' && 'pb-1'
+            cn(
+                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12', 
+                page === 'seatDetails' && 'pt-0 pb-1 md:pb-12', 
+                page === 'districtDetails' && 'pt-0 pb-1 md:pb-12', 
+                page === 'home' && 'pb-1',
+                page === 'news' && 'hidden'
             )
         }>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">

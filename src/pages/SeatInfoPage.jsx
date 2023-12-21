@@ -26,7 +26,7 @@ import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
 import cn from '../lib/cn'
 
-console.log('===seat previous result', seatPreviousResult)
+// console.log('===seat previous result', seatPreviousResult)
 
 const symbols = [
     {

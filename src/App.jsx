@@ -9,6 +9,7 @@ import ElectionResultPage from "./pages/ElectionResultPage";
 import DistrictNavigationPage from "./pages/DistrictNavigationPage";
 import DistrictInfoPage from "./pages/DistrictInfoPage";
 import SeatNavigationPage from "./pages/SeatNavigationPage";
+import News from "./pages/News";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,12 @@ function App() {
       path: "/",
       element: (
         <HomePage />
+      ),
+    },
+    {
+      path: "/news",
+      element: (
+        <News />
       ),
     },
     {

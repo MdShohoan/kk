@@ -46,6 +46,9 @@ function Header() {
         else if (path.startsWith('/election-result')) {
             setCurrentPage('election-result')
         }
+        else if (path.startsWith('/news')) {
+            setCurrentPage('news')
+        }
         else{
             setCurrentPage('home')
         }
@@ -64,7 +67,8 @@ function Header() {
         },
         {
             text: 'খবর',
-            to: ''
+            to: 'news',
+            page: 'news'
         },
         {
             text: 'ফলাফল',
@@ -95,7 +99,8 @@ function Header() {
         },
         {
             text: 'খবর',
-            to: ''
+            to: 'news',
+            page: 'news'
         },
         {
             text: 'ফলাফল',
