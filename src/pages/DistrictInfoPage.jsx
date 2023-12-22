@@ -159,8 +159,8 @@ function DistrictInfoPage() {
           {/* ------------District information counter start---------- */}
           <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8'>
             {
-              districtCounterData.map((singleData, i) => (
-                <Card key={i} type='type1' data={singleData} />
+              districtCounterData.map((singleData) => (
+                <Card key={singleData?.count} type='type1' data={singleData} />
               ))
             }
           </div>
