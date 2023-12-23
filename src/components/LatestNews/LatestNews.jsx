@@ -30,7 +30,7 @@ export default function LatestNews() {
                     নির্বাচনের সর্বশেষ খবর
                 </Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 mb-6">
-                    <Card story={stories[0]} />
+                    <Card story={stories[0]} className={'mb-1 sm:mb-0'}/>
                     {
                         stories?.slice(1, 3).map((story) => (
                             <>
