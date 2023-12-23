@@ -1,40 +1,21 @@
-import { clsx } from 'clsx';
-import { useState } from "react";
 import cn from '../../../lib/cn';
-function Card({ news, className }) {
-    const [isHovered, setIsHovered] = useState(false)
+function Card({ story, className }) {
+    const openNewTab = (url) => {
+        window.open(url, "_blank")
+    }
     return (
         <div
-            className={cn('cursor-pointer', className)}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className={cn('cursor-pointer group', className)}
+            key={story?.n_id}
+            onClick={() => openNewTab(story?.detailsUrl)}
         >
-            <div className="overflow-clip rounded-lg mb-4">
+            <div className='overflow-clip rounded-lg'>
                 <img
-                    src={news?.image}
-                    alt="News image"
-                    className={clsx(
-                        "w-full rounded block transition-all duration-500 object-cover",
-                        {
-                            "scale-105": isHovered === true,
-                        }
-                    )}
+                    className='mb-3 group-hover:scale-105 transition-all duration-500'
+                    src={story?.thumb_image}
                 />
             </div>
-
-            <h1
-                className={
-                    clsx(
-                        "font-semibold text-lg transition-all duration-300",
-                        {
-                            'text-blue-500': isHovered === true,
-                            'text-primary': isHovered === false
-                        }
-                    )
-                }
-            >
-                {news?.title}
-            </h1>
+            <h1 className='group-hover:text-primary leading-[22px] text-lg text-[#333] transition-all duration-300'>{story?.n_head}</h1>
         </div>
     )
 }

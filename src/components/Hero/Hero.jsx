@@ -1,5 +1,5 @@
 import { useLocation, useParams } from 'react-router-dom';
-import ECLogo from '../../assets/EC/ECLogo.png'
+import ECLogo from '../../assets/EC/নির্বাচন_কমিশন.png'
 import DistrictMap from '../common/DistrictMap/DistrictMap';
 import CountdownTimer from '../common/CountdownTimer/CountdownTimer';
 import { useEffect, useState } from 'react';

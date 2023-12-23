@@ -1,34 +1,41 @@
 import Title from "../common/Title/Title";
-import newsCard1 from '../../assets/newsCard/newsCard1.png'
-import newsCard2 from '../../assets/newsCard/newsCard2.png'
 import Card from "./Card/Card";
 import List from "./List/List";
 import Section from "../common/Section/Section";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function LatestNews() {
-    const data = [
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard2 },
-        { title: 'হারিয়ে যাওয়া আংটির খোঁজে লন্ডন থেকে প্যারিস', image: newsCard1 },
-    ]
 
+    const [stories, setStories] = useState([])
+    const url = 'https://bn-api.kalerkantho.com/api/election?page=1'
+    // const url = 'https://bn-api.kalerkantho.com/api/gallery_cat/3?page=1'
+
+
+    const fetchData = async () => {
+        const res = await axios.get(url)
+        setStories(res?.data?.data)
+
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    console.log(stories)
     return (
         <Section>
             <div className="container mx-auto">
                 <Title>
                     নির্বাচনের সর্বশেষ খবর
                 </Title>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 md:gap-8 mb-4 md:mb-16">
-                    <Card news={data[0]} />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 mb-6">
+                    <Card story={stories[0]} />
                     {
-                        data?.slice(2, 4).map((news, i) => (
+                        stories?.slice(1, 3).map((story) => (
                             <>
-                                <Card news={news} key={i} className={'hidden md:block'} />
-                                <List key={i} info={news} className={'flex md:hidden'} />
+                                <Card story={story} key={story?.n_id} className={'hidden md:block'} />
+                                <List key={story?.n_id} story={story} className={'flex md:hidden'} />
                             </>
                         ))
                     }
@@ -39,10 +46,10 @@ export default function LatestNews() {
                 </div>
 
                 {/* ----News Card Start (visible in big screen)---- */}
-                <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+                <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {
-                        data?.slice(3).map((news, i) => (
-                            <Card news={news} key={i} />
+                        stories?.slice(3, 11).map((story) => (
+                            <Card story={story} key={story?.n_id} />
                         ))
                     }
                 </div>
@@ -51,17 +58,12 @@ export default function LatestNews() {
                 {/* ----News List Start (visible in mobile screen)---- */}
                 <div className='flex md:hidden flex-col gap-4 '>
                     {
-                        data?.slice(3).map((info, i) => (
-                            <List key={i} info={info} />
+                        stories?.slice(3, 12).map((story) => (
+                            <List key={story.n_id} story={story} />
                         ))
                     }
                 </div>
                 {/* ----News List end (visible in mobile screen)---- */}
-                <span
-                    className="block md:hidden text-center rounded-md border border-primary mt-4 py-[6px] text-xl"
-                >
-                    আরও
-                </span>
             </div>
         </Section>
     )

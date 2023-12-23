@@ -143,6 +143,7 @@ function Header() {
                 <span className='md:hidden'>
                     <MdMenu size={32} onClick={() => setIsOpenNav(true)} />
                 </span>
+
                 {/*------------Drawer start----------*/}
                 <div
                     className={clsx(
@@ -180,6 +181,7 @@ function Header() {
                     </ul>
                 </div>
                 {/*------------Drawer end----------*/}
+                
             </div>
         </header>
     )
