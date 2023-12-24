@@ -55,7 +55,7 @@ function Video() {
                             </span>
                         </div>
                         <h1
-                            className={`text-${hoverElement === videos[0]?.id ? 'primary' : '[#000]'} font-bold text-2xl pt-3 transition-all duration-300`}
+                            className={`text-${hoverElement === videos[0]?.id ? 'primary' : '[#333]'} font-bold text-2xl pt-3 transition-all duration-300`}
                         >
                             {videos[0]?.name}
                         </h1>
@@ -93,7 +93,7 @@ function Video() {
                                         />
                                     </div>
                                     <div className='flex-1'>
-                                        <h1 className={`text-sm md:text-lg font-bold leading-[22px] text-${hoverElement === info?.id ? 'primary' : '[#000]'} transition-all duration-300`}>{info?.name}</h1>
+                                        <h1 className={`text-sm md:text-lg font-bold leading-[22px] text-${hoverElement === info?.id ? 'primary' : '[#333]'} transition-all duration-300`}>{info?.name}</h1>
                                     </div>
                                 </div>
                             ))

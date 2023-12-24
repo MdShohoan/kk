@@ -48,7 +48,7 @@ function News() {
                             className='flex-1 flex flex-col md:flex-row gap-4 cursor-pointer group'
                         >
                             <div className='basis-full'>
-                                <h1 className='font-bold text-3xl mb-2 group-hover:text-primary transition-all duration-500'>{news[0]?.n_head}</h1>
+                                <h1 className='font-bold text-3xl mb-2 text-[#333] group-hover:text-primary transition-all duration-500'>{news[0]?.n_head}</h1>
                                 <p className='text-[#333] text-base mb-3'>{news[0]?.n_details}</p>
                                 <div className='flex items-center gap-[3px]'>
                                     <IoMdTime />
@@ -97,8 +97,8 @@ function News() {
                                         <img src={story.thumb_image} className='w-full rounded-lg' />
                                     </div>
                                     <div className='basis-3/5'>
-                                        <h1 className='text-lg mb-2 leading-[22px] font-bold'>{story?.n_head}</h1>
-                                        <p className='text-sm'>{story?.n_details}</p>
+                                        <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333]'>{story?.n_head}</h1>
+                                        <p className='text-sm text-[#333]'>{story?.n_details}</p>
                                     </div>
                                 </div>
                             ))

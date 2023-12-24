@@ -7,10 +7,10 @@ function List({ story, className }) {
     return (
         <div
             onClick={() => openNewTab(story?.detailsUrl)}
-            className={cn('flex gap-3 border-b border-gray4 pb-2 cursor-pointer font-bold text-sm', className)}
+            className={cn('flex gap-3 border-b border-gray4 pb-2 cursor-pointer font-bold text-sm text-[#333]', className)}
         >
             <img src={story?.thumb_image} className='h-[64px] w-[112px] flex justify-center items-center rounded-lg' />
-            <h1 className={` hover:text-primary text-[#000] transition-all duration-300`}>
+            <h1 className={` hover:text-primary transition-all duration-300`}>
                 {story?.n_head}
             </h1>
         </div>
