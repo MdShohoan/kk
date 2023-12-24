@@ -15,7 +15,7 @@ function Card({ story, className }) {
                     src={story?.thumb_image}
                 />
             </div>
-            <h1 className='group-hover:text-primary leading-[22px] text-lg text-[#333] transition-all duration-300'>{story?.n_head}</h1>
+            <h1 className='group-hover:text-primary leading-[22px] text-lg text-[#000] transition-all duration-300'>{story?.n_head}</h1>
         </div>
     )
 }

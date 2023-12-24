@@ -29,7 +29,7 @@ function Video() {
         fetchData()
     }, [])
 
-    console.log(videos[0], '=============1st video')
+    console.log(videos, '============= videos')
 
     return (
         <Section>
@@ -45,22 +45,6 @@ function Video() {
                         onMouseLeave={() => setHoverElement(null)}
                         onClick={() => openNewTab(videos[0]?.id)}
                     >
-                        {/* <div
-                            className='md:h-full rounded flex justify-center items-center relative'
-                            style={{
-                                backgroundImage: `url(${data[0]?.thumbnail})`,
-                                backgroundRepeat: 'no-repeat',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center'
-                            }}
-                        >
-                            <span className='inline-block py-16 md:p-0'>
-                                <GoPlay
-                                    color={hoverElement === 1 ? 'red' : 'white'} size={48}
-                                    style={{ transition: 'all 300ms' }}
-                                />
-                            </span>
-                        </div> */}
                         <div className='relative'>
                             <img src={videos[0]?.cover_photo} className='w-full h-auto md:h-[250px] object-cover md:w-full xl:w-full xl:h-auto rounded-lg' />
                             <span className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -71,7 +55,7 @@ function Video() {
                             </span>
                         </div>
                         <h1
-                            className={`text-${hoverElement === videos[0]?.id ? 'primary-contrast' : 'primary'} font-extrabold text-2xl pt-3 transition-all duration-300`}
+                            className={`text-${hoverElement === videos[0]?.id ? 'primary' : '[#000]'} font-bold text-2xl pt-3 transition-all duration-300`}
                         >
                             {videos[0]?.name}
                         </h1>
@@ -90,23 +74,27 @@ function Video() {
                                     onMouseLeave={() => setHoverElement(null)}
                                     onClick={() => openNewTab(info?.id)}
                                 >
-                                    <div
-                                        className='h-[50px] w-[104px] flex justify-center items-center rounded'
-                                        style={{
-                                            backgroundImage: `url(${info?.cover_photo})`,
-                                            backgroundRepeat: 'no-repeat',
-                                            backgroundSize: 'cover',
-                                            backgroundPosition: 'center',
-                                        }}
-                                    >
+                                    <div className='w-[108px] h-[58px] border relative'>
+                                        <img
+                                            className='w-[108px] h-[58px] object-cover rounded'
+                                            src={info?.cover_photo}
+                                        />
                                         <GoPlay
                                             color={hoverElement === info?.id ? 'red' : 'white'}
-                                            style={{ transition: 'all 300ms' }}
+                                            style={{
+                                                transition: 'all 300ms',
+                                                position: 'absolute',
+                                                left: '50%',
+                                                top: '50%',
+                                                transform: 'translate(-50%, -50%)',
+                                            }}
                                             size={24}
 
                                         />
                                     </div>
-                                    <h1 className={`text-sm text-${hoverElement === info?.id ? 'primary' : '[#666]'} font-normal transition-all duration-300`}>{info?.name}</h1>
+                                    <div className='flex-1'>
+                                        <h1 className={`text-sm md:text-lg leading-[22px] text-${hoverElement === info?.id ? 'primary' : '[#000]'} font-normal transition-all duration-300`}>{info?.name}</h1>
+                                    </div>
                                 </div>
                             ))
                         }
