@@ -11,7 +11,7 @@ function toBengaliDigits(number) {
     }
 
     // Convert the number to a string and then convert each digit
-    const bengaliNumber = number.toString().split('').map(convertDigit).join('');
+    const bengaliNumber = number?.toString()?.split('')?.map(convertDigit)?.join('');
 
     return bengaliNumber;
 }

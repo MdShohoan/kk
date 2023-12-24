@@ -22,10 +22,12 @@ function DistrictInfoPage() {
   const { districtNo } = useParams()
   const [update, setUpdate] = useState(0)
 
+  console.log('Latest data', latestData)
   console.log(update)
+
   useEffect(() => {
     //11th election data of current district
-    const eleventhData = getDistrictDataByDistrictNo(districtNo)?.find((element) => element.ElectionNo === 11)
+    const eleventhData = getDistrictDataByDistrictNo(districtNo)?.find((element) => element.electionNoEn === 11)
     setLatestData(eleventhData)
   }, [districtNo])
 
@@ -65,12 +67,12 @@ function DistrictInfoPage() {
 
   const chartData = [...getDistrictDataByDistrictNo(districtNo)]?.map((district) => {
     return {
-      electionNo: district?.ElectionNo,
+      electionNo: district?.electionNoEn,
       series: [
-        toEnglishDigits(district?.bal || 0),
-        toEnglishDigits(district?.bnp || 0),
-        toEnglishDigits(district?.jp || 0),
-        toEnglishDigits(district?.ao || 0),
+        toEnglishDigits(district?.al || '০'),
+        toEnglishDigits(district?.bnp || '০'),
+        toEnglishDigits(district?.jp || '০'),
+        toEnglishDigits(district?.ao || '০'),
       ]
     }
   })
@@ -186,6 +188,7 @@ function DistrictInfoPage() {
                       className="block absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/4"
                     >
                       {toBengaliDigits(element.electionNo)}ম
+                      {console.log('election', element)}
                     </span>
                   </div>
                 </div>

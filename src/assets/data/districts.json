@@ -2,190 +2,223 @@
     "data": [
         {
             "districtNo": 1,
-            "ElectionNo": 11,
-            "maleVoter": "৩৫৭৬২২",
-            "femaleVoter": "৩৫৬৪৪৫",
-            "totalVoter": "৭১৪০৬৭",
+            "electionNoBn": "১২ম",
+            "electionNoEn": 12,
+            "totalVoter": "০",
+            "totalSeat": "০",
+            "ao": 0
+        },
+        {
+            "districtNo": 1,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৭১৪০৮৩",
             "totalSeat": "২",
-            "bal": "২",
+            "al": "২",
+            "ao": 0,
             "__EMPTY_43": 0
         },
         {
             "districtNo": 1,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬১৫৮৪০",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "ao": "১"
         },
         {
             "districtNo": 1,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৫৪৪৭৪৬",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 1,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৪৫৪৩২৫",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 1,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৩৭৬৯১১",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 1,
-            "ElectionNo": 5,
-            "maleVoter": "১৯৫০৭১",
-            "femaleVoter": "১৮৩১১৯",
-            "totalVoter": "৩৭৮১৯০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
+            "totalVoter": 378190,
             "totalSeat": "২",
             "bnp": "১",
             "ao": "১"
         },
         {
             "districtNo": 2,
-            "ElectionNo": 11,
-            "maleVoter": "৫০২৯৯৪",
-            "femaleVoter": "৪৯২৭১৮",
-            "totalVoter": "৯৯৫৭১২",
+            "electionNoBn": "১২ম",
+            "electionNoEn": 12
+        },
+        {
+            "districtNo": 2,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৯৯৭৭৯২",
             "totalSeat": "৩",
-            "bal": "২",
+            "al": "২",
             "bnp": "১"
         },
         {
             "districtNo": 2,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬৩৩৬৪৭",
-            "totalSeat": "২",
-            "bal": "২"
+            "totalSeat": "৩ (বিনা প্রতি)",
+            "al": "৩"
         },
         {
             "districtNo": 2,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৭৮২৫২৭",
-            "totalSeat": "২",
-            "bal": "২"
+            "totalSeat": "৩",
+            "al": "২",
+            "jp": "১"
         },
         {
             "districtNo": 2,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৬৭৩৯২৫",
-            "totalSeat": "২",
-            "bal": "১",
-            "bnp": "১"
+            "totalSeat": "৩",
+            "al": "১",
+            "bnp": "১",
+            "jp": "১"
         },
         {
             "districtNo": 2,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫৫২৪৭৩",
-            "totalSeat": "২",
-            "bal": "২"
+            "totalSeat": "৩",
+            "al": "৩"
         },
         {
             "districtNo": 2,
-            "ElectionNo": 5,
-            "maleVoter": "২৮০৪১৩",
-            "femaleVoter": "২৫৮১৫১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৫৩৮৫৬৪",
-            "totalSeat": "২",
-            "bal": "১",
+            "totalSeat": "৩",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 3,
-            "ElectionNo": 11,
-            "maleVoter": "১১০৭১৮০",
-            "femaleVoter": "১১০১১০১",
-            "totalVoter": "২২০৮২৮১",
-            "totalSeat": "৬",
-            "bal": "৬"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 3,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২২০৮৫৮৭",
+            "totalSeat": "৬",
+            "al": "৬"
+        },
+        {
+            "districtNo": 3,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১৬৯৫৫৬২",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 3,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৭৬৬২২০",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 3,
-            "ElectionNo": 8,
-            "totalVoter": "১৫৫৪৯৮৩",
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
+            "totalVoter": "১২৬৪৯২৭",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩",
             "ao": "২"
         },
         {
             "districtNo": 3,
-            "ElectionNo": 7,
-            "totalVoter": "১২৪৮৩৬৬",
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
+            "totalVoter": "১২৪৮১৬৬",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "১"
         },
         {
             "districtNo": 3,
-            "ElectionNo": 5,
-            "maleVoter": "৬৩৩৪৫৪",
-            "femaleVoter": "৫৯৪৯৪৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১২২৮৪০০",
             "totalSeat": "৬",
-            "bal": "৪",
+            "al": "৪",
             "ao": "২"
         },
         {
             "districtNo": 4,
-            "ElectionNo": 11,
-            "maleVoter": "৬৪৯৪৩৫",
-            "femaleVoter": "৬৪২৯৪৫",
-            "totalVoter": "১২৯২৩৮০",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 4,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১২৯২৪৩৪",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "jp": "২"
         },
         {
             "districtNo": 4,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫৯৪২৩২",
-            "totalSeat": "৪",
-            "bal": "৩",
+            "totalSeat": "৪ (বিনা প্রতি)",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 4,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১০১৩৫৯৫",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "jp": "২"
         },
         {
             "districtNo": 4,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৯০৪৩১১",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "১",
             "ao": "১"
         },
         {
             "districtNo": 4,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭২৩০৮৫",
             "totalSeat": "৪",
             "jp": "৩",
@@ -193,129 +226,142 @@
         },
         {
             "districtNo": 4,
-            "ElectionNo": 5,
-            "maleVoter": "৩৯৬১৪২",
-            "femaleVoter": "৩৭০১৯৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৭৬৬৩৩৯",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "ao": "২"
         },
         {
             "districtNo": 5,
-            "ElectionNo": 11,
-            "maleVoter": "৪৫৭৭২৭",
-            "femaleVoter": "৪৫৮৩২৩",
-            "totalVoter": "৯১৬০৫০",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 5,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৯১৬৬৪৬",
             "totalSeat": "৩",
-            "bal": "২",
+            "al": "২",
             "jp": "১"
         },
         {
             "districtNo": 5,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫০০৮৭৬",
-            "totalSeat": "৫",
-            "bal": "৫"
+            "totalSeat": "৩",
+            "al": "৩"
         },
         {
             "districtNo": 5,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৭১০২১৮",
-            "totalSeat": "৪",
-            "bal": "২",
+            "totalSeat": "৩",
+            "al": "১",
             "jp": "২"
         },
         {
             "districtNo": 5,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৬৫৫১৯৮",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "bnp": "১",
             "jp": "১"
         },
         {
             "districtNo": 5,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫২৫১৪৭",
-            "totalSeat": "৪",
-            "bnp": "১",
+            "totalSeat": "৩",
             "jp": "৩"
         },
         {
             "districtNo": 5,
-            "ElectionNo": 5,
-            "maleVoter": "২৭৫৩২৮",
-            "femaleVoter": "২৫৬০২৪",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৫৩১৩৫২",
             "totalSeat": "৩",
             "jp": "৩"
         },
         {
             "districtNo": 6,
-            "ElectionNo": 11,
-            "maleVoter": "১০৬০২০১",
-            "femaleVoter": "১০৭৪৬৪১",
-            "totalVoter": "২১৩৪৮৪২",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 6,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২১৩২৬৪০",
             "totalSeat": "৬",
-            "bal": "৪",
+            "al": "৪",
             "jp": "২"
         },
         {
             "districtNo": 6,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১০৮৭৪৪৪",
-            "totalSeat": "৭",
-            "bal": "৪",
+            "totalSeat": "৬",
+            "al": "৪",
             "jp": "২",
             "ao": "১"
         },
         {
             "districtNo": 6,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৭০৭৬৪৮",
-            "totalSeat": "৭",
-            "bal": "৩",
-            "jp": "৪"
+            "totalSeat": "৬",
+            "al": "৩",
+            "jp": "৩"
         },
         {
             "districtNo": 6,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৫৪৯২২৬",
-            "totalSeat": "৭",
-            "jp": "৭"
-        },
-        {
-            "districtNo": 6,
-            "ElectionNo": 7,
-            "totalVoter": "১২০১৮৯৪",
-            "totalSeat": "৭",
-            "bal": "১",
+            "totalSeat": "৬",
             "jp": "৬"
         },
         {
             "districtNo": 6,
-            "ElectionNo": 5,
-            "maleVoter": "৬১৯৬৩৬",
-            "femaleVoter": "৫৭৮৭৩৯",
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
+            "totalVoter": "১২০১৮৯৪",
+            "totalSeat": "৬",
+            "jp": "৬"
+        },
+        {
+            "districtNo": 6,
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১৯৮৩৭৫",
             "totalSeat": "৬",
             "jp": "৬"
         },
         {
             "districtNo": 7,
-            "ElectionNo": 11,
-            "maleVoter": "৭৬১০৮৮",
-            "femaleVoter": "৭৮৫৭৯৪",
-            "totalVoter": "১৫৪৬৮৮২",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 7,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৫৪৭০০১",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 7,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬১৩১০৬",
             "totalSeat": "৪",
             "jp": "৩",
@@ -323,483 +369,539 @@
         },
         {
             "districtNo": 7,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১২২৪৬৬১",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "jp": "৩"
         },
         {
             "districtNo": 7,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১১১১৬১৫",
             "totalSeat": "৪",
             "jp": "৪"
         },
         {
             "districtNo": 7,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৮৫৬১৮৮",
             "totalSeat": "৪",
             "jp": "৪"
         },
         {
             "districtNo": 7,
-            "ElectionNo": 5,
-            "maleVoter": "৪৭১১৩১",
-            "femaleVoter": "৪৪৮৯২৫",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৯২০০৫৬",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "jp": "৩"
         },
         {
             "districtNo": 8,
-            "ElectionNo": 11,
-            "maleVoter": "৮৭১৭৬৪",
-            "femaleVoter": "৯১৩৯০০",
-            "totalVoter": "১৭৮৫৬৬৪",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 8,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৭৮৫৪৪১",
             "totalSeat": "৫",
-            "bal": "৩",
+            "al": "৪",
             "jp": "১"
         },
         {
             "districtNo": 8,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১৩২১২৮০",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "ao": "১"
         },
         {
             "districtNo": 8,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৪১৯৯০৮",
             "totalSeat": "৫",
-            "bal": "৩",
+            "al": "৩",
             "jp": "২"
         },
         {
             "districtNo": 8,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৩৫৭০২৫",
-            "totalSeat": "৪",
-            "bal": "১",
+            "totalSeat": "৫",
+            "al": "১",
             "bnp": "১",
-            "jp": "১",
+            "jp": "২",
             "ao": "১"
         },
         {
             "districtNo": 8,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০৫২০৮৩",
-            "totalSeat": "২",
-            "jp": "২"
+            "totalSeat": "৫",
+            "jp": "৫"
         },
         {
             "districtNo": 8,
-            "ElectionNo": 5,
-            "maleVoter": "৫৭১৩৬৪",
-            "femaleVoter": "৫৪৩১৩১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১১৪৪৯৫",
             "totalSeat": "৫",
             "jp": "৫"
         },
         {
             "districtNo": 9,
-            "ElectionNo": 11,
-            "maleVoter": "৩৫০৬৭৩",
-            "femaleVoter": "৩৫৫৮৭৬",
-            "totalVoter": "৭০৬৫৪৯",
-            "totalSeat": "২",
-            "bal": "২"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 9,
-            "ElectionNo": 10,
-            "totalVoter": "০",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৭০৬৫৪৩",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 9,
-            "ElectionNo": 9,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "(বিনা প্রতি) ",
+            "totalSeat": "২",
+            "al": "২"
+        },
+        {
+            "districtNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৫৭৯০০৮",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 9,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৫২১৬৪৯",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 9,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৪৪৫৭৫৮",
-            "totalSeat": "০"
+            "totalSeat": "২",
+            "bnp": "২"
         },
         {
             "districtNo": 9,
-            "ElectionNo": 5,
-            "maleVoter": "২১১৬৯০",
-            "femaleVoter": "২০৪৫৬৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৪১৬২৫৬",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 10,
-            "ElectionNo": 11,
-            "maleVoter": "১২৬০৫৬২",
-            "femaleVoter": "১২৮৬২০২",
-            "totalVoter": "২৫৪৬৭৬৪",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২৫৪৬৯৫৮",
             "totalSeat": "৭",
-            "bal": "২",
+            "al": "২",
             "bnp": "২",
             "jp": "২",
             "ao": "১"
         },
         {
             "districtNo": 10,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৭০৫৪৭৬",
-            "totalSeat": "৬",
-            "bal": "২",
-            "jp": "৩",
+            "totalSeat": "৭",
+            "al": "২",
+            "jp": "৪",
             "ao": "১"
         },
         {
             "districtNo": 10,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "২০৫৪০৭৯",
-            "totalSeat": "৬",
-            "bal": "২",
-            "bnp": "৪"
+            "totalSeat": "৭",
+            "al": "২",
+            "bnp": "৫"
         },
         {
             "districtNo": 10,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৮৯৮৫৯৫",
-            "totalSeat": "৬",
-            "bnp": "৬"
+            "totalSeat": "৭",
+            "bnp": "৭"
         },
         {
             "districtNo": 10,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১৫০৪৮২৩",
-            "totalSeat": "২",
-            "bnp": "২"
+            "totalSeat": "৭",
+            "bnp": "৭"
         },
         {
             "districtNo": 10,
-            "ElectionNo": 5,
-            "maleVoter": "৭৭১২৭২",
-            "femaleVoter": "৭৪৪৬৭১",
-            "totalVoter": "১৫১৫৯৪৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
+            "totalVoter": "১৫১৬৯৪২",
             "totalSeat": "৭",
             "bnp": "৬",
             "ao": "১"
         },
         {
             "districtNo": 11,
-            "ElectionNo": 11,
-            "maleVoter": "৫৮৯৫০২",
-            "femaleVoter": "৫৮৬০৭৮",
-            "totalVoter": "১১৭৫৫৮০",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 11,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১১৭৫৬৮৫",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "bnp": "২"
         },
         {
             "districtNo": 11,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩৩২৫৩৮",
-            "totalSeat": "৪",
-            "bal": "৩",
-            "jp": "১"
+            "totalSeat": "৩",
+            "al": "৩"
         },
         {
             "districtNo": 11,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৯১৮১৮৪",
-            "totalSeat": "৪",
-            "bal": "৩",
-            "bnp": "১"
+            "totalSeat": "৩",
+            "al": "৩"
         },
         {
             "districtNo": 11,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৭৮১৮০৪",
-            "totalSeat": "৪",
-            "bnp": "৪"
+            "totalSeat": "৩",
+            "bnp": "৩"
         },
         {
             "districtNo": 11,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৬৫৩১৯৭",
-            "totalSeat": "৪",
-            "bnp": "৪"
+            "totalSeat": "৩",
+            "bnp": "৩"
         },
         {
             "districtNo": 11,
-            "ElectionNo": 5,
-            "maleVoter": "৩২৭৯৩০",
-            "femaleVoter": "৩২২৬১৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৬৫০৫৪৮",
-            "totalSeat": "৪",
+            "totalSeat": "৩",
             "bnp": "২",
-            "ao": "২"
+            "ao": "১"
         },
         {
             "districtNo": 12,
-            "ElectionNo": 11,
-            "maleVoter": "৯৯৫০৯৯",
-            "femaleVoter": "১০০৭৩৬১",
-            "totalVoter": "২০০২৪৬০",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 12,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২০০২৭৩৫",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 12,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৮৯৪২৭৭",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 12,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৬১৬৪৩৯",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 12,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৪৩৭৬৩৫",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "৫"
         },
         {
             "districtNo": 12,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১১৮৪৬৯১",
             "totalSeat": "৬",
             "bnp": "৬"
         },
         {
             "districtNo": 12,
-            "ElectionNo": 5,
-            "maleVoter": "৫৯৩০৭২",
-            "femaleVoter": "৫৭৫৪১৪",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১৬৮৪৮৬",
             "totalSeat": "৬",
-            "bal": "২",
+            "al": "২",
             "bnp": "৩",
             "ao": "১"
         },
         {
             "districtNo": 13,
-            "ElectionNo": 11,
-            "maleVoter": "৯৬৭৫৯৩",
-            "femaleVoter": "৯৭৪৭৫৭",
-            "totalVoter": "১৯৪২৩৫০",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 13,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৯৪২৫৬১",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 13,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫৯৩৫৩৮",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 13,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৫৭০৮২৬",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 13,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৩৩৭৯৩৩",
             "totalSeat": "৫",
             "bnp": "৫"
         },
         {
             "districtNo": 13,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০৮৩৭৯৮",
-            "totalSeat": "৪",
-            "bnp": "৪"
+            "totalSeat": "৫",
+            "bnp": "৫"
         },
         {
             "districtNo": 13,
-            "ElectionNo": 5,
-            "maleVoter": "৫০৪৮৬৯",
-            "femaleVoter": "৪৯৬৪২৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১০০১২৯৭",
-            "totalSeat": "৬",
-            "bal": "১",
-            "bnp": "৪",
+            "totalSeat": "৫",
+            "al": "১",
+            "bnp": "৩",
             "jp": "১"
         },
         {
             "districtNo": 14,
-            "ElectionNo": 11,
-            "maleVoter": "৬৫০৩৮৮",
-            "femaleVoter": "৬৫৩৩৪৩",
-            "totalVoter": "১৩০৩৭৩১",
-            "totalSeat": "৪",
-            "bal": "৪"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 14,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৩০৩৮৮৭",
+            "totalSeat": "৪",
+            "al": "৪"
+        },
+        {
+            "districtNo": 14,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২৪৭০৯২",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 14,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১০৫০১৭০",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 14,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৯২৩৩৪৫",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 14,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭৩২৩০৪",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 14,
-            "ElectionNo": 5,
-            "maleVoter": "৩৬৮১৫৯",
-            "femaleVoter": "৩৫২৯১৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৭২১০৭৫",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "১",
             "ao": "১"
         },
         {
             "districtNo": 15,
-            "ElectionNo": 11,
-            "maleVoter": "১১০৮৫৩৯",
-            "femaleVoter": "১০৮৭৭২৪",
-            "totalVoter": "২১৯৬২৬৩",
-            "totalSeat": "৬",
-            "bal": "৬"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 15,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২১৯৬৪৭৬",
+            "totalSeat": "৬",
+            "al": "৬"
+        },
+        {
+            "districtNo": 15,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩০৩২৮৮",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 15,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৭৬৪৯৫৬",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "১"
         },
         {
             "districtNo": 15,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৮২৬১৮৯",
-            "totalSeat": "৬",
-            "bal": "১",
-            "bnp": "৫"
+            "totalSeat": "৭",
+            "al": "১",
+            "bnp": "৫",
+            "ao": "১"
         },
         {
             "districtNo": 15,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১২৬৭০১৫",
-            "totalSeat": "৬",
-            "bal": "৫",
-            "bnp": "১"
+            "totalSeat": "৭",
+            "al": "৫",
+            "bnp": "২"
         },
         {
             "districtNo": 15,
-            "ElectionNo": 5,
-            "maleVoter": "৭৭০৫৩১",
-            "femaleVoter": "৬৯৮৩১৫",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৪৬৮৮৪৬",
-            "totalSeat": "৬",
-            "bal": "১",
-            "bnp": "৫"
+            "totalSeat": "৭",
+            "al": "১",
+            "bnp": "৬"
         },
         {
             "districtNo": 16,
-            "ElectionNo": 11,
-            "maleVoter": "৯৪৮৬৭৩",
-            "femaleVoter": "৯৩০৬৫৪",
-            "totalVoter": "১৮৭৯৩২৭",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 16,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৮৭৯৭১৫",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 16,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬৯২৮১৬",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 16,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৪৮৪৭১৯",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 16,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৪২৮৯৪২",
             "totalSeat": "৫",
-            "bal": "১",
+            "al": "১",
             "bnp": "২",
             "ao": "২"
         },
         {
             "districtNo": 16,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০৪৩৯৩৬",
-            "totalSeat": "৪",
-            "bal": "৪",
-            "bnp": "০"
+            "totalSeat": "৫",
+            "al": "৪",
+            "bnp": "১"
         },
         {
             "districtNo": 16,
-            "ElectionNo": 5,
-            "maleVoter": "৬০৭২২৪",
-            "femaleVoter": "৫৫৩১৫৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১৬০৩৮২",
             "totalSeat": "৫",
             "bnp": "৩",
@@ -807,39 +909,46 @@
         },
         {
             "districtNo": 17,
-            "ElectionNo": 11,
-            "maleVoter": "২৪৫১৯৬",
-            "femaleVoter": "২৫০৬৯৬",
-            "totalVoter": "৪৯৫৮৯২",
-            "totalSeat": "২",
-            "bal": "২"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 17,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৪৯৫৮৯৩",
+            "totalSeat": "২",
+            "al": "২"
+        },
+        {
+            "districtNo": 17,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৪৫৬৬৯৬",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "ao": "১"
         },
         {
             "districtNo": 17,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৪০৭৫২৫",
             "totalSeat": "২",
-            "bal": "১",
-            "ao": "১"
+            "al": "১",
+            "bnp": "১"
         },
         {
             "districtNo": 17,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৩৭৮২৪৬",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 17,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২৯৮০২৩",
             "totalSeat": "২",
             "bnp": "১",
@@ -847,106 +956,117 @@
         },
         {
             "districtNo": 17,
-            "ElectionNo": 5,
-            "maleVoter": "১৩৯৩৪৪",
-            "femaleVoter": "১৩৬২৯৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২৭৫৬৩৭",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "bnp": "১"
         },
         {
             "districtNo": 18,
-            "ElectionNo": 11,
-            "maleVoter": "৭২৭৮০৫",
-            "femaleVoter": "৭৩১৭৬৪",
-            "totalVoter": "১৪৫৯৫৬৯",
+            "electionNoBn": "১২ম"
+        },
+        {
+            "districtNo": 18,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৪৫৯৮৮৮",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 18,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৯৫২৩২৮",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "ao": "২"
         },
         {
             "districtNo": 18,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১১৭১৪২৭",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 18,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১০৮৩৯৩০",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 18,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৮৪০৫৬৪",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 18,
-            "ElectionNo": 5,
-            "maleVoter": "৪৫৩০৭০",
-            "femaleVoter": "৪২০২৯৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৭৩৩৬৩",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 19,
-            "ElectionNo": 11,
-            "maleVoter": "৪২৫৬০৭",
-            "femaleVoter": "৪২৭১৫০",
-            "totalVoter": "৮৫২৭৫৭",
-            "totalSeat": "২",
-            "bal": "২"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 19,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৮৫২৮৭২",
+            "totalSeat": "২",
+            "al": "২"
+        },
+        {
+            "districtNo": 19,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৭৬৪৮১২",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 19,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৬৮৪৪৩৩",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 19,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৬০৩১৫৩",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 19,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৪৮২৬৯৪",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 19,
-            "ElectionNo": 5,
-            "maleVoter": "২২৭৭৪৯",
-            "femaleVoter": "২১৭১৩৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৪৪৪৮৮৫",
             "totalSeat": "২",
             "bnp": "১",
@@ -954,629 +1074,667 @@
         },
         {
             "districtNo": 20,
-            "ElectionNo": 11,
-            "maleVoter": "৬৭২৬০৫",
-            "femaleVoter": "৬৬৯৬৭৩",
-            "totalVoter": "১৩৪২২৭৮",
-            "totalSeat": "৪",
-            "bal": "৪"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 20,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৩৪২৪৩০",
+            "totalSeat": "৪",
+            "al": "৪"
+        },
+        {
+            "districtNo": 20,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১১৯৮৪৭২",
-            "totalSeat": "৩",
-            "bal": "২",
+            "totalSeat": "৪",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 20,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১০৭১৪৭৭",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 20,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৯৭৯৫৫৪",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 20,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭৮১১৮৭",
-            "totalSeat": "৩",
-            "bnp": "৩"
+            "totalSeat": "৪",
+            "bnp": "৪"
         },
         {
             "districtNo": 20,
-            "ElectionNo": 5,
-            "maleVoter": "৪০২৮৯৭",
-            "femaleVoter": "৩৭৩০৬৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৭৭৫৯৬০",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 21,
-            "ElectionNo": 11,
-            "maleVoter": "১০৪৮৫৩৭",
-            "femaleVoter": "১০৪২৭৪৭",
-            "totalVoter": "২০৯১২৮৪",
-            "totalSeat": "৬",
-            "bal": "৬"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 21,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২০৯২৪৭২",
+            "totalSeat": "৬",
+            "al": "৬"
+        },
+        {
+            "districtNo": 21,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১১৬০৬৭৬",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 21,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৬৪১৫৯৯",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 21,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৪৯৭০১২",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "২",
             "ao": "৩"
         },
         {
             "districtNo": 21,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১২০১৯৪০",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 21,
-            "ElectionNo": 5,
-            "maleVoter": "৫৯১২৬৮",
-            "femaleVoter": "৫৬০৫৮০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১৫১৮৪৮",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 22,
-            "ElectionNo": 11,
-            "maleVoter": "৩৪২৮৯৫",
-            "femaleVoter": "৩৪২০৭৭",
-            "totalVoter": "৬৮৪৯৭২",
-            "totalSeat": "২",
-            "bal": "২"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 22,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৬৮৫০৫৯",
+            "totalSeat": "২",
+            "al": "২"
+        },
+        {
+            "districtNo": 22,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫৯৯৮১৫",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 22,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৫৩৪১১৫",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 22,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৪৯৮২০৪",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "bnp": "১"
         },
         {
             "districtNo": 22,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৩৮৮৬৫৩",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 22,
-            "ElectionNo": 5,
-            "maleVoter": "২১২১১৬",
-            "femaleVoter": "২০০৬০১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৪১২৭১৭",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "bnp": "১"
         },
         {
             "districtNo": 23,
-            "ElectionNo": 11,
-            "maleVoter": "২৭৬০৪৬",
-            "femaleVoter": "২৭৯৮৭২",
-            "totalVoter": "৫৫৫৯১৮",
-            "totalSeat": "২",
-            "bal": "২"
+            "electionNoBn": "১২ম"
         },
         {
             "districtNo": 23,
-            "ElectionNo": 10,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৫৫৬০১৮",
+            "totalSeat": "২",
+            "al": "২"
+        },
+        {
+            "districtNo": 23,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২৭২৬২২",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "ao": "১"
         },
         {
             "districtNo": 23,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৪২২৭৭৬",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "ao": "১"
         },
         {
             "districtNo": 23,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৪৩৫৫২২",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 23,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৩৩০৩৯৫",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 23,
-            "ElectionNo": 5,
-            "maleVoter": "২০৭২০৫",
-            "femaleVoter": "১৯৮৯৮৫",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৪০৬১৯০",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 24,
-            "ElectionNo": 11,
-            "maleVoter": "৫৫৯২৬৮",
-            "femaleVoter": "৫৫৩৭৭৮",
-            "totalVoter": "১১১৩০৪৬",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১১১৩২৫৪",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 24,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২৫৯৬৬৮",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 24,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৮৭৬৯৬৩",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 24,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৮৮৫৬৬০",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "১",
             "ao": "১"
         },
         {
             "districtNo": 24,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭০৩২৮৬",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 24,
-            "ElectionNo": 5,
-            "maleVoter": "৪৪৬০৩১",
-            "femaleVoter": "৪০৮৫৪৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৫৪৫৭৮",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "১",
             "ao": "১"
         },
         {
             "districtNo": 25,
-            "ElectionNo": 11,
-            "maleVoter": "৯০২৮৩৫",
-            "femaleVoter": "৮৯৮০০৬",
-            "totalVoter": "১৮০০৮৪১",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৮০১০০২",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 25,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬৭১০৫৪",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 25,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৪৪২৮৬২",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "১"
         },
         {
             "districtNo": 25,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৩১৩৪৪৮",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩",
             "ao": "২"
         },
         {
             "districtNo": 25,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০৬৮৬১৭",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "১"
         },
         {
             "districtNo": 25,
-            "ElectionNo": 5,
-            "maleVoter": "৬০৩১৬১",
-            "femaleVoter": "৫১২৫৮৪",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১১৫৭৪৫",
             "totalSeat": "৬",
-            "bal": "৩",
+            "al": "৩",
             "bnp": "২",
             "ao": "১"
         },
         {
             "districtNo": 26,
-            "ElectionNo": 11,
-            "maleVoter": "৭৮১৫৩০",
-            "femaleVoter": "৭৭৮৭৮৯",
-            "totalVoter": "১৫৬০৩১৯",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৫৬০৪২২",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 26,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬৯৩৮১৬",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 26,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১২৩৩৯৫১",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "jp": "২"
         },
         {
             "districtNo": 26,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১০৮২৩৩৬",
-            "totalSeat": "৪",
+            "totalSeat": "৫",
             "bnp": "১",
-            "ao": "৩"
+            "ao": "৪"
         },
         {
             "districtNo": 26,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৯০৫৩২৯",
-            "totalSeat": "৪",
-            "bal": "২",
+            "totalSeat": "৫",
+            "al": "৩",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 26,
-            "ElectionNo": 5,
-            "maleVoter": "৪৪০০১২",
-            "femaleVoter": "৪২৯৬৮১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৬৯৬৯৩",
-            "totalSeat": "৪",
-            "bal": "১",
-            "ao": "৩"
+            "totalSeat": "৫",
+            "al": "১",
+            "ao": "৪"
         },
         {
             "districtNo": 27,
-            "ElectionNo": 11,
-            "maleVoter": "৩৩৭৩৭৪",
-            "femaleVoter": "৩৪৫৩২৪",
-            "totalVoter": "৬৮২৬৯৮",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৬৮২৭৬৮",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 27,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫৯০৯৮০",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 27,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৫২০৩৮৫",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 27,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৫৩৮৪৪৮",
-            "totalSeat": "২",
+            "totalSeat": "৩",
+            "al": "১",
             "bnp": "১",
             "ao": "১"
         },
         {
             "districtNo": 27,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৩৯৫৯৬১",
-            "totalSeat": "২",
-            "bal": "১",
+            "totalSeat": "৩",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 27,
-            "ElectionNo": 5,
-            "maleVoter": "২৭৭৯২৩",
-            "femaleVoter": "২৬৩১৪৯",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৫৪১০৭২",
-            "totalSeat": "২",
-            "bal": "১",
+            "totalSeat": "৩",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 28,
-            "ElectionNo": 11,
-            "maleVoter": "৫৯৬২৮৪",
-            "femaleVoter": "৫৯৬১৮৩",
-            "totalVoter": "১১৯২৪৬৭",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১১৯৩০৬০",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 28,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫৮৫৭২৩",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 28,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৮৭৯৭৩২",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 28,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৯৭৯৫৪৬",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "২"
         },
         {
             "districtNo": 28,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৬৪৩৮৮৮",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 28,
-            "ElectionNo": 5,
-            "maleVoter": "৪৮৭৩৯৪",
-            "femaleVoter": "৪২৯৩৯৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৯১৬৭৮৭",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৩",
+            "bnp": "১"
         },
         {
             "districtNo": 29,
-            "ElectionNo": 11,
-            "maleVoter": "৬৪৮২৯৯",
-            "femaleVoter": "৬২০৭৫৭",
-            "totalVoter": "১২৬৯০৫৬",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১২৭৩৭৮৯",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 29,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫০৮৩১৮",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 29,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৯৪১৪০৪",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 29,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১০৫৯৮১৩",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 29,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৬৬৮২৮৬",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "২"
         },
         {
             "districtNo": 29,
-            "ElectionNo": 5,
-            "maleVoter": "৪৭৩৪৫৪",
-            "femaleVoter": "৩৭৫০২৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৪৮৪৭৭",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 30,
-            "ElectionNo": 11,
-            "maleVoter": "৮৯৮৯৭০",
-            "femaleVoter": "৮৮১৫৮৫",
-            "totalVoter": "১৭৮০৫৫৫",
-            "totalSeat": "৬",
-            "bal": "৪",
-            "jp": "৫"
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৭৮১৬৪০",
+            "totalSeat": "৪",
+            "al": "৪"
         },
         {
             "districtNo": 30,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৭৪৯৮৯৬",
-            "totalSeat": "৬",
-            "bal": "৪",
-            "jp": "১",
-            "ao": "১"
+            "totalSeat": "৪",
+            "al": "৪"
         },
         {
             "districtNo": 30,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৩১৯০৮৭",
             "totalSeat": "৬",
-            "bal": "২",
-            "bnp": "২",
-            "jp": "২"
+            "al": "৩",
+            "ao": "১"
         },
         {
             "districtNo": 30,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৩৩৪৭৭৮",
-            "totalSeat": "৬",
-            "bnp": "৬"
+            "totalSeat": "৪",
+            "bnp": "৪"
         },
         {
             "districtNo": 30,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৯৪৬১৮৩",
-            "totalSeat": "৬",
-            "bal": "২",
-            "bnp": "৩",
-            "jp": "১"
+            "totalSeat": "৪",
+            "al": "২",
+            "bnp": "২"
         },
         {
             "districtNo": 30,
-            "ElectionNo": 5,
-            "maleVoter": "৭০৩৮০৭",
-            "femaleVoter": "৬০১৯৩১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৩০৫৭৩৮",
-            "totalSeat": "৬",
-            "bal": "২",
-            "bnp": "৩",
+            "totalSeat": "৪",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 31,
-            "ElectionNo": 11,
-            "maleVoter": "২৩৬৩৩৮",
-            "femaleVoter": "২৩২৭৭৭",
-            "totalVoter": "৪৬৯১১৫",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৪৬৯২৯২",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 31,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১৫৪৩৩৪",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 31,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৩৫৬৭৪৯",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 31,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৪০১৩৯০",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 31,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২৮২৪৫৪",
             "totalSeat": "২",
             "jp": "২"
         },
         {
             "districtNo": 31,
-            "ElectionNo": 5,
-            "maleVoter": "২২৭৬১৬",
-            "femaleVoter": "২০৪৪৩৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৪৩২০৫৪",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 32,
-            "ElectionNo": 11,
-            "maleVoter": "৪১৬৬০৪",
-            "femaleVoter": "৪১২৬৪১",
-            "totalVoter": "৮২৯২৪৫",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৮২৯৪৫০",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 32,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১৬৯০৯৭",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "ao": "২"
         },
         {
             "districtNo": 32,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৬৩২১৫৯",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 32,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৫৫৩০০১",
             "totalSeat": "৪",
             "bnp": "২",
@@ -1584,7 +1742,8 @@
         },
         {
             "districtNo": 32,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৪০৯৫৬৮",
             "totalSeat": "৩",
             "jp": "২",
@@ -1592,937 +1751,975 @@
         },
         {
             "districtNo": 32,
-            "ElectionNo": 5,
-            "maleVoter": "২৭৫৩৩৫",
-            "femaleVoter": "২৫৫৯৩৫",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৫৩১২৭০",
             "totalSeat": "৩",
-            "bnp": "১",
+            "al": "১",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 33,
-            "ElectionNo": 11,
-            "maleVoter": "১৩৮১০১৫",
-            "femaleVoter": "১৪০৩৮৫৬",
-            "totalVoter": "২৭৮৪৮৭১",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২৭৭৪৪২২",
             "totalSeat": "৮",
-            "bal": "৮"
+            "al": "৮"
         },
         {
             "districtNo": 33,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৯৯৯২৩৭",
             "totalSeat": "৮",
-            "bal": "৮"
+            "al": "৮"
         },
         {
             "districtNo": 33,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "২২৩৩০৯৭",
             "totalSeat": "৮",
-            "bal": "৬",
+            "al": "৬",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 33,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "২১০৭৬৫৪",
             "totalSeat": "৮",
-            "bal": "২",
+            "al": "২",
             "bnp": "৫",
             "ao": "১"
         },
         {
             "districtNo": 33,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১৬২১৫৬৫",
             "totalSeat": "৮",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "৩"
         },
         {
             "districtNo": 33,
-            "ElectionNo": 5,
-            "maleVoter": "৯৩৪৮১৭",
-            "femaleVoter": "৮৫২৩৬৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৭৮৭১৮৪",
             "totalSeat": "৮",
-            "bal": "১",
+            "al": "১",
             "bnp": "৫",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 34,
-            "ElectionNo": 11,
-            "maleVoter": "৮৪৯৯২২",
-            "femaleVoter": "৮৬৪৮৪৬",
-            "totalVoter": "১৭১৪৭৬৮",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৬৮৫৩০০",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 34,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১১৪১৫২০",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "jp": "১"
         },
         {
             "districtNo": 34,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৩৬২০১২",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 34,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৩৭২৭৮২",
             "totalSeat": "৫",
-            "bal": "২",
+            "al": "২",
             "bnp": "৩"
         },
         {
             "districtNo": 34,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০৩৫৮৩৬",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 34,
-            "ElectionNo": 5,
-            "maleVoter": "৫৮৮৮৯০",
-            "femaleVoter": "৫৩৩৭০৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১১২২৫৯৭",
             "totalSeat": "৫",
-            "bal": "৪",
-            "bnp": "১"
-        },
-        {
-            "districtNo": 35,
-            "ElectionNo": 11,
-            "maleVoter": "৫১২১৩৭",
-            "femaleVoter": "৫২৩৪৪৬",
-            "totalVoter": "১০৩৫৫৮৩",
-            "totalSeat": "৩",
-            "bal": "৩"
-        },
-        {
-            "districtNo": 35,
-            "ElectionNo": 10,
-            "totalVoter": "৯০৬৯৮৮",
-            "totalSeat": "৩",
-            "bal": "৩"
-        },
-        {
-            "districtNo": 35,
-            "ElectionNo": 9,
-            "totalVoter": "৩২৩৫৮৯৬",
-            "totalSeat": "৩",
-            "bal": "৩"
-        },
-        {
-            "districtNo": 35,
-            "ElectionNo": 8,
-            "totalVoter": "৭৯৩৬৩৭",
-            "totalSeat": "৩",
-            "bal": "১",
+            "al": "৩",
             "bnp": "২"
         },
         {
             "districtNo": 35,
-            "ElectionNo": 7,
-            "totalVoter": "৬১০৭৫৩",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১০৩৬০৫৬",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 35,
-            "ElectionNo": 5,
-            "maleVoter": "৩৪০৬৯৮",
-            "femaleVoter": "৩১৪০৩০",
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "৯০৬৯৮৮",
+            "totalSeat": "৩",
+            "al": "৩"
+        },
+        {
+            "districtNo": 35,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
+            "totalVoter": "৮০৯৯৯৬",
+            "totalSeat": "৩",
+            "al": "৩"
+        },
+        {
+            "districtNo": 35,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
+            "totalVoter": "৭৯৩৬৩৭",
+            "totalSeat": "৩",
+            "al": "১",
+            "bnp": "২"
+        },
+        {
+            "districtNo": 35,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
+            "totalVoter": "৬১০৭৫৩",
+            "totalSeat": "৩",
+            "al": "৩"
+        },
+        {
+            "districtNo": 35,
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৬৫৪৭২৮",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "bnp": "১",
             "jp": "১"
         },
         {
             "districtNo": 36,
-            "ElectionNo": 11,
-            "maleVoter": "১৮৯৩২১১",
-            "femaleVoter": "১৮৫৭৯১০",
-            "totalVoter": "৩৭৫১১২১",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৩৭৫২২৩৪",
             "totalSeat": "১১",
-            "bal": "৯",
+            "al": "৯",
             "jp": "২"
         },
         {
             "districtNo": 36,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১৩২২৫৮৫",
             "totalSeat": "১১",
-            "bal": "৭",
+            "al": "৭",
             "jp": "৪"
         },
         {
             "districtNo": 36,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "২৯১৬৭১১",
             "totalSeat": "১১",
-            "bal": "১১"
+            "al": "১১"
         },
         {
             "districtNo": 36,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "২৬৩৯৪৮৫",
             "totalSeat": "১১",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "৫",
             "ao": "১"
         },
         {
             "districtNo": 36,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২০৪৮০৪৬",
             "totalSeat": "১১",
-            "bal": "৭",
+            "al": "৬",
             "bnp": "৩",
-            "jp": "১"
+            "jp": "২"
         },
         {
             "districtNo": 36,
-            "ElectionNo": 5,
-            "maleVoter": "১১১৪০৫৩",
-            "femaleVoter": "৯৯৩০২৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২১০৭০৮০",
             "totalSeat": "১১",
-            "bal": "৪",
+            "al": "৪",
             "bnp": "৬",
             "jp": "১"
         },
         {
             "districtNo": 37,
-            "ElectionNo": 11,
-            "maleVoter": "৮০৯৬০১",
-            "femaleVoter": "৭৯৬৮৮১",
-            "totalVoter": "১৬০৬৪৮২",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৬০৬৭০৬",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 37,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৯৩৬০৫৫",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 37,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১২৩৫৩৭০",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 37,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১০৪২০৪১",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 37,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৮০৮৪৪৫",
-            "totalSeat": "৫",
-            "bal": "৩",
-            "bnp": "২"
+            "totalSeat": "৪",
+            "al": "৩",
+            "bnp": "১"
         },
         {
             "districtNo": 37,
-            "ElectionNo": 5,
-            "maleVoter": "৫৩২৯১৬",
-            "femaleVoter": "৪৮৬৪৬৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১০১৯৩৮২",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 38,
-            "ElectionNo": 11,
-            "maleVoter": "১০৭২৭৭৮",
-            "femaleVoter": "১০৫৩১৯২",
-            "totalVoter": "২১২৫৯৭০",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২১২৬৪৫১",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "jp": "১"
         },
         {
             "districtNo": 38,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩০১৪৬২",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "jp": "১"
         },
         {
             "districtNo": 38,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৬২১৩৬৫",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "jp": "১"
         },
         {
             "districtNo": 38,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৫৬৬৯৬৬",
-            "totalSeat": "৬",
-            "bal": "৪",
+            "totalSeat": "৭",
+            "al": "৫",
             "bnp": "২"
         },
         {
             "districtNo": 38,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১২২২৪১৬",
-            "totalSeat": "৬",
-            "bal": "৪",
+            "totalSeat": "৭",
+            "al": "৫",
             "bnp": "২"
         },
         {
             "districtNo": 38,
-            "ElectionNo": 5,
-            "maleVoter": "৭১৬৪১৬",
-            "femaleVoter": "৬৫০৭৫১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৩৬৭১৬৭",
-            "totalSeat": "৬",
-            "bal": "২",
+            "totalSeat": "৭",
+            "al": "২",
+            "bnp": "৫"
+        },
+        {
+            "districtNo": 39,
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১১১০৫০৪",
+            "totalSeat": "৩",
+            "al": "৩"
+        },
+        {
+            "districtNo": 39,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "৩৪৩৫২৬",
+            "totalSeat": "৩",
+            "al": "৩"
+        },
+        {
+            "districtNo": 39,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
+            "totalVoter": "৮৬৯৩০৩",
+            "totalSeat": "৩",
+            "al": "২",
+            "jp": "১"
+        },
+        {
+            "districtNo": 39,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
+            "totalVoter": "৮৪৬৩৪৪",
+            "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 39,
-            "ElectionNo": 11,
-            "maleVoter": "৫৫২৪৯৩",
-            "femaleVoter": "৫৫৭৭০৪",
-            "totalVoter": "১১১০১৯৭",
-            "totalSeat": "৩",
-            "bal": "৩"
-        },
-        {
-            "districtNo": 39,
-            "ElectionNo": 10,
-            "totalVoter": "৩৪৩৫২৬",
-            "totalSeat": "৩",
-            "bal": "৩"
-        },
-        {
-            "districtNo": 39,
-            "ElectionNo": 9,
-            "totalVoter": "৮৬৯৩০৩",
-            "totalSeat": "৩",
-            "bal": "২",
-            "jp": "১"
-        },
-        {
-            "districtNo": 39,
-            "ElectionNo": 8,
-            "totalVoter": "৮৪৬৩৪৪",
-            "totalSeat": "৩",
-            "bnp": "৩"
-        },
-        {
-            "districtNo": 39,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৬৫০২৪৪",
-            "totalSeat": "৩",
-            "bnp": "৩"
+            "totalSeat": "৪",
+            "bnp": "৪"
         },
         {
             "districtNo": 39,
-            "ElectionNo": 5,
-            "maleVoter": "৩৭৬৭৫৩",
-            "femaleVoter": "৩৫৪০০৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৭৩০৭৬১",
-            "totalSeat": "৩",
-            "bnp": "৩"
+            "totalSeat": "৪",
+            "bnp": "৪"
         },
         {
             "districtNo": 40,
-            "ElectionNo": 11,
-            "maleVoter": "৫৯৭৬৭৫",
-            "femaleVoter": "৫৬৫৩১৩",
-            "totalVoter": "১১৬২৯৮৮",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১১৬৩১৯৬",
             "totalSeat": "৩",
-            "bal": "২",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 40,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬৪৫১৮৬",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 40,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৮৭৫০৭৮",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 40,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৮৪৮৯০০",
-            "totalSeat": "৩",
+            "totalSeat": "৪",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 40,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৬১৭৮১০",
-            "totalSeat": "৩",
-            "bnp": "৩"
+            "totalSeat": "৪",
+            "bnp": "৪"
         },
         {
             "districtNo": 40,
-            "ElectionNo": 5,
-            "maleVoter": "৪৪৭০২৮",
-            "femaleVoter": "৩৮৩৯২০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৩০৯৪৮",
-            "totalSeat": "৩",
-            "bnp": "৩"
+            "totalSeat": "৪",
+            "bnp": "৪"
         },
         {
             "districtNo": 41,
-            "ElectionNo": 11,
-            "maleVoter": "৪০০২৪৬৩",
-            "femaleVoter": "৩৭২৯১২৫",
-            "totalVoter": "৭৭৩১৫৮৮",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৭৬৮০৯০৬",
             "totalSeat": "২০",
-            "bal": "১৭",
+            "al": "১৭",
             "jp": "২",
             "ao": "১"
         },
         {
             "districtNo": 41,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩০১৬৭৪১",
             "totalSeat": "২০",
-            "bal": "১৪",
+            "al": "১৪",
             "jp": "৩",
             "ao": "৩"
         },
         {
             "districtNo": 41,
-            "ElectionNo": 9,
-            "totalVoter": "৬২৬৩২৪১",
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
+            "totalVoter": "৬২৬৩২৩৪",
             "totalSeat": "২০",
-            "bal": "১৮",
+            "al": "১৮",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 41,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৪৮১৪৪৬৮",
             "totalSeat": "১৩",
             "bnp": "১৩"
         },
         {
             "districtNo": 41,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৩৩৮৬৩৫৯",
             "totalSeat": "১৩",
-            "bal": "৭",
+            "al": "৭",
             "bnp": "৬"
         },
         {
             "districtNo": 41,
-            "ElectionNo": 5,
-            "maleVoter": "১৬৩৩৬৩৭",
-            "femaleVoter": "১১৬৩৬৩৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২৭৯৭২৭০",
             "totalSeat": "১৩",
             "bnp": "১৩"
         },
         {
             "districtNo": 42,
-            "ElectionNo": 11,
-            "maleVoter": "১২১৪৮৬১",
-            "femaleVoter": "১২০১৮৪২",
-            "totalVoter": "২৪১৬৭০৩",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২৪১৬৮৬৮",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 42,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২২৯৫৪৮",
-            "totalSeat": "৪",
-            "bal": "৪"
+            "totalSeat": "৫",
+            "al": "৫"
         },
         {
             "districtNo": 42,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৮৯৯০৩৮",
-            "totalSeat": "৪",
-            "bal": "৪"
+            "totalSeat": "৫",
+            "al": "৫"
         },
         {
             "districtNo": 42,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১২৮৭৩১০",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "bnp": "১"
         },
         {
             "districtNo": 42,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৮৯৬৯৬০",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 42,
-            "ElectionNo": 5,
-            "maleVoter": "৪৮০০৫৮",
-            "femaleVoter": "৪১৮৮৫৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৯৮৯১৫",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "bnp": "২"
         },
         {
             "districtNo": 43,
-            "ElectionNo": 11,
-            "maleVoter": "৭৭৫৪২০",
-            "femaleVoter": "৭৭৬৫৫০",
-            "totalVoter": "১৫৫১৯৭০",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৫৪৯৩৫৪",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 43,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৭২৫১৭০",
             "totalSeat": "৫",
-            "bal": "৩",
+            "al": "৩",
             "ao": "২"
         },
         {
             "districtNo": 43,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১১৯২৫২৬",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 43,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১১২০২৭৪",
             "totalSeat": "৫",
-            "bal": "১",
+            "al": "১",
             "bnp": "৪"
         },
         {
             "districtNo": 43,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৮৭২৩৬৯",
             "totalSeat": "৫",
-            "bal": "২",
+            "al": "২",
             "bnp": "৩"
         },
         {
             "districtNo": 43,
-            "ElectionNo": 5,
-            "maleVoter": "৫৪৪৫৩৫",
-            "femaleVoter": "৪৭৯৮০৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১০২৪৩৪৩",
             "totalSeat": "৫",
             "bnp": "৫"
         },
         {
             "districtNo": 44,
-            "ElectionNo": 11,
-            "maleVoter": "১০৩৪০৩৯",
-            "femaleVoter": "১০০০১৯৪",
-            "totalVoter": "২০৩৪২৩৩",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২০৬৪৩৪৫",
             "totalSeat": "৫",
-            "bal": "৩",
+            "al": "৩",
             "jp": "২"
         },
         {
             "districtNo": 44,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩০৯০২৪",
             "totalSeat": "৫",
-            "bal": "৩",
+            "al": "৩",
             "jp": "২"
         },
         {
             "districtNo": 44,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৫৮৩৫১০",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "jp": "১"
         },
         {
             "districtNo": 44,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১২০৩০৯৩",
             "totalSeat": "৫",
             "bnp": "৫"
         },
         {
             "districtNo": 44,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৯০৭৪০১",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "bnp": "১"
         },
         {
             "districtNo": 44,
-            "ElectionNo": 5,
-            "maleVoter": "৫৭১৫৮৯",
-            "femaleVoter": "৪৪৯৯৩৯",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১০২১৫২৮",
             "totalSeat": "৫",
             "bnp": "৫"
         },
         {
             "districtNo": 45,
-            "ElectionNo": 11,
-            "maleVoter": "৪০৮৫১১",
-            "femaleVoter": "৪০০১৭৮",
-            "totalVoter": "৮০৮৬৮৯",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৮০৯০৯২",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 45,
-            "ElectionNo": 10,
-            "totalVoter": "০",
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "(বিনা প্রতি) ",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 45,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৬২৪১৩৮",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 45,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৫৭৯৭২৬",
             "totalSeat": "২",
             "bnp": "২"
         },
         {
             "districtNo": 45,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৪৪৪৬১৫",
             "totalSeat": "২",
-            "bal": "২"
+            "al": "২"
         },
         {
             "districtNo": 45,
-            "ElectionNo": 5,
-            "maleVoter": "২৬৩২৫১",
-            "femaleVoter": "২২৩৬২৭",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৪৮৬৮৭৮",
             "totalSeat": "২",
-            "bal": "১",
+            "al": "১",
             "ao": "১"
         },
         {
             "districtNo": 46,
-            "ElectionNo": 11,
-            "maleVoter": "৭১৪৩৬২",
-            "femaleVoter": "৭০৭২৭৯",
-            "totalVoter": "১৪২১৬৪১",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৪২২০২৯",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 46,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩২১৭৯৩",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 46,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১০৭৮৪২৮",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 46,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১০৭৩১৫৯",
-            "totalSeat": "৩",
-            "bal": "১",
+            "totalSeat": "৫",
+            "al": "৩",
             "bnp": "২"
         },
         {
             "districtNo": 46,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭০৭২৯৩",
-            "totalSeat": "৩",
-            "bal": "১",
+            "totalSeat": "৫",
+            "al": "৩",
             "bnp": "২"
         },
         {
             "districtNo": 46,
-            "ElectionNo": 5,
-            "maleVoter": "৫০৪৭০৫",
-            "femaleVoter": "৪৬৮৭১২",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৯৭৩৪১৭",
-            "totalSeat": "৩",
-            "bal": "২",
+            "totalSeat": "৫",
+            "al": "৪",
             "bnp": "১"
         },
         {
             "districtNo": 47,
-            "ElectionNo": 11,
-            "maleVoter": "৪৪২৫৪১",
-            "femaleVoter": "৪৩৬৯২৩",
-            "totalVoter": "৮৭৯৪৬৪",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৮৭৭৩০৫",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 47,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৭৫৭৮৯৭",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 47,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৬৭০২২৮",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 47,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৬৮৯৫৮০",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 47,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫০৪৪৩৩",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 47,
-            "ElectionNo": 5,
-            "maleVoter": "৩৩৯৮১৮",
-            "femaleVoter": "৩১৩৬১০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৬৫৩৪২৮",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 48,
-            "ElectionNo": 11,
-            "maleVoter": "৪৫৬৯২৮",
-            "femaleVoter": "৪৩৩৪৩১",
-            "totalVoter": "৮৯০৩৫৯",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৮৯০২৮০",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 48,
-            "ElectionNo": 10,
-            "totalVoter": "০",
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "(বিনা প্রতি) ",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 48,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৬৭৩৫৯১",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 48,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৭৪০৩৩৫",
-            "totalSeat": "৪",
-            "bal": "৪"
+            "totalSeat": "৩",
+            "al": "৩"
         },
         {
             "districtNo": 48,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫১৩৩৬৬",
-            "totalSeat": "৪",
-            "bal": "৪"
+            "totalSeat": "৩",
+            "al": "৩"
         },
         {
             "districtNo": 48,
-            "ElectionNo": 5,
-            "maleVoter": "৩৭০৭৩৬",
-            "femaleVoter": "৩৪০৮৫৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৭১১৫৯২",
-            "totalSeat": "৪",
-            "bal": "৩",
+            "totalSeat": "৩",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 49,
-            "ElectionNo": 11,
-            "maleVoter": "৪৪২২৫৮",
-            "femaleVoter": "৪১৮৮৫০",
-            "totalVoter": "৮৬১১০৮",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৮৬১৬৫০",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 49,
-            "ElectionNo": 10,
-            "totalVoter": "০",
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "(বিনা প্রতি) ",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 49,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৬২৩৩০৫",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 49,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৭২৫১৪২",
             "totalSeat": "৩",
-            "bal": "২",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 49,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫১১০৭৫",
             "totalSeat": "৩",
-            "bal": "৩"
+            "al": "৩"
         },
         {
             "districtNo": 49,
-            "ElectionNo": 5,
-            "maleVoter": "৩৫১৩২১",
-            "femaleVoter": "৩২২৪১৩",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৬৭৩৭৩৪",
             "totalSeat": "৩",
-            "bal": "২",
+            "al": "২",
             "ao": "১"
         },
         {
             "districtNo": 50,
-            "ElectionNo": 11,
-            "maleVoter": "৮২৩৫০৭",
-            "femaleVoter": "৮২৩৫৫৯",
-            "totalVoter": "১৬৪৭০৬৬",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৬৪১৭৬৯",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "jp": "১"
         },
         {
             "districtNo": 50,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৯৬০৭৩৩",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "jp": "১"
         },
         {
             "districtNo": 50,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১২৫৪২৫২",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "jp": "১"
         },
         {
             "districtNo": 50,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১১৮৮১৩৭",
             "totalSeat": "৫",
-            "bal": "২",
+            "al": "২",
             "bnp": "৩"
         },
         {
             "districtNo": 50,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৯০১৬১৭",
             "totalSeat": "৫",
-            "bal": "৩",
+            "al": "৩",
             "bnp": "১",
             "jp": "১"
         },
         {
             "districtNo": 50,
-            "ElectionNo": 5,
-            "maleVoter": "৫২৯৩৮৯",
-            "femaleVoter": "৪৯১৭৫৮",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১০২১১৪৭",
             "totalSeat": "৫",
-            "bal": "২",
+            "al": "২",
             "jp": "১",
             "ao": "২"
         },
         {
             "districtNo": 51,
-            "ElectionNo": 11,
-            "maleVoter": "১১৪৯৪৭৭",
-            "femaleVoter": "১১০৩৩২৪",
-            "totalVoter": "২২৫২৮০১",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২২৫৪৩১৪",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "ao": "১"
         },
         {
             "districtNo": 51,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৬১৪২৫০",
             "totalSeat": "৬",
-            "bal": "৪",
+            "al": "৪",
             "jp": "২"
         },
         {
             "districtNo": 51,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৭০৯৬৯৫",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 51,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৫০২৬৪১",
             "totalSeat": "৬",
             "bnp": "৪",
@@ -2530,174 +2727,182 @@
         },
         {
             "districtNo": 51,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১১৬৮৭৩০",
             "totalSeat": "৬",
-            "bal": "৪",
+            "al": "৪",
             "bnp": "১",
             "jp": "১"
         },
         {
             "districtNo": 51,
-            "ElectionNo": 5,
-            "maleVoter": "৭২১২৭২",
-            "femaleVoter": "৬০৫৮৮০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৩২৭১৫২",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "১",
             "jp": "৩",
             "ao": "১"
         },
         {
             "districtNo": 52,
-            "ElectionNo": 11,
-            "maleVoter": "৬৫২০২২",
-            "femaleVoter": "৬৪৫০৪৬",
-            "totalVoter": "১২৯৭০৬৮",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১২৯৭৪২০",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 52,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৫১৩৪৭৩",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "ao": "১"
         },
         {
             "districtNo": 52,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১০১২৫৫০",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 52,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৯১০৩৯৭",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "২",
             "ao": "১"
         },
         {
             "districtNo": 52,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭৪৭৪৮৬",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "bnp": "১"
         },
         {
             "districtNo": 52,
-            "ElectionNo": 5,
-            "maleVoter": "৪৩১৫৪৩",
-            "femaleVoter": "৩৮৩২১৪",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮১৪৭৫৭",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "jp": "২"
         },
         {
             "districtNo": 53,
-            "ElectionNo": 11,
-            "maleVoter": "৭১০৫৯৪",
-            "femaleVoter": "৭১৫৪৭৩",
-            "totalVoter": "১৪২৬০৬৭",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৪২৬৪৪০",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 53,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৯২৩৪৫২",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 53,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১১০৪৯৯৪",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 53,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১০৩৪৭৭৩",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 53,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৮১২৬২৪",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 53,
-            "ElectionNo": 5,
-            "maleVoter": "৪৫৯৩৯৭",
-            "femaleVoter": "৪৩৭৬৭৪",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৯৭০৭১",
-            "totalSeat": "৪",
-            "bal": "২",
+            "totalSeat": "৪/",
+            "al": "২",
             "jp": "২"
         },
         {
             "districtNo": 54,
-            "ElectionNo": 11,
-            "maleVoter": "৯৮৭৩২০",
-            "femaleVoter": "৯৬৫৪৬২",
-            "totalVoter": "১৯৫২৭৮২",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৯৪৪১৫০",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "bnp": "১"
         },
         {
             "districtNo": 54,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "১২০১৫৪৬",
             "totalSeat": "৬",
-            "bal": "৫",
+            "al": "৫",
             "jp": "১"
         },
         {
             "districtNo": 54,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৪৪৪০৭৮",
             "totalSeat": "৬",
-            "bal": "৪",
+            "al": "৪",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 54,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৪৮৫০৫৬",
-            "totalSeat": "৫",
-            "bal": "১",
+            "totalSeat": "৬",
+            "al": "১",
             "bnp": "৩",
-            "ao": "১"
+            "ao": "২"
         },
         {
             "districtNo": 54,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০৯০৪৯৮",
-            "totalSeat": "০"
+            "totalSeat": "৬",
+            "al": "৪",
+            "bnp": "২"
         },
         {
             "districtNo": 54,
-            "ElectionNo": 5,
-            "maleVoter": "৭৩১৯০২",
-            "femaleVoter": "৬৪৮৯৮৫",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৩৮০৮৮৭",
             "totalSeat": "৬",
             "bnp": "৪",
@@ -2705,186 +2910,195 @@
         },
         {
             "districtNo": 55,
-            "ElectionNo": 11,
-            "maleVoter": "১৯৫৩৭৫৫",
-            "femaleVoter": "১৯২৪৭১৯",
-            "totalVoter": "৩৮৭৮৪৭৪",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৪১৬৬৭৭৮",
             "totalSeat": "১১",
-            "bal": "১১"
+            "al": "১১"
         },
         {
             "districtNo": 55,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২১২৩৫৭১",
             "totalSeat": "১১",
-            "bal": "৭",
+            "al": "৭",
             "jp": "২",
             "ao": "২"
         },
         {
             "districtNo": 55,
-            "ElectionNo": 9,
-            "totalVoter": "২৯৭৭৯৫০",
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
+            "totalVoter": "২৮৫৭৬২৭",
             "totalSeat": "১১",
-            "bal": "৯",
+            "al": "৯",
             "bnp": "২"
         },
         {
             "districtNo": 55,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "২৮১১৪৪৮",
-            "totalSeat": "১১",
-            "bnp": "১১"
+            "totalSeat": "১২",
+            "bnp": "১১",
+            "ao": "১"
         },
         {
             "districtNo": 55,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২০৪১৮৯৫",
-            "totalSeat": "১১",
-            "bal": "৬",
+            "totalSeat": "১২",
+            "al": "৭",
             "bnp": "৪",
             "jp": "১"
         },
         {
             "districtNo": 55,
-            "ElectionNo": 5,
-            "maleVoter": "১৩১৪৫৮০",
-            "femaleVoter": "১১৫৩৭৯৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২৪৬৮৩৭৬",
             "totalSeat": "১২",
-            "bal": "১",
+            "al": "১",
             "bnp": "৮",
             "jp": "২",
             "ao": "১"
         },
         {
             "districtNo": 56,
-            "ElectionNo": 11,
-            "maleVoter": "৯১৭২৩৪",
-            "femaleVoter": "৮৮৯৭৪৩",
-            "totalVoter": "১৮০৬৯৭৭",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৮০৪১৩৩",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 56,
-            "ElectionNo": 10,
-            "totalVoter": "০",
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
+            "totalVoter": "(বিনা প্রতি) ",
             "totalSeat": "৫",
-            "bal": "৫"
+            "al": "৫"
         },
         {
             "districtNo": 56,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৩২১৬২০",
             "totalSeat": "৫",
-            "bal": "৪",
+            "al": "৪",
             "bnp": "১"
         },
         {
             "districtNo": 56,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১২০৪৩৪৬",
-            "totalSeat": "৫",
-            "bnp": "৫"
+            "totalSeat": "৬",
+            "bnp": "৬"
         },
         {
             "districtNo": 56,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০১২১৩৯",
-            "totalSeat": "৫",
-            "bal": "২",
-            "bnp": "৩"
-        },
-        {
-            "districtNo": 56,
-            "ElectionNo": 5,
-            "maleVoter": "৭২৯৫৬৬",
-            "femaleVoter": "৫৮৫৪৪৪",
-            "totalVoter": "১৩১৫০১০",
-            "totalSeat": "৫",
-            "bal": "১",
+            "totalSeat": "৬",
+            "al": "২",
             "bnp": "৪"
         },
         {
+            "districtNo": 56,
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
+            "totalVoter": "১৩১৫০১০",
+            "totalSeat": "৬",
+            "al": "১",
+            "bnp": "৫"
+        },
+        {
             "districtNo": 57,
-            "ElectionNo": 11,
-            "maleVoter": "৫৩৩১৮৮",
-            "femaleVoter": "৫১২৬৩৬",
-            "totalVoter": "১০৪৫৮২৪",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১০৪৫৯৮৭",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 57,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩৩১২১৬",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "ao": "২"
         },
         {
             "districtNo": 57,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৭৬৫৬৭৩",
             "totalSeat": "৩",
             "bnp": "৩"
         },
         {
             "districtNo": 57,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৬৮৭৭২৭",
             "totalSeat": "৩",
             "bnp": "৩"
         },
         {
             "districtNo": 57,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫৩৬৩৪৫",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "bnp": "২"
         },
         {
             "districtNo": 57,
-            "ElectionNo": 5,
-            "maleVoter": "৩৯২০৮১",
-            "femaleVoter": "৩০১৮৪৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৬৯৩৯২৭",
             "totalSeat": "৩",
-            "bal": "১",
+            "al": "১",
             "bnp": "২"
         },
         {
             "districtNo": 58,
-            "ElectionNo": 11,
-            "maleVoter": "১০৯৬৯২১",
-            "femaleVoter": "১০৫১৭০০",
-            "totalVoter": "২১৪৮৬২১",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২১৫৫৯০৪",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 58,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২১৫৩১৬",
             "totalSeat": "৬",
-            "bal": "৬"
+            "al": "৬"
         },
         {
             "districtNo": 58,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৫১৩০৮৯",
             "totalSeat": "৬",
-            "bal": "২",
+            "al": "২",
             "bnp": "৩",
             "ao": "১"
         },
         {
             "districtNo": 58,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৪৭৬৬১৪",
             "totalSeat": "৬",
             "bnp": "৫",
@@ -2892,59 +3106,62 @@
         },
         {
             "districtNo": 58,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১০১৫০৯৬",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "৫"
         },
         {
             "districtNo": 58,
-            "ElectionNo": 5,
-            "maleVoter": "৮০৬১৭৮",
-            "femaleVoter": "৫৭৪২৭০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৩৮০৪৪৮",
             "totalSeat": "৬",
-            "bal": "১",
+            "al": "১",
             "bnp": "৪",
             "jp": "১"
         },
         {
             "districtNo": 59,
-            "ElectionNo": 11,
-            "maleVoter": "৬১২৮৮৫",
-            "femaleVoter": "৫৯৭৪৪২",
-            "totalVoter": "১২১০৩২৭",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১২৩৪৩০৪",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "ao": "২"
         },
         {
             "districtNo": 59,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৪৫২৬০৩",
             "totalSeat": "৪",
-            "bal": "২",
+            "al": "২",
             "jp": "১",
             "ao": "১"
         },
         {
             "districtNo": 59,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৯০৩৮২২",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 59,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৮৯২৬২৬",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 59,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৫৯৪৬৬৯",
             "totalSeat": "৪",
             "bnp": "৩",
@@ -2952,260 +3169,269 @@
         },
         {
             "districtNo": 59,
-            "ElectionNo": 5,
-            "maleVoter": "৪৮২৩৬৪",
-            "femaleVoter": "৩৪৯১০১",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৮৩১৪৬৫",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 60,
-            "ElectionNo": 11,
-            "maleVoter": "২৯১১২৩৪",
-            "femaleVoter": "২৭২৫১৯৯",
-            "totalVoter": "৫৬৩৬৪৩৩",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৫৬৩২১১৪",
             "totalSeat": "১৬",
-            "bal": "১৪",
+            "al": "১৩",
             "jp": "১",
-            "ao": "১"
+            "ao": "২"
         },
         {
             "districtNo": 60,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২৮৫৫৭১৭",
             "totalSeat": "১৬",
-            "bal": "১২",
+            "al": "১২",
             "jp": "২",
             "ao": "২"
         },
         {
             "districtNo": 60,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৪৩৮৯৫৯৩",
             "totalSeat": "১৬",
-            "bal": "৯",
+            "al": "৯",
             "bnp": "৩",
             "jp": "১",
             "ao": "৩"
         },
         {
             "districtNo": 60,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৩৭৮৬২১৯",
             "totalSeat": "১৫",
-            "bal": "২",
+            "al": "২",
             "bnp": "১২",
             "ao": "১"
         },
         {
             "districtNo": 60,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২৮১৯৭৫৩",
             "totalSeat": "১৫",
-            "bal": "৪",
+            "al": "৪",
             "bnp": "১১"
         },
         {
             "districtNo": 60,
-            "ElectionNo": 5,
-            "maleVoter": "১৬৬৩৬৫০",
-            "femaleVoter": "১৩২০৯১০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২৯৮৪৫৬০",
             "totalSeat": "১৫",
-            "bal": "৪",
+            "al": "৪",
             "bnp": "৮",
             "ao": "৩"
         },
         {
             "districtNo": 61,
-            "ElectionNo": 11,
-            "maleVoter": "৭০৮৭৪১",
-            "femaleVoter": "৬৫৮০৩৯",
-            "totalVoter": "১৩৬৬৭৮০",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "১৩৬৮০৮২",
             "totalSeat": "৪",
-            "bal": "৪"
+            "al": "৪"
         },
         {
             "districtNo": 61,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২৩৩৩১১",
             "totalSeat": "৪",
-            "bal": "৩",
+            "al": "৩",
             "jp": "১"
         },
         {
             "districtNo": 61,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১০৬৯৩১০",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "২",
             "ao": "১"
         },
         {
             "districtNo": 61,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৯৭৮২৬০",
             "totalSeat": "৪",
             "bnp": "৪"
         },
         {
             "districtNo": 61,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "৭২৬৭০৬",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "৩"
         },
         {
             "districtNo": 61,
-            "ElectionNo": 5,
-            "maleVoter": "৩৮৮৯৮৫",
-            "femaleVoter": "৩৩৫৫৯৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "৭২৪৫৮১",
             "totalSeat": "৪",
-            "bal": "১",
+            "al": "১",
             "bnp": "১",
             "ao": "২"
         },
         {
             "districtNo": 62,
-            "ElectionNo": 11,
-            "maleVoter": "২২৬৫২৪",
-            "femaleVoter": "২১৫২১৯",
-            "totalVoter": "৪৪১৭৪৩",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৪৪১৮৪৩",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 62,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩৮০৮৫৭",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 62,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৩৩৭৪০৭",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 62,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৩২৭০৫১",
             "totalSeat": "১",
             "bnp": "১"
         },
         {
             "districtNo": 62,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২১৬৫২২",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 62,
-            "ElectionNo": 5,
-            "maleVoter": "১৩১৭৯৬",
-            "femaleVoter": "১১০৩৯৬",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২৪২১৯২",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 63,
-            "ElectionNo": 11,
-            "maleVoter": "২২০৩৫০",
-            "femaleVoter": "১৯৭৮৬৫",
-            "totalVoter": "৪১৮২১৫",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "৪১৮২১৭",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 63,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "৩৭১৩৪৫",
             "totalSeat": "১",
             "ao": "১"
         },
         {
             "districtNo": 63,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "৩৩১৮১২",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 63,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "৩১০১৪৮",
             "totalSeat": "১",
             "bnp": "১"
         },
         {
             "districtNo": 63,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "২৩৪৯৬২",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 63,
-            "ElectionNo": 5,
-            "maleVoter": "১৩৬৫২২",
-            "femaleVoter": "১০৮৬৫৯",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "২৪৫১৮১",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 64,
-            "ElectionNo": 11,
-            "maleVoter": "১২৮১২৯",
-            "femaleVoter": "১১৮৫২৪",
-            "totalVoter": "২৪৬৬৫৩",
+            "electionNoBn": "১১ম",
+            "electionNoEn": 11,
+            "totalVoter": "২৪৬৮৭৩",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 64,
-            "ElectionNo": 10,
+            "electionNoBn": "১০ম",
+            "electionNoEn": 10,
             "totalVoter": "২১৬৭৪৪",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 64,
-            "ElectionNo": 9,
+            "electionNoBn": "৯ম",
+            "electionNoEn": 9,
             "totalVoter": "১৯৫৯৯৬",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 64,
-            "ElectionNo": 8,
+            "electionNoBn": "৮ম",
+            "electionNoEn": 8,
             "totalVoter": "১৭৪৩৫৯",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 64,
-            "ElectionNo": 7,
+            "electionNoBn": "৭ম",
+            "electionNoEn": 7,
             "totalVoter": "১৩৩১১৮",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         },
         {
             "districtNo": 64,
-            "ElectionNo": 5,
-            "maleVoter": "৮২০৮৬",
-            "femaleVoter": "৬৭৪৪০",
+            "electionNoBn": "৫ম",
+            "electionNoEn": 5,
             "totalVoter": "১৪৯৫২৬",
             "totalSeat": "১",
-            "bal": "১"
+            "al": "১"
         }
     ]
 }

@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import thumbnail1 from '../../assets/videoThumbnail/thumbnail1.png'
 import thumbnail2 from '../../assets/videoThumbnail/thumbnail2.png'
 import Title from './../common/Title/Title';
 import { GoPlay } from "react-icons/go";
 import Section from '../common/Section/Section';
+import axios from 'axios';
 
 function Video() {
     const [hoverElement, setHoverElement] = useState(null)
@@ -20,6 +21,23 @@ function Video() {
         { id: 5, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
         { id: 6, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
     ]
+
+    const [stories, setStories] = useState([])
+    // const url = 'https://bn-api.kalerkantho.com/api/election?page=1'
+    const url = 'https://bn-api.kalerkantho.com/api/gallery_cat/3?page=1'
+
+
+    const fetchData = async () => {
+        const res = await axios.get(url)
+        setStories(res?.data?.data)
+
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    console.log(stories, 'videos==========')
 
     return (
         <Section>
