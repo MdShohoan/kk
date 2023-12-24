@@ -5,7 +5,7 @@ function Card({ story, className }) {
     }
     return (
         <div
-            className={cn('cursor-pointer group', className)}
+            className={cn('cursor-pointer group text-lg text-[#000]', className)}
             key={story?.n_id}
             onClick={() => openNewTab(story?.detailsUrl)}
         >
@@ -15,7 +15,7 @@ function Card({ story, className }) {
                     src={story?.thumb_image}
                 />
             </div>
-            <h1 className='group-hover:text-primary leading-[22px] text-lg text-[#000] transition-all duration-300'>{story?.n_head}</h1>
+            <h1 className='group-hover:text-primary leading-[22px] transition-all duration-300'>{story?.n_head}</h1>
         </div>
     )
 }

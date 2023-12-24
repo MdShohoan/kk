@@ -42,7 +42,7 @@ function News() {
             <Section>
                 <div className='container'>
                     {/* <----------Top section start-------------> */}
-                    <div className='flex flex-col lg:flex-row gap-4 mb-6'>
+                    <div className='flex flex-col lg:flex-row gap-4 mb-8'>
                         <div
                             onClick={() => openNewTab(news[0]?.detailsUrl)}
                             className='flex-1 flex flex-col md:flex-row gap-4 cursor-pointer group'
@@ -70,25 +70,49 @@ function News() {
                     {/* <---------------Top section end--------------> */}
 
                     {/* <----------------Middle section start----------> */}
-                    <div className='hidden lg:grid grid-cols-4 gap-6'>
+                    <div className='hidden lg:grid grid-cols-4 gap-8'>
                         {
                             news?.slice(1, 9)?.map((newsItem) => (
-                                <Card story={newsItem} key={newsItem?.n_id}/>
+                                <Card story={newsItem} key={newsItem?.n_id} className={'font-bold'} />
                             ))
                         }
                     </div>
 
                     {/*News List Start (visible in mobile screen)*/}
-                    <div className='flex lg:hidden flex-col gap-4 '>
+                    <div className='flex lg:hidden flex-col gap-4'>
                         {
                             news?.slice(1, 9).map((newsItem) => (
                                 <List key={newsItem.n_id} story={newsItem} />
                             ))
                         }
                     </div>
-                    {/*News List end (visible in mobile screen)-*/}
-
                     {/* <---------------Middle section end------------------>*/}
+
+                    {/* <---------------Last section start------------------>*/}
+                    <div className='max-w-xl mx-auto md:mt-8 flex flex-col gap-y-8'>
+                        {
+                            news?.slice(9)?.map((story) => (
+                                <div key={story?.n_id} className='md:flex gap-4 hidden'>
+                                    <div className='basis-2/5' >
+                                        <img src={story.thumb_image} className='w-full rounded-lg' />
+                                    </div>
+                                    <div className='basis-3/5'>
+                                        <h1 className='text-lg mb-2 leading-[22px] font-bold'>{story?.n_head}</h1>
+                                        <p className='text-sm'>{story?.n_details}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    <div className='flex md:hidden flex-col gap-4 mt-4'>
+                        {
+                            news?.slice(9)?.map((story) => (
+                                <List key={story.n_id} story={story} />
+                            ))
+                        }
+                    </div>
+                    {/* <---------------Last section end------------------>*/}
                 </div>
             </Section>
         </Layout>

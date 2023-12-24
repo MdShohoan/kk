@@ -93,7 +93,7 @@ function Video() {
                                         />
                                     </div>
                                     <div className='flex-1'>
-                                        <h1 className={`text-sm md:text-lg leading-[22px] text-${hoverElement === info?.id ? 'primary' : '[#000]'} font-normal transition-all duration-300`}>{info?.name}</h1>
+                                        <h1 className={`text-sm md:text-lg font-bold leading-[22px] text-${hoverElement === info?.id ? 'primary' : '[#000]'} transition-all duration-300`}>{info?.name}</h1>
                                     </div>
                                 </div>
                             ))

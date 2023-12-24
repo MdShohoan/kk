@@ -30,11 +30,11 @@ export default function LatestNews() {
                     নির্বাচনের সর্বশেষ খবর
                 </Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 mb-6">
-                    <Card story={stories[0]} className={'mb-1 sm:mb-0 border-b pb-1 sm:pb-0 sm:border-b-0 font-bold md:font-normal'}/>
+                    <Card story={stories[0]} className={'mb-1 pb-1 sm:pb-0 sm:border-b-0 font-bold text-2xl'}/>
                     {
                         stories?.slice(1, 3).map((story) => (
                             <>
-                                <Card story={story} key={story?.n_id} className={'hidden md:block'} />
+                                <Card story={story} key={story?.n_id} className={'hidden md:block font-bold'} />
                                 <List key={story?.n_id} story={story} className={'flex md:hidden'} />
                             </>
                         ))
@@ -49,7 +49,7 @@ export default function LatestNews() {
                 <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {
                         stories?.slice(3, 11).map((story) => (
-                            <Card story={story} key={story?.n_id} />
+                            <Card story={story} key={story?.n_id} className={'font-bold'}/>
                         ))
                     }
                 </div>
