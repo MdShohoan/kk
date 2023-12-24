@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import thumbnail1 from '../../assets/videoThumbnail/thumbnail1.png'
-import thumbnail2 from '../../assets/videoThumbnail/thumbnail2.png'
 import Title from './../common/Title/Title';
 import { GoPlay } from "react-icons/go";
 import Section from '../common/Section/Section';
@@ -9,27 +7,21 @@ import axios from 'axios';
 function Video() {
     const [hoverElement, setHoverElement] = useState(null)
 
-    const handleVideoHover = (element) => {
-        setHoverElement(element.id)
+    const handleVideoHover = (video) => {
+        setHoverElement(video.id)
     }
 
-    const data = [
-        { id: 1, title: 'নির্বাচন কি সঠিক হবে ?', thumbnail: thumbnail1 },
-        { id: 2, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
-        { id: 3, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
-        { id: 4, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
-        { id: 5, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
-        { id: 6, title: 'সরকার পোশাকশিল্প ধ্বংসের নীলনকশা বাস্তবায়ন করছে : রিজভী', thumbnail: thumbnail2 },
-    ]
+    const openNewTab = (id) => {
+        window.open(`https://www.kalerkantho.com/video/${id}`, "_blank")
+    }
 
-    const [stories, setStories] = useState([])
-    // const url = 'https://bn-api.kalerkantho.com/api/election?page=1'
-    const url = 'https://bn-api.kalerkantho.com/api/gallery_cat/3?page=1'
+    const [videos, setVideos] = useState([])
 
 
     const fetchData = async () => {
+        const url = 'https://bn-api.kalerkantho.com/api/gallery_cat/3?page=1'
         const res = await axios.get(url)
-        setStories(res?.data?.data)
+        setVideos(res?.data?.data)
 
     }
 
@@ -37,7 +29,7 @@ function Video() {
         fetchData()
     }, [])
 
-    console.log(stories, 'videos==========')
+    console.log(videos[0], '=============1st video')
 
     return (
         <Section>
@@ -49,8 +41,9 @@ function Video() {
                     {/* ----Big video Start---- */}
                     <div
                         className='h-full md:flex flex-col cursor-pointer'
-                        onMouseEnter={() => handleVideoHover(data[0])}
+                        onMouseEnter={() => handleVideoHover(videos[0])}
                         onMouseLeave={() => setHoverElement(null)}
+                        onClick={() => openNewTab(videos[0]?.id)}
                     >
                         {/* <div
                             className='md:h-full rounded flex justify-center items-center relative'
@@ -69,18 +62,18 @@ function Video() {
                             </span>
                         </div> */}
                         <div className='relative'>
-                            <img src={data[0]?.thumbnail} className='w-full h-auto md:h-[250px] object-cover md:w-full xl:w-full xl:h-auto rounded-lg' />
+                            <img src={videos[0]?.cover_photo} className='w-full h-auto md:h-[250px] object-cover md:w-full xl:w-full xl:h-auto rounded-lg' />
                             <span className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 <GoPlay
-                                    color={hoverElement === 1 ? 'red' : 'white'} size={48}
+                                    color={hoverElement === videos[0]?.id ? 'red' : 'white'} size={48}
                                     style={{ transition: 'all 300ms' }}
                                 />
                             </span>
                         </div>
                         <h1
-                            className={`text-${hoverElement === 1 ? 'primary-contrast' : 'primary'} font-extrabold text-2xl pt-3 transition-all duration-300`}
+                            className={`text-${hoverElement === videos[0]?.id ? 'primary-contrast' : 'primary'} font-extrabold text-2xl pt-3 transition-all duration-300`}
                         >
-                            {data[0]?.title}
+                            {videos[0]?.name}
                         </h1>
                     </div>
                     {/* ----Big video End---- */}
@@ -89,17 +82,18 @@ function Video() {
                     {/* ----Video List Start---*/}
                     <div className='flex flex-col gap-4'>
                         {
-                            data?.slice(1, 5).map((info, i) => (
+                            videos?.slice(1, 5).map((info, i) => (
                                 <div
                                     key={i}
                                     className='flex gap-2 border-b last:border-0 border-gray4 pb-2 cursor-pointer'
                                     onMouseEnter={() => handleVideoHover(info)}
                                     onMouseLeave={() => setHoverElement(null)}
+                                    onClick={() => openNewTab(info?.id)}
                                 >
                                     <div
                                         className='h-[50px] w-[104px] flex justify-center items-center rounded'
                                         style={{
-                                            backgroundImage: `url(${info.thumbnail})`,
+                                            backgroundImage: `url(${info?.cover_photo})`,
                                             backgroundRepeat: 'no-repeat',
                                             backgroundSize: 'cover',
                                             backgroundPosition: 'center',
@@ -112,7 +106,7 @@ function Video() {
 
                                         />
                                     </div>
-                                    <h1 className={`text-sm text-${hoverElement === info?.id ? 'blue-500' : '[#666]'} font-normal transition-all duration-300`}>{info?.title}</h1>
+                                    <h1 className={`text-sm text-${hoverElement === info?.id ? 'primary' : '[#666]'} font-normal transition-all duration-300`}>{info?.name}</h1>
                                 </div>
                             ))
                         }
