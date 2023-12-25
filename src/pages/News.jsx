@@ -92,12 +92,16 @@ function News() {
                     <div className='max-w-xl mx-auto md:mt-8 flex flex-col gap-y-8'>
                         {
                             news?.slice(9)?.map((story) => (
-                                <div key={story?.n_id} className='md:flex gap-4 hidden'>
-                                    <div className='basis-2/5' >
-                                        <img src={story.thumb_image} className='w-full rounded-lg' />
+                                <div
+                                    onClick={()=>openNewTab(story?.detailsUrl)}
+                                    key={story?.n_id}
+                                    className='md:flex gap-4 hidden group cursor-pointer'
+                                >
+                                    <div className='basis-2/5 rounded-lg overflow-clip' >
+                                        <img src={story.thumb_image} className='w-full group-hover:scale-105 transition-all duration-500' />
                                     </div>
                                     <div className='basis-3/5'>
-                                        <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333]'>{story?.n_head}</h1>
+                                        <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333] group-hover:text-primary transition-all duration-500'>{story?.n_head}</h1>
                                         <p className='text-sm text-[#333]'>{story?.n_details}</p>
                                     </div>
                                 </div>
