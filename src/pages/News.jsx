@@ -6,6 +6,7 @@ import formatTimeDifference from '../lib/formatTimeDifference'
 import { IoMdTime } from "react-icons/io";
 import List from '../components/LatestNews/List/List'
 import Card from '../components/LatestNews/Card/Card'
+import cn from '../lib/cn'
 
 
 function News() {
@@ -70,10 +71,12 @@ function News() {
                     {/* <---------------Top section end--------------> */}
 
                     {/* <----------------Middle section start----------> */}
-                    <div className='hidden lg:grid grid-cols-4 gap-8'>
+                    <div className='hidden lg:grid grid-cols-4 gap-y-4'>
                         {
-                            news?.slice(1, 9)?.map((newsItem) => (
-                                <Card story={newsItem} key={newsItem?.n_id} className={'font-bold'} />
+                            news?.slice(1, 9)?.map((newsItem, i) => (
+                                <div key={newsItem?.n_id} className='border-t pt-6'>
+                                    <Card story={newsItem} className={cn(`font-bold border-r px-5 pb-6 h-full`, (i + 1) % 4 === 0 && 'border-r-0 pr-0', (i + 1) === 1 && 'pl-0', (i + 1) === 5 && 'pl-0')} />
+                                </div>
                             ))
                         }
                     </div>
@@ -89,26 +92,28 @@ function News() {
                     {/* <---------------Middle section end------------------>*/}
 
                     {/* <---------------Last section start------------------>*/}
-                    <div className='max-w-xl mx-auto md:mt-8 flex flex-col gap-y-8'>
-                        {
-                            news?.slice(9)?.map((story) => (
-                                <div
-                                    onClick={()=>openNewTab(story?.detailsUrl)}
-                                    key={story?.n_id}
-                                    className='md:flex gap-4 hidden group cursor-pointer'
-                                >
-                                    <div className='basis-2/5 rounded-lg overflow-clip' >
-                                        <img src={story.thumb_image} className='w-full group-hover:scale-105 transition-all duration-500' />
+                    <div className='container border-t mt-4'>
+                        <div className='max-w-xl mx-auto md:mt-8 flex flex-col gap-y-4'>
+                            {
+                                news?.slice(9)?.map((story) => (
+                                    <div
+                                        onClick={() => openNewTab(story?.detailsUrl)}
+                                        key={story?.n_id}
+                                        className='md:flex gap-4 hidden group cursor-pointer border-b pb-4 last:border-b-0'
+                                    >
+                                        <div className='basis-2/5 rounded-lg overflow-clip' >
+                                            <img src={story.thumb_image} className='w-full group-hover:scale-105 transition-all duration-500' />
+                                        </div>
+                                        <div className='basis-3/5'>
+                                            <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333] group-hover:text-primary transition-all duration-500'>{story?.n_head}</h1>
+                                            <p className='text-sm text-[#333]'>{story?.n_details}</p>
+                                        </div>
                                     </div>
-                                    <div className='basis-3/5'>
-                                        <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333] group-hover:text-primary transition-all duration-500'>{story?.n_head}</h1>
-                                        <p className='text-sm text-[#333]'>{story?.n_details}</p>
-                                    </div>
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
+                        </div>
                     </div>
-
+                    {/* Visible in mobile only */}
                     <div className='flex md:hidden flex-col gap-4 mt-4'>
                         {
                             news?.slice(9)?.map((story) => (
