@@ -13,6 +13,8 @@ import Spinner from '../components/common/Spinner/Spinner'
 function News() {
     const [news, setNews] = useState([])
     const [loading, setLoading] = useState(false)
+    // const [page, setPage] = useState(1)
+    
     const url = 'https://bn-api.kalerkantho.com/api/election?page=1'
 
     const fetchData = async () => {
@@ -36,12 +38,26 @@ function News() {
         fetchData()
     }, [])
 
+    //Load more data
+    // useEffect(() => {
+    //     (
+    //         async ()=>{
+    //             const res = await axios.get(`https://bn-api.kalerkantho.com/api/election?page=${page}&per_page=10`)
+    //             setNews((news)=>[...news, ...res.data.data])
+    //         }
+    //     )()
+    // }, [page])
 
-    console.log(news)
+    const loadMore = ()=>{
+        // setPage((page)=>page+1)
+    }
+
+
+    console.log(news, '=======news')
     return (
         <Layout>
             {
-                loading ? (<Spinner className={'h-[calc(100vh-62px)'}/>) : (
+                loading ? (<Spinner className={'h-[calc(100vh-62px)'} />) : (
                     <>
                         <Section className='mb-3 md:mb-3 lg:mb-6 mt-3'>
                             <div className='container'>
@@ -132,6 +148,15 @@ function News() {
                                     }
                                 </div>
                                 {/* <---------------Last section end------------------>*/}
+                                <div className='flex justify-center mt-7'>
+                                    <span
+                                        onClick={loadMore}
+                                        className='w-fit mx-auto inline-block border border-primary text-primary py-1 px-8 rounded cursor-pointer hover:text-primary-light hover:bg-primary transit duration-500 bg-primary-light'>
+
+                                        আরও
+                                    </span>
+                                </div>
+
                             </div>
                         </Section>
                     </>
