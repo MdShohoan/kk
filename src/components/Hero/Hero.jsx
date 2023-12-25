@@ -91,7 +91,7 @@ function Hero() {
         districts: <></>,
         seats: <></>,
         seatDetails: <div className='mt-2 md:mt-1'><DistrictMap /></div>,
-        home: <img src={ECLogo} className='w-[220px] md:w-auto' />,
+        home: <img src={ECLogo} className='w-[220px] md:w-[300px] md:pb-12' />,
         results: <></>
     }
 
@@ -118,9 +118,9 @@ function Hero() {
     return (
         <section className={
             cn(
-                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12', 
-                page === 'seatDetails' && 'pt-0 pb-1 md:pb-12', 
-                page === 'districtDetails' && 'pt-0 pb-1 md:pb-12', 
+                'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-12 py-12',
+                page === 'seatDetails' && 'pt-0 pb-1 md:pb-12',
+                page === 'districtDetails' && 'pt-0 pb-1 md:pb-12',
                 page === 'home' && 'pb-1',
                 page === 'news' && 'hidden'
             )
@@ -177,14 +177,9 @@ function Hero() {
                                     </div>
                                     {/* -----Election Date End---- */}
 
-                                    {/* -----Sponsor Start----- */}
-                                    <div className='bg-white p-4 rounded-md mx-auto md:mx-0 border border-primary-background'>
-                                        <CountdownTimer electionDate={'2024-01-07T00:00:00'} />
-                                        <div className='mt-4 w-[300px] h-[90px] flex justify-center items-center bg-primary-light'>
-                                            ads
-                                        </div>
-                                    </div>
-                                    {/* -----Sponsor End----- */}
+                                    {/* -----Sponsor and Countdown Start----- */}
+                                    <CountdownTimer electionDate={'2024-01-07T00:00:00'} />
+                                    {/* -----Sponsor and Countdown End----- */}
                                 </div>
                             )
                         }
@@ -194,7 +189,7 @@ function Hero() {
                             <div className='self-center w-fit hidden md:block'>
                                 <div>{heading}</div>
                                 {
-                                    page === pages?.seatDetails && <SeatNoCard seatNo={toBengaliDigits(seatNo)}/>
+                                    page === pages?.seatDetails && <SeatNoCard seatNo={toBengaliDigits(seatNo)} />
                                 }
                             </div>
                         )
@@ -210,7 +205,7 @@ function Hero() {
                                 <div>{heading}</div>
 
                                 {
-                                    page === pages?.seatDetails && <SeatNoCard seatNo={toBengaliDigits(seatNo)}/>
+                                    page === pages?.seatDetails && <SeatNoCard seatNo={toBengaliDigits(seatNo)} />
                                 }
                             </div>
                         )
