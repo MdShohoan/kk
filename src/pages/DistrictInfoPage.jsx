@@ -5,7 +5,7 @@ import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
 import Card from '../components/common/CardCountUP/CardCountUP'
 import districtList from '../assets/data/districtsList/districtsList'
-import { ScrollRestoration, useParams } from "react-router-dom"
+import { Navigate, ScrollRestoration, useParams } from "react-router-dom"
 import Title from "../components/common/Title/Title"
 import Chart from "react-apexcharts";
 import ColorBoxes from "../components/common/ColorBoxes/ColorBoxes"
@@ -31,12 +31,12 @@ function DistrictInfoPage() {
     setLatestData(eleventhData)
   }, [districtNo])
 
-  useEffect(()=>{
-    setUpdate((prev)=>prev+1)
+  useEffect(() => {
+    setUpdate((prev) => prev + 1)
   }, [districtNo])
 
   //Find district name by districtNo
-  function findDistrictById() {
+  function findDistrictNameById() {
     for (const division of districtList) {
       const foundDistrict = division.districts.find(district => district?.districtCode === districtNo);
 
@@ -44,10 +44,11 @@ function DistrictInfoPage() {
         return foundDistrict.districtName;
       }
     }
+    return false
   }
 
   //Find current district data by districtNO
-  function getDistrictDataByDistrictNo(districtNo){
+  function getDistrictDataByDistrictNo(districtNo) {
     return districtData?.data?.filter((district) => district?.districtNo == districtNo)
   }
 
@@ -144,6 +145,10 @@ function DistrictInfoPage() {
     }],
   }
 
+  if (!findDistrictNameById()) {
+    return <Navigate to={'/'} />
+  }
+
   return (
     <Layout>
       <ScrollRestoration />
@@ -153,7 +158,7 @@ function DistrictInfoPage() {
             <span
               className='inline-block rounded-lg bg-primary-light text-2xl py-[6px] px-4 mb-2'
             >
-              {findDistrictById()} জেলা
+              {findDistrictNameById()} জেলা
             </span>
             <div className='bg-gray1 h-[2px]' />
           </div>

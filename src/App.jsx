@@ -1,5 +1,6 @@
 import {
   createBrowserRouter,
+  Navigate,
   RouterProvider,
 } from "react-router-dom";
 
@@ -50,6 +51,10 @@ function App() {
     {
       path: "/seats/:seatNo",
       element: <SeatInfoPage />,
+    },
+    {
+      path: "/*",
+      element: <Navigate to={'/'}/>,
     },
   ]);
 

@@ -18,7 +18,7 @@ import dariPalla from '../assets/partyLogo/dari-palla.webp'
 import masal from '../assets/partyLogo/masal.webp'
 
 
-import { ScrollRestoration, useParams } from 'react-router-dom'
+import { Navigate, ScrollRestoration, useParams } from 'react-router-dom'
 
 import seatPreviousResult from '../assets/data/seatPreviousResult.json'
 import seatList from '../assets/data/seatsList/seatsList'
@@ -76,7 +76,7 @@ function SeatInfoPage() {
                 return foundSeat.seatName;
             }
         }
-        return 'পাওয়া যায়নি'
+        return false
     }
 
     //Filter result by seatNo and election 9 to latest
@@ -134,6 +134,10 @@ function SeatInfoPage() {
             photo: candidat1,
         },
     ]
+
+    if(!findSeatById()){
+        return <Navigate to={'/'}/>
+    }
 
     return (
         <>
