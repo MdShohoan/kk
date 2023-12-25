@@ -130,7 +130,7 @@ function Header() {
                             navList.map((item, i) => (
                                 <Link key={i} to={`/${item?.to}`}>
                                     <li className={cn(
-                                        'text-base font-medium capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                        'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
                                         currentPage === item?.page && 'text-primary'
                                     )}>
                                         {item?.text}
