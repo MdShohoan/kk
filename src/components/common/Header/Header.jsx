@@ -49,38 +49,16 @@ function Header() {
         else if (path.startsWith('/news')) {
             setCurrentPage('news')
         }
-        else{
+        else {
             setCurrentPage('home')
         }
     }, [path])
 
+    const openNewTab = (url) => {
+        window.open(url, "_blank")
+    }
+
     const navList = [
-        {
-            text: 'আসন',
-            to: 'seats',
-            page: 'seats'
-        },
-        {
-            text: 'জেলা',
-            to: 'districts',
-            page: 'districts'
-        },
-        {
-            text: 'খবর',
-            to: 'news',
-            page: 'news'
-        },
-        {
-            text: 'ফলাফল',
-            to: 'election-result',
-            page: 'election-result'
-        },
-        {
-            text: 'কালের কণ্ঠ',
-            to: ''
-        },
-    ]
-    const mobileNavList = [
         {
             text: 'হোম',
             to: '',
@@ -127,7 +105,7 @@ function Header() {
                 <nav className='hidden md:block'>
                     <ul className="flex justify-between items-center gap-7">
                         {
-                            navList.map((item, i) => (
+                            navList?.slice(1, 5).map((item, i) => (
                                 <Link key={i} to={`/${item?.to}`}>
                                     <li className={cn(
                                         'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
@@ -138,6 +116,16 @@ function Header() {
                                 </Link>
                             ))
                         }
+                        <li
+                            onClick={() => openNewTab('https://www.kalerkantho.com')}
+                            className={cn(
+                                'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                currentPage === navList[5]?.page && 'text-primary'
+                            )}
+                        >
+                            {navList[5]?.text}
+                        </li>
+
                     </ul>
                 </nav>
                 <span className='md:hidden'>
@@ -167,7 +155,7 @@ function Header() {
                     </div>
                     <ul className='px-4'>
                         {
-                            mobileNavList?.map((navItem, i) => (
+                            navList?.slice(0, 5)?.map((navItem, i) => (
                                 <Link key={i} to={`/${navItem?.to}`}>
                                     <li className={cn(
                                         'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
@@ -178,10 +166,18 @@ function Header() {
                                 </Link>
                             ))
                         }
+                        <li
+                            onClick={() => openNewTab('https://www.kalerkantho.com')}
+                            className={cn(
+                                'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                currentPage === navList[5]?.page && 'text-primary border-primary-contrast'
+                            )}>
+                            {navList[5]?.text}
+                        </li>
                     </ul>
                 </div>
                 {/*------------Drawer end----------*/}
-                
+
             </div>
         </header>
     )
