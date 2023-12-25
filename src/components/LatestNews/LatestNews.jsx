@@ -4,6 +4,7 @@ import List from "./List/List";
 import Section from "../common/Section/Section";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import cn from "../../lib/cn";
 
 export default function LatestNews() {
 
@@ -29,27 +30,13 @@ export default function LatestNews() {
                 <Title>
                     নির্বাচনের সর্বশেষ খবর
                 </Title>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 mb-6">
-                    <Card story={stories[0]} className={'mb-1 pb-1 sm:pb-0 sm:border-b-0 font-bold leading-[22px] text-2xl md:text-lg'}/>
-                    {
-                        stories?.slice(1, 3).map((story) => (
-                            <>
-                                <Card story={story} key={story?.n_id} className={'hidden md:block font-bold'} />
-                                <List key={story?.n_id} story={story} className={'flex md:hidden'} />
-                            </>
-                        ))
-                    }
-
-                    <div className='h-[250px] w-[300px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
-                        ads: 300*250
-                    </div>
-                </div>
-
                 {/* ----News Card Start (visible in big screen)---- */}
-                <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="hidden lg:grid grid-cols-4 gap-y-4">
                     {
-                        stories?.slice(3, 11).map((story) => (
-                            <Card story={story} key={story?.n_id} className={'font-bold'}/>
+                        stories?.slice(0, 12).map((story, i) => (
+                            <div key={story?.n_id} className='border-t pt-4'>
+                                <Card story={story} className={cn(`font-bold border-r px-5 pb-6 h-full`, (i + 1) % 4 === 0 && 'border-r-0 pr-0', (i + 1) === 1 && 'pl-0', (i + 1) === 5 && 'pl-0')} />
+                            </div>
                         ))
                     }
                 </div>
@@ -57,8 +44,9 @@ export default function LatestNews() {
 
                 {/* ----News List Start (visible in mobile screen)---- */}
                 <div className='flex md:hidden flex-col gap-4 '>
+                    <Card story={stories[0]} className={'mb-1 pb-1 sm:pb-0 sm:border-b-0 font-bold leading-[22px] text-2xl md:text-lg'} />
                     {
-                        stories?.slice(3, 12).map((story) => (
+                        stories?.slice(1, 12).map((story) => (
                             <List key={story.n_id} story={story} />
                         ))
                     }
