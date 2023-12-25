@@ -6,7 +6,6 @@ import total_candidate from '../../assets/election/total-candidate.png'
 import male_voter from '../../assets/election/male-voter.png'
 import female_voter from '../../assets/election/female-voter.png'
 import common_voter from '../../assets/election/common-gender.png'
-import male_candidate from '../../assets/election/male-candidate.png'
 import total_seat from '../../assets/election/total-seat.png'
 import political_parties from '../../assets/election/political-parties.png'
 import Section from '../common/Section/Section';
@@ -18,7 +17,7 @@ export default function ElectionShortStatistics() {
     { count: '৫৮৯১৯২০২', title: 'নারী ভোটার ', image: female_voter },
     { count: '৮৫২', title: 'হিজড়া ভোটার', image: common_voter },
     { count: '১৮৯৫', title: 'মোট প্রার্থী', image: total_candidate },
-    { count: '৩৮২', title: 'স্বতন্ত্র প্রার্থী', image: male_candidate },
+    { count: '৩৮২', title: 'স্বতন্ত্র প্রার্থী', image: total_candidate },
     { count: '২৭', title: 'দল', image: political_parties },
     { count: '৩০০', title: 'আসন সংখ্যা', image: total_seat },
 
