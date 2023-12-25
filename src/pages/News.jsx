@@ -46,11 +46,11 @@ function News() {
                     <div className='flex flex-col lg:flex-row gap-4 mb-8'>
                         <div
                             onClick={() => openNewTab(news[0]?.detailsUrl)}
-                            className='flex-1 flex flex-col md:flex-row gap-4 cursor-pointer group'
+                            className='flex-1 flex flex-col-reverse md:flex-row gap-4 cursor-pointer group'
                         >
-                            <div className='basis-full'>
+                            <div className='basis-full mb  md:mb-0'>
                                 <h1 className='font-bold text-3xl mb-2 text-[#333] group-hover:text-primary transition-all duration-500'>{news[0]?.n_head}</h1>
-                                <p className='text-[#333] text-base mb-3'>{news[0]?.n_details}</p>
+                                <p className='text-[#333] text-base mb-3 hidden md:block'>{news[0]?.n_details}</p>
                                 <div className='flex items-center gap-[3px]'>
                                     <IoMdTime />
                                     <span className='text-xs text-[#333]'>
