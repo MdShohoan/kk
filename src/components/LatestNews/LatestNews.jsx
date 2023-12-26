@@ -47,7 +47,7 @@ export default function LatestNews() {
                                 {
                                     stories?.slice(0, 12).map((story, i) => (
                                         <div key={story?.n_id} className='border-t pt-4'>
-                                            <Card story={story} className={cn(`font-bold border-r px-5 pb-6 h-full`, (i + 1) % 4 === 0 && 'border-r-0 pr-0', (i + 1) === 1 && 'pl-0', (i + 1) === 5 && 'pl-0')} />
+                                            <Card story={story} className={cn(`font-bold border-r px-5 pb-6`, (i + 1) % 4 === 0 && 'border-r-0 pr-0', (i + 1) === 1 && 'pl-0', (i + 1) === 5 && 'pl-0')} />
                                         </div>
                                     ))
                                 }

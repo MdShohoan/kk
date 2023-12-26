@@ -3,7 +3,7 @@ import SeatNavigator from '../components/common/SeatNavigator/SeatNavigator'
 import Layout from '../components/common/Layout/Layout'
 import Section from '../components/common/Section/Section'
 
-import candidat1 from '../assets/candidatePhoto/asaduzzaman.webp'
+// import candidat1 from '../assets/candidatePhoto/asaduzzaman.webp'
 import total_voter from '../assets/election/total-voter.png'
 import total_candidate from '../assets/election/total-candidate.png'
 import male_voter from '../assets/election/male-voter.png'
@@ -25,6 +25,7 @@ import seatList from '../assets/data/seatsList/seatsList'
 import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
 import cn from '../lib/cn'
+import candidatesData from '../assets/data/candidatesData.json'
 
 // console.log('===seat previous result', seatPreviousResult)
 
@@ -58,6 +59,9 @@ function SeatInfoPage() {
     function filterResultByNameAndElectionEightToPrevious() {
         return seatPreviousResult?.data?.filter((sr) => sr?.seatName === findSeatById() && sr.electionNoEn <= 8)
     }
+
+    //Filter candidates by seat
+    const currentCandidates = candidatesData?.data?.filter((seat)=>seat?.seatName == seatNo)
 
     const symbols = [
         {
@@ -109,32 +113,32 @@ function SeatInfoPage() {
         { count: '১৮৪৮', title: 'মোট প্রার্থী', image: total_candidate },
     ]
 
-    const candidates = [
-        {
-            name: 'আসাদুজ্জামান নূর',
-            party: 'আওয়ামী লীগ',
-            symbol: 'নৌকা',
-            photo: candidat1,
-        },
-        {
-            name: 'আসাদুজ্জামান নূর',
-            party: 'আওয়ামী লীগ',
-            symbol: 'নৌকা',
-            photo: candidat1,
-        },
-        {
-            name: 'আসাদুজ্জামান নূর',
-            party: 'আওয়ামী লীগ',
-            symbol: 'নৌকা',
-            photo: candidat1,
-        },
-        {
-            name: 'আসাদুজ্জামান নূর',
-            party: 'আওয়ামী লীগ',
-            symbol: 'নৌকা',
-            photo: candidat1,
-        },
-    ]
+    // const candidates = [
+    //     {
+    //         name: 'আসাদুজ্জামান নূর',
+    //         party: 'আওয়ামী লীগ',
+    //         symbol: 'নৌকা',
+    //         photo: candidat1,
+    //     },
+    //     {
+    //         name: 'আসাদুজ্জামান নূর',
+    //         party: 'আওয়ামী লীগ',
+    //         symbol: 'নৌকা',
+    //         photo: candidat1,
+    //     },
+    //     {
+    //         name: 'আসাদুজ্জামান নূর',
+    //         party: 'আওয়ামী লীগ',
+    //         symbol: 'নৌকা',
+    //         photo: candidat1,
+    //     },
+    //     {
+    //         name: 'আসাদুজ্জামান নূর',
+    //         party: 'আওয়ামী লীগ',
+    //         symbol: 'নৌকা',
+    //         photo: candidat1,
+    //     },
+    // ]
 
     if(!findSeatById()){
         return <Navigate to={'/'}/>
@@ -173,15 +177,15 @@ function SeatInfoPage() {
                         {/* -----------Candidates information start-------- */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8">
                             {
-                                candidates.map((candidate, i) => (
+                                currentCandidates?.map((candidate, i) => (
                                     <div key={i} className="text-center cursor-pointer bg-[#b9b9b969] py-5 rounded-xl">
                                         <img
-                                            src={candidate?.photo}
+                                            src={`http://localhost:5173/src/assets/candidates/${candidate?.candidateImage}`}
                                             className="bg-[#b9b9b969] w-[100px] md:w-[130px] mx-auto block border-4 border-[#fff] rounded-full shadow-[0_0_5px_rgba(0,0,0,0.6)]"
                                         />
                                         <div className="mt-5">
-                                            <h2 className="text-lg font-bold text-[#547cf5] mb-2">{candidate?.name}</h2>
-                                            <span className="block text-sm mb-[2px] font-normal text-[#000000cc]"><span className="font-semibold">দল:</span> {candidate?.party}</span>
+                                            <h2 className="text-lg font-bold text-[#547cf5] mb-2">{candidate?.candidateName}</h2>
+                                            <span className="block text-sm mb-[2px] font-normal text-[#000000cc]"><span className="font-semibold">দল:</span> {candidate?.partyName}</span>
                                             <span className="block text-sm font-normal text-[#000000cc]"><span className="font-semibold">প্রতীক:</span> {candidate?.symbol}</span>
                                         </div>
                                     </div>

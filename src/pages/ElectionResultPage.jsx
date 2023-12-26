@@ -35,6 +35,7 @@ function ElectionResultPage() {
         }
     }, [state]);
 
+
     //Pie Chart Data
     const pieChartData = result.data.map((item) => {
         return { year: item.year, series: [item?.alSeat, item?.bnpSeat, item?.jpSeat, item?.aoSeat] }
