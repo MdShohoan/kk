@@ -6,10 +6,10 @@ import JatiyoPartyLogo from '../../assets/partyLogo/JatioyoPartyLogo.webp'
 function UnofficialResult() {
 
   const data = [
-    { name: 'আ. লীগ জোট', logo: AwamiLeagueLogo, ahead: '০', won: '২৬৬' },
-    { name: 'বিএনপি জোট', logo: BNPLogo, ahead: '০', won: '৭' },
-    { name: 'জাতীয় পার্টি', logo: JatiyoPartyLogo, ahead: '০', won: '২২' },
-    { name: 'অন্যান্য', logo: '', ahead: '০', won: '৪' },
+    { name: 'আ. লীগ জোট', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২৬৬' },
+    { name: 'বিএনপি জোট', logo: BNPLogo, totalSeat: '৩০০', won: '৭' },
+    { name: 'জাতীয় পার্টি', logo: JatiyoPartyLogo, totalSeat: '৩০০', won: '২২' },
+    { name: 'অন্যান্য', logo: '', totalSeat: '৩০০', won: '৪' },
   ]
 
   const colors = [
@@ -29,7 +29,7 @@ function UnofficialResult() {
         <div>
           <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
             <div className={"col-start-1 col-end-4 " + headingCellStyle}>দল / জোট</div>
-            <div className={headingCellStyle}>এগিয়ে</div>
+            <div className={headingCellStyle}>মোট আসন</div>
             <div className={headingCellStyle}>জয়ী</div>
           </div>
 
@@ -39,7 +39,7 @@ function UnofficialResult() {
                 <img src={party?.logo} className="h-7 mx-auto" />
               </div>
               <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
-              <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.ahead}</div>
+              <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.totalSeat}</div>
               <div style={{ background: colors[i]?.dark }} className="rounded flex justify-center items-center">{party?.won}</div>
             </div>
           ))}
