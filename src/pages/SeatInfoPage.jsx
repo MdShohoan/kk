@@ -28,36 +28,6 @@ import cn from '../lib/cn'
 
 // console.log('===seat previous result', seatPreviousResult)
 
-const symbols = [
-    {
-        symbolName: 'নৌকা',
-        symbolImage: AwamiLeagueLogo
-    },
-    {
-        symbolName: 'ধানের শীষ',
-        symbolImage: BNPLogo,
-    },
-    {
-        symbolName: 'দাঁড়িপাল্লা',
-        symbolImage: dariPalla,
-    },
-    {
-        symbolName: 'লাঙল',
-        symbolImage: jatipartySymbol,
-    },
-    // {
-    //     symbolName: 'হাতুড়ি',
-    //     symbolImage: '',
-    // },
-    // {
-    //     symbolName: 'কাস্তে',
-    //     symbolImage: '',
-    // },
-    {
-        symbolName: 'মশাল',
-        symbolImage: masal,
-    },
-]
 
 function SeatInfoPage() {
     const { seatNo } = useParams()
@@ -88,6 +58,37 @@ function SeatInfoPage() {
     function filterResultByNameAndElectionEightToPrevious() {
         return seatPreviousResult?.data?.filter((sr) => sr?.seatName === findSeatById() && sr.electionNoEn <= 8)
     }
+
+    const symbols = [
+        {
+            symbolName: 'নৌকা',
+            symbolImage: AwamiLeagueLogo
+        },
+        {
+            symbolName: 'ধানের শীষ',
+            symbolImage: BNPLogo,
+        },
+        {
+            symbolName: 'দাঁড়িপাল্লা',
+            symbolImage: dariPalla,
+        },
+        {
+            symbolName: 'লাঙল',
+            symbolImage: jatipartySymbol,
+        },
+        // {
+        //     symbolName: 'হাতুড়ি',
+        //     symbolImage: '',
+        // },
+        // {
+        //     symbolName: 'কাস্তে',
+        //     symbolImage: '',
+        // },
+        {
+            symbolName: 'মশাল',
+            symbolImage: masal,
+        },
+    ]
 
     //Set Party Symbol
     function setPartySymbol(result) {
