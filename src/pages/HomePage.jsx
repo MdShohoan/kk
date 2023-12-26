@@ -1,7 +1,6 @@
 import ElectionShortStatistics from '../components/ElectionShortStatistics/ElectionShortStatistics'
 import QuickLinks from '../components/QuickLinks/QuickLinks'
 import Video from '../components/Video/Video'
-import ElectionInformation from '../components/ElectionInformation/ElectionInformation'
 // import UnofficialResult from '../components/UnofficialResult/UnofficialResult'
 import ResultsHistory from '../components/ResultsHistory/ResultsHistory'
 import LatestNews from '../components/LatestNews/LatestNews'
@@ -28,7 +27,7 @@ function HomePage() {
                     ads: 970*250
                 </div>
                 <QuickLinks />
-                <ElectionInformation />
+                {/* <ElectionInformation /> */}
                 <Maps />
                 {/* <Section>
                     <div className='container'>

@@ -2,6 +2,7 @@ import Section from "../common/Section/Section"
 import BangladeshMap from '../../components/common/BangladeshMap/BangladeshMap'
 import Title from "../common/Title/Title"
 import UnofficialResult from "../UnofficialResult/UnofficialResult"
+import SeatNavigator from '../../components/common/SeatNavigator/SeatNavigator'
 
 function Maps() {
     return (
@@ -14,11 +15,10 @@ function Maps() {
                         </Title>
                         <BangladeshMap />
                     </div>
-                    <div className="border rounded pt-4">
+                    <div className="border rounded pt-4 px-0 md:px-2">
+                        <Title>নির্বাচনের তথ্য জানতে আসন নির্বাচন করুন</Title>
+                        <SeatNavigator className={'grid-cols-2 lg:grid-cols-2 mb-12 px-0 md:px-2'}/>
                         <UnofficialResult />
-                        <div className=" mx-auto flex justify-center items-center w-[300px] h-[250px] bg-gray-300 mt-8 mb-2 md:mb-0">
-                            ads
-                        </div>
                     </div>
                 </div>
             </div>
