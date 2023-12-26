@@ -43,7 +43,7 @@ export default function LatestNews() {
                     loading ? (<Spinner className={'h-[300px]'}/>) : (
                         <>
                             {/* ----News Card Start (visible in big screen)---- */}
-                            <div className="hidden lg:grid grid-cols-4 gap-y-4">
+                            <div className="hidden md:grid grid-cols-4 gap-y-4">
                                 {
                                     stories?.slice(0, 12).map((story, i) => (
                                         <div key={story?.n_id} className='border-t pt-4'>

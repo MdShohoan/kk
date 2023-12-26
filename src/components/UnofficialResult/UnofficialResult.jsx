@@ -23,7 +23,7 @@ function UnofficialResult() {
   return (
     <div>
       <Title>
-        ১১তম নির্বাচনের বেসরকারি ফলাফল
+        ১১তম নির্বাচনের ফলাফল
       </Title>
       <div className="max-w-[300px] md:max-w-[500px] mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
         <div>
