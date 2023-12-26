@@ -8,7 +8,6 @@ import List from '../components/LatestNews/List/List'
 import Card from '../components/LatestNews/Card/Card'
 import cn from '../lib/cn'
 import Spinner from '../components/common/Spinner/Spinner'
-import toBengaliDigits from '../lib/toBanglaDigits'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { colors } from '../theme'
 
@@ -162,7 +161,7 @@ function News() {
                                         onClick={loadMore}
                                         className={
                                             cn(
-                                                `inline-flex items-center gap-2 border border-primary text-primary-light py-1 px-4 rounded cursor-pointer bg-primary transit`,
+                                                `inline-flex items-center gap-1 border border-primary text-primary-light py-1 px-4 rounded cursor-pointer bg-primary transit`,
 
                                             )
                                         }>
@@ -178,7 +177,7 @@ function News() {
                                         {
                                             loadingMore ? 'লোড হচ্ছে...' : (
                                                 <>
-                                                    আরও {toBengaliDigits(moreCount)}
+                                                    আরও
                                                     <IoIosArrowRoundForward size={24} color={colors.primary.light} />
                                                 </>
                                             )
