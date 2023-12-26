@@ -49,7 +49,7 @@ function DistrictInfoPage() {
 
   //Find current district data by districtNO
   function getDistrictDataByDistrictNo(districtNo) {
-    return districtData?.data?.filter((district) => district?.districtNo == districtNo)
+    return districtData?.data?.filter((district) => district?.districtNo == districtNo && district?.electionNoEn<12)
   }
 
 
