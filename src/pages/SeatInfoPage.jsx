@@ -35,9 +35,13 @@ function SeatInfoPage() {
     const [previousResult, setPreviousResult] = useState([])
 
     let BASE_URL = 'http://localhost:5173'
-    if(process.env.NODE_ENV === 'production'){
+    
+
+    if(import.meta.env.VITE_REACT_NODE_ENV === 'production'){
         BASE_URL = 'https://superb-mandazi-0bd10a.netlify.app'
     }
+
+    console.log('import.meta.env.REACT_NODE_ENV', import.meta.env.VITE_REACT_NODE_ENV)
     useEffect(() => {
         setPreviousResult([...filterResultByIdAndElectionNineToLatest(), ...filterResultByNameAndElectionEightToPrevious()])
     }, [seatNo])
