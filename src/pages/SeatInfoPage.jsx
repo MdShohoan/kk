@@ -34,6 +34,10 @@ function SeatInfoPage() {
     const { seatNo } = useParams()
     const [previousResult, setPreviousResult] = useState([])
 
+    let BASE_URL = 'http://localhost:5173'
+    if(process.env.NODE_ENV === 'production'){
+        BASE_URL = 'https://superb-mandazi-0bd10a.netlify.app'
+    }
     useEffect(() => {
         setPreviousResult([...filterResultByIdAndElectionNineToLatest(), ...filterResultByNameAndElectionEightToPrevious()])
     }, [seatNo])
@@ -180,7 +184,7 @@ function SeatInfoPage() {
                                 currentCandidates?.map((candidate, i) => (
                                     <div key={i} className="text-center cursor-pointer bg-[#b9b9b969] py-5 rounded-xl">
                                         <img
-                                            src={`http://localhost:5173/src/assets/candidates/${candidate?.candidateImage}`}
+                                            src={`${BASE_URL}/src/assets/candidates/${candidate?.candidateImage}`}
                                             className="bg-[#b9b9b969] w-[100px] md:w-[130px] mx-auto block border-4 border-[#fff] rounded-full shadow-[0_0_5px_rgba(0,0,0,0.6)]"
                                         />
                                         <div className="mt-5">
