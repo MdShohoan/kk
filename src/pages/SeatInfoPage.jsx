@@ -168,8 +168,8 @@ function SeatInfoPage() {
                         {/* ------------Seat information counter start---------- */}
                         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-8'>
                             {
-                                seatData.map((singleData, i) => (
-                                    <Card key={i} type='type1' data={singleData} />
+                                seatData.map((singleData) => (
+                                    <Card key={singleData?.count} type='type1' data={singleData} />
                                 ))
                             }
                         </div>
