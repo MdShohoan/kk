@@ -186,13 +186,13 @@ function SeatInfoPage() {
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8">
                             {
                                 currentCandidates?.map((candidate, i) => (
-                                    <div key={i} className="text-center cursor-pointer bg-[#b9b9b969] py-5 rounded-xl">
+                                    <div key={i} className="text-center cursor-pointer bg-primary-light py-5 rounded-xl">
                                         <img
                                             src={`${BASE_URL}/candidates/${candidate?.candidateImage}`}
-                                            className="bg-[#b9b9b969] w-[100px] md:w-[130px] mx-auto block border-4 border-[#fff] rounded-full shadow-[0_0_5px_rgba(0,0,0,0.6)]"
+                                            className="bg-primary-light w-[100px] md:w-[130px] mx-auto block border-4 border-[#fff] rounded-full shadow-[0_0_5px_rgba(0,0,0,0.6)]"
                                         />
                                         <div className="mt-5">
-                                            <h2 className="text-lg font-bold text-[#547cf5] mb-2">{candidate?.candidateName}</h2>
+                                            <h2 className="text-lg font-bold text-primary mb-2">{candidate?.candidateName}</h2>
                                             <span className="block text-sm mb-[2px] font-normal text-[#000000cc]"><span className="font-semibold">দল:</span> {candidate?.partyName}</span>
                                             <span className="block text-sm font-normal text-[#000000cc]"><span className="font-semibold">প্রতীক:</span> {candidate?.symbol}</span>
                                         </div>
