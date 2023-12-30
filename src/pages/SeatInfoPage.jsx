@@ -189,6 +189,7 @@ function SeatInfoPage() {
                                     <div key={i} className="text-center cursor-pointer bg-primary-light py-5 rounded-xl">
                                         <img
                                             src={`${BASE_URL}/candidates/${candidate?.candidateImage}`}
+                                            alt={candidate.candidateName+' এর ছবি'}
                                             className="bg-primary-light w-[100px] md:w-[130px] mx-auto block border-4 border-[#fff] rounded-full shadow-[0_0_5px_rgba(0,0,0,0.6)]"
                                         />
                                         <div className="mt-5">
