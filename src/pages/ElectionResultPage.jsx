@@ -10,8 +10,6 @@ import Section from "../components/common/Section/Section";
 import toBengaliDigits from "../lib/toBanglaDigits";
 import result from '../assets/data/result.json'
 
-// import Tabletop from 'tabletop'
-
 function ElectionResultPage() {
 
     const [selectedYear, setSelectedYear] = useState('2018')
@@ -37,24 +35,13 @@ function ElectionResultPage() {
         }
     }, [state]);
 
-
-    console.log()
-    // function init() {
-    //     Tabletop.init( { key: `https://docs.google.com/spreadsheets/d/e/2PACX-1vQC1HUZ25sVsXHrxP8lTb0unstZZ6DdK88WvWAp3XkUpgZE20W3JSw8EDZw_keiIrxtDvX74PV7oeyx/pubhtml`,
-    //                      callback: showInfo,
-    //                      simpleSheet: false } )
-    //   }
-     
-    //  function showInfo(data) {
-    //   // do something with the data
-    //   console.log(data);
-    // }
-
-    //   useEffect(()=>{
-    //     init()
-    //   },[])
-
-    // console.log(Tabletop)
+    // useEffect(()=>{
+    //    const fetchSheetData = async ()=>{
+    //         const res = await axios.get('https://script.googleusercontent.com/macros/echo?user_content_key=IJEweLAS0HiV1NRhx0d1ylxGADTRWv-ctOZh5m96CRPKJb2D5dgvWydtB09UIjkyYUyFHLtgZ1alHSplNtzu7KbK5RrUpQRUm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEgwieDZTPm8TbirIQVWIgylD6AW22YDVO9qmOL8x2_JK06zP1FYeMde26UMf7vHOW-e0xoQVDsdOE5JGwCm4laOv_VJxEKF39z9Jw9Md8uu&lib=MyuAjZMpTOSNJQUtG3dx92CAQp5mDGOFN')
+    //         console.log(res.data.data, 'Sheet data=============')
+    //    }
+    //    fetchSheetData()
+    // }, [])
 
 
     //Pie Chart Data
@@ -74,7 +61,7 @@ function ElectionResultPage() {
     const parties = [
         {
             name: "আ. লীগ",
-            key:'alSeat',
+            key: 'alSeat',
         },
         {
             name: "বিএনপি",
@@ -91,11 +78,11 @@ function ElectionResultPage() {
     ]
 
     //Compare chart data
-    const compareChartData = parties.map((party)=>{
+    const compareChartData = parties.map((party) => {
         return {
             name: party?.name,
-            data:result?.data?.map((singleResult)=>singleResult[party?.key])
-            
+            data: result?.data?.map((singleResult) => singleResult[party?.key])
+
         }
     })
 
