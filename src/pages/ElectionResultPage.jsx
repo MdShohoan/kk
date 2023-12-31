@@ -10,6 +10,8 @@ import Section from "../components/common/Section/Section";
 import toBengaliDigits from "../lib/toBanglaDigits";
 import result from '../assets/data/result.json'
 
+// import Tabletop from 'tabletop'
+
 function ElectionResultPage() {
 
     const [selectedYear, setSelectedYear] = useState('2018')
@@ -34,6 +36,25 @@ function ElectionResultPage() {
             scrollToSection(compareSectionRef);
         }
     }, [state]);
+
+
+    console.log()
+    // function init() {
+    //     Tabletop.init( { key: `https://docs.google.com/spreadsheets/d/e/2PACX-1vQC1HUZ25sVsXHrxP8lTb0unstZZ6DdK88WvWAp3XkUpgZE20W3JSw8EDZw_keiIrxtDvX74PV7oeyx/pubhtml`,
+    //                      callback: showInfo,
+    //                      simpleSheet: false } )
+    //   }
+     
+    //  function showInfo(data) {
+    //   // do something with the data
+    //   console.log(data);
+    // }
+
+    //   useEffect(()=>{
+    //     init()
+    //   },[])
+
+    // console.log(Tabletop)
 
 
     //Pie Chart Data

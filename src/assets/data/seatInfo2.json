@@ -7,7 +7,7 @@
             "districtNameBn": "সাতক্ষীরা",
             "districtNameEn": "Satkhira",
             "totalVoter": "৪৭২০৪৭",
-            "maleVoter": "২৩৬০৮৯",
+            "maleVoter": "২৩৬০৮৭",
             "femaleVoter": "২৩৫৯৫৪",
             "hijraVoter": "২",
             "totalCandidate": "১০"
@@ -30,10 +30,10 @@
             "districtNo": 24,
             "districtNameBn": "সাতক্ষীরা",
             "districtNameEn": "Satkhira",
-            "totalVoter": "২৩৬৫০২",
-            "maleVoter": "১২০৫৬৭",
-            "femaleVoter": "১১৫৯৬৪",
-            "hijraVoter": "১",
+            "totalVoter": "৪৩১৩৮০",
+            "maleVoter": "২১৮২৪৬",
+            "femaleVoter": "২১৩১৩১",
+            "hijraVoter": "৩",
             "totalCandidate": "৬"
         },
         {
@@ -42,9 +42,9 @@
             "districtNo": 24,
             "districtNameBn": "সাতক্ষীরা",
             "districtNameEn": "Satkhira",
-            "totalVoter": "২৮৪৩৫৮",
-            "maleVoter": "১৪৩৬৬৮",
-            "femaleVoter": "১৪০৬৮৬",
+            "totalVoter": "৪৪২১৯৩",
+            "maleVoter": "২২৩৪৩৪",
+            "femaleVoter": "২১৮৭৫৫",
             "hijraVoter": "৪",
             "totalCandidate": "৭"
         },
@@ -57,6 +57,7 @@
             "totalVoter": "৪৮৩৯১১",
             "maleVoter": "২৪১৭৫২",
             "femaleVoter": "২৪২১৫১",
+            "hijraVoter": "৮",
             "totalCandidate": "১০"
         },
         {
@@ -68,6 +69,7 @@
             "totalVoter": "৩১৭২৪৭",
             "maleVoter": "১৫৭৫৯৩",
             "femaleVoter": "১৫৯৬৫২",
+            "hijraVoter": "২",
             "totalCandidate": "৭"
         },
         {
@@ -77,8 +79,8 @@
             "districtNameBn": "পটুয়াখালী",
             "districtNameEn": "Patuakhali",
             "totalVoter": "৪৭৩২৫৭",
-            "maleVoter": "২৩৮৪৪৩",
-            "femaleVoter": "২৪৮০০৪",
+            "maleVoter": "২৩৮৪১৪",
+            "femaleVoter": "২৩৪৮৩৩",
             "hijraVoter": "১০",
             "totalCandidate": "৬"
         },
@@ -100,10 +102,10 @@
             "districtNo": 31,
             "districtNameBn": "পটুয়াখালী",
             "districtNameEn": "Patuakhali",
-            "totalVoter": "৩৫১৩৬৭",
-            "maleVoter": "১৭৬৬৯১",
-            "femaleVoter": "১৭৪৬৭৫",
-            "hijraVoter": "১",
+            "totalVoter": "৩৫২২৬১",
+            "maleVoter": "১৭৭১৫৪",
+            "femaleVoter": "১৭৫১০৫",
+            "hijraVoter": "২",
             "totalCandidate": "৬"
         },
         {
@@ -112,9 +114,9 @@
             "districtNo": 31,
             "districtNameBn": "পটুয়াখালী",
             "districtNameEn": "Patuakhali",
-            "totalVoter": "২৮৯৬৯৪",
-            "maleVoter": "১৪৬১৯৪",
-            "femaleVoter": "১৪৩৪৯৭",
+            "totalVoter": "২৯০২০৮",
+            "maleVoter": "১৪৬৮১৩",
+            "femaleVoter": "১৪৩৩৯২",
             "hijraVoter": "৩",
             "totalCandidate": "৬"
         },
@@ -267,9 +269,9 @@
             "districtNo": 27,
             "districtNameBn": "পিরোজপুর",
             "districtNameEn": "Pirojpur",
-            "totalVoter": "৩৬৭০৩৭",
+            "totalVoter": "৩৬৭০৩৮",
             "maleVoter": "১৮৬৩০৬",
-            "femaleVoter": "১৮০৭৩১",
+            "femaleVoter": "১৮০৭৩২",
             "totalCandidate": "৪"
         },
         {
@@ -278,9 +280,10 @@
             "districtNo": 27,
             "districtNameBn": "পিরোজপুর",
             "districtNameEn": "Pirojpur",
-            "totalVoter": "৩৮৪৫১৩",
-            "maleVoter": "১৯২৮৩৫",
-            "femaleVoter": "১৯১৬৭৮",
+            "totalVoter": "৩৮৪৪৯৩",
+            "maleVoter": "১৯২৮২৫",
+            "femaleVoter": "১৯১৬৬৬",
+            "hijraVoter": "২",
             "totalCandidate": "৭"
         },
         {
@@ -289,9 +292,10 @@
             "districtNo": 27,
             "districtNameBn": "পিরোজপুর",
             "districtNameEn": "Pirojpur",
-            "totalVoter": "২২৩৪৪১",
+            "totalVoter": "২২৩৪৪২",
             "maleVoter": "১১২৯৬৭",
             "femaleVoter": "১১০৪৭৪",
+            "hijraVoter": "১",
             "totalCandidate": "৮"
         },
         {
@@ -340,7 +344,7 @@
             "maleVoter": "১৭৮৮৯২",
             "femaleVoter": "১৭৫৬৬২",
             "hijraVoter": "২",
-            "totalCandidate": "৮"
+            "totalCandidate": "৯"
         },
         {
             "seatNo": 134,
@@ -363,7 +367,7 @@
             "maleVoter": "২২৩১৭১",
             "femaleVoter": "২১৯২৫০",
             "hijraVoter": "৫",
-            "totalCandidate": "৭"
+            "totalCandidate": "৮"
         },
         {
             "seatNo": 136,
@@ -383,10 +387,10 @@
             "districtNo": 37,
             "districtNameBn": "টাঙ্গাইল",
             "districtNameEn": "Tangail",
-            "totalVoter": "৩৯০০১০",
+            "totalVoter": "৩৯০১১৯",
             "maleVoter": "১৯৪০৮২",
             "femaleVoter": "১৯৬০৩৪",
-            "hijraVoter": "৪",
+            "hijraVoter": "৩",
             "totalCandidate": "৮"
         },
         {
@@ -455,9 +459,10 @@
             "districtNo": 35,
             "districtNameBn": "শেরপুর",
             "districtNameEn": "Sherpur",
-            "totalVoter": "৩৬১৩৭৮",
-            "maleVoter": "১৭৯৫৫২",
-            "femaleVoter": "১৮১৮২৬",
+            "totalVoter": "৪২৩৬৬৪",
+            "maleVoter": "২১০৫১৮",
+            "femaleVoter": "২১৩১৩৭",
+            "hijraVoter": "৯",
             "totalCandidate": "৭"
         },
         {
@@ -466,9 +471,9 @@
             "districtNo": 35,
             "districtNameBn": "শেরপুর",
             "districtNameEn": "Sherpur",
-            "totalVoter": "৩৪৯১৫৮",
-            "maleVoter": "১৭১৯১২",
-            "femaleVoter": "১৭৭২৪৬",
+            "totalVoter": "৪১১৬৯৫",
+            "maleVoter": "২০১৫০৫",
+            "femaleVoter": "২১০১৯০",
             "totalCandidate": "৩"
         },
         {
@@ -477,10 +482,11 @@
             "districtNo": 35,
             "districtNameBn": "শেরপুর",
             "districtNameEn": "Sherpur",
-            "totalVoter": "৩২৫৫২০",
-            "maleVoter": "১৬০৭৭৯",
-            "femaleVoter": "১৬৪৭৪১",
-            "totalCandidate": "৫"
+            "totalVoter": "৩৮২৪০০",
+            "maleVoter": "১৮৯৪০২",
+            "femaleVoter": "১৯২৯৯৪",
+            "hijraVoter": "৪",
+            "totalCandidate": "৬"
         },
         {
             "seatNo": 146,
@@ -488,9 +494,9 @@
             "districtNo": 34,
             "districtNameBn": "ময়মনসিংহ",
             "districtNameEn": "Mymensingh",
-            "totalVoter": "৪৫০৮৪২",
-            "maleVoter": "২২৪৯৯৬",
-            "femaleVoter": "২২৫৮৫৩",
+            "totalVoter": "৪৫২৮৯৭",
+            "maleVoter": "২২৬০১৯",
+            "femaleVoter": "২২৬৮৭৫",
             "hijraVoter": "৩",
             "totalCandidate": "৭"
         },
@@ -500,9 +506,9 @@
             "districtNo": 34,
             "districtNameBn": "ময়মনসিংহ",
             "districtNameEn": "Mymensingh",
-            "totalVoter": "৫৩৯৫৭১",
-            "maleVoter": "২৭৪৪৭০",
-            "femaleVoter": "২৬৫০৯৮",
+            "totalVoter": "৫৪০৩৪৫",
+            "maleVoter": "২৭৪৮৪৭",
+            "femaleVoter": "২৬৫৪৯৫",
             "hijraVoter": "৩",
             "totalCandidate": "৭"
         },
@@ -512,9 +518,9 @@
             "districtNo": 34,
             "districtNameBn": "ময়মনসিংহ",
             "districtNameEn": "Mymensingh",
-            "totalVoter": "২৭৫৯৮৬",
-            "maleVoter": "১৩৯১৯৯",
-            "femaleVoter": "১৩৬৭৮৭",
+            "totalVoter": "২৭৬০৪০",
+            "maleVoter": "১৩৯২১৪",
+            "femaleVoter": "১৩৬৮২৬",
             "totalCandidate": "৯"
         },
         {
@@ -539,7 +545,7 @@
             "maleVoter": "১৮২১৮১",
             "femaleVoter": "১৮১৯৭৭",
             "hijraVoter": "২",
-            "totalCandidate": "৫"
+            "totalCandidate": "৭"
         },
         {
             "seatNo": 151,
@@ -547,9 +553,9 @@
             "districtNo": 34,
             "districtNameBn": "ময়মনসিংহ",
             "districtNameEn": "Mymensingh",
-            "totalVoter": "৩৮৫৯৮৪",
-            "maleVoter": "১৯৪৪৩৬",
-            "femaleVoter": "১৯১৫৪৬",
+            "totalVoter": "৩৮৫৯৮৫",
+            "maleVoter": "১৯৪৪৪২",
+            "femaleVoter": "১৯১৫৪১",
             "hijraVoter": "২",
             "totalCandidate": "৬"
         },
@@ -560,8 +566,8 @@
             "districtNameBn": "ময়মনসিংহ",
             "districtNameEn": "Mymensingh",
             "totalVoter": "৩৭৪৯৯৪",
-            "maleVoter": "১৯০৫৫৫",
-            "femaleVoter": "১৮৪৪৩৯",
+            "maleVoter": "১৯০৫৫৬",
+            "femaleVoter": "১৮৪৪৩৮",
             "totalCandidate": "৪"
         },
         {
@@ -594,11 +600,11 @@
             "districtNo": 34,
             "districtNameBn": "ময়মনসিংহ",
             "districtNameEn": "Mymensingh",
-            "totalVoter": "৩৮২৯৪০",
-            "maleVoter": "১৯৪৬১২",
-            "femaleVoter": "১৮৮৩২৬",
+            "totalVoter": "৩৮২৯৪৬",
+            "maleVoter": "১৯৪৬১৬",
+            "femaleVoter": "১৮৮৩২৮",
             "hijraVoter": "২",
-            "totalCandidate": "৩"
+            "totalCandidate": "৫"
         },
         {
             "seatNo": 156,
@@ -670,7 +676,7 @@
             "maleVoter": "১৩৭৯১৬",
             "femaleVoter": "১৩২৭৮২",
             "hijraVoter": "১",
-            "totalCandidate": "৪"
+            "totalCandidate": "৫"
         },
         {
             "seatNo": 162,
@@ -682,7 +688,7 @@
             "maleVoter": "২৬০৪০৪",
             "femaleVoter": "২৫৩৫৭১",
             "hijraVoter": "৩",
-            "totalCandidate": "৭"
+            "totalCandidate": "৮"
         },
         {
             "seatNo": 163,
@@ -694,7 +700,7 @@
             "maleVoter": "২৪৭৯৭৪",
             "femaleVoter": "২৪৫৮২৫",
             "hijraVoter": "৫",
-            "totalCandidate": "৬"
+            "totalCandidate": "৭"
         },
         {
             "seatNo": 164,
@@ -706,7 +712,7 @@
             "maleVoter": "২১২১৯৫",
             "femaleVoter": "২০১৪৪৮",
             "hijraVoter": "৩",
-            "totalCandidate": "৭"
+            "totalCandidate": "৮"
         },
         {
             "seatNo": 165,
@@ -730,7 +736,7 @@
             "maleVoter": "১৭০৪৭১",
             "femaleVoter": "১৬০২৯১",
             "hijraVoter": "২",
-            "totalCandidate": "৬"
+            "totalCandidate": "৭"
         },
         {
             "seatNo": 167,
@@ -808,9 +814,9 @@
             "districtNo": 44,
             "districtNameBn": "মুন্সীগঞ্জ",
             "districtNameEn": "Munshiganj",
-            "totalVoter": "৪৮০২৪৫",
+            "totalVoter": "৪৮০২৫১",
             "maleVoter": "২৪৮৫০৯",
-            "femaleVoter": "২৩১৭৩৬",
+            "femaleVoter": "২৩১৭৪২",
             "totalCandidate": "১০"
         },
         {
@@ -819,9 +825,9 @@
             "districtNo": 40,
             "districtNameBn": "ঢাকা",
             "districtNameEn": "Dhaka",
-            "totalVoter": "৫১৩৬০৫",
-            "maleVoter": "২৫৯৪৪৫",
-            "femaleVoter": "২৫৪১৫৭",
+            "totalVoter": "৫১৩৬০৯",
+            "maleVoter": "২৫৯৪৪৩",
+            "femaleVoter": "২৫৪১৬৩",
             "hijraVoter": "৩",
             "totalCandidate": "৭"
         },
@@ -831,10 +837,10 @@
             "districtNo": 40,
             "districtNameBn": "ঢাকা",
             "districtNameEn": "Dhaka",
-            "totalVoter": "২৬২২৬৯",
-            "maleVoter": "১৩৫৬৪১",
-            "femaleVoter": "১২৬৬২৪",
-            "hijraVoter": "৪",
+            "totalVoter": "৫৫৮৯৫৪",
+            "maleVoter": "২৮৯৪৫৩",
+            "femaleVoter": "২৬৯৪৮৮",
+            "hijraVoter": "১৩",
             "totalCandidate": "৪"
         },
         {
@@ -856,7 +862,7 @@
             "districtNameBn": "ঢাকা",
             "districtNameEn": "Dhaka",
             "totalVoter": "২৫৪৫৫৭",
-            "maleVoter": "১৩২৪১১",
+            "maleVoter": "১৩২৪১০",
             "femaleVoter": "১২২১৬২",
             "hijraVoter": "৫",
             "totalCandidate": "৯"
@@ -1035,9 +1041,9 @@
             "districtNo": 40,
             "districtNameBn": "ঢাকা",
             "districtNameEn": "Dhaka",
-            "totalVoter": "৭৫৬৪১৯",
-            "maleVoter": "৩৮৭৪৬৯",
-            "femaleVoter": "৩৬৮৯৩৭",
+            "totalVoter": "৭৫৬৪১৬",
+            "maleVoter": "৩৮৭৪৬৮",
+            "femaleVoter": "৩৬৮৯৩৫",
             "hijraVoter": "১৩",
             "totalCandidate": "১০"
         },
@@ -1059,10 +1065,10 @@
             "districtNo": 41,
             "districtNameBn": "গাজীপুর",
             "districtNameEn": "Gazipur",
-            "totalVoter": "৬৯৮৭৬৯",
-            "maleVoter": "৩৫১১০২",
-            "femaleVoter": "৩৪৭৬৫৫",
-            "hijraVoter": "১২",
+            "totalVoter": "৬৯৫৮৫২",
+            "maleVoter": "৩৪৯৫০৭",
+            "femaleVoter": "৩৪৬৩৩৪",
+            "hijraVoter": "১১",
             "totalCandidate": "৭"
         },
         {
@@ -1071,10 +1077,10 @@
             "districtNo": 41,
             "districtNameBn": "গাজীপুর",
             "districtNameEn": "Gazipur",
-            "totalVoter": "৭৮৩০১৭",
-            "maleVoter": "৩৮৯৮৭৩",
-            "femaleVoter": "৩৯৩১৩৭",
-            "hijraVoter": "৭",
+            "totalVoter": "৭৭৯৭২৬",
+            "maleVoter": "৩৯১৩৭০",
+            "femaleVoter": "৩৮৮৩৪৭",
+            "hijraVoter": "৯",
             "totalCandidate": "৯"
         },
         {
@@ -1083,9 +1089,9 @@
             "districtNo": 41,
             "districtNameBn": "গাজীপুর",
             "districtNameEn": "Gazipur",
-            "totalVoter": "৫২৩০৯০",
-            "maleVoter": "২৬৩০৫৭",
-            "femaleVoter": "২৬০০২৮",
+            "totalVoter": "৪৯৪৪২৭",
+            "maleVoter": "২৪৫৪৩৪",
+            "femaleVoter": "২৪৮৯৮৮",
             "hijraVoter": "৫",
             "totalCandidate": "৭"
         },
@@ -1095,10 +1101,10 @@
             "districtNo": 41,
             "districtNameBn": "গাজীপুর",
             "districtNameEn": "Gazipur",
-            "totalVoter": "৩১০২৪৫",
-            "maleVoter": "১৫৮৫৪৪",
-            "femaleVoter": "১৫৫৭০১",
-            "totalCandidate": "৬"
+            "totalVoter": "৩১০৭৪৭",
+            "maleVoter": "১৫৪৮৭১",
+            "femaleVoter": "১৫৫৮৭৬",
+            "totalCandidate": "৭"
         },
         {
             "seatNo": 198,
@@ -1106,9 +1112,9 @@
             "districtNo": 41,
             "districtNameBn": "গাজীপুর",
             "districtNameEn": "Gazipur",
-            "totalVoter": "৩২১২৪৫",
-            "maleVoter": "১৬৮৩৩৬",
-            "femaleVoter": "১৬৪২১৮",
+            "totalVoter": "৩৩৩৫৭৫",
+            "maleVoter": "১৬৯১০১",
+            "femaleVoter": "১৬৪৪৭২",
             "hijraVoter": "২",
             "totalCandidate": "৮"
         }

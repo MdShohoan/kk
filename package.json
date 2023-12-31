@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.19.0",
+    "tabletop": "^1.6.3",
     "tailwind-merge": "^2.1.0"
   },
   "devDependencies": {
