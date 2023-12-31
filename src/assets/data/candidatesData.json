@@ -2,9 +2,9 @@
     "data": [
         {
             "seatName": 1,
-            "symbol": "নৌকা",
+            "symbol": "নৌকা ",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "নাঈমুজ্জামান ভূইয়া",
+            "candidateName": "নাঈমুজ্জামান ভূইয়া ",
             "candidateImage": "seat-1/NAIMUJJAMAN_BHUIYAN.jpg"
         },
         {
@@ -17,22 +17,22 @@
         {
             "seatName": 1,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ সুপ্রিম পাটি (বিএসপি)",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি (বিএসপি)",
             "candidateName": "আব্দুল ওয়াদুদ বাদশা",
             "candidateImage": "seat-1/ABDUL_WADUD_BADSHA.jpg"
         },
         {
             "seatName": 1,
             "symbol": "আম",
-            "partyName": "ন্যাশনাল পিপলস পাটি",
-            "candidateName": "মশিউর রহমান বাবুল",
+            "partyName": "ন্যাশনাল পিপলস পার্টি",
+            "candidateName": "মশিউর রহমান বাবুল ",
             "candidateImage": "seat-1/MOSIUR_RAHMAN.jpg"
         },
         {
             "seatName": 1,
             "symbol": "টেলিভিশন",
             "partyName": "বাংলাদেশ ন্যাশনালিস্ট পার্টি",
-            "candidateName": "সিরাজুল ইসলাম",
+            "candidateName": "সিরাজুল ইসলাম ",
             "candidateImage": "seat-1/SIRAJUL_ISLAM.jpg"
         },
         {
@@ -51,7 +51,7 @@
         },
         {
             "seatName": 2,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ লুৎফর রহমান রিপন",
             "candidateImage": "seat-2/LUTFOR_RAHMAN_RIPON.jpeg"
@@ -66,7 +66,7 @@
         {
             "seatName": 2,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ সুপ্রীম পার্টি (বিএসপি)",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি (বিএসপি)",
             "candidateName": "আহমাদ রেজা ফারুকী",
             "candidateImage": "seat-2/AHMED_REJA_FARUKI.jpg"
         },
@@ -79,30 +79,30 @@
         },
         {
             "seatName": 3,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "রেজাউর রাজী স্বপন",
+            "candidateName": "মো. রেজাউর রাজী",
             "candidateImage": "seat-3/Rejaur_Raji.jpg"
         },
         {
             "seatName": 3,
             "symbol": "মিনার",
             "partyName": "ইসলামী ঐক্যজোট",
-            "candidateName": "রফিকুল ইসলাম",
+            "candidateName": "মো. রফিকুল ইসলাম",
             "candidateImage": "seat-3/Rofiqul_Islam.jpg"
         },
         {
             "seatName": 3,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস্ পার্টি",
-            "candidateName": "রাজিউল ইসলাম",
+            "candidateName": "মোঃ রাজিউল ইসলাম",
             "candidateImage": "seat-3/Rajiul.jpg"
         },
         {
             "seatName": 4,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মোঃ মাজহারুল ইসলাম সুজন",
+            "candidateName": "মোঃ মাজহারুল ইসলাম",
             "candidateImage": "seat-4/Majharul_Islam.jpg"
         },
         {
@@ -114,35 +114,35 @@
         },
         {
             "seatName": 4,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোছা : নুরুন নাহার বেগম",
+            "candidateName": "মোছাঃ নুরুন নাহার বেগম",
             "candidateImage": "seat-4/Nurun_Nahar_Begum.jpg"
         },
         {
             "seatName": 4,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস",
-            "candidateName": "মোছা: রিম্পা আকতার",
+            "candidateName": "মোছাঃ রিম্পা আকতার ",
             "candidateImage": "seat-4/Rimpa.jpeg"
         },
         {
             "seatName": 4,
             "symbol": "সোফা",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আব্দুল কাদের",
+            "candidateName": "মো. আব্দুল কাদের",
             "candidateImage": "seat-4/Abdul Kader.jpg"
         },
         {
             "seatName": 5,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "হাফিজ উদ্দিন আহম্মেদ",
             "candidateImage": "seat-5/Hafiz_Uddin.jpg"
         },
         {
             "seatName": 5,
-            "symbol": "হাতুরী",
+            "symbol": "হাতুড়ি",
             "partyName": "ওয়ার্কার্স পার্টি",
             "candidateName": "গোপাল চন্দ্র রায়",
             "candidateImage": "seat-5/Gopal_Chandra_Roy.jpg"
@@ -151,33 +151,33 @@
             "seatName": 5,
             "symbol": "কুলা",
             "partyName": "বিকল্পধারা",
-            "candidateName": "এসএম খলিলুর রহমান সরকার",
+            "candidateName": "এস এম খলিলুর রহমান সরকার",
             "candidateImage": "seat-5/Khalilur_Rahman.jpg"
         },
         {
             "seatName": 5,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আশা মনি",
+            "candidateName": "মোছা: আশা মনি",
             "candidateImage": "seat-5/Asa_Moni.jpg"
         },
         {
             "seatName": 6,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মনোরঞ্জন শীল গোপাল",
+            "candidateName": "মনোরঞ্জন শীল গোপাল ",
             "candidateImage": "seat-6/Manoranjan Shill Gopal ---- AL (1).jpg"
         },
         {
             "seatName": 6,
-            "symbol": "হাতুড়ী",
-            "partyName": "ওয়ার্কার্স পার্টি",
-            "candidateName": "আব্দুল হক",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "আবদুল হক ",
             "candidateImage": "seat-6/Abdul Houque ---OP.jpg"
         },
         {
             "seatName": 6,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ শাহিনুর ইসলাম",
             "candidateImage": "seat-6/Shahinur Islam----JP (1).jpg"
@@ -185,7 +185,7 @@
         {
             "seatName": 6,
             "symbol": "আম",
-            "partyName": "ন্যাশনাল পিপলস্ পার্টি",
+            "partyName": "ন্যাশনাল পিপলস্ পার্টি (এনপিপি)",
             "candidateName": "মোঃ জহুরুল ইসলাম",
             "candidateImage": "seat-6/Johurul Islam---NPP.jpg"
         },
@@ -193,7 +193,7 @@
             "seatName": 6,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ জাকারিয়া",
+            "candidateName": "মোঃ জাকারিয়া ",
             "candidateImage": "seat-6/Jakariya jaka ----AL  Individual.jpg"
         },
         {
@@ -205,42 +205,42 @@
         },
         {
             "seatName": 7,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ মাহবুব আলম",
+            "candidateName": "মোঃ মাহবুব আলম ",
             "candidateImage": "seat-7/Mahabub Alam ----JP.jpg"
         },
         {
             "seatName": 7,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আনোয়ার চৌধুরী জীবন",
+            "candidateName": "আনোয়ার চৌধুরী জীবন ",
             "candidateImage": "seat-7/Anwar Chowdhury Jibon  ----JP Individual.jpg"
         },
         {
             "seatName": 8,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ইকবালুর রহিম",
+            "candidateName": "ইকবালুর রহিম ",
             "candidateImage": "seat-8/Iqbalur Rahim --- AL.jpg"
         },
         {
             "seatName": 8,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আহমেদ শফি রুবেল",
+            "candidateName": "আহমেদ শফি রুবেল ",
             "candidateImage": "seat-8/Ahmed Sofi Rubel ----JP.jpg"
         },
         {
             "seatName": 8,
             "symbol": "মিনার",
             "partyName": "ইসলামী ঐক্যজোট",
-            "candidateName": "মোঃ ফরহাদ আলম",
+            "candidateName": "মোঃ ফরহাদ আলম ",
             "candidateImage": "seat-8/Md Forhad Alam ----Islami oikkojot.jpg"
         },
         {
             "seatName": 8,
-            "symbol": "হাত পাখা",
+            "symbol": "হাত (পাঞ্জা)",
             "partyName": "বিএমএল",
             "candidateName": "আব্দুস সালাম",
             "candidateImage": "seat-8/Abdus Salam ----BML.jpg"
@@ -248,7 +248,7 @@
         {
             "seatName": 8,
             "symbol": "আম",
-            "partyName": "ন্যাশনাল পিপলস্ পার্টি",
+            "partyName": "ন্যাশনাল পিপলস্ পার্টি (এনপিপি)",
             "candidateName": "পারুল সরকার লিনা",
             "candidateImage": "seat-8/Parul Sarker Lina ----NPP.jpg"
         },
@@ -256,63 +256,77 @@
             "seatName": 8,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বিশ্বজিৎ কুমার ঘোষ কাঞ্চন",
+            "candidateName": "বিশ্বজিৎ কুমার ঘোষ",
             "candidateImage": "seat-8/Bishawjit Ghosh kanchan ---AL Individual.jpg"
+        },
+        {
+            "seatName": 8,
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "রাশেদ পারভেজ",
+            "candidateImage": "seat-8/রাশেদ পারভেজ.jpeg"
         },
         {
             "seatName": 9,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আবুল হাসান মাহমুদ আলী",
+            "candidateName": "আবুল হাসান মাহমুদ আলী ",
             "candidateImage": "seat-9/A H M Mahamud Ali --- AL.jpg"
         },
         {
             "seatName": 9,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ মোনাজাত চৌধুরী",
+            "candidateName": "মোঃ মোনাজাত চৌধুরী ",
             "candidateImage": "seat-9/MD. Monajat Chowdhury ----JP.jpg"
         },
         {
             "seatName": 9,
             "symbol": "আম",
-            "partyName": "ন্যাশনাল পিপলস্ পার্টি",
-            "candidateName": "মোসাঃ আজিজা সুলতানা",
+            "partyName": "ন্যাশনাল পিপলস্ পার্টি (এনপিপি)",
+            "candidateName": "মোসাঃ আজিজা সুলতানা  ",
             "candidateImage": "seat-9/Ajija Sultana ---- NPP.jpg"
         },
         {
             "seatName": 9,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ তারিকুল ইসলাম তারিক",
+            "candidateName": "মোঃ তারিকুল ইসলাম তারিক ",
             "candidateImage": "seat-9/Tarikul Islam Tarik --- AL Individual.jpg"
         },
         {
             "seatName": 10,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "অ্যাড. বীর মুক্তিযোদ্ধা মোস্তাাফিজুর রহমান",
+            "candidateName": "মোস্তাফিজুর রহমান ",
             "candidateImage": "seat-10/Mostafizur Rahman --- AL.jpg"
         },
         {
             "seatName": 10,
             "symbol": "আম",
-            "partyName": "ন্যাশনাল পিপলস্ পার্টি",
-            "candidateName": "মোঃ শওকত আলী",
+            "partyName": "ন্যাশনাল পিপলস্ পার্টি (এনপিপি)",
+            "candidateName": "মোঃ শওকত আলী ",
             "candidateImage": "seat-10/Md. Sowkat Ali ---NPP.jpg"
         },
         {
             "seatName": 10,
-            "symbol": "লাঙ্গল",
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ তোজাম্মেল হক",
+            "candidateImage": "seat-10/মো. তোজাম্মেল হক.jpeg"
+        },
+        {
+            "seatName": 10,
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ নুরুল ইসলাম",
+            "candidateName": "মোঃ নুরুল ইসলাম ",
             "candidateImage": "seat-10/Md. Nurul Islam ---JP.jpg"
         },
         {
             "seatName": 10,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ হযরত আলী বেলাল",
+            "candidateName": "মোঃ হযরত আলী বেলাল ",
             "candidateImage": "seat-10/Md. Hazrat Ali Belal ---Individual.jpg"
         },
         {
@@ -344,150 +358,157 @@
             "candidateImage": "seat-11/Ajijul Houque Chowdhury --- Individual.jpg"
         },
         {
+            "seatName": 11,
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ শাহনেওয়াজ ফিরোজ শুভ শাহ",
+            "candidateImage": "seat-11/মোঃ শাহনেওয়াজ ফিরোজ শুভ শাহ, স্বতন্ত্র, ঈগল.jpeg"
+        },
+        {
             "seatName": 12,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "বীর মুক্তিযোদ্ধা আফতাব উদ্দিন সরকার",
+            "candidateName": "মোঃ আফতাব উদ্দিন সরকার  ",
             "candidateImage": "seat-12/Altab_Uddin_Sarka.jfif"
         },
         {
             "seatName": 12,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "তসলিম উদ্দিন",
+            "candidateName": "মোঃ তসলিম উদ্দিন  ",
             "candidateImage": "seat-12/Taslim_Uddin.jfif"
         },
         {
             "seatName": 12,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "এন. কে. আলম চৌধুরী",
+            "candidateName": "অ্যাডভোকেট এন. কে. আলম চৌধুরী  ",
             "candidateImage": "seat-12/N_K_Alom_Chowdhury.jfif"
         },
         {
             "seatName": 12,
-            "symbol": "নোঙ্গর",
+            "symbol": "নোঙর",
             "partyName": "বিএনএম",
-            "candidateName": "জাফর ইকবাল সিদ্দিকী",
+            "candidateName": "জাফর  ইকবাল  সিদ্দিকী",
             "candidateImage": "seat-12/Zafur_Iqbal_Siddik.jfif"
         },
         {
             "seatName": 12,
             "symbol": "বাইসাইকেল",
-            "partyName": "জাতীয় পার্টি",
-            "candidateName": "মখদুম আজম মাশরাফি",
+            "partyName": "জাতীয় পার্টি (জেপি)",
+            "candidateName": "মোঃ মখদুম আজম মাশরাফী  ",
             "candidateImage": "seat-12/Makhdum_Azam Mashrafi.jfif"
         },
         {
             "seatName": 12,
             "symbol": "টেলিভিশন",
-            "partyName": "বাংলাদেশ ন্যাশনালিস্ট ফ্রন্ট",
-            "candidateName": "সিরাজুল ইসলাম",
+            "partyName": "বাংলাদেশ ন্যাশনালিস্ট ফ্রন্ট (বিএনএফ)",
+            "candidateName": "মোঃ সিরাজুল ইসলাম",
             "candidateImage": "seat-12/Sirajul_Islam.jfif"
         },
         {
             "seatName": 12,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ইমরান কবির চৌধুরী",
+            "candidateName": "মোঃ ইমরান কবির চৌধুরী ",
             "candidateImage": "seat-12/Imran_Kabir_Chowdhury.jfif"
         },
         {
             "seatName": 13,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আসাদুজ্জামান নূর",
+            "candidateName": "আসাদুজ্জামান নূর  ",
             "candidateImage": "seat-13/Asaduzzaman_Nur.jpg"
         },
         {
             "seatName": 13,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "শাহাজাহান আলী চৌধুরী",
+            "candidateName": "মোঃ শাহজাহান আলী চৌধুরী  ",
             "candidateImage": "seat-13/Shahajan_Ali_Chowdhury.jpg"
         },
         {
             "seatName": 13,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোরছালীন ইসলাম",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "মোঃ মোরছালীন ইসলাম ",
             "candidateImage": "seat-13/Morsalin_Islam.jpg"
         },
         {
             "seatName": 13,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বীর মুক্তিযোদ্ধা জয়নাল আবেদীন",
+            "candidateName": "মোঃ জয়নাল আবেদীন",
             "candidateImage": "seat-13/Joynal_Abedin.jpg"
         },
         {
             "seatName": 14,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মেজর (অব.) রানা মোহাম্মদ সোহেল",
+            "candidateName": "রানা  মোহাম্মদ  সোহেল ",
             "candidateImage": "seat-14/Rana_Mohammad.jpg"
         },
         {
             "seatName": 14,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "খলিলুর রহমান",
+            "candidateName": "মোঃ খলিলুর রহমান ",
             "candidateImage": "seat-14/Khlilur_Rahaman.jpg"
         },
         {
             "seatName": 14,
             "symbol": "হাতঘড়ি",
             "partyName": "বাংলাদেশ কল্যাণ পার্টি",
-            "candidateName": "বাদশা আলমগীর",
+            "candidateName": "মোঃ বাদশা আলমগীর  ",
             "candidateImage": "seat-14/Badshah_Alomgir.jpg"
         },
         {
             "seatName": 14,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মার্জিয়া সুলতানা",
+            "candidateName": "মার্জিয়া সুলতানা  ",
             "candidateImage": "seat-14/Marzia_Sultan.jpg"
         },
         {
             "seatName": 14,
             "symbol": "কেতলি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "কাজী ফারুক কাদের",
+            "candidateName": "কাজী ফারুক কাদের ",
             "candidateImage": "seat-14/Kazi_Faruk_Kader.jpg"
         },
         {
             "seatName": 14,
             "symbol": "মোড়া",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আবু সাঈদ শামীম",
+            "candidateName": "মোঃ আবু সাইদ (শামীম)  ",
             "candidateImage": "seat-14/Abu_Said_Shamim.jpg"
         },
         {
             "seatName": 14,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "সাদ্দাম হোসেন পাভেল",
+            "candidateName": "মোঃ সাদ্দাম হোসেন (পাভেল)",
             "candidateImage": "seat-14/Saddam_Hossain.jpg"
         },
         {
             "seatName": 14,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "হুকুম আলী খান",
+            "candidateName": "মোঃ হুকুম আলী খান",
             "candidateImage": "seat-14/Hukum_Ali_Khan.jpg"
         },
         {
             "seatName": 15,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আহসান আদেলুর রহমান",
+            "candidateName": "আহসান আদেলুর রহমান  ",
             "candidateImage": "seat-15/Ahachan_Adelur_Rahaman.jfif"
         },
         {
             "seatName": 15,
-            "symbol": "নোঙ্গর",
+            "symbol": "নোঙর",
             "partyName": "বিএনএম",
-            "candidateName": "এম সাজেদুল করিম",
+            "candidateName": "এম সাজেদুল করিম  ",
             "candidateImage": "seat-15/S_Sajdul_Karim.jfif"
         },
         {
@@ -500,56 +521,56 @@
         {
             "seatName": 15,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "আজিজুল হক",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
+            "candidateName": "মোঃ আজিজুল হক ",
             "candidateImage": "seat-15/মোঃ আজিজুল হক নীলফামারী ৪.jfif"
         },
         {
             "seatName": 15,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "আব্দুল হাই সরকার",
+            "candidateName": "মোঃ আব্দুল হাই সরকার",
             "candidateImage": "seat-15/মোঃ আব্দুল হাই সরকার নীলফামারী ৪.jfif"
         },
         {
             "seatName": 15,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোকছেদুল মোমিন",
+            "candidateName": "মোঃ মোখছেদুল মোমিন",
             "candidateImage": "seat-15/মোঃ মোখছেদুল মোমিন নীলফামারী ৪.jfif"
         },
         {
             "seatName": 15,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "সিদ্দিকুল আলম",
+            "candidateName": "মোঃ সিদ্দিকুল আলম",
             "candidateImage": "seat-15/মোঃ সিদ্দিকুল আলম নীলফামারী ৪.jfif"
         },
         {
             "seatName": 16,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মোতাহার হোসেন",
+            "candidateName": "মোঃ মোতাহার হোসেন",
             "candidateImage": "seat-16/Lalmonirhat-1_AL_Motahar Hossain.jpg"
         },
         {
             "seatName": 16,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আতাউর রহমান প্রধান",
+            "candidateName": "মোঃ আতাউর রহমান প্রধান ",
             "candidateImage": "seat-16/Lalmonirhat-1_AL_Ataur Rahman.jpg"
         },
         {
             "seatName": 16,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "হাবিব মোঃ ফারুক",
             "candidateImage": "seat-16/Lalmonirhat-1_Habib.jpg"
         },
         {
             "seatName": 16,
             "symbol": "মোমবাতি",
-            "partyName": "বাংলাদেশ ইসলামি ফ্রন্ট",
+            "partyName": "বাংলাদেশ ইসলামী ফ্রন্ট",
             "candidateName": "মোঃ আজম আজহার হোসেন",
             "candidateImage": "seat-16/Lalmonirhat-1_AL_Azom Azahar.jpg"
         },
@@ -571,7 +592,7 @@
             "seatName": 17,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ সিরাজুল হক",
+            "candidateName": "মোঃ সিরাজুল হক ",
             "candidateImage": "seat-17/Lalmonirhat-2_Sirajul.jpg"
         },
         {
@@ -585,14 +606,14 @@
             "seatName": 17,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ মমতাজ আলী",
+            "candidateName": "মোঃ মমতাজ আলী ",
             "candidateImage": "seat-17/Lalmonirhat-2_Mamotaj.jpg"
         },
         {
             "seatName": 17,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ দেলওয়ার হোসেন",
+            "candidateName": "মোঃ দেলোয়ার হোসেন",
             "candidateImage": "seat-17/Lalmonirhat-2_AL_Delwar.jpg"
         },
         {
@@ -605,7 +626,7 @@
         {
             "seatName": 17,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মোঃ দেলাব্বর হোসেন",
             "candidateImage": "seat-17/Lalmonirhat-2_Delabbor.jpg"
         },
@@ -618,7 +639,7 @@
         },
         {
             "seatName": 18,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ জাহিদ হাসান",
             "candidateImage": "seat-18/Lalmonirhat-3_Jahid.jpg"
@@ -626,14 +647,14 @@
         {
             "seatName": 18,
             "symbol": "চাকা",
-            "partyName": "বাংলাদেশ সাম্যবাদী দল",
+            "partyName": "বাংলাদেশ সাম্যবাদী দল (এমএল)",
             "candidateName": "মোঃ আশরাফুল আলম",
             "candidateImage": "seat-18/মোঃ আশরাফুল আলম.jpg"
         },
         {
             "seatName": 18,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "আবু তৈয়ব মোঃ আজমুল হক পাটোয়ারী",
             "candidateImage": "seat-18/আবু তৈয়ব মোঃ আজমুল হক পাটোয়ারী.jpg"
         },
@@ -641,7 +662,7 @@
             "seatName": 18,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ শামীম আহম্মেদ চৌধুরী",
+            "candidateName": "মোঃ শামীম আহাম্মেদ চৌধুরী",
             "candidateImage": "seat-18/মোঃ শামীম আহাম্মেদ চৌধুরী.jpg"
         },
         {
@@ -660,23 +681,23 @@
         },
         {
             "seatName": 19,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "হোসেন মকবুল শাহরিয়ার",
+            "candidateName": "হোসেন মকবুল শাহরিয়ার   ",
             "candidateImage": "seat-19/(রংপুর-1) হোসেন মকবুল শাহরিয়ার..jpg"
         },
         {
             "seatName": 19,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ শাহিনুর রহমান",
+            "candidateName": "মোঃ শাহিনুর আলম",
             "candidateImage": "seat-19/(রংপুর-1) শাহিনুর আলম.jpg"
         },
         {
             "seatName": 19,
             "symbol": "কেতলি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ আসাদুজ্জামান",
+            "candidateName": "মোঃ আসাদুজ্জামান ",
             "candidateImage": "seat-19/(রংপুর-1) আসাদুজ্জামান.jpg"
         },
         {
@@ -688,163 +709,163 @@
         },
         {
             "seatName": 19,
-            "symbol": "হাতুরী",
-            "partyName": "ওয়ার্কার্স পার্টি",
-            "candidateName": "মোঃ বখতিয়ার হোসেন",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "মোঃ বখতিয়ার হোসেন  ",
             "candidateImage": "seat-19/(রংপুর-1) বখতিয়ার হোসেন.jpg"
         },
         {
             "seatName": 19,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ বদরুদ্দোজা চৌধুরী",
+            "candidateName": "মোঃ বদরুদ্দোজা চৌধুরী ",
             "candidateImage": "seat-19/(রংপুর-1) বদরুদ্দোজা চৌধুরী.jpg"
         },
         {
             "seatName": 19,
-            "symbol": "সোনালী আঁশ",
-            "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ হাবিবুর রহমান",
+            "symbol": "আম",
+            "partyName": "ন্যাশনাল পিপলস পার্টি",
+            "candidateName": "মোঃ হাবিবুর রহমান ",
             "candidateImage": "seat-19/(রংপুর-1) হাবিবুর রহমান_1.jpg"
         },
         {
             "seatName": 19,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "শ্যামলী রায়",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "শ্যামলী রায় ",
             "candidateImage": "seat-19/(রংপুর-1)শ্যামলী.jpg"
         },
         {
             "seatName": 19,
             "symbol": "মোড়া",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ মোশারফ হোসেন",
+            "candidateName": "মোঃ মোশারফ হোসেন ",
             "candidateImage": "seat-19/মোশারফ হোসেন......jpg"
         },
         {
             "seatName": 20,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আনিছুল ইসলাম মন্ডল",
+            "candidateName": "আনিছুল ইসলাম মন্ডল ",
             "candidateImage": "seat-20/(রংপুর-2)আনিছুল হক.jpg"
         },
         {
             "seatName": 20,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আবুল কালাম মোঃ আহসানুল হক চৌধুরী",
+            "candidateName": "আবুল কালাম মোঃ আহসানুল হক চৌধুরী ",
             "candidateImage": "seat-20/(রংপুর-2)আবুল কালাম মোঃ আহসানুল হক চৌধুরী..jpg"
         },
         {
             "seatName": 20,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বিশ্বনাথ সরকার",
+            "candidateName": "বিশ্বনাথ সরকার ",
             "candidateImage": "seat-20/(রংপুর-2)বিশ্বনাথ সরকার.jpg"
         },
         {
             "seatName": 21,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "গোলাম মোহাম্মদ কাদের",
+            "candidateName": "গোলাম মোহাম্মদ কাদের ",
             "candidateImage": "seat-21/(রংপুর-3)গোলাম মোঃ কাদের..jpg"
         },
         {
             "seatName": 21,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোছাঃ আনোয়ারা ইসলাম রাণী (হিজড়া)",
+            "candidateName": "মোছাঃ আনোয়ারা ইসলাম রাণী (হিজড়া) ",
             "candidateImage": "seat-21/(রংপুর-3)আনোয়ারা ইসলাম রানী..jpg"
         },
         {
             "seatName": 21,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "মোঃ শহিদুল ইসলাম",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ শহিদুল ইসলাম ",
             "candidateImage": "seat-21/(রংপুর-3)শহিদুল ইসলাম.jpg"
         },
         {
             "seatName": 21,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "শফিউল আলম",
+            "candidateName": "শফিউল আলম ",
             "candidateImage": "seat-21/(রংপুর-3)শফিউল আলম.jpg"
         },
         {
             "seatName": 21,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
-            "candidateName": "মোঃ আব্দুর রহমান রেজু",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
+            "candidateName": "মোঃ আব্দুর রহমান (রেজু)",
             "candidateImage": "seat-21/(রংপুর-3)আব্দুর রহমান রেজু.jpg"
         },
         {
             "seatName": 21,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ একরামুল হক",
+            "candidateName": "মোঃ একরামুল হক ",
             "candidateImage": "seat-21/(রংপুর-3)একরামুল.jpg"
         },
         {
             "seatName": 22,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "টিপু মুনশি",
+            "candidateName": "টিপু মুনশি ",
             "candidateImage": "seat-22/(রংপুর-4) টিপু মুনশি.jpg"
         },
         {
             "seatName": 22,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোস্তফা সেলিম",
+            "candidateName": "মোস্তফা সেলিম ",
             "candidateImage": "seat-22/(রংপুর-4) মোস্তফা সেলিম.jpg"
         },
         {
             "seatName": 22,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ সিরাজুল ইসলাম",
+            "candidateName": "মোঃ সিরাজুল ইসলাম ",
             "candidateImage": "seat-22/(রংপুর-4) সিরাজুল ইসলাম_1.jpg"
         },
         {
             "seatName": 23,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "রাশেক রহমান",
+            "candidateName": "রাশেক রহমান ",
             "candidateImage": "seat-23/(রংপুর-5)রাশেক রহমান.jpg"
         },
         {
             "seatName": 23,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ আনিছুর রহমান",
+            "candidateName": "মোঃ আনিছুর রহমান ",
             "candidateImage": "seat-23/(রংপুর-5) আনিছুর রহমান.jpg"
         },
         {
             "seatName": 23,
             "symbol": "গামছা",
             "partyName": "কৃষক শ্রমিক জনতা লীগ",
-            "candidateName": "মোঃ আব্দুল হালিম মন্ডল",
+            "candidateName": "মোঃ আব্দুল হালিম মন্ডল ",
             "candidateImage": "seat-23/(রংপুর-5)আব্দুল হালিম মন্ডল.jpg"
         },
         {
             "seatName": 23,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ মাহবুবার রহমান",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "মোঃ মাহবুবুর রহমান ",
             "candidateImage": "seat-23/(রংপুর-5)মাহবুবুর রহমান.jpg"
         },
         {
             "seatName": 23,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
-            "candidateName": "মোঃ আব্দুল ওয়াদুদ মিয়া",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
+            "candidateName": "মোঃ আব্দুল ওয়াদুদ মিয়া ",
             "candidateImage": "seat-23/(রংপুর-5)আব্দুল ওয়াদুদ.jpg"
         },
         {
             "seatName": 23,
             "symbol": "চেয়ার",
-            "partyName": "ইসলামিক ফ্রন্ট বাংলাদেশ",
-            "candidateName": "মোঃ এনামুল হক",
+            "partyName": "ইসলামিক ফ্রন্ট বাংলাদেশ ",
+            "candidateName": "মোঃ এনামুল হক ",
             "candidateImage": "seat-23/(রংপুর-5)এনামুল হক.jpg"
         },
         {
@@ -858,76 +879,76 @@
             "seatName": 23,
             "symbol": "টেলিভিশন",
             "partyName": "বিএনএফ",
-            "candidateName": "আব্দুল বাতেন",
+            "candidateName": "আব্দুল বাতেন ",
             "candidateImage": "seat-23/(রংপুর-5)আব্দুল বাতেন.jpg"
         },
         {
             "seatName": 24,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "শিরিন শারমিন চৌধুরী",
+            "candidateName": "শিরীন শারমিন চৌধুরী ",
             "candidateImage": "seat-24/(রংপুর-6) শিরীন শারমিন চৌধুরী.jpg"
         },
         {
             "seatName": 24,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ সিরাজুল ইসলাম",
+            "candidateName": "মোঃ সিরাজুল ইসলাম ",
             "candidateImage": "seat-24/(রংপুর-6) সিরাজুল ইসলাম ..jpg"
         },
         {
             "seatName": 24,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "তাকিয়া জাহান চৌধুরী",
+            "candidateName": "তাকিয়া জাহান চৌধুরী ",
             "candidateImage": "seat-24/(রংপুর-6) তাকিয়া জাহান চৌধুরী.jpg"
         },
         {
             "seatName": 24,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ হুমায়ন ইজাজ",
+            "candidateName": "মোঃ হুমায়ূন ইজাজ",
             "candidateImage": "seat-24/(রংপুর-6) হুমাযুন ইজাজ.jpg"
         },
         {
             "seatName": 24,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ নুর আলম মিয়া",
+            "candidateName": "মোঃ নূর আলম মিয়া ",
             "candidateImage": "seat-24/(রংপুর-6) নুর আলম মিয়া.jpg"
         },
         {
             "seatName": 24,
             "symbol": "হাতঘড়ি",
-            "partyName": "বাংলাদেশ কল্যাণ পার্টি",
-            "candidateName": "মোঃ জাকারিয়া হোসেন",
+            "partyName": "বাংলাদেশ কল্যাণ পার্টি ",
+            "candidateName": "মোঃ জাকারিয়া হোসেন  ",
             "candidateImage": "seat-24/(রংপুর-6) জাকারিয়া হোসেন.jpg"
         },
         {
             "seatName": 24,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ মাহবুল আলম",
+            "candidateName": "মোঃ মাহবুল আলম ",
             "candidateImage": "seat-24/(রংপুর-6)মাহবুব আলম--.jpg"
         },
         {
             "seatName": 25,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "এ কে এম মোস্তাফিজার রহমান",
+            "candidateName": "এ কে এম মোস্তাফিজুর রহমান",
             "candidateImage": "seat-25/Kurigram-1) japa.jpg"
         },
         {
             "seatName": 25,
-            "symbol": "ফুলের মালা মার্কা",
+            "symbol": "ফুলের মালা ",
             "partyName": "বাংলাদেশ তরিকত ফেডারেশন",
-            "candidateName": "কাজি মোঃ লতিফুল কবির",
+            "candidateName": "কাজী মোঃ লতিফুল কবীর",
             "candidateImage": "seat-25/কাজী মোঃ লতিফুল কবীর.jpg"
         },
         {
             "seatName": 25,
-            "symbol": "জাকের পার্টি",
-            "partyName": "গোলাপ ফুল মার্কা",
+            "symbol": "গোলাপ ফুল",
+            "partyName": "জাকের পার্টি",
             "candidateName": "মোঃ আব্দুল হাই",
             "candidateImage": "seat-25/kurigram-1-abdul hai-jaker party.jpg"
         },
@@ -941,15 +962,15 @@
         {
             "seatName": 25,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
-            "candidateName": "মনিরুজ্জামান খান ভাসানী",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
+            "candidateName": "মোঃ মনিরুজ্জামান খান ভাসানী ",
             "candidateImage": "seat-25/মোঃ মনিরুজ্জামান খান ভাসানী.jpg"
         },
         {
             "seatName": 26,
-            "symbol": "লাঙ্গল",
-            "partyName": "জাতীয় পার্টি",
-            "candidateName": "পনির উদ্দিন আহমেদ",
+            "symbol": "লাঙল",
+            "partyName": "জাতীয় পার্টি (জেপি)",
+            "candidateName": "পনির উদ্দিন আহমেদ ",
             "candidateImage": "seat-26/kurigram-2 panir uddin japa.jpg"
         },
         {
@@ -962,15 +983,15 @@
         {
             "seatName": 26,
             "symbol": "হাতুড়ি",
-            "partyName": "বাংলাদেশ ওয়ার্কাস পার্টি",
-            "candidateName": "মোঃ আব্দুল কুদ্দুস মিয়া",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "মোঃ আঃ কুদ্দুস মিয়া",
             "candidateImage": "seat-26/মোঃ মকবুল হোসেন.jpg"
         },
         {
             "seatName": 26,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ মকবুল হোসেন",
+            "candidateName": "মোঃ মকবুল হোসেন ",
             "candidateImage": "seat-26/মোঃ আঃ কুদ্দুস মিয়া.jpg"
         },
         {
@@ -984,7 +1005,7 @@
             "seatName": 27,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ডা: আক্কাস আলী সরকার",
+            "candidateName": "ডা: মোঃ আক্কাস আলী সরকার ",
             "candidateImage": "seat-27/kurigram-3 dr. akkas ali-satontro.jpg"
         },
         {
@@ -996,49 +1017,49 @@
         },
         {
             "seatName": 27,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ আব্দুস সোবহান",
+            "candidateName": "আব্দুস সোবহান",
             "candidateImage": "seat-27/kurigram-3 abdus sobhan japa.jpeg"
         },
         {
             "seatName": 27,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ আব্দুল বাতেন",
+            "candidateName": "মোঃ  আব্দুল বাতেন ",
             "candidateImage": "seat-27/মোঃ আব্দুল বাতেন.jpg"
         },
         {
             "seatName": 27,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ মোসাদ্দেকুল আলম",
+            "candidateName": "মোঃ মোসাদ্দেকুল আলম ",
             "candidateImage": "seat-27/মোঃ মোসাদ্দেকুল আলম.jpg"
         },
         {
             "seatName": 27,
             "symbol": "গামছা",
             "partyName": "কৃষক শ্রমিক জনতা লীগ",
-            "candidateName": "মোঃ হাবিবুর রহমান",
+            "candidateName": "মোঃ হাবিবুর রহমান ",
             "candidateImage": "seat-27/মোঃ হাবিবুর রহমান.jpg"
         },
         {
             "seatName": 27,
-            "symbol": "নোঙ্গর",
+            "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "মোঃ সাফিউর রহমান",
+            "candidateName": "মোঃ সাফিউর রহমান ",
             "candidateImage": "seat-27/মোঃ সাফিউর রহমান.jpg"
         },
         {
             "seatName": 28,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "অ্যাডভোকেট বিপ্লব হাসান পলাশ",
+            "candidateName": "মোঃ বিপ্লব হাসান পলাশ",
             "candidateImage": "seat-28/kurigram-4 biplob hasan polash-al.jpg"
         },
         {
             "seatName": 28,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "এ কে এম সাইফুর রহমান",
             "candidateImage": "seat-28/Kurigram-4) Bablu.jpg"
@@ -1047,12 +1068,12 @@
             "seatName": 28,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ মজিবর রহমান বঙ্গবাসী",
+            "candidateName": "মোঃ মজিবুর রহমান বঙ্গবাসী ",
             "candidateImage": "seat-28/Kurigram -4 bangobasi satrontro.jpg"
         },
         {
             "seatName": 28,
-            "symbol": "বাইসাইকেল",
+            "symbol": "বাইসাইকেল ",
             "partyName": "জেপি",
             "candidateName": "মোঃ রুহুল আমিন",
             "candidateImage": "seat-28/Kurigram-4) Rahul amain Jp.jpg"
@@ -1061,21 +1082,21 @@
             "seatName": 28,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ শহিদুল ইসলাম শালু",
+            "candidateName": "মোঃ শহিদুল ইসলাম শালু ",
             "candidateImage": "seat-28/Kurigram-4) Shahidul Islam shalu-satantro.jpg"
         },
         {
             "seatName": 28,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "অ্যাভোকেট মাছুম ইকবাল",
+            "candidateName": "মোঃ মাছুম ইকবাল",
             "candidateImage": "seat-28/মোঃ মাছুম ইকবাল.jpg"
         },
         {
             "seatName": 28,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ আব্দুল হামিদ",
+            "candidateName": "মোঃ আব্দুল হামিদ ",
             "candidateImage": "seat-28/মোঃ আব্দুল হামিদ.jpg"
         },
         {
@@ -1089,313 +1110,327 @@
             "seatName": 28,
             "symbol": "গামছা",
             "partyName": "কৃষক শ্রমিক জনতা লীগ",
-            "candidateName": "মোহাম্মদ আবু শামিম হাবীব",
+            "candidateName": "মোহাম্মদ আবু শামিম হাবীব ",
             "candidateImage": "seat-28/মোহাম্মদ আবু শামিম হাবীব.jpg"
         },
         {
+            "seatName": 28,
+            "symbol": "ঢেঁকি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ ফারুকুল ইসলাম",
+            "candidateImage": "seat-28/মোঃ ফারুকুল ইসলাম.jpeg"
+        },
+        {
+            "seatName": 28,
+            "symbol": "কলার ছড়ি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "শাহ্ মোঃ নুর-ই-শাহী",
+            "candidateImage": "seat-28/শাহ্ মোঃ নুর-ই-শাহী.jpeg"
+        },
+        {
             "seatName": 29,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "শামীম হায়দার পাটোয়ারী",
+            "candidateName": "শামীম হায়দার পাটোয়ারী ",
             "candidateImage": "seat-29/Shamim Hayder Patoary.jpg"
         },
         {
             "seatName": 29,
             "symbol": "হাতঘড়ি",
-            "partyName": "বাংলাদেশ কল্যাণ পার্টি",
-            "candidateName": "আইরিন আক্তার",
+            "partyName": "বাংলাদেশ কল্যাণ পার্টি ",
+            "candidateName": "মোছা. আইরিন আক্তার ",
             "candidateImage": "seat-29/মোছাঃ আইরিন আক্তার.jpg"
         },
         {
             "seatName": 29,
-            "symbol": "ঘড়ি",
+            "symbol": "ছড়ি",
             "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
-            "candidateName": "খন্দকার রবিউল ইসলাম",
+            "candidateName": "খন্দকার রবিউল ইসলাম ",
             "candidateImage": "seat-29/খন্দকার রবিউল ইসলাম.jpg"
         },
         {
             "seatName": 29,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মর্জিনা খান",
+            "candidateName": "মর্জিনা খান ",
             "candidateImage": "seat-29/মর্জিনা খান.jpg"
         },
         {
             "seatName": 29,
             "symbol": "গামছা",
             "partyName": "কৃষক শ্রমিক জনতা লীগ",
-            "candidateName": "মোঃ আবু ববক্কর সিদ্দিক",
+            "candidateName": "মোঃ আবু ববক্কর সিদ্দিক ",
             "candidateImage": "seat-29/মোঃ আবু বক্কর ছিদ্দিক.jpg"
         },
         {
             "seatName": 29,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "গোলাম আহসান হাবীব মাসুদ",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মো. গোলাম আহসান হাবীব মাসুদ",
             "candidateImage": "seat-29/Golam Ahosan Habib Masud (1).jpg"
         },
         {
             "seatName": 29,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ ফকরুল হাসান",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "মোঃ ফখরুল হাসান ",
             "candidateImage": "seat-29/মোঃ ফখরুল হাসান.jpg"
         },
         {
             "seatName": 29,
             "symbol": "টেলিভিশন",
             "partyName": "বিএনএফ",
-            "candidateName": "ওমর ফারুক সিজার",
+            "candidateName": "মোঃ ওমর ফারুক সিজার ",
             "candidateImage": "seat-29/মোঃ ওমর ফারুক সিজার.jpg"
         },
         {
             "seatName": 29,
             "symbol": "ঢেঁকি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আব্দুল্লাহ নাহিদ নিগার",
+            "candidateName": "আব্দুল্লাহ নাহিদ নিগার ",
             "candidateImage": "seat-29/Abdulla Nahid Niger.jpg"
         },
         {
             "seatName": 29,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "জয়নাল আবেদীন",
+            "candidateName": "জয়নাল আবেদীন ",
             "candidateImage": "seat-29/মোঃ জয়নাল আবেদীন.jpg"
         },
         {
             "seatName": 30,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আব্দুর রশিদ সরকার",
+            "candidateName": "মোঃ আব্দুর রশীদ সরকার  ",
             "candidateImage": "seat-30/Rahid.jpg"
         },
         {
             "seatName": 30,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "শাহ সারোয়ার কবীর",
+            "candidateName": "শাহ সারোয়ার কবীর ",
             "candidateImage": "seat-30/Saha Sarowar.jpg"
         },
         {
             "seatName": 30,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোছা. মাছুমা আক্তার",
+            "candidateName": "মোছাঃ মাছুমা আখতার",
             "candidateImage": "seat-30/মোছাঃ মাসুমা আখতার.jpg"
         },
         {
             "seatName": 30,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "জিয়া জামান খান",
+            "candidateName": "জিয়া জামান খান ",
             "candidateImage": "seat-30/জিয়া জামান খান.jpg"
         },
         {
             "seatName": 30,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "মোঃ গোলাম মারুফ মনা",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ গোলাম মারুফ মনা ",
             "candidateImage": "seat-30/মোঃ গোলাম মারুফ মনা.jpg"
         },
         {
             "seatName": 31,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "অ্যাড. উম্মে কুলসুম স্মৃতি",
+            "candidateName": "উম্মে কুলসুম স্মৃতি ",
             "candidateImage": "seat-31/Kulsum (1).jpg"
         },
         {
             "seatName": 31,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মইনুর রাব্বী চৌধুরী",
+            "candidateName": "মইনুর রাব্বী চৌধুরী ",
             "candidateImage": "seat-31/Rabbi.jpg"
         },
         {
             "seatName": 31,
             "symbol": "ঢেঁকি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ আজিজার রহমান বিএসসি",
+            "candidateName": "মোঃ আজিজার রহমান",
             "candidateImage": "seat-31/মোঃ আজিজার রহমান.jpg"
         },
         {
             "seatName": 31,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "সাহরিয়া খান বিপ্লব",
+            "candidateName": "মোঃ সাহরিয়া খাঁন ",
             "candidateImage": "seat-31/Biplop.jpg"
         },
         {
             "seatName": 31,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মফিজুল হক সরকার",
+            "candidateName": "মোঃ মফিজুল হক সরকার ",
             "candidateImage": "seat-31/Mofijul Haque Sarker.jpg"
         },
         {
             "seatName": 31,
-            "symbol": "নোঙ্গর",
-            "partyName": "জাপা স্বতন্ত্র",
-            "candidateName": "মোঃ মঞ্জুরুল হক",
+            "symbol": "নোঙর",
+            "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
+            "candidateName": "মোঃ মনজুরুল হক",
             "candidateImage": "seat-31/মোঃ মনজুরুল হক.jpg"
         },
         {
             "seatName": 31,
             "symbol": "গামছা",
             "partyName": "কৃষক শ্রমিক জনতা লীগ",
-            "candidateName": "মোস্তফা মনিরুজ্জামান",
+            "candidateName": "মোঃ মোস্তফা মনিরুজ্জামান ",
             "candidateImage": "seat-31/মোঃ মোস্তফা মনিরুজ্জামান.jpg"
         },
         {
             "seatName": 31,
             "symbol": "হাতঘড়ি",
-            "partyName": "বাংলাদেশ কল্যাণ পার্টি",
-            "candidateName": "মাহমুদুল হক",
+            "partyName": "বাংলাদেশ কল্যাণ পার্টি ",
+            "candidateName": "মোঃ মাহমুদুল হক ",
             "candidateImage": "seat-31/মোঃ মাহমুদুল হক.jpg"
         },
         {
             "seatName": 31,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "জাহাঙ্গীর আলম সরকার",
+            "candidateName": "মোঃ জাহাঙ্গীর আলম",
             "candidateImage": "seat-31/মোঃ জাহাঙ্গীর আলম.jpg"
         },
         {
             "seatName": 31,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "এসএম খাদেমুল ইসলাম খুদি",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
+            "candidateName": "এস এম খাদেমুল ইসলাম খুদি",
             "candidateImage": "seat-31/এস এম খাদেমুল ইসলাম খুদি.jpg"
         },
         {
             "seatName": 32,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আবুল কালাম আজাদ",
+            "candidateName": "মোঃ আবুল কালাম আজাদ",
             "candidateImage": "seat-32/Abul Kalam Azad (1).jpg"
         },
         {
             "seatName": 32,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "কাজী মশিউর রহমান",
+            "candidateName": "কাজী মোঃ মশিউর রহমান ",
             "candidateImage": "seat-32/Kazi Mosiur (1).jpg"
         },
         {
             "seatName": 32,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মনোয়ার হোসেন চৌধুরী",
+            "candidateName": "মোঃ মনোয়ার হোসেন চৌধুরী ",
             "candidateImage": "seat-32/Monoar Hossain (1).jpg"
         },
         {
             "seatName": 33,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মাহমুদ হাসান রিপন",
+            "candidateName": "মাহমুদ হাসান",
             "candidateImage": "seat-33/Mahamud Hasan Ripon.jpg"
         },
         {
             "seatName": 33,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আতাউর রহমান সরকার",
+            "candidateName": "মোঃ আতাউর রহমান",
             "candidateImage": "seat-33/Ataur Rahman (1).jpg"
         },
         {
             "seatName": 33,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ফারজানা রাব্বী বুবলী",
+            "candidateName": "ফারজানা রাব্বী বুবলী ",
             "candidateImage": "seat-33/Farjana Rabbi Bubli (1).jpg"
         },
         {
             "seatName": 33,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "শামসুল আজাদ শীতল",
+            "candidateName": "মোঃ শামসুল আজাদ শীতল ",
             "candidateImage": "seat-33/মোঃ শামসুল আজাদ শীতল.jpg"
         },
         {
             "seatName": 33,
             "symbol": "কুলা",
-            "partyName": "বিকল্প ধারা",
-            "candidateName": "জাহাঙ্গীর আলম",
+            "partyName": "বিকল্পধারা বাংলাদেশ",
+            "candidateName": "মোঃ জাহাঙ্গীর আলম ",
             "candidateImage": "seat-33/মোঃ জাহাঙ্গীর আলম.jpg"
         },
         {
             "seatName": 33,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "ফারুক মিয়া",
+            "candidateName": "মোঃ ফারুক মিয়া",
             "candidateImage": "seat-33/মোঃ ফারুক মিয়া.jpg"
         },
         {
             "seatName": 34,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "সামছুল আলম দুদু",
+            "candidateName": "সামছুল আলম দুদু ",
             "candidateImage": "seat-34/Pic-01.jpg"
         },
         {
             "seatName": 34,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আব্দুল আজিজ মোল্লা",
+            "candidateName": "আব্দুল আজিজ মোল্লা ",
             "candidateImage": "seat-34/Pic-02.jpg"
         },
         {
             "seatName": 34,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "এ কে এম রায়হান মন্ডল মনু",
+            "candidateName": "এ কে এম রায়হান মন্ডল মনু ",
             "candidateImage": "seat-34/Pic-03.jpg"
         },
         {
             "seatName": 34,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "জহুরুল ইসলাম",
+            "candidateName": "মোঃ জহুরুল ইসলাম ",
             "candidateImage": "seat-34/Pic-05.jpg"
         },
         {
             "seatName": 34,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "এ.কে.এম মোয়াজ্জেম হোসেন",
+            "candidateName": "এ কে এম মোয়াজ্জেম হোসেন",
             "candidateImage": "seat-34/Pic-04.jpg"
         },
         {
             "seatName": 34,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ রুকনুজ্জামান",
+            "candidateName": "মোঃ রুকুনুজ্জামান ",
             "candidateImage": "seat-34/Pic-07.jpg"
         },
         {
             "seatName": 34,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ মাসুম",
+            "candidateName": "মোঃ মাসুম ",
             "candidateImage": "seat-34/Pic-06.jpg"
         },
         {
             "seatName": 35,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "হুইপ আবু সাঈদ আল মাহমুদ স্বপন",
+            "candidateName": "আবু সাঈদ আল মাহমুদ স্বপন ",
             "candidateImage": "seat-35/Pic-1.jpg"
         },
         {
             "seatName": 35,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "আবুল খায়ের মোঃ সাখাওয়াত হোসেন",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
+            "candidateName": "আবুল খায়ের মোঃ সাখাওয়াত হোসেন ",
             "candidateImage": "seat-35/Pic-3.jpg"
         },
         {
             "seatName": 35,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ আবু সাঈদ নুরুল্লাহ",
             "candidateImage": "seat-35/Pic-2.jpg"
@@ -1404,21 +1439,21 @@
             "seatName": 35,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ আবু সাঈদ",
+            "candidateName": "মোঃ আবু সাঈদ ",
             "candidateImage": "seat-35/Pic-5.jpg"
         },
         {
             "seatName": 35,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মোঃ নয়ন",
+            "candidateName": "মোঃ নয়ন ",
             "candidateImage": "seat-35/Pic-6.jpg"
         },
         {
             "seatName": 35,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ গোলাম মাহফুজ চৌধুরী",
+            "candidateName": "মোঃ গোলাম মাহফুজ চৌধুরী ",
             "candidateImage": "seat-35/Pic-4.jpg"
         },
         {
@@ -1432,21 +1467,21 @@
             "seatName": 35,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ আতোয়ার রহমান",
+            "candidateName": "মোঃ আতোয়ার রহমান মন্ডল",
             "candidateImage": "seat-35/Pic-8.jpg"
         },
         {
             "seatName": 36,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "এন, এম, আবু জিহাদ",
+            "candidateName": "এন এম আবু জিহাদ ",
             "candidateImage": "seat-36/BOG -01 (07).jpg"
         },
         {
             "seatName": 36,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "কে এস এম মোস্তাফিজুর রহমান",
+            "candidateName": "কে এস এম মোস্তাফিজুর রহমান ",
             "candidateImage": "seat-36/BOG -01 (03).jpg"
         },
         {
@@ -1459,7 +1494,7 @@
         {
             "seatName": 36,
             "symbol": "ফুলের মালা",
-            "partyName": "তরিকত ফেডারেশন",
+            "partyName": "বাংলাদেশ তরিকত ফেডারেশন",
             "candidateName": "মোঃ আনোয়ার হোসেন",
             "candidateImage": "seat-36/মোঃ আনোয়ার হোসেন.jpg"
         },
@@ -1472,7 +1507,7 @@
         },
         {
             "seatName": 36,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ গোলাম মোস্তফা বাবু",
             "candidateImage": "seat-36/BOG -01 (02).jpg"
@@ -1480,7 +1515,7 @@
         {
             "seatName": 36,
             "symbol": "বটগাছ",
-            "partyName": "খেলাফত আন্দোলন",
+            "partyName": "বাংলাদেশ খেলাফত আন্দোলন",
             "candidateName": "মোঃ নজরুল ইসলাম",
             "candidateImage": "seat-36/BOG -01 (09).jpg"
         },
@@ -1494,7 +1529,7 @@
         {
             "seatName": 36,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "মোঃ হাসান আকবর আফজল",
             "candidateImage": "seat-36/BOG -01 (08).jpg"
         },
@@ -1543,13 +1578,13 @@
         {
             "seatName": 37,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মোঃ মুনছুর রহমান শেখ",
             "candidateImage": "seat-37/মোঃ মুনছুর রহমান শেখ.jpg"
         },
         {
             "seatName": 37,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "শরিফুল ইসলাম জিন্নাহ",
             "candidateImage": "seat-37/BOG -02 (01).jpg"
@@ -1565,7 +1600,7 @@
             "seatName": 38,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "খান মুহাম্মদ সাইফুল্লাহ্ আল মেহেদী",
+            "candidateName": "খাঁন মুহাম্মদ সাইফুল্লাহ্ আল মেহেদী",
             "candidateImage": "seat-38/2. KHAN MD SAIFULLAH.jpg"
         },
         {
@@ -1592,14 +1627,14 @@
         {
             "seatName": 38,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "মোঃ আঃ মালেক সরকার",
             "candidateImage": "seat-38/BOG -03 (05).jpg"
         },
         {
             "seatName": 38,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মোঃ তাজ উদ্দীন মন্ডল",
             "candidateImage": "seat-38/BOG -03 (04).jpg"
         },
@@ -1612,7 +1647,7 @@
         },
         {
             "seatName": 38,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ নূরুল ইসলাম তালুকদার",
             "candidateImage": "seat-38/BOG -03 (01).jpg"
@@ -1628,14 +1663,21 @@
             "seatName": 38,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ফেরদৌস স্বাধীন ফিরোজ",
+            "candidateName": "মোঃ ফেরদৌস স্বাধীন ফিরোজ",
             "candidateImage": "seat-38/10. FERDOSH SADHIN FIROZ.jpg"
+        },
+        {
+            "seatName": 38,
+            "symbol": "আলমিরা",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ জাকারিয়া হোসেন",
+            "candidateImage": "seat-38/মোঃ জাকারিয়া হোসেন.jpeg"
         },
         {
             "seatName": 39,
             "symbol": "নৌকা",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "একেএম রেজাউল করিম তানসেন",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "এ কে এম রেজাউল করিম তানসেন",
             "candidateImage": "seat-39/BOG -04 (01).jpg"
         },
         {
@@ -1661,8 +1703,8 @@
         },
         {
             "seatName": 39,
-            "symbol": "ট্রাক",
-            "partyName": "স্বতন্ত্র",
+            "symbol": "লাঙল",
+            "partyName": "জাতীয় পার্টি",
             "candidateName": "শাহীন মোস্তফা কামাল",
             "candidateImage": "seat-39/BOG -04 (03).jpg"
         },
@@ -1676,7 +1718,7 @@
         {
             "seatName": 40,
             "symbol": "মিনার",
-            "partyName": "ইসলামী ঐক্য জোট",
+            "partyName": "ইসলামী ঐক্যজোট",
             "candidateName": "মোঃ নজরুল ইসলাম",
             "candidateImage": "seat-40/BOG -05 (02).jpg"
         },
@@ -1690,20 +1732,20 @@
         {
             "seatName": 40,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মোঃ মামুনার রশিদ",
             "candidateImage": "seat-40/মোঃ মামুনার রশিদ.jpg"
         },
         {
             "seatName": 40,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "মোঃ রাসেল মাহমুদ",
             "candidateImage": "seat-40/BOG -05 (03).jpg"
         },
         {
             "seatName": 41,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ আজিজ আহম্মেদ",
             "candidateImage": "seat-41/BOG -06 (02).jpg"
@@ -1738,36 +1780,36 @@
         },
         {
             "seatName": 42,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "এ. টি. এম আমিনুল ইসলাম",
+            "candidateName": "এ টি এম আমিনুল ইসলাম",
             "candidateImage": "seat-42/BOG -07 (02).jpg"
         },
         {
             "seatName": 42,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মেহেরুল আলম মিশু",
             "candidateImage": "seat-42/BOG -07 (03).jpg"
         },
         {
             "seatName": 42,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "মোঃ আব্দুর রাজ্জাক",
             "candidateImage": "seat-42/মোঃ আবদুর রাজ্জাক.jpg"
         },
         {
             "seatName": 42,
             "symbol": "বাইসাইকেল",
-            "partyName": "জাতীয় পার্টি",
+            "partyName": "জাতীয় পার্টি-জেপি",
             "candidateName": "মোঃ আব্দুল মজিদ",
             "candidateImage": "seat-42/মোঃ আব্দুল মজিদ.jpg"
         },
         {
             "seatName": 42,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
             "candidateName": "মোঃ এনামুল হক",
             "candidateImage": "seat-42/মোঃ এনামুল হক.jpg"
         },
@@ -1789,7 +1831,7 @@
             "seatName": 42,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ডা. মোস্তফা আলম নান্নু",
+            "candidateName": "মোঃ মোস্তফা আলম",
             "candidateImage": "seat-42/BOG -07 (01).jpg"
         },
         {
@@ -1803,21 +1845,35 @@
             "seatName": 42,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ রেজাউল করিম বাবলু",
+            "candidateName": "মোঃ রেজাউল করিম (বাবলু)",
             "candidateImage": "seat-42/BOG -07 (04).jpg"
         },
         {
             "seatName": 42,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "সরকার বাদল",
+            "candidateName": "মোঃ সরকার বাদল",
             "candidateImage": "seat-42/BOG -07 (05).jpg"
         },
         {
+            "seatName": 42,
+            "symbol": "কাঁঁচি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "নজরুল ইসলাম মিলন",
+            "candidateImage": "seat-42/নজরুল ইসলাম মিলন.jpeg"
+        },
+        {
+            "seatName": 42,
+            "symbol": "চার্জার লাইট",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ আমজাদ হোসেন",
+            "candidateImage": "seat-42/মো. আমজাদ হোসেন.jpeg"
+        },
+        {
             "seatName": 43,
-            "symbol": "নৌকা",
+            "symbol": "নৌকা ",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ড. সামিল উদ্দিন শিমুল",
+            "candidateName": "ডাঃ সামিল উদ্দিন আহমেদ শিমুল",
             "candidateImage": "seat-43/সামিল উদ্দিন আহমেদ শিমুল, নৌকা.jpeg"
         },
         {
@@ -1831,14 +1887,14 @@
             "seatName": 43,
             "symbol": "কেটলি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোহ. গোলাম রাব্বানী",
+            "candidateName": "মোহাঃ গোলাম রাব্বানী",
             "candidateImage": "seat-43/গোলাম রাব্বানী (কেটলি).jpeg"
         },
         {
             "seatName": 43,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "অধ্যাপক আফজাল হোসেন",
+            "candidateName": "মোহাঃ আফজাল হোসেন",
             "candidateImage": "seat-43/মোহাঃ আফজাল হোসেন.jpg"
         },
         {
@@ -1852,21 +1908,21 @@
             "seatName": 43,
             "symbol": "মোমবাতি",
             "partyName": "বাংলাদেশ ইসলামী ফ্রন্ট",
-            "candidateName": "নবাব মো. কামসুল হোদা",
+            "candidateName": "নবাব মোঃ শামসুল হোদা",
             "candidateImage": "seat-43/নবাব মোঃ শামসুল হোদা.jpg"
         },
         {
             "seatName": 43,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "আব্দুল হালিম",
+            "candidateName": "মোঃ আব্দুল হালিম",
             "candidateImage": "seat-43/মোঃ আব্দুল হালিম.jpg"
         },
         {
             "seatName": 44,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মু. জিয়াউর রহমান",
+            "candidateName": "মুঃ জিয়াউর রহমান",
             "candidateImage": "seat-44/জিয়াউর রহমান, নৌকা.jpeg"
         },
         {
@@ -1880,12 +1936,12 @@
             "seatName": 44,
             "symbol": "টেলিভিশন",
             "partyName": "বিএনএফ",
-            "candidateName": "আজিজুর রহমান",
+            "candidateName": "মোঃ আজিজুর রহমান",
             "candidateImage": "seat-44/মোঃ আজিজুর রহমান.jpg"
         },
         {
             "seatName": 44,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ আব্দুর রশিদ",
             "candidateImage": "seat-44/মোহাঃ আব্দুর রশিদ.jpg"
@@ -1906,16 +1962,16 @@
         },
         {
             "seatName": 45,
-            "symbol": "নোঙ্গর",
+            "symbol": "নোঙর",
             "partyName": "বিএনএম",
-            "candidateName": "মাওলানা আব্দুল মতিন",
+            "candidateName": "মোহাম্মদ আব্দুল মতিন",
             "candidateImage": "seat-45/মো. আব্দুল মতিন, নোঙ্গর বিএনএম.jpeg"
         },
         {
             "seatName": 45,
             "symbol": "টেলিভিশন",
             "partyName": "বিএনএফ",
-            "candidateName": "মোঃ কামরুজ্জামান খান",
+            "candidateName": "কামরুজ্জামান খাঁন",
             "candidateImage": "seat-45/কামরুজ্জামান খাঁন.jpg"
         },
         {
@@ -1927,7 +1983,7 @@
         },
         {
             "seatName": 46,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ আকবর আলী",
             "candidateImage": "seat-46/Jatiyo Party Candidate.jpg"
@@ -1955,7 +2011,7 @@
         },
         {
             "seatName": 47,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "এ্যাডভোকেট মোঃ তোফাজ্জল হোসেন",
             "candidateImage": "seat-47/Jatiyo Party Candidate.jpg"
@@ -1971,7 +2027,7 @@
             "seatName": 48,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মাহফুজা আকরাম চেšধুরী",
+            "candidateName": "মাহফুজা আকরাম চৌধুরী",
             "candidateImage": "seat-48/Freedom Candidate_02.jpg"
         },
         {
@@ -1983,7 +2039,7 @@
         },
         {
             "seatName": 48,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ মাসুদ রানা",
             "candidateImage": "seat-48/Jatiyo Party Candidate.jpeg"
@@ -1992,7 +2048,7 @@
             "seatName": 48,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ সোহেল কবির চেšধুরী",
+            "candidateName": "মোঃ সোহেল কবির চৌধুরী",
             "candidateImage": "seat-48/Trinomul BNP Candidate.jpg"
         },
         {
@@ -2001,6 +2057,20 @@
             "partyName": "আওয়ামী লীগ",
             "candidateName": "সৌরেন্দ্র নাথ চক্রবর্তী",
             "candidateImage": "seat-48/Awami League Candidate.jpeg"
+        },
+        {
+            "seatName": 48,
+            "symbol": "কাঁচি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "ডি এম মাহবুব-উল-মান্নাফ",
+            "candidateImage": "seat-48/ডি এম মাহবুব- উল- মান্নাফ.jpeg"
+        },
+        {
+            "seatName": 48,
+            "symbol": "কেটলি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ শামিনুর রহমান",
+            "candidateImage": "seat-48/মোঃ শামিনুর রহমান.jpeg"
         },
         {
             "seatName": 49,
@@ -2013,19 +2083,19 @@
             "seatName": 49,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোহাঃ ইমাজ উদ্দিন প্রাং",
+            "candidateName": "মুহাঃ ইমাজ উদ্দিন প্রাং",
             "candidateImage": "seat-49/Freedom Candidate_02.jpg"
         },
         {
             "seatName": 49,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মোঃ আব্দুর রহমান",
             "candidateImage": "seat-49/Bangladesh Congress Candidate.jpg"
         },
         {
             "seatName": 49,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ আলতাফ হোসেন",
             "candidateImage": "seat-49/Jatiyo Party Candidate.jpg"
@@ -2038,9 +2108,16 @@
             "candidateImage": "seat-49/Awami League Candidate.jpg"
         },
         {
+            "seatName": 49,
+            "symbol": "কাঁচি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ আফজাল হোসেন",
+            "candidateImage": "seat-49/মোঃ আফজাল হোসেন.jpeg\t"
+        },
+        {
             "seatName": 50,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "এস এম আজাদ হোসেন মুরাদ",
             "candidateImage": "seat-50/Jatiya Samajtantrik Dal (Jasad) Candidate.jpg"
         },
@@ -2060,7 +2137,7 @@
         },
         {
             "seatName": 50,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ ইফতারুল ইসলাম বকুল",
             "candidateImage": "seat-50/Jatiyo Party Candidate.jpg"
@@ -2069,7 +2146,7 @@
             "seatName": 51,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "খন্দকার ইস্তেষাব আলম",
+            "candidateName": "খন্দকার ইন্তেখাব আলম",
             "candidateImage": "seat-51/NPP Candidate.jpg"
         },
         {
@@ -2083,14 +2160,14 @@
             "seatName": 51,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মোঃ আনোয়ার হোসেন হেলাল",
+            "candidateName": "মোঃ আনোয়ার হোসেন (হেলাল)",
             "candidateImage": "seat-51/Awami League Candidate.jpg"
         },
         {
             "seatName": 51,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ আবু বেলাল হোসেন (জুয়েল)",
+            "candidateName": "মোঃ আবু বেলাল হোসেন ",
             "candidateImage": "seat-51/Jatiyo Party Candidate.jpg"
         },
         {
@@ -2111,13 +2188,13 @@
             "seatName": 51,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ পিকে আব্দুর রব",
+            "candidateName": "মোঃ পি কে আব্দুর রব",
             "candidateImage": "seat-51/Trinomul BNP Candidate.jpg"
         },
         {
             "seatName": 51,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "সরদার মোঃ আব্দুস সাত্তার",
             "candidateImage": "seat-51/Bangladesh Congress Candidate.jpg"
         },
@@ -2125,14 +2202,14 @@
             "seatName": 52,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ওমর ফারুক চেšধুরী",
+            "candidateName": "ওমর ফারুক চৌধুরী",
             "candidateImage": "seat-52/Rajshahi -1.jpg"
         },
         {
             "seatName": 52,
-            "symbol": "কাস্তে",
+            "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "গোলাম রাব্বানী",
+            "candidateName": "মোঃ গোলাম রাব্বানী",
             "candidateImage": "seat-52/Rajshahi --1.jpg"
         },
         {
@@ -2153,7 +2230,7 @@
             "seatName": 52,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "জামাল খান দুদু",
+            "candidateName": "মোঃ জামাল খান দুদু",
             "candidateImage": "seat-52/মোঃ জামাল খান দুদু.jpg"
         },
         {
@@ -2165,14 +2242,14 @@
         },
         {
             "seatName": 52,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
             "candidateName": "বশির আহমেদ",
             "candidateImage": "seat-52/বশির আহমেদ.jpg"
         },
         {
             "seatName": 52,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ শামসুদ্দীন",
             "candidateImage": "seat-52/মোঃ শামসুদ্দীন.jpg"
@@ -2181,105 +2258,119 @@
             "seatName": 52,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মাহিয়া মাহি",
+            "candidateName": "শারমিন আক্তার নিপা মাহিয়া",
             "candidateImage": "seat-52/Rajshahi ---1.jpg"
+        },
+        {
+            "seatName": 52,
+            "symbol": "বেলুন",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "শাহনেওয়াজ আয়েশা আখতার জাহান",
+            "candidateImage": "seat-52/শাহনেওয়াজ আয়েশা আখতার জাহান.jpeg"
+        },
+        {
+            "seatName": 52,
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ আখতারুজ্জামান",
+            "candidateImage": "seat-52/মোঃ আখতারুজ্জামান.jpeg"
         },
         {
             "seatName": 53,
             "symbol": "নৌকা",
-            "partyName": "আওয়ামী লীগ",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
             "candidateName": "ফজলে হোসেন বাদশা",
             "candidateImage": "seat-53/Rajshahi -2.jpg"
         },
         {
             "seatName": 53,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "আব্দুল্লাহ আল মাসুদ শিবলী",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
+            "candidateName": "আবদুল্লাহ আল মাসুদ সিদ্দিকী শিবলী",
             "candidateImage": "seat-53/আবদুল্লাহ আল মাসুদ সিদ্দিকী শিবলী.jpg"
         },
         {
             "seatName": 53,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "সাইফুল ইসলাম স্বপন",
+            "candidateName": "মোঃ সাইফুল ইসলাম স্বপন",
             "candidateImage": "seat-53/Rajshahi---2.jpg"
         },
         {
             "seatName": 53,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "কামরুল হাসান",
+            "candidateName": "মোঃ কামরুল হাসান",
             "candidateImage": "seat-53/মোঃ কামরুল হাসান.jpg"
         },
         {
             "seatName": 53,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
             "candidateName": "ইয়াসির আলিফ বিন হাবিব",
             "candidateImage": "seat-53/ইয়াসির আলিফ বিন হাবিব.jpg"
         },
         {
             "seatName": 53,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মারুফ শাহরিয়ার",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "মোঃ মারুফ শাহারিয়ার",
             "candidateImage": "seat-53/মোঃ মারুফ শাহারিয়ার.jpg"
+        },
+        {
+            "seatName": 53,
+            "symbol": "কাঁচি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ শফিকুর রহমান",
+            "candidateImage": "seat-53/মোঃ শফিকুর রহমান.jpeg"
         },
         {
             "seatName": 54,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আসাদুজ্জ¥ান আসাদ",
+            "candidateName": "মোহাঃ আসাদুজ্জামান আসাদ",
             "candidateImage": "seat-54/Rajshahi -3.jpg"
-        },
-        {
-            "seatName": 54,
-            "symbol": "লাঙ্গল",
-            "partyName": "জাতীয় পার্টি",
-            "candidateName": "সোলাইমান হোসেন",
-            "candidateImage": "seat-54/"
         },
         {
             "seatName": 54,
             "symbol": "টেলিভিশন",
             "partyName": "বিএনএফ",
-            "candidateName": "বজলুর রহমান",
+            "candidateName": "মোঃ বজলুর রহমান",
             "candidateImage": "seat-54/মোঃ বজলুর রহমান.jpg"
         },
         {
             "seatName": 54,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আবদুস সালাম খান",
+            "candidateName": "মোঃ আব্দুস সালাম খান",
             "candidateImage": "seat-54/মোঃ আব্দুস সালাম খান.jpg"
         },
         {
             "seatName": 54,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "মতিউর রহমান মন্টু",
+            "candidateName": "এ কে এম মতিউর রহমান",
             "candidateImage": "seat-54/এ. কে. এম. মতিউর রহমান.jpg"
         },
         {
             "seatName": 54,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "সইবুর রহমান",
+            "candidateName": "মোঃ সইবুর রহমান",
             "candidateImage": "seat-54/মোঃ সইবুর রহমান.jpg"
         },
         {
             "seatName": 54,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
-            "candidateName": "এনামুল হক",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
+            "candidateName": "মোঃ এনামূল হক",
             "candidateImage": "seat-54/মোঃ এনামূল হক.jpg"
         },
         {
             "seatName": 55,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আবুল কালম আজাদ",
+            "candidateName": "আবুল কালাম আজাদ",
             "candidateImage": "seat-55/Rajshahi -4.jpg"
         },
         {
@@ -2291,23 +2382,23 @@
         },
         {
             "seatName": 55,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আবু তালেব প্রামানিক",
+            "candidateName": "মোঃ আবু তালেব প্রাং",
             "candidateImage": "seat-55/মোঃ আবু তালেব প্রাং.jpg"
         },
         {
             "seatName": 55,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "সাইফুল ইসলাম রায়হান",
+            "candidateName": "মোঃ সাইফুল ইসলাম রায়হান",
             "candidateImage": "seat-55/মোঃ সাইফুল ইসলাম রায়হান.jpg"
         },
         {
             "seatName": 55,
             "symbol": "মাথাল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বাবুল হোসেন",
+            "candidateName": "মোঃ বাবুল হোসেন",
             "candidateImage": "seat-55/মোঃ বাবুল হোসেন.jpg"
         },
         {
@@ -2321,21 +2412,21 @@
             "seatName": 56,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আবদুল ওয়াদুদ দারা",
+            "candidateName": "মোঃ আব্দুল ওয়াদুদ",
             "candidateImage": "seat-56/Abdul Oadut Dara.jpg"
         },
         {
             "seatName": 56,
             "symbol": "মাছ",
-            "partyName": "গণ ফ্রন্ট",
-            "candidateName": "মখলেসুর রহমান",
+            "partyName": "গণফ্রন্ট",
+            "candidateName": "মোঃ মখলেসুর রহমান",
             "candidateImage": "seat-56/Moklasur Rahoman.jpg"
         },
         {
             "seatName": 56,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আবুল হোসেন",
+            "candidateName": "মোঃ আবুল হোসেন",
             "candidateImage": "seat-56/Abul Hosen.jpg"
         },
         {
@@ -2349,34 +2440,34 @@
             "seatName": 56,
             "symbol": "একতারা",
             "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
-            "candidateName": "আলতাফ হোসেন মোল্লা",
+            "candidateName": "মোঃ আলতাফ হোসেন মোল্লা",
             "candidateImage": "seat-56/AltaF hosen.jpg"
         },
         {
             "seatName": 56,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ওবায়দুর রহমান",
+            "candidateName": "মোঃ ওবায়দুর রহমান",
             "candidateImage": "seat-56/Obaidur Rohman.jpg"
         },
         {
             "seatName": 57,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "শাহরিয়ার আলম",
+            "candidateName": "মোঃ শাহরিয়ার আলম",
             "candidateImage": "seat-57/Rajshahi -06.jpg"
         },
         {
             "seatName": 57,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "রায়হানুল হক",
+            "candidateName": "মোঃ রাহেনুল হক",
             "candidateImage": "seat-57/Rajshahi --6.jpg"
         },
         {
             "seatName": 57,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "জুলফিকার মান্নান জামী",
             "candidateImage": "seat-57/জুলফিকার মান্নান জামী.jpg"
         },
@@ -2384,76 +2475,76 @@
             "seatName": 57,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মহসিন আলী",
+            "candidateName": "মোঃ মহসিন আলী",
             "candidateImage": "seat-57/মোঃ মহসিন আলী.jpg"
         },
         {
             "seatName": 57,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "শামসুদ্দিন রিন্টু",
+            "candidateName": "মোঃ শামসুদ্দিন রিন্টু",
             "candidateImage": "seat-57/মোঃ শামসুদ্দিন রিন্টু.jpg"
         },
         {
             "seatName": 57,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "আবদুস সামাদ",
+            "candidateName": "মোঃ আব্দুস সামাদ",
             "candidateImage": "seat-57/মোঃ আব্দুস সামাদ.jpg"
         },
         {
             "seatName": 58,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "শহিদুল ইসলাম বকুল",
+            "candidateName": "মোঃ শহিদুল ইসলাম (বকুল)",
             "candidateImage": "seat-58/Sahidul Islam Bokul MP Natore ason 1.jpg"
         },
         {
             "seatName": 58,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বীর মুক্তিযোদ্ধা এ্যাড. আবুল কালাম আজাদ",
+            "candidateName": "মোঃ আবুল কালাম",
             "candidateImage": "seat-58/1_Natore -1 copy.jpg"
         },
         {
             "seatName": 58,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "লে. কর্নল (অব.) মোঃ রমজান আলী সরকার",
+            "candidateName": "মোঃ রমজান আলী সরকার",
             "candidateImage": "seat-58/2_Natore -1 copy.jpg"
         },
         {
             "seatName": 58,
             "symbol": "ঢেঁকি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "কাজল রায়",
+            "candidateName": "কাজল রায় ",
             "candidateImage": "seat-58/3_Natore -1 copy.jpg"
         },
         {
             "seatName": 58,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "ব্যারিস্টার মোঃ আশিক হোসেন",
+            "candidateName": "মোঃ আশিক হোসেন ",
             "candidateImage": "seat-58/মোঃ আশিক হোসেন.jpg"
         },
         {
             "seatName": 58,
-            "symbol": "হাতুরি",
-            "partyName": "বাংলাদেশ ওয়ার্কার্স পার্টি",
-            "candidateName": "অধ্যক্ষ ইব্রাহিম খলিল",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "মোঃ ইব্রাহীম খলিল ",
             "candidateImage": "seat-58/মোঃ ইব্রাহীম খলিল.jpg"
         },
         {
             "seatName": 58,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "ইঞ্জিনিয়ার মোঃ মোয়াজ্জেম হোসেন",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ মোয়াজ্জেম হোসেন",
             "candidateImage": "seat-58/মোঃ মোয়াজ্জেম হোসেন.jpg"
         },
         {
             "seatName": 58,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
             "candidateName": "মোঃ লিয়াকত আলী",
             "candidateImage": "seat-58/মোঃ লিয়াকত আলী.jpg"
         },
@@ -2461,7 +2552,7 @@
             "seatName": 58,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ জামাল উদ্দিন ফারুক",
+            "candidateName": "মোঃ জামাল উদ্দীন ফারুক",
             "candidateImage": "seat-58/4_Natore -1 copy.jpg"
         },
         {
@@ -2475,12 +2566,12 @@
             "seatName": 59,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আহাদ আলী সরকার",
+            "candidateName": "মোঃ আহাদ আলী সরকার ",
             "candidateImage": "seat-59/Natore-02, Ahad ali Sarkar.jpg"
         },
         {
             "seatName": 59,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "ড. মোঃ নূরন্নবী মৃধা",
             "candidateImage": "seat-59/Nurun Nabi mridha natore-2.jpg"
@@ -2495,7 +2586,7 @@
         {
             "seatName": 59,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "মোঃ শরিফুল ইসলাম",
             "candidateImage": "seat-59/মোঃ শরিফুল ইসলাম.jpg"
         },
@@ -2515,22 +2606,22 @@
         },
         {
             "seatName": 60,
-            "symbol": "হাতুরি",
-            "partyName": "বাংলাদেশ ওয়ার্কার্স পার্টি",
-            "candidateName": "মোঃ মিজানুর রহমান মিজান",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "মোঃ মিজানুর রহমান",
             "candidateImage": "seat-60/মিজানুর রহমান মিজান.jpg"
         },
         {
             "seatName": 60,
             "symbol": "ফুলের মালা",
-            "partyName": "বাংলাদেশ তরীকত ফেডারেশন",
-            "candidateName": "মোঃ আলতাফ",
+            "partyName": "বাংলাদেশ তরিকত ফেডারেশন",
+            "candidateName": "মোঃ আলতাফ হোসেন",
             "candidateImage": "seat-60/মোঃ আলতাফ হোসেন.jpg"
         },
         {
             "seatName": 60,
             "symbol": "কুলা",
-            "partyName": "বিকল্প ধারা",
+            "partyName": "বিকল্পধারা বাংলাদেশ",
             "candidateName": "মোঃ আনোয়ার হোসেন",
             "candidateImage": "seat-60/আনোয়ার হোসেন আলীরাজ.jpg"
         },
@@ -2552,21 +2643,28 @@
             "seatName": 60,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ আব্দুল্লাহ আল মামুন",
+            "candidateName": "মোঃ আব্দুল্লাহ আল-মামুন",
             "candidateImage": "seat-60/আব্দুল্লাহ আল মামুন.jpg"
+        },
+        {
+            "seatName": 60,
+            "symbol": "লাঙল",
+            "partyName": "জাতীয় পার্টি",
+            "candidateName": "মোঃ আনিসুর রহমান",
+            "candidateImage": "seat-60/আনিসুর রহমান.jpg"
         },
         {
             "seatName": 61,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ডাঃ মোঃ সিদ্দিকুর রহমান পাটোয়ারী",
+            "candidateName": "মোঃ সিদ্দিকুর রহমান পাটোয়ারী",
             "candidateImage": "seat-61/1_Natore 4 Ason copy.jpg"
         },
         {
             "seatName": 61,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আব্দুল্লাহ বিন কুদ্দুস",
+            "candidateName": "আসিফ আব্দুল্লাহ বিন কুদ্দুস",
             "candidateImage": "seat-61/আসিফ আব্দুল্লাহ বিন কুদ্দুস.jpg"
         },
         {
@@ -2578,9 +2676,9 @@
         },
         {
             "seatName": 61,
-            "symbol": "বাইসাইকেল",
-            "partyName": "জাতীয় পার্টি",
-            "candidateName": "এসএম সেলিম রেজা",
+            "symbol": "বাইসাইকেল ",
+            "partyName": "জাতীয় পার্টি -জেপি",
+            "candidateName": "এস এম সেলিম রেজা",
             "candidateImage": "seat-61/3_Natore 4 Ason copy.jpg"
         },
         {
@@ -2593,22 +2691,30 @@
         {
             "seatName": 61,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "শান্তি রিবেরু",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "শান্তি রিবারু",
             "candidateImage": "seat-61/8_Natore 4 Ason copy.jpg"
         },
         {
             "seatName": 61,
+            "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
             "candidateName": "মোঃ জাহিদুল ইসলাম",
             "candidateImage": "seat-61/5_Natore 4 Ason copy.jpg"
         },
         {
             "seatName": 61,
-            "symbol": "দোলনা",
+            "symbol": "দোলনা ",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ সুজন আহমেদ",
+            "candidateName": "সুজন আহমেদ",
             "candidateImage": "seat-61/6_Natore 4 Ason copy.jpg"
+        },
+        {
+            "seatName": 61,
+            "symbol": "লাঙল",
+            "partyName": "জাতীয় পার্টি",
+            "candidateName": "মোঃ আলাউদ্দিন মৃধা",
+            "candidateImage": "seat-61/4_Natore 4 Ason copy.jpg"
         },
         {
             "seatName": 62,
@@ -2619,100 +2725,114 @@
         },
         {
             "seatName": 62,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "জহুরুল ইসলাম",
+            "candidateName": "মোঃ জহুরুল ইসলাম",
             "candidateImage": "seat-62/sirajganj (1) zohorul islam photo.jpg"
         },
         {
             "seatName": 62,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "বীর মুক্তিযোদ্ধা সাইফুল ইসলাম",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ সাইফুল ইসলাম",
             "candidateImage": "seat-62/sirajganj (1) saiful islam photo .jpg"
         },
         {
             "seatName": 62,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "সবুজ আলী",
+            "candidateName": "মোঃ সবুজ আলী",
             "candidateImage": "seat-62/sirajganj (1) sobuj ali photo.png"
         },
         {
             "seatName": 63,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ড. জান্নাত আরা তালুকদার হেনরী",
+            "candidateName": "মোছাঃ জান্নাত আরা হেনরী",
             "candidateImage": "seat-63/sirajganj (2) jannat ara henry photo.jpg"
         },
         {
             "seatName": 63,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আমিনুল ইসলাম ঝন্টু",
+            "candidateName": "মোঃ আমিনুল ইসলাম",
             "candidateImage": "seat-63/sirajganj (2) aminul islam photo.jpg"
         },
         {
             "seatName": 63,
             "symbol": "গোলাপ ফুল",
             "partyName": "জাকের পার্টি",
-            "candidateName": "আব্দুর রুবেল সরকার",
+            "candidateName": "মোঃ আব্দুর রুবেল সরকার",
             "candidateImage": "seat-63/sirajganj (2) abdur robel sorkar photo.jpeg"
         },
         {
             "seatName": 63,
-            "symbol": "হাতুরী",
-            "partyName": "ওয়ার্কার্স পার্টি",
-            "candidateName": "সাদাকাত হোসেন বাবুল",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "সাদাকাত হোসেন খান বাবুল",
             "candidateImage": "seat-63/sirajganj (2) shadakat hossain khan babul photo.png"
         },
         {
             "seatName": 63,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "সোহেল রানা",
+            "candidateName": "মোঃ সোহেল রানা",
             "candidateImage": "seat-63/sirajganj (2) shohel rana photo.jpeg"
         },
         {
             "seatName": 64,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ডা. আব্দুল আজিজ",
+            "candidateName": "মোঃ আব্দুল আজিজ",
             "candidateImage": "seat-64/sirajganj (3) abdul aziz photo.jpg"
         },
         {
             "seatName": 64,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "জাকির হোসেন",
+            "candidateName": "মোঃ জাকির হোসেন",
             "candidateImage": "seat-64/siraganj (3) zakir hossain photo.jpg"
         },
         {
             "seatName": 64,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "গোলাম মোস্তফা",
+            "candidateName": "মোঃ গোলাম মোস্তফা",
             "candidateImage": "seat-64/sirajganj (3) golam mostofa photo.jpg"
+        },
+        {
+            "seatName": 64,
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ সাখাওয়াত হোসেন",
+            "candidateImage": "seat-64/মোঃ সাখাওয়াত হোসেন.jpeg"
+        },
+        {
+            "seatName": 64,
+            "symbol": "ট্রাক",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ নুরুল ইসলাম",
+            "candidateImage": "seat-64/মোঃ নুরুল ইসলাম.jpeg"
         },
         {
             "seatName": 65,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "বীর মুক্তিযোদ্ধা শফিকুল ইসলাম শফি",
+            "candidateName": "মোঃ শফিকুল ইসলাম",
             "candidateImage": "seat-65/sirajganj (4) shofiqul islam photo.jpg"
         },
         {
             "seatName": 65,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "বীর মুক্তিযোদ্ধা মোস্তফা কামাল বকুল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ মোস্তফা কামাল (বকুল)",
             "candidateImage": "seat-65/sirajganj (4) mostofa kamal photo.jpeg"
         },
         {
             "seatName": 65,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "হিল্টন প্রামানিক",
+            "candidateName": "মোঃ হিল্টন প্রামানিক",
             "candidateImage": "seat-65/sirajganj (4) hilton proramanik photo.jpg"
         },
         {
@@ -2726,35 +2846,35 @@
             "seatName": 66,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বীর মুক্তিযোদ্ধা আব্দুল লতিফ বিশ্বাস",
-            "candidateImage": "seat-66/sirajganj (5) lotif bissas photo.jpg"
+            "candidateName": "মোঃ আব্দুল লতিফ বিশ্বাস",
+            "candidateImage": "seat-66/sirajganj (5)  lotif bissas photo.jpg"
         },
         {
             "seatName": 66,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "আব্দুল হাকিম",
+            "candidateName": "মোঃ আব্দুল হাকিম",
             "candidateImage": "seat-66/sirajganj (5) abdul hakim photo.jpg"
         },
         {
             "seatName": 66,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "ফজলুল হক",
+            "candidateName": "মোঃ ফজলুল হক",
             "candidateImage": "seat-66/sirajganj (5) fojlul haoqe photo ..jpg"
         },
         {
             "seatName": 66,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মেজর (অব:) আব্দুল্লাহ আল মামুন",
+            "candidateName": "আব্দুল্লাহ আল মামুন",
             "candidateImage": "seat-66/sirajganj (5) abdulla al mamun photo.jpg"
         },
         {
             "seatName": 66,
             "symbol": "গামছা",
             "partyName": "কৃষক শ্রমিক জনতা লীগ",
-            "candidateName": "ব্যারিষ্টার নাজমুল হক",
+            "candidateName": "মোঃ নাজমুল হক",
             "candidateImage": "seat-66/sirajganj (5) nazmul hoaqe photo.jpg"
         },
         {
@@ -2768,14 +2888,14 @@
             "seatName": 67,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "বীর মুক্তিযোদ্ধা হালিমুুল হক মিরু",
+            "candidateName": " মোঃ হালিমুুল হক মিরু",
             "candidateImage": "seat-67/sirajganj (6) halimol haoqe miru photo.jpg"
         },
         {
             "seatName": 67,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোক্তার হোসেন",
+            "candidateName": "মোঃ মোক্তার হোসেন",
             "candidateImage": "seat-67/sirajganj (6) mukrar hossain photo.jpeg"
         },
         {
@@ -2788,29 +2908,29 @@
         {
             "seatName": 67,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "মোজাম্মেল হক",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ মোজাম্মেল হক",
             "candidateImage": "seat-67/sirajganj (6) mozammal haoqe photo.jpeg"
         },
         {
             "seatName": 67,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "মোহাম্মদ শামীম",
+            "candidateName": "মোহাম্মাদ শামীম",
             "candidateImage": "seat-67/sirajganj (6) mohammad shamim photo.jpeg"
         },
         {
             "seatName": 67,
-            "symbol": "হাতুরী",
-            "partyName": "ওয়ার্কার্স পার্টি",
-            "candidateName": "রেজাউল রশীদ খান",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "মোঃ রেজাউর রশীদ খান",
             "candidateImage": "seat-67/sirajganj (6) rajaur rosid khan photo.jpg"
         },
         {
             "seatName": 67,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
-            "candidateName": "কাজী মোঃ আল আমিন",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
+            "candidateName": "কাজী মোঃ আলামিন",
             "candidateImage": "seat-67/sirajganj (6) al amin photo.jpeg"
         },
         {
@@ -2837,8 +2957,8 @@
         {
             "seatName": 68,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "মোছা: পরভীন খাতুন",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোছা: পারভীন খাতুন",
             "candidateImage": "seat-68/Parvin Khatun, Pabna-1, Jasod.jpg"
         },
         {
@@ -2850,9 +2970,9 @@
         },
         {
             "seatName": 68,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "সরদার শাহাজাহান",
+            "candidateName": "সরদার শাহজাহান",
             "candidateImage": "seat-68/Shajahan Sordar,Pabna-1, Jatio Parti.jpg"
         },
         {
@@ -2878,7 +2998,7 @@
         },
         {
             "seatName": 69,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ মেহেদী হাসান রুবেল",
             "candidateImage": "seat-69/MD Mehedi Hasan Rubel Pabna-2 Jatio Parti.jpg"
@@ -2893,7 +3013,7 @@
         {
             "seatName": 69,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "শেখ আনিসুজ্জামান",
             "candidateImage": "seat-69/Shekh Anisuzaman Pabna-2 Jasod.jpg"
         },
@@ -2901,8 +3021,15 @@
             "seatName": 69,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ আজিজুল হক",
+            "candidateName": "মোঃ আজিজুল হক ",
             "candidateImage": "seat-69/MD Azizul Haque,Pabna-2 NPP.jpg"
+        },
+        {
+            "seatName": 69,
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ আঃ আজিজ খান",
+            "candidateImage": "seat-69/মোঃ আঃ আজিজ খান.jpeg"
         },
         {
             "seatName": 70,
@@ -2913,7 +3040,7 @@
         },
         {
             "seatName": 70,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মীর নাদিম মোহাম্মদ ডাবলু",
             "candidateImage": "seat-70/Mir Nadim Dablu, Pabna-3 Jatio Parti.jpg"
@@ -2935,7 +3062,7 @@
         {
             "seatName": 70,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "মোঃ আবুল বাশার শেখ",
             "candidateImage": "seat-70/Abul Basar Shekh, Pabna-3 , Jasod.jpg"
         },
@@ -2949,7 +3076,7 @@
         {
             "seatName": 70,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
+            "partyName": "বাংলাদেশ সুপ্রিম পার্টি",
             "candidateName": "মোঃ মাহবুবুর রহমান জয় চৌধুরী",
             "candidateImage": "seat-70/Mahbubur Rahman Joy, Pabna-3, BSP.jpg"
         },
@@ -2969,7 +3096,7 @@
         },
         {
             "seatName": 71,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ রেজাউল করিম",
             "candidateImage": "seat-71/Rejaul Korim pabna-4 Jatio parti.jpeg"
@@ -2977,7 +3104,7 @@
         {
             "seatName": 71,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "মোঃ আব্দুল খালেক (বীর মুক্তিযোদ্ধা)",
             "candidateImage": "seat-71/Abdul Khalek ,Pabna-4,Jasod.jpeg"
         },
@@ -2999,20 +3126,20 @@
             "seatName": 72,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "গোলাম ফারুক খন্দ: প্রিন্স",
+            "candidateName": "গোলাম ফারুক খন্দঃ প্রিন্স",
             "candidateImage": "seat-72/Golam Faruk Prince ,Pabna-5, Auamilig.jpg"
         },
         {
             "seatName": 72,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "আব্দুল কাদের খান",
             "candidateImage": "seat-72/Abdul kodor Khan pabna-5, Jatio Parti.jpg"
         },
         {
             "seatName": 72,
-            "symbol": "হাতুরী",
-            "partyName": "ওয়ার্কার্স পার্টি",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
             "candidateName": "মোঃ জাকির হোসেন",
             "candidateImage": "seat-72/Zakir Hosen,Pabna-5, Wakers Pari.jpg"
         },
@@ -3020,7 +3147,7 @@
             "seatName": 72,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মোঃ আফজাল হোসেন বটু",
+            "candidateName": "মোঃ আফজাল হোসেন বটু ",
             "candidateImage": "seat-72/Afzal Hosen Botu, Pabna-5, Trinomul BNP.jpg"
         },
         {
@@ -3041,35 +3168,35 @@
             "seatName": 73,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "প্রফেসর আব্দুল মান্নান",
+            "candidateName": "প্রফেসর আবদুল মান্নান",
             "candidateImage": "seat-73/মেহেরপুর-১, স্বতন্ত্র প্রফেসর আব্দুল মান্নান.jpg"
         },
         {
             "seatName": 73,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "জয়নাল আবেদীন",
+            "candidateName": "মোঃ জয়নাল আবেদীন",
             "candidateImage": "seat-73/মেহেরপুর-১, স্বতন্ত্র, জয়নাল আবেদীন.jpg"
         },
         {
             "seatName": 73,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আব্দুল হামিদ",
+            "candidateName": "মোঃ আব্দুল হামিদ",
             "candidateImage": "seat-73/মেহেরপুর-১, জাতীয় পার্টি, আব্দুল হামিদ.jpg"
         },
         {
             "seatName": 73,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
-            "candidateName": "বাবুল জম",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
+            "candidateName": "মোঃ বাবুল জম",
             "candidateImage": "seat-73/মেহেরপুর-১, সাংস্কৃতিক মুক্তিজোট, বাবুল জম.jpg"
         },
         {
             "seatName": 73,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "তরিকুল ইসলাম",
+            "candidateName": "মোঃ তারিকুল ইসলাম (লিটন)",
             "candidateImage": "seat-73/মেহেরপুর-১, এনপিপি, তরিকুল ইসলাম লিটন.jpg"
         },
         {
@@ -3083,42 +3210,42 @@
             "seatName": 74,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মকবুল হোসেন",
+            "candidateName": "মোঃ মকবুল হোসেন",
             "candidateImage": "seat-74/মেহেরপুর-২, স্বতন্ত্র প্রার্থী, মকবুল হোসেন.jpg"
         },
         {
             "seatName": 74,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "আব্দুল গনি",
+            "candidateName": "মোঃ আব্দুল গনি",
             "candidateImage": "seat-74/মেহেরপুর-২, তৃণমুল বিএনপি, আব্দুল গনি.jpg"
         },
         {
             "seatName": 74,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "আল ফারুক",
+            "candidateName": "মোঃ আল ফারুক",
             "candidateImage": "seat-74/মেহেরপুর-২, বাংলাদেশ কংগ্রেস, আল ফারুক.jpg"
         },
         {
             "seatName": 74,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "কেতাব আলী",
+            "candidateName": "মোহাঃ কেতাব আলী",
             "candidateImage": "seat-74/মেহেরপুর-২, জাতীয় পার্টি, কেতাব আলী.jpg"
         },
         {
             "seatName": 74,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "গোলাম রসুল",
+            "candidateName": "মোঃ গোলাম রসুল",
             "candidateImage": "seat-74/মেহেরপুর-২, এনপিপি, গোলাম রসুল.jpg"
         },
         {
             "seatName": 74,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
-            "candidateName": "শাহ জামাল",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
+            "candidateName": "মোঃ শাহ জামাল",
             "candidateImage": "seat-74/মেহেরপুর-২, সাংস্কৃতিক মুক্তিজোট, শাহজামাল.jpg"
         },
         {
@@ -3132,63 +3259,63 @@
             "seatName": 75,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "রেজাউল হক চৌধুরী",
+            "candidateName": "মোঃ রেজাউল হক চৌধুরী",
             "candidateImage": "seat-75/মোঃ রেজাউল হক চোধুরী.jpg"
         },
         {
             "seatName": 75,
             "symbol": "কেটলি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ফিরোজ আল মামুন",
+            "candidateName": "মহাঃ ফিরোজ আল মামুন",
             "candidateImage": "seat-75/মহাঃ ফিরোজ আল মামুন.jpg"
         },
         {
             "seatName": 75,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "নাজমুল হুদা",
+            "candidateName": "মোঃ নাজমুল হুদা",
             "candidateImage": "seat-75/মোঃ নাজমুল হুদা.jpg"
         },
         {
             "seatName": 75,
             "symbol": "হাতুড়ি",
-            "partyName": "ওয়ার্কাস পাটি",
-            "candidateName": "মজিবুর রহমান",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "মোহাঃ মজিবুর রহমান",
             "candidateImage": "seat-75/মোহাঃ মজিবুর রহমান.jpg"
         },
         {
             "seatName": 75,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "আনিসুর রহমান",
+            "candidateName": "মোঃ আনিসুর রহমান",
             "candidateImage": "seat-75/মোঃ আনিছুর রহমান.jpg"
         },
         {
             "seatName": 75,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "শাহরিয়ার জামিল",
+            "candidateName": "মোঃ শাহারিয়ার জামিল",
             "candidateImage": "seat-75/মোঃ শাহারিয়ার জামিল.jpg"
         },
         {
             "seatName": 75,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
-            "candidateName": "সাজেদুল ইসলাম",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
+            "candidateName": "মোঃ সাজেদুল ইসলাম",
             "candidateImage": "seat-75/মোঃ সাজেদুল ইসলাম.jpg"
         },
         {
             "seatName": 75,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "সেলিম রেজা",
+            "candidateName": "মোঃ সেলিম রেজা",
             "candidateImage": "seat-75/মোঃ সেলিম রেজা.jpg"
         },
         {
             "seatName": 75,
             "symbol": "মশাল",
             "partyName": "জাসদ",
-            "candidateName": "শরিফুল কবির স্বপন",
+            "candidateName": "শরিফুল কবির  স্বপন",
             "candidateImage": "seat-75/শরিফুল কবির স্বপন.jpg"
         },
         {
@@ -3202,7 +3329,7 @@
             "seatName": 76,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "কামারুল আরেফিন",
+            "candidateName": "মোঃ কামারুল আরেফিন",
             "candidateImage": "seat-76/কামারুল আরেফিন, স্বতন্ত্র, ট্রাক.JPG"
         },
         {
@@ -3223,42 +3350,49 @@
             "seatName": 76,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "অরিফুর রহমান",
+            "candidateName": "আরিফুর রহমান",
             "candidateImage": "seat-76/আরিফুর রহমান.jpg"
         },
         {
             "seatName": 76,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "শহিদুল ইসলাম ফারুকী",
+            "candidateName": "মুহাঃ শহীদুল ইসলাম ফারুকী",
             "candidateImage": "seat-76/মুহাঃ শহীদুল ইসলাম ফারুকী.jpg"
         },
         {
             "seatName": 76,
             "symbol": "চেয়ার",
-            "partyName": "ইসলামীক ফ্রন্ট",
-            "candidateName": "বাবুল আক্তার",
+            "partyName": "ইসলামিক ফ্রন্ট বাংলাদেশ",
+            "candidateName": "মোঃ বাবুল আক্তার",
             "candidateImage": "seat-76/মোঃ বাবুল আক্তার.jpg"
+        },
+        {
+            "seatName": 76,
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মোঃ রুবেল পারভেজ",
+            "candidateImage": "seat-76/মোঃ রুবেল পারভেজ.jpg"
         },
         {
             "seatName": 77,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মাহাবুবউল আলম হানিফ",
+            "candidateName": "মোঃ মাহবুবউল আলম হানিফ",
             "candidateImage": "seat-77/মাহবুবউল আলম হানিফ, নৌকা.JPG"
         },
         {
             "seatName": 77,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "পারভেজ আনোয়ার তনু",
+            "candidateName": "মোঃ পারভেজ আনোয়ার",
             "candidateImage": "seat-77/পারভেজ আনোয়ার তনু, ঈগল.JPG"
         },
         {
             "seatName": 77,
             "symbol": "ফুলের মালা",
-            "partyName": "তরিকত ফেড়ারেশন",
-            "candidateName": "মেহেদী হাসান রিজভি",
+            "partyName": "বাংলাদেশ তরিকত ফেড়ারেশন",
+            "candidateName": "মেহেদী হাসান রিজভী",
             "candidateImage": "seat-77/মেহেদী হাসান রিজভী.jpg"
         },
         {
@@ -3272,7 +3406,7 @@
             "seatName": 77,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "ফরিদ উদ্দিন শেখ",
+            "candidateName": "মোঃ ফরিদ উদ্দিন শেখ",
             "candidateImage": "seat-77/মোঃ ফরিদ উদ্দিন শেখ.jpg"
         },
         {
@@ -3286,76 +3420,76 @@
             "seatName": 78,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আব্দুর রউফ",
+            "candidateName": "আবদুর রউফ",
             "candidateImage": "seat-78/আব্দুর রউফ, ট্রাক.JPG"
         },
         {
             "seatName": 78,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "আবু শামসু মোহাম্মদ খালিকুজ্জামান",
+            "candidateName": "আবু শামস মোঃ খালেকুজ্জামান",
             "candidateImage": "seat-78/আবু সামছ্ মোঃ খালেকুজ্জামান.jpg"
         },
         {
             "seatName": 78,
             "symbol": "ফুলের মালা",
-            "partyName": "তরিকত ফেড়ারেশন",
-            "candidateName": "আলতাফ হোসেন",
+            "partyName": "বাংলাদেশ তরিকত ফেড়ারেশন",
+            "candidateName": "মোঃ আলতাফ হোসেন",
             "candidateImage": "seat-78/মোঃ আলতাফ হোসেন.jpg"
         },
         {
             "seatName": 78,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আয়েন উদ্দিন",
+            "candidateName": "মোঃ আয়েন উদ্দিন",
             "candidateImage": "seat-78/মোঃ আয়েন উদ্দিন.jpg"
         },
         {
             "seatName": 78,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "শহিদুল ইসলাম",
+            "candidateName": "মোঃ শহিদুল ইসলাম",
             "candidateImage": "seat-78/মোঃ শহিদুল ইসলাম.jpg"
         },
         {
             "seatName": 78,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "রাশেদুল ইসলাম",
+            "candidateName": "মোঃ রাশেদুল ইসলাম",
             "candidateImage": "seat-78/মোঃ রাশেদুল ইসলাম.jpg"
         },
         {
             "seatName": 78,
             "symbol": "টেলিভিশন",
             "partyName": "বিএনএফ",
-            "candidateName": "হারুনর রশিদ",
+            "candidateName": "মোঃ হারুনার রশিদ",
             "candidateImage": "seat-78/মোঃ হারুনার রশিদ.jpg"
         },
         {
             "seatName": 79,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "সোলায়মান হক জোয়ার্দ্দার ছেলুন",
+            "candidateName": "সোলায়মান হক জোয়ার্দ্দার (ছেলুন) ",
             "candidateImage": "seat-79/Chuadanga-1 Solyman.jpg"
         },
         {
             "seatName": 79,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "অ্যাডভোকেট মোঃ সোহরাব হোসেন",
+            "candidateName": "মোঃ সোহরাব হোসেন অ্যাডভোকেট",
             "candidateImage": "seat-79/Chuadanga-01 shorab.jpg"
         },
         {
             "seatName": 79,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ ইদ্রিস চৌধুরী",
+            "candidateName": "মোঃ ইদ্রিস চৌধুরী ",
             "candidateImage": "seat-79/মোঃ ইদ্রিস চৌধুরী.jpg"
         },
         {
             "seatName": 79,
-            "symbol": "লাঙ্গল",
-            "partyName": "জাতীয় পার্টি",
+            "symbol": "ঈগল",
+            "partyName": "স্বতন্ত্র",
             "candidateName": "দিলীপ কুমার আগরওয়ালা",
             "candidateImage": "seat-79/Chuadanga-01 Dilip.jpeg"
         },
@@ -3382,22 +3516,22 @@
         },
         {
             "seatName": 80,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ রবিউল ইসলাম",
+            "candidateName": "মোঃ রবিউল ইসলাম ",
             "candidateImage": "seat-80/মোঃ রবিউল ইসলাম.jpg"
         },
         {
             "seatName": 80,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ ইদ্রিস আলী",
+            "candidateName": "মোঃ ইদ্রিস চৌধুরী ",
             "candidateImage": "seat-80/মোঃ ইদ্রিস চৌধুরী.jpg"
         },
         {
             "seatName": 80,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
             "candidateName": "দেওয়ান মোঃ ইয়াছিন উল্লাহ",
             "candidateImage": "seat-80/দেওয়ান মোঃ ইয়াছিন উল্লাহ.jpg"
         },
@@ -3405,33 +3539,47 @@
             "seatName": 80,
             "symbol": "গোলাপ ফুল",
             "partyName": "জাকের পার্টি",
-            "candidateName": "মোঃ আব্দুল লতিফ",
+            "candidateName": "মোঃ আব্দুল লতিফ খান",
             "candidateImage": "seat-80/মোঃ আব্দুল লতিফ খান.jpg"
         },
         {
             "seatName": 80,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ আবু হাশেম রেজা",
+            "candidateName": "মোঃ আবু হাশেম রেজা ",
             "candidateImage": "seat-80/Hasem Reza, AL,, Chuadanga-02.jpg"
         },
         {
             "seatName": 80,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ নূর হাকিম",
+            "candidateName": "মোঃ নূর হাকিম ",
             "candidateImage": "seat-80/মোঃ নূর হাকিম.jpg"
+        },
+        {
+            "seatName": 80,
+            "symbol": "ঢেঁকি",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "মীর্জা শাহরিয়ার মাহমুদ",
+            "candidateImage": "seat-80/মীর্জা শাহরিয়ার মাহমুদ.jpeg"
+        },
+        {
+            "seatName": 80,
+            "symbol": "ফ্রিজ",
+            "partyName": "স্বতন্ত্র",
+            "candidateName": "নজরুল মল্লিক",
+            "candidateImage": "seat-80/নজরুল মল্লিক.jpeg"
         },
         {
             "seatName": 81,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আব্দুল হাই",
+            "candidateName": "মোঃ আব্দুল হাই ",
             "candidateImage": "seat-81/Jhenidah photo-12jpg.jpg"
         },
         {
             "seatName": 81,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মনিকা আলম",
             "candidateImage": "seat-81/Jhenidah Photo -10.jpg"
@@ -3440,7 +3588,7 @@
             "seatName": 81,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "নজরুল ইসলাম বিস্বাস দুলাল",
+            "candidateName": "নজরুল ইসলাম",
             "candidateImage": "seat-81/Jhenidah-Photo-16.jpg"
         },
         {
@@ -3461,42 +3609,42 @@
             "seatName": 81,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "আনিচুর রহমান",
+            "candidateName": "মোঃ আনিচুর রহমান",
             "candidateImage": "seat-81/Jhenidah Photo -5.jpg"
         },
         {
             "seatName": 82,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "তাহজীব আলম সিদ্দিকী সমি",
+            "candidateName": "তাহজীব আলম সিদ্দিকী",
             "candidateImage": "seat-82/Jhenidah Photo-11.jpg"
         },
         {
             "seatName": 82,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "নাসের শাহরিয়ার জাহেদী মহুল",
+            "candidateName": "মোঃ নাসের শাহরিয়ার জাহেদী",
             "candidateImage": "seat-82/Jhenidah- Photo-4.jpg"
         },
         {
             "seatName": 82,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
-            "candidateName": "ফজলুল কবির গামা",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল",
+            "candidateName": "মোঃ ফজলুল কবির",
             "candidateImage": "seat-82/Jhenidah Photo-15.jpg"
         },
         {
             "seatName": 82,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস",
-            "candidateName": "নাসির উদ্দিন",
+            "candidateName": "মোঃ নাসির উদ্দিন",
             "candidateImage": "seat-82/মোঃ নাসির উদ্দীন.jpg"
         },
         {
             "seatName": 82,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মাহাফুজুর রহমান",
+            "candidateName": "মোঃ মাহফুজুর রহমান",
             "candidateImage": "seat-82/Jhenidah Photo-8.jpg"
         },
         {
@@ -3510,99 +3658,106 @@
             "seatName": 82,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মিজানুর রহমান মিজু",
+            "candidateName": "মোঃ মিজানুর রহমান মিজু ",
             "candidateImage": "seat-82/Jhenidah Photo-1.jpg"
         },
         {
             "seatName": 82,
             "symbol": "হাতঘড়ি",
-            "partyName": "কল্যান পার্টি",
-            "candidateName": "আব্দাল হান্নান খা",
+            "partyName": "বাংলাদেশ কল্যাণ পার্টি",
+            "candidateName": "মোঃ আব্দুল হান্নান খাঁ",
             "candidateImage": "seat-82/মোঃ আব্দুল হান্নান খাঁ.jpg"
         },
         {
             "seatName": 82,
-            "symbol": "কুড়ে ঘর",
+            "symbol": "কুঁড়েঘর",
             "partyName": "বাংলাদেশ ন্যাশনাল আওয়ামী পার্টি",
-            "candidateName": "খন্দকার হাফিজুর রহমান ফারুক",
+            "candidateName": "খন্দকার হাফিজুর রহমান ফারুক ",
             "candidateImage": "seat-82/খোন্দকার হাফিজুর রহমান ফারুক.jpg"
         },
         {
             "seatName": 82,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
-            "candidateName": "শরিফ মোহম্মদ বদরুল হায়দার",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
+            "candidateName": "শরিফ মোহাম্মদ বদরুল হায়দার",
             "candidateImage": "seat-82/শরীফ মোহাম্মদ বদরুল হায়দার.jpg"
         },
         {
             "seatName": 82,
             "symbol": "একতারা",
-            "partyName": "বাংলাদেশ বাংলাদেশ সুপ্রিম পার্টি",
-            "candidateName": "নজরুল ইসলাম",
+            "partyName": "বাংলাদেশ  সুপ্রিম পার্টি",
+            "candidateName": "মোঃ নজরুল ইসলাম",
             "candidateImage": "seat-82/মোঃ নজরুল ইসলাম.jpg"
         },
         {
             "seatName": 83,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "অ্যাডভোকেট. শফিকুল আজম খান",
+            "candidateName": "মোঃ শফিকুল আজম খাঁন",
             "candidateImage": "seat-83/Jhenidah Photo-3.jpg"
         },
         {
             "seatName": 83,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "আব্দুর রহমান",
+            "candidateName": "মোঃ আব্দুর রহমান",
             "candidateImage": "seat-83/Jhenidah Photo-7.jpg"
         },
         {
             "seatName": 83,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "নবী নেওয়াজ",
+            "candidateName": "মোঃ নবী নেওয়াজ",
             "candidateImage": "seat-83/Jhenidah Photo-6.jpg"
         },
         {
-            "seatName": 84,
+            "seatName": 83,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মেজর জেনারেল (অব.) সালাহ উদ্দিন মিয়াজী",
+            "candidateName": "মোঃ সালাহ উদ্দিন মিয়াজী",
             "candidateImage": "seat-83/Jhenidah Photo -2.jpg"
         },
         {
             "seatName": 84,
+            "symbol": "সোনালী আঁশ",
+            "partyName": "তৃণমূল বিএনপি",
+            "candidateName": "নূরুউদ্দীন আহম্মেদ",
+            "candidateImage": "seat-84/Jhenidah Photo 17.jpg"
+        },
+        {
+            "seatName": 84,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "আনোয়ারুল আজীম আনার",
+            "candidateName": "মোঃ আনোয়ারুল আজীম (আনার)",
             "candidateImage": "seat-84/IJhenidah Photo-13.jpg"
         },
         {
             "seatName": 84,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আব্দুর রশিদ খোকন",
+            "candidateName": "মোঃ আব্দুর রশিদ খোকন",
             "candidateImage": "seat-84/মোঃ আব্দুর রশিদ খোকন.jpg"
         },
         {
             "seatName": 84,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "এমদাদুল ইসলাম বা”্চু",
+            "candidateName": "এমদাদুল ইসলাম (বাচ্চু)",
             "candidateImage": "seat-84/Jhenidah - Photo-9.jpg"
         },
         {
             "seatName": 84,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "নজরুল ইসলাম ছানা",
+            "candidateName": "মোঃ নজরুল ইসলাম",
             "candidateImage": "seat-84/মোঃ নজরুল ইসলাম.jpg"
         },
         {
             "seatName": 85,
-            "symbol": "সোনালী আঁশ",
-            "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "নুরুদ্দিন আহমেদ",
-            "candidateImage": "seat-84/Jhenidah Photo 17.jpg"
+            "symbol": "লাঙল",
+            "partyName": "জাতীয় পার্টি",
+            "candidateName": "মোঃ আক্তারুজ্জামান",
+            "candidateImage": "seat-85/3_Election- Jashore -1 Ason copy.jpg"
         },
         {
             "seatName": 85,
@@ -3615,15 +3770,15 @@
             "seatName": 85,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মোঃ আশরাফুল আলম লিটন",
+            "candidateName": "মোঃ আশরাফুল আলম",
             "candidateImage": "seat-85/2_Election- Jashore -1 Ason copy.jpg"
         },
         {
             "seatName": 86,
-            "symbol": "লাঙ্গল",
-            "partyName": "জাতীয় পার্টি",
-            "candidateName": "মোঃ আক্তারুজ্জামান",
-            "candidateImage": "seat-85/3_Election- Jashore -1 Ason copy.jpg"
+            "symbol": "টেলিভিশন",
+            "partyName": "বিএনএফ",
+            "candidateName": "মোঃ শামসুল হক",
+            "candidateImage": "seat-86/মোঃ শামছুল হক.jpg"
         },
         {
             "seatName": 86,
@@ -3643,12 +3798,12 @@
             "seatName": 86,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "এসএম হাবিবুর রহমান",
+            "candidateName": "এস এম হাবিবুর রহমান ",
             "candidateImage": "seat-86/3_Election,  Jashore-2 Ason copy.jpg"
         },
         {
             "seatName": 86,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ ফিরোজ শাহ",
             "candidateImage": "seat-86/4_Election,  Jashore-2 Ason copy.jpg"
@@ -3656,21 +3811,21 @@
         {
             "seatName": 86,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মোঃ আব্দুল আওয়াল",
             "candidateImage": "seat-86/মোঃ আব্দুল আওয়াল.jpg"
         },
         {
             "seatName": 87,
-            "symbol": "টেলিভিশন",
-            "partyName": "বিএনএফ",
-            "candidateName": "মোঃ শামসুল হক",
-            "candidateImage": "seat-86/মোঃ শামছুল হক.jpg"
+            "symbol": "বটগাছ",
+            "partyName": "বাংলাদেশ খেলাফত আন্দোলন",
+            "candidateName": "মোহাম্মাদ তৌহিদুজ্জামান",
+            "candidateImage": "seat-87/মোহাম্মাদ তৌহিদুজ্জামান.jpg"
         },
         {
             "seatName": 87,
-            "symbol": "ট্রাক",
-            "partyName": "স্বতন্ত্র",
+            "symbol": "নৌকা",
+            "partyName": "আওয়ামী লীগ",
             "candidateName": "কাজী নাবিল আহমেদ",
             "candidateImage": "seat-87/1_Election, Jashore-3 Ason copy.jpg"
         },
@@ -3683,16 +3838,16 @@
         },
         {
             "seatName": 87,
-            "symbol": "ঈগল",
-            "partyName": "স্বতন্ত্র",
-            "candidateName": "অ্যাডভোকেট মাহাবুব আলম বাচ্চু",
+            "symbol": "লাঙল",
+            "partyName": "জাতীয় পার্টি",
+            "candidateName": "মোঃ মাহাবুব আলম",
             "candidateImage": "seat-87/2_Election, Jashore-3 Ason copy.jpg"
         },
         {
             "seatName": 87,
             "symbol": "কুলা",
             "partyName": "বিকল্পধারা",
-            "candidateName": "মোঃ মারুফ হাসান কাজল",
+            "candidateName": "মোঃ মারুফ হাসান (কাজল)",
             "candidateImage": "seat-87/5_Election, Jashore-3 Ason copy.jpg"
         },
         {
@@ -3718,10 +3873,10 @@
         },
         {
             "seatName": 88,
-            "symbol": "বটগাছ",
-            "partyName": "বাংলাদেশ খেলাফত আন্দোলন",
-            "candidateName": "মোহাম্মদ তৌহিদুজ্জামান",
-            "candidateImage": "seat-87/মোহাম্মাদ তৌহিদুজ্জামান.jpg"
+            "symbol": "নৌকা",
+            "partyName": "আওয়ামী লীগ",
+            "candidateName": "এনামুল হক বাবুল",
+            "candidateImage": "seat-88/এনামুল হক বাবুল.jpeg"
         },
         {
             "seatName": 88,
@@ -3739,7 +3894,7 @@
         },
         {
             "seatName": 88,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ জহুরুল হক",
             "candidateImage": "seat-88/2_Election , Jashore-4 Ason copy.jpg"
@@ -3748,11 +3903,11 @@
             "seatName": 88,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "এম শাব্বির আহমেদ",
+            "candidateName": "লেঃ কঃ এম শাব্বির আহমেদ (অবঃ)",
             "candidateImage": "seat-88/4_Election , Jashore-4 Ason copy.jpg"
         },
         {
-            "seatName": 89,
+            "seatName": 88,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
             "candidateName": "সুকৃতি কুমার মন্ডল",
@@ -3769,12 +3924,12 @@
             "seatName": 89,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "ইয়াকুব আলী",
+            "candidateName": "মোঃ ইয়াকুব আলী",
             "candidateImage": "seat-89/2_Election, Jashore-5 Ason copy 2.jpg"
         },
         {
             "seatName": 89,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "এম এ হালিম",
             "candidateImage": "seat-89/4_Election, Jashore-5 Ason copy 2.jpg"
@@ -3787,7 +3942,7 @@
             "candidateImage": "seat-89/3_Election, Jashore-5 Ason copy 2.jpg"
         },
         {
-            "seatName": 90,
+            "seatName": 89,
             "symbol": "মিনার",
             "partyName": "ইসলামী ঐক্যজোট",
             "candidateName": "হাফেজ মাওলানা নুরুল্লাহ আব্বাসী",
@@ -3797,28 +3952,28 @@
             "seatName": 90,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "শাহীন চাকলাদার",
+            "candidateName": "শাহীন চাকলাদার ",
             "candidateImage": "seat-90/1_Election, Jashore 6 Ason copy.jpg"
         },
         {
             "seatName": 90,
             "symbol": "কাঁচি",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "এইচএম আমীর হোসেন",
+            "candidateName": "এইচ এম আমির হোসেন ",
             "candidateImage": "seat-90/2_Election, Jashore 6 Ason copy.jpg"
         },
         {
             "seatName": 90,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "আজিজুল ইসলাম",
+            "candidateName": "মোঃ আজিজুল ইসলাম",
             "candidateImage": "seat-90/3_Election, Jashore 6 Ason copy.jpg"
         },
         {
             "seatName": 90,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "জিএম হাসান",
+            "candidateName": "জি এম হাসান",
             "candidateImage": "seat-90/4_Election, Jashore 6 Ason copy.jpg"
         },
         {
@@ -3830,23 +3985,23 @@
         },
         {
             "seatName": 91,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "সিরাজুস সায়েফিন সাইফ",
+            "candidateName": "মোঃ সিরাজুস সায়েফিন সাঈফ",
             "candidateImage": "seat-91/মোঃ সিরাজুস সায়েফিন সাঈফ.jpg"
         },
         {
             "seatName": 91,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "কাজী রেজাউল হোসেন",
+            "candidateName": "অ্যাড. কাজী রেজাউল হোসেন",
             "candidateImage": "seat-91/এ্যাডঃ কাজী রেজাউল হোসেন.jpg"
         },
         {
             "seatName": 91,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "সঞ্জয় কুমার রায়",
+            "candidateName": "সঞ্জয় কুমার রায় (রনি)",
             "candidateImage": "seat-91/সন্‌জয় কুমার রায় (রনি).jpg"
         },
         {
@@ -3860,21 +4015,21 @@
             "seatName": 92,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ড.শ্রী বীরেন শিকদার",
+            "candidateName": "ড. শ্রী বীরেন শিকদার",
             "candidateImage": "seat-92/বীরেন শিকদার, নৌকা.jpg"
         },
         {
             "seatName": 92,
             "symbol": "ডাব",
             "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "কাজী রেজাউল ইসলাম",
+            "candidateName": "অ্যাড. কাজী রেজাউল হোসেন",
             "candidateImage": "seat-92/কাজী রেজাউল  হোসেন.jpg"
         },
         {
             "seatName": 92,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "আখিদুল ইসলাম",
+            "candidateName": "মোঃ আখিদুল ইসলাম",
             "candidateImage": "seat-92/মোঃ আখিদুল ইসলাম.jpg"
         },
         {
@@ -3886,7 +4041,7 @@
         },
         {
             "seatName": 92,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ মুরাদ আলী",
             "candidateImage": "seat-92/মোঃ মুরাদ আলী.jpg"
@@ -3895,34 +4050,34 @@
             "seatName": 93,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "বি এম কবিরুল হক মুক্তি",
+            "candidateName": "বি এম কবিরুল হক ",
             "candidateImage": "seat-93/Narail-01-বি এম কবিরুল হক মুক্তি- নৌকা-আওয়ামীলীগ.jpeg"
         },
         {
             "seatName": 93,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "স্ত্রী চন্দনা হক",
+            "candidateName": "চন্দনা হক",
             "candidateImage": "seat-93/Narail-01-চন্দনা হক- ঈগলপাখি।-স্বতন্ত্র.jpeg"
         },
         {
             "seatName": 93,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মিল্টন মোল্যা",
+            "candidateName": "মোঃ মিল্টন মোল্যা ",
             "candidateImage": "seat-93/Narail-01-মিল্টন মোল্যা- লাঙ্গল-জাতীয় পার্টি.jpeg"
         },
         {
             "seatName": 93,
-            "symbol": "হাতুড়ী",
+            "symbol": "হাতুড়ি",
             "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টির",
-            "candidateName": "মোঃ নজরুল ইসলাম",
+            "candidateName": "মোঃ নজরুল ইসলাম ",
             "candidateImage": "seat-93/Narail-01-মো.নজরুল ইসলাম- হাতুড়ী-বাংলাদেশের ওয়ার্কার্স পার্টি.jpeg"
         },
         {
             "seatName": 93,
             "symbol": "বাইসাইকেল",
-            "partyName": "জাতীয় পার্টি",
+            "partyName": "জাতীয় পার্টি-জেপি",
             "candidateName": "শামিম আরা পারভীন (ইয়াসমীন)",
             "candidateImage": "seat-93/Narail-01-শামিম আরা পারভীন(ইয়াসমীন)-বাই সাইকেল-জাতীয় পার্টি-জেপি.jpeg"
         },
@@ -3937,42 +4092,42 @@
             "seatName": 94,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মাশরাফি বিন মোর্ত্তজা",
+            "candidateName": "মাশরাফী বিন মোর্ত্তজা",
             "candidateImage": "seat-94/Narail-02-মাশরাফি বিন মোর্ত্তজা - নৌকা।আওয়ামীলীগ.jpg"
         },
         {
             "seatName": 94,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "খন্দকার ফায়েকুজ্জামান",
             "candidateImage": "seat-94/Narail-02-খন্দকার ফায়েকুজ্জামান -লাঙ্গল-জাতীয় পার্টি.jpeg"
         },
         {
             "seatName": 94,
-            "symbol": "হাতুড়ী",
-            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টির",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
             "candidateName": "শেখ হাফিজুর রহমান",
             "candidateImage": "seat-94/Narail-02-শেখ হাফিজুর রহমান- হাতুড়ি-বাংলাদেশের ওয়ার্কার্স পার্টি.jpeg"
         },
         {
             "seatName": 94,
             "symbol": "মাছ",
-            "partyName": "গণফ্রন্ট",
-            "candidateName": "লতিফুর রহমান",
+            "partyName": "গণফ্রন্ট ",
+            "candidateName": "মোঃ লতিফুর রহমান",
             "candidateImage": "seat-94/Narail-02-লতিফুর রহমান- মাছ-গণফ্রন্ট.jpeg"
         },
         {
             "seatName": 94,
             "symbol": "মিনার",
             "partyName": "ইসলামী ঐক্যজোট",
-            "candidateName": "আই ও জে মোঃ মাহাবুবুর রহমান",
+            "candidateName": "মোঃ মাহবুবুর রহমান",
             "candidateImage": "seat-94/Narail-02-মো.মাহাবুবুর রহমান-মিনার-ইসলামী ঐক্যজোট-আই ও জে.jpeg"
         },
         {
             "seatName": 94,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মোঃ মনিরুল ইসলাম",
+            "candidateName": "মোঃ মনিরুল ইসলাম ",
             "candidateImage": "seat-94/Narail-02-মো.মনিরুল ইসলাম -আম-এনপিপি.jpeg"
         },
         {
@@ -4005,7 +4160,7 @@
         },
         {
             "seatName": 95,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ কামরুজ্জামান",
             "candidateImage": "seat-95/Bagerhat Constituency-One Md Kamruzzama.JPG"
@@ -4013,7 +4168,7 @@
         {
             "seatName": 95,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "এইচ এম আতাউর রহমান আতিকী",
             "candidateImage": "seat-95/Bagerhat Constituency-One HM Ataur Rahman Atiki.JPG"
         },
@@ -4040,7 +4195,7 @@
         },
         {
             "seatName": 96,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "হাজরা সহিদুল ইসলাম",
             "candidateImage": "seat-96/Bagerhat Constituency-Two, Hazra Shahidul Islam.JPG"
@@ -4068,7 +4223,7 @@
         },
         {
             "seatName": 97,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ মনিরুজ্জামান মনি",
             "candidateImage": "seat-97/Bagerhat Constituency Three, Md Moniruzzaman moni.JPG"
@@ -4076,7 +4231,7 @@
         {
             "seatName": 97,
             "symbol": "মশাল",
-            "partyName": "জাতীয় সমাজ তান্ত্রিক দল",
+            "partyName": "জাতীয় সমাজতান্ত্রিক দল-জাসদ",
             "candidateName": "শেখ নুরুজ্জামান মাসুম",
             "candidateImage": "seat-97/Bagerhat Constituency Three,  Sk Nuruzzaman.JPG"
         },
@@ -4091,13 +4246,13 @@
             "seatName": 97,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মি. ম্যানুয়েল সরকার",
+            "candidateName": "মি. মানুয়েল সরকার",
             "candidateImage": "seat-97/Bagerhat Constituency Three,  Manuel sarker.JPG"
         },
         {
             "seatName": 97,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মফিজুল ইসলাম গাজী",
             "candidateImage": "seat-97/Bagerhat Constituency Three, Mofizul islam gazi.JPG"
         },
@@ -4124,14 +4279,14 @@
         },
         {
             "seatName": 98,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
             "candidateName": "মুহাম্মদ বদরুজ্জামান",
             "candidateImage": "seat-98/Bagerhat Constituency-Four,  MD Badruzzaman.JPG"
         },
         {
             "seatName": 98,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "সাজন কুমার মিস্ত্রী",
             "candidateImage": "seat-98/Bagerhat Constituency-Four, Sajon Kumar Mistry.JPG"
@@ -4147,7 +4302,7 @@
             "seatName": 98,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "লুৎফুন নাহার রিক্তা",
+            "candidateName": "লুৎফুন নাহার (রিক্তা)",
             "candidateImage": "seat-98/Bagerhat Constituency-Four, Lutfun nahar Rikta.JPG"
         },
         {
@@ -4161,33 +4316,33 @@
             "seatName": 99,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "ননী গোপাল মÐল",
+            "candidateName": "ননী গোপাল মন্ডল ",
             "candidateImage": "seat-99/Khulna 01 _Noni Gopal_AL.jpg"
         },
         {
             "seatName": 99,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "কাজী হাসানুর রশিদ",
+            "candidateName": "কাজী হাসানুর রশিদ ",
             "candidateImage": "seat-99/Khulna 01 _Kazi _Japa.jpg"
         },
         {
             "seatName": 99,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "গোবিন্দ্র চন্দ্র প্রামাণিক",
+            "candidateName": "গোবিন্দ চন্দ্র প্রামাণিক ",
             "candidateImage": "seat-99/Khulna 01_Gobinda_TBNP.jpg"
         },
         {
             "seatName": 100,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "সেখ সালাউদ্দিন",
+            "candidateName": "সেখ সালাহউদ্দিন",
             "candidateImage": "seat-100/সেখ সালাহউদ্দিন.jpg"
         },
         {
             "seatName": 100,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মোঃ গাউসুল আজম",
             "candidateImage": "seat-100/Khulna 02 _ Gous_Japa.jpg"
@@ -4195,14 +4350,14 @@
         {
             "seatName": 100,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "দেবদাস সরকার",
             "candidateImage": "seat-100/দেবদাস সরকার.jpg"
         },
         {
             "seatName": 100,
-            "symbol": "ঘড়ি",
-            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তি জোট",
+            "symbol": "ছড়ি",
+            "partyName": "বাংলাদেশ সাংস্কৃতিক মুক্তিজোট",
             "candidateName": "বাবু কুমার রায়",
             "candidateImage": "seat-100/বাবু কুমার রায়.jpg"
         },
@@ -4229,7 +4384,7 @@
         },
         {
             "seatName": 101,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মো. আব্দুল্লাহ আল মামুন",
             "candidateImage": "seat-101/মোঃ আব্দুল্লাহ আল মামুন.jpg"
@@ -4257,23 +4412,23 @@
         },
         {
             "seatName": 102,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "মো. ফরহাদ হোসেন",
+            "candidateName": "মোঃ ফরহাদ আহমেদ",
             "candidateImage": "seat-102/মোঃ ফরহাদ আহমেদ.jpg"
         },
         {
             "seatName": 102,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "এস এম আজমল হোসেন",
+            "candidateName": "এস এম আজমল হোসেন ",
             "candidateImage": "seat-102/এস এম আজমল হোসেন.jpg"
         },
         {
             "seatName": 102,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
-            "candidateName": "মনিরা সুলতানা",
+            "partyName": "বাংলাদেশ কংগ্রেস",
+            "candidateName": "মনিরা সুলতানা ",
             "candidateImage": "seat-102/মনিরা সুলতানা.jpg"
         },
         {
@@ -4294,7 +4449,7 @@
             "seatName": 102,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মো. হাবিবুর রহমান",
+            "candidateName": "শেখ হাবিবুর রহমান",
             "candidateImage": "seat-102/শেখ হাবিবুর রহমান.jpg"
         },
         {
@@ -4308,14 +4463,14 @@
             "seatName": 102,
             "symbol": "ট্রাক",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মো. জুয়েল রানা",
+            "candidateName": "মোঃ জুয়েল রানা",
             "candidateImage": "seat-102/মোঃ জুয়েল রানা.jpg"
         },
         {
             "seatName": 102,
             "symbol": "ঈগল",
             "partyName": "স্বতন্ত্র",
-            "candidateName": "মো. রেজভী আলম",
+            "candidateName": "মোঃ রেজভী আলম ",
             "candidateImage": "seat-102/মোঃ রেজভী আলম.jpg"
         },
         {
@@ -4327,43 +4482,43 @@
         },
         {
             "seatName": 103,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
             "candidateName": "মো. শাহীদ আলম",
             "candidateImage": "seat-103/মোঃ শাহীদ আলম.jpg"
         },
         {
             "seatName": 103,
-            "symbol": "হাতুরী",
-            "partyName": "ওয়ার্কার্স পার্টি",
-            "candidateName": "শেখ সেলিম আকতা",
+            "symbol": "হাতুড়ি",
+            "partyName": "বাংলাদেশের ওয়ার্কার্স পার্টি",
+            "candidateName": "শেখ সেলিম আকতার",
             "candidateImage": "seat-103/শেখ আকরাম হোসেন.jpg"
         },
         {
             "seatName": 104,
             "symbol": "নৌকা",
             "partyName": "আওয়ামী লীগ",
-            "candidateName": "মো. রশীদুজ্জামান",
+            "candidateName": "মোঃ রশীদুজ্জামান",
             "candidateImage": "seat-104/মোঃ রশীদুজ্জামান.jpg"
         },
         {
             "seatName": 104,
-            "symbol": "লাঙ্গল",
+            "symbol": "লাঙল",
             "partyName": "জাতীয় পার্টি",
-            "candidateName": "শফিকুল ইসলাম মধু",
+            "candidateName": "মোঃ শফিকুল ইসলাম মধু ",
             "candidateImage": "seat-104/মোঃ শফিকুল ইসলাম মধু.jpg"
         },
         {
             "seatName": 104,
             "symbol": "নোঙর",
             "partyName": "বাংলাদেশ জাতীয়তাবাদী আন্দোলন",
-            "candidateName": "এস এম নেওয়াজ মোরশেদ",
+            "candidateName": "এস এম নেওয়াজ মোরশেদ ",
             "candidateImage": "seat-104/এস এম নেওয়াজ মোরশেদ.jpg"
         },
         {
             "seatName": 104,
             "symbol": "ডাব",
-            "partyName": "বাংলাদেশ কংগ্রেস পার্টি",
+            "partyName": "বাংলাদেশ কংগ্রেস",
             "candidateName": "মির্জা গোলাম আজম",
             "candidateImage": "seat-104/মির্জা গোলাম আজম.jpg"
         },
@@ -4371,14 +4526,14 @@
             "seatName": 104,
             "symbol": "আম",
             "partyName": "ন্যাশনাল পিপলস পার্টি",
-            "candidateName": "মো. আবু সুফিয়ান",
+            "candidateName": "মোঃ আবু সুফিয়ান",
             "candidateImage": "seat-104/মোঃ আবু সুফিয়ান.jpg"
         },
         {
             "seatName": 104,
             "symbol": "সোনালী আঁশ",
             "partyName": "তৃণমূল বিএনপি",
-            "candidateName": "মো. নাদির উদ্দিন খান",
+            "candidateName": "মোঃ নাদির উদ্দিন খান",
             "candidateImage": "seat-104/মোঃ নাদির উদ্দিন খান.jpg"
         },
         {

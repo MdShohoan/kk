@@ -20,19 +20,11 @@ import { useEffect, useState } from "react"
 function DistrictInfoPage() {
   const [latestData, setLatestData] = useState({})
   const { districtNo } = useParams()
-  const [update, setUpdate] = useState(0)
-
-  console.log('Latest data', latestData)
-  console.log(update)
 
   useEffect(() => {
     //11th election data of current district
     const eleventhData = getDistrictDataByDistrictNo(districtNo)?.find((element) => element.electionNoEn === 11)
     setLatestData(eleventhData)
-  }, [districtNo])
-
-  useEffect(() => {
-    setUpdate((prev) => prev + 1)
   }, [districtNo])
 
   //Find district name by districtNo
