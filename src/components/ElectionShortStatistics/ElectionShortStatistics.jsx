@@ -12,7 +12,7 @@ import Section from '../common/Section/Section';
 
 export default function ElectionShortStatistics() {
   const data = [
-    { count: '১১৯৬,৯১৬৩৩', title: 'মোট ভোটার', image: total_voter },
+    { count: '১১৯৬৯১৬৩৩', title: 'মোট ভোটার', image: total_voter },
     { count: '৬০৭৭১৫৭৯', title: 'পুরুষ ভোটার', image: male_voter },
     { count: '৫৮৯১৯২০২', title: 'নারী ভোটার ', image: female_voter },
     { count: '৮৫২', title: 'হিজড়া ভোটার', image: common_voter },

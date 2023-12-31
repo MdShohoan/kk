@@ -3,7 +3,6 @@ import SeatNavigator from '../components/common/SeatNavigator/SeatNavigator'
 import Layout from '../components/common/Layout/Layout'
 import Section from '../components/common/Section/Section'
 
-// import candidat1 from '../assets/candidatePhoto/asaduzzaman.webp'
 import total_voter from '../assets/election/total-voter.png'
 import total_candidate from '../assets/election/total-candidate.png'
 import male_voter from '../assets/election/male-voter.png'
@@ -26,8 +25,9 @@ import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
 import cn from '../lib/cn'
 import candidatesData from '../assets/data/candidatesData.json'
+import seatInfo1 from '../assets/data/seatInfo1.json'
+import seatInfo2 from '../assets/data/seatInfo2.json'
 
-// console.log('===seat previous result', seatPreviousResult)
 
 
 function SeatInfoPage() {
@@ -112,41 +112,18 @@ function SeatInfoPage() {
         return ''
     }
 
+    console.log([...seatInfo1.data, ...seatInfo2.data], 'seat info=========')
+
+    const currentSeatInfo = [...seatInfo1.data, ...seatInfo2.data]?.find((seat)=>seat.seatNo == seatNo)
+    console.log('current seat info', currentSeatInfo)
 
     const seatData = [
-        { count: '১০৪১৯০৪৮০', title: 'মোট ভোটার', image: total_voter },
-        { count: '৫২৫৪৭৩২৯', title: 'পুরুষ ভোটার', image: male_voter },
-        { count: '৫১৬৪৩১৫১', title: 'নারী ভোটার ', image: female_voter },
-        { count: '৫', title: 'হিজড়া ভোটার ', image: common_gender },
-        { count: '১৮৪৮', title: 'মোট প্রার্থী', image: total_candidate },
+        { count: currentSeatInfo?.totalVoter || '০', title: 'মোট ভোটার', image: total_voter },
+        { count: currentSeatInfo?.maleVoter || '০', title: 'পুরুষ ভোটার', image: male_voter },
+        { count: currentSeatInfo?.femaleVoter || '০', title: 'নারী ভোটার ', image: female_voter },
+        { count: currentSeatInfo?.hijraVoter || '০', title: 'হিজড়া ভোটার ', image: common_gender },
+        { count: currentSeatInfo?.totalCandidate || '০', title: 'মোট প্রার্থী', image: total_candidate },
     ]
-
-    // const candidates = [
-    //     {
-    //         name: 'আসাদুজ্জামান নূর',
-    //         party: 'আওয়ামী লীগ',
-    //         symbol: 'নৌকা',
-    //         photo: candidat1,
-    //     },
-    //     {
-    //         name: 'আসাদুজ্জামান নূর',
-    //         party: 'আওয়ামী লীগ',
-    //         symbol: 'নৌকা',
-    //         photo: candidat1,
-    //     },
-    //     {
-    //         name: 'আসাদুজ্জামান নূর',
-    //         party: 'আওয়ামী লীগ',
-    //         symbol: 'নৌকা',
-    //         photo: candidat1,
-    //     },
-    //     {
-    //         name: 'আসাদুজ্জামান নূর',
-    //         party: 'আওয়ামী লীগ',
-    //         symbol: 'নৌকা',
-    //         photo: candidat1,
-    //     },
-    // ]
 
     if(!findSeatById()){
         return <Navigate to={'/'}/>
@@ -169,7 +146,7 @@ function SeatInfoPage() {
                         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-8'>
                             {
                                 seatData.map((singleData) => (
-                                    <Card key={singleData?.count} type='type1' data={singleData} />
+                                    <Card key={(singleData?.count+singleData?.title)} type='type1' data={singleData} />
                                 ))
                             }
                         </div>
