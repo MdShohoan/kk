@@ -24,7 +24,9 @@ import seatList from '../assets/data/seatsList/seatsList'
 import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
 import cn from '../lib/cn'
-import candidatesData from '../assets/data/candidatesData.json'
+import candidatesData1 from '../assets/data/candidatesData1.json'
+import candidatesData2 from '../assets/data/candidatesData2.json'
+
 import seatInfo1 from '../assets/data/seatInfo1.json'
 import seatInfo2 from '../assets/data/seatInfo2.json'
 
@@ -69,7 +71,7 @@ function SeatInfoPage() {
     }
 
     //Filter candidates by seat
-    const currentCandidates = candidatesData?.data?.filter((seat)=>seat?.seatName == seatNo)
+    const currentCandidates = [...candidatesData1.data, ...candidatesData2.data]?.filter((seat)=>seat?.seatName == seatNo)
 
     const symbols = [
         {
