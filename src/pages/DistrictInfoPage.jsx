@@ -10,7 +10,6 @@ import Title from "../components/common/Title/Title"
 import Chart from "react-apexcharts";
 import ColorBoxes from "../components/common/ColorBoxes/ColorBoxes"
 import districtData from '../assets/data/districts.json'
-
 import Section from '../components/common/Section/Section'
 import DistrictNavigator from "../components/common/DistrictNavigator/DistrictNavigator"
 import toBengaliDigits from "../lib/toBanglaDigits"
@@ -23,9 +22,9 @@ function DistrictInfoPage() {
   const { districtNo } = useParams()
 
   useEffect(() => {
-    //11th election data of current district
-    const eleventhData = getDistrictDataByDistrictNo(districtNo)?.find((element) => element.electionNoEn === 11)
-    setLatestData(eleventhData)
+    //12th election data of current district
+    const twelveThData = getDistrictDataByDistrictNo(districtNo)?.find((element) => element.electionNoEn == 12)
+    setLatestData(twelveThData)
   }, [districtNo])
 
   //Find district name by districtNo
@@ -42,10 +41,8 @@ function DistrictInfoPage() {
 
   //Find current district data by districtNO
   function getDistrictDataByDistrictNo(districtNo) {
-    return districtData?.data?.filter((district) => district?.districtNo == districtNo && district?.electionNoEn<12)
+    return districtData?.data?.filter((district) => district?.districtNo == districtNo)
   }
-
-
 
   const districtCounterData = [
     { count: latestData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
@@ -54,12 +51,12 @@ function DistrictInfoPage() {
     { count: latestData?.totalSeat, title: 'মোট আসন', image: total_candidate },
   ]
 
-  console.log(districtCounterData, 'District counter data')
+  console.log(latestData, 'District counter data=======')
 
   const colors = ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854']
   const labels = ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য']
 
-  const chartData = [...getDistrictDataByDistrictNo(districtNo)]?.map((district) => {
+  const chartData = [...getDistrictDataByDistrictNo(districtNo).filter((district)=>district?.electionNoEn<12)]?.map((district) => {
     return {
       electionNo: district?.electionNoEn,
       series: [
