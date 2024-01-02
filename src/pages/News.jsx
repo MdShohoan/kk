@@ -110,9 +110,9 @@ function News() {
                                 <div className='grid grid-cols-1 lg:grid-cols-4 mb-4'>
                                     <div
                                         onClick={() => openNewTab(news[0]?.detailsUrl)}
-                                        className='md:col-start-1 md:col-end-4 flex flex-col-reverse md:flex-row gap-4 cursor-pointer group md:pr-5 md:border-r'
+                                        className='md:col-start-1 md:col-end-4 flex flex-col-reverse md:flex-row gap-4 cursor-pointer group lg:pr-5 lg:border-r mb-6 lg:mb-0'
                                     >
-                                        <div className='basis-full mb  md:mb-0'>
+                                        <div className='md:basis-full'>
                                             <h1 className='font-bold text-3xl mb-2 text-[#333] group-hover:text-primary transition-all duration-500'>{news[0]?.n_head}</h1>
                                             <p className='text-[#333] text-base mb-3 hidden md:block'>{news[0]?.n_details}</p>
                                             <div className='flex items-center gap-[3px]'>
@@ -122,7 +122,7 @@ function News() {
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className='basis-full rounded-lg overflow-clip'>
+                                        <div className='md:basis-full rounded-lg overflow-clip'>
                                             <img src={news[0]?.thumb_image} className='w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-500' />
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@ function News() {
                                 {/* <---------------Middle section end------------------>*/}
 
                                 {/* <---------------Last section start------------------>*/}
-                                <div className='container border-t mt-4'>
+                                <div className='container border-t mt-4 hidden lg:block'>
                                     <div className='max-w-xl mx-auto md:mt-8 flex flex-col gap-y-4'>
                                         {
                                             news?.slice(10)?.map((story) => (
@@ -177,10 +177,10 @@ function News() {
                                     </div>
                                 </div>
                                 {/* Visible in mobile only */}
-                                <div className='flex md:hidden flex-col gap-4 mt-4'>
+                                <div className='flex lg:hidden flex-col gap-4 mt-4'>
                                     {
                                         news?.slice(10)?.map((story) => (
-                                            <List key={story.n_id} story={story} />
+                                            <List className={'last:border-b-0'} key={story.n_id} story={story} />
                                         ))
                                     }
                                 </div>
