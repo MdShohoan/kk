@@ -52,9 +52,9 @@ const CountdownTimer = ({ electionDate }) => {
           ))
         }
       </div>
-      <div className='mt-4 w-[300px] h-[90px] flex justify-center items-center bg-primary-light'>
+      {/* <div className='mt-4 w-[300px] h-[90px] flex justify-center items-center bg-primary-light'>
         ads
-      </div>
+      </div> */}
     </div>
   );
 };

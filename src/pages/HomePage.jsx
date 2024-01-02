@@ -23,9 +23,9 @@ function HomePage() {
                 {/* <Sponsor /> */}
                 <Schedule />
                 <ElectionShortStatistics />
-                <div className='w-[300px] h-[250px] lg:h-[250px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
+                {/* <div className='w-[300px] h-[250px] lg:h-[250px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>
                     ads: 970*250
-                </div>
+                </div> */}
                 <QuickLinks />
                 {/* <ElectionInformation /> */}
                 <Maps />
