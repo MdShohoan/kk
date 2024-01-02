@@ -3,6 +3,7 @@ import total_voter from '../assets/election/total-voter.png'
 import total_candidate from '../assets/election/total-seat.png'
 import male_voter from '../assets/election/male-voter.png'
 import female_voter from '../assets/election/female-voter.png'
+import common_gender from '../assets/election/common-gender.png'
 import Card from '../components/common/CardCountUP/CardCountUP'
 import districtList from '../assets/data/districtsList/districtsList'
 import { Navigate, ScrollRestoration, useParams } from "react-router-dom"
@@ -45,13 +46,12 @@ function DistrictInfoPage() {
   }
 
   const districtCounterData = [
-    { count: latestData?.totalVoter, title: 'মোট ভোটার', image: total_voter },
-    { count: latestData?.maleVoter, title: 'পুরুষ ভোটার', image: male_voter },
-    { count: latestData?.femaleVoter, title: 'নারী ভোটার ', image: female_voter },
-    { count: latestData?.totalSeat, title: 'মোট আসন', image: total_candidate },
+    { count: latestData?.totalVoter || '০', title: 'মোট ভোটার', image: total_voter },
+    { count: latestData?.maleVoter || '০', title: 'পুরুষ ভোটার', image: male_voter },
+    { count: latestData?.femaleVoter || '০', title: 'নারী ভোটার ', image: female_voter },
+    { count: latestData?.thirdGenderVoter || '০', title: 'হিজড়া ভোটার ', image: common_gender},
+    { count: latestData?.totalSeat || '০', title: 'মোট আসন', image: total_candidate},
   ]
-
-  console.log(latestData, 'District counter data=======')
 
   const colors = ['#66c2a5', '#8da0cb', '#e78ac3', '#a6d854']
   const labels = ['আ. লীগ জোট', 'বিএনপি জোট', 'জাতীয় পার্টি', 'অন্যান্য']
@@ -154,10 +154,10 @@ function DistrictInfoPage() {
           </div>
 
           {/* ------------District information counter start---------- */}
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8'>
+          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-8'>
             {
               districtCounterData.map((singleData) => (
-                <Card key={singleData?.count} type='type1' data={singleData} />
+                <Card key={singleData?.count+singleData.title} type='type1' data={singleData} />
               ))
             }
           </div>
