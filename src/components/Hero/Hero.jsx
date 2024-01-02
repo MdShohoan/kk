@@ -121,7 +121,7 @@ function Hero() {
                 'bg-primary-light h-auto md:h-fit md:rounded-br-[250px] mb-16 py-12',
                 page === 'seatDetails' && 'pt-0 pb-1 md:pb-12',
                 page === 'districtDetails' && 'pt-0 pb-1 md:pb-12',
-                page === 'home' && 'pb-1',
+                page === 'home' && 'pb-4',
                 page === 'news' && 'hidden'
             )
         }>
