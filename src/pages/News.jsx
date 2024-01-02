@@ -123,7 +123,7 @@ function News() {
                                             </div>
                                         </div>
                                         <div className='md:basis-full rounded-lg overflow-clip'>
-                                            <img src={news[0]?.thumb_image} className='w-full h-44 md:h-60 object-cover group-hover:scale-105 transition-all duration-500' />
+                                            <img src={news[0]?.thumb_image} className='w-full h-44 md:h-60 object-cover group-hover:scale-105 transition-all duration-500 rounded-lg' />
                                         </div>
                                     </div>
                                     <div className='lg:col-start-4 lg:col-end-5 lg:pl-5'>
