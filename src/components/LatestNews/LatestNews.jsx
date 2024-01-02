@@ -59,7 +59,7 @@ export default function LatestNews() {
                                 <Card story={stories[0]} className={'mb-1 pb-1 sm:pb-0 sm:border-b-0 font-bold leading-[22px] text-2xl md:text-lg'} />
                                 {
                                     stories?.slice(1, 12).map((story) => (
-                                        <List key={story.n_id} story={story} />
+                                        <List key={story.n_id} story={story} className={cn('last:border-b-0')}/>
                                     ))
                                 }
                             </div>
