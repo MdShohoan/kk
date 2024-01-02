@@ -199,7 +199,7 @@ function SeatInfoPage() {
                                     }>
                                         <div className='bg-primary-light h-36 w-36 rounded-full mx-auto mb-8 text-center flex justify-center items-center flex-col'>
                                             <span className='block mb-2 text-2xl font-bold text-primary relative z-20'>
-                                                {toBengaliDigits(result?.electionNoEn)} ম
+                                                {toBengaliDigits(result?.electionNoEn)}{result?.electionNoEn>9? 'তম': 'ম'}
                                             </span>
                                             <span className='block text-gray-700 font-bold text-sm relative z-30'>
                                                 সংসদ নির্বাচন <br /> {toBengaliDigits(result?.electionYearEn)}

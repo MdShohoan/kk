@@ -12,18 +12,18 @@ export default function SeatNavigationPage() {
             <section className="mb-12">
                 <div className="container">
                     <Title>
-                        আসন ভিত্তিক নির্বাচনী তথ্য
+                        আসনভিত্তিক নির্বাচনী তথ্য
                     </Title>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="col-span-full md:col-start-1 md:col-end-2 border p-2 md:p-4">
                             <div className='text-center font-medium text-lg text-[#333] mb-5'>
-                                নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে আসনের উপর ক্লিক করুন
+                                নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে আসনের ওপর ক্লিক করুন
                             </div>
                             <SeatNavigator className='lg:grid-cols-2' />
                         </div>
                         <div className="col-span-full md:col-start-2 md:col-end-4 border p-2 md:p-4">
                             <div className='text-center font-medium text-lg text-[#333]'>
-                                নির্বাচনের তথ্য জানতে আসনের উপর ক্লিক করুন
+                                নির্বাচনের তথ্য জানতে আসনের ওপর ক্লিক করুন
                             </div>
                             <SeatNavigationMap />
                         </div>

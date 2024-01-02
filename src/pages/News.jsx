@@ -208,7 +208,7 @@ function News() {
                                                 {
                                                     loadingMore ? 'লোড হচ্ছে...' : (
                                                         <>
-                                                            আরও
+                                                            আরো
                                                             <IoIosArrowRoundForward size={24} color={colors.primary.light} />
                                                         </>
                                                     )

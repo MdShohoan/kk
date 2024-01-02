@@ -11,18 +11,18 @@ function DistrictNavigationPage() {
       <Section>
         <div className="container">
           <Title>
-            জেলা ভিত্তিক নির্বাচনী তথ্য
+            জেলাভিত্তিক নির্বাচনী তথ্য
           </Title>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="col-span-full md:col-start-1 md:col-end-2 border p-2 md:p-8 md:pt-4">
               <div className='text-center font-medium text-lg text-[#333] mb-8'>
-                নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে জেলার উপর ক্লিক করুন
+                নির্বাচনের তথ্য জানতে নিজ বিভাগ হতে জেলার ওপর ক্লিক করুন
               </div>
               <DistrictNavigator className='lg:grid-cols-2' />
             </div>
             <div className="col-span-full md:col-start-2 md:col-end-3 border">
               <div className='text-center py-4 font-medium text-lg text-[#333]'>
-                নির্বাচনের তথ্য জানতে জেলার উপর ক্লিক করুন
+                নির্বাচনের তথ্য জানতে জেলার ওপর ক্লিক করুন
               </div>
               <BangladeshMap />
             </div>
