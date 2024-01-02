@@ -11,7 +11,7 @@ function Maps() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="border-0 lg:border rounded pt-4">
                         <Title>
-                            নির্বাচনের তথ্য জানতে জেলার উপর ক্লিক করুন
+                            নির্বাচনের তথ্য জানতে জেলার ওপর ক্লিক করুন
                         </Title>
                         <BangladeshMap />
                     </div>

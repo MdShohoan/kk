@@ -5,7 +5,7 @@ import toBengaliDigits from '../../../lib/toBanglaDigits';
 
 const CountdownTimer = ({ electionDate }) => {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
-  const units = ['দিন', 'ঘন্টা', 'মিনিট', 'সেকেন্ড']
+  const units = ['দিন', 'ঘণ্টা', 'মিনিট', 'সেকেন্ড']
 
   useEffect(() => {
     const interval = setInterval(() => {

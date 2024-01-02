@@ -28,7 +28,7 @@ function Schedule() {
             dateEn: moment('2024-01-05')
         },
         {
-            title: 'ভোট গ্রহণ',
+            title: 'ভোটগ্রহণ',
             date: '০৭ জানুয়ারি ২০২৪',
             dateEn: moment('2024-01-07')
         },

@@ -19,7 +19,7 @@ export default function ElectionShortStatistics() {
     { count: '১৮৯৫', title: 'মোট প্রার্থী', image: total_candidate },
     { count: '৩৮২', title: 'স্বতন্ত্র প্রার্থী', image: total_candidate },
     { count: '২৭', title: 'দল', image: political_parties },
-    { count: '৩০০', title: 'আসন সংখ্যা', image: total_seat },
+    { count: '৩০০', title: 'আসনসংখ্যা', image: total_seat },
 
   ]
 

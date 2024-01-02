@@ -153,7 +153,7 @@ function Hero() {
                                 clsx('block text-sm font-normal text-gray1', (page === 'seatDetails' || page === 'districtDetails') && 'hidden md:block')
                             }
                         >
-                            নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালের কণ্ঠে, আংশিক নয় পুরো সত্যি
+                            নির্বাচনের সর্বশেষ দেখতে চোখ রাখুন কালের কণ্ঠে, আংশিক নয় পুরো সত্য
                         </span>
                         {
                             page === 'home' && (

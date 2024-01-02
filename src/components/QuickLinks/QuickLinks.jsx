@@ -19,7 +19,7 @@ function QuickLinks() {
 
     const quickLinks = [
         { id: 'seat', link: 'seats', title: 'আসন', subtitle: 'জেনে নিন আপনার আসন সম্পর্কে', icon: MdOutlineEventSeat },
-        { id: 'map', link: 'districts', title: 'ম্যাপ ', subtitle: 'নির্বাচনের তথ্য জানতে ম্যাপ উপর ক্লিক করুন', icon: FaMapMarkerAlt },
+        { id: 'map', link: 'districts', title: 'ম্যাপ ', subtitle: 'নির্বাচনের তথ্য জানতে মাপের ওপর ক্লিক করুন', icon: FaMapMarkerAlt },
         { id: 'result', link: 'election-result', title: 'ফলাফল', subtitle: ' নির্বাচনের  ফলাফল', icon: MdOutlineAddReaction },
         { id: 'win-lose', link: 'election-result', title: 'হার-জিত', subtitle: 'দেখুন কে কোথায় জিতেছিল', icon: IoMdGitCompare },
     ]
