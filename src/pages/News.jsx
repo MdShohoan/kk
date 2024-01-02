@@ -107,10 +107,10 @@ function News() {
 
 
                                 {/* Top section without add start */}
-                                <div className='grid grid-cols-4 mb-4'>
+                                <div className='grid grid-cols-1 lg:grid-cols-4 mb-4'>
                                     <div
                                         onClick={() => openNewTab(news[0]?.detailsUrl)}
-                                        className='col-start-1 col-end-4 flex flex-col-reverse md:flex-row gap-4 cursor-pointer group pr-5 border-r'
+                                        className='md:col-start-1 md:col-end-4 flex flex-col-reverse md:flex-row gap-4 cursor-pointer group md:pr-5 md:border-r'
                                     >
                                         <div className='basis-full mb  md:mb-0'>
                                             <h1 className='font-bold text-3xl mb-2 text-[#333] group-hover:text-primary transition-all duration-500'>{news[0]?.n_head}</h1>
@@ -126,8 +126,9 @@ function News() {
                                             <img src={news[0]?.thumb_image} className='w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-500' />
                                         </div>
                                     </div>
-                                    <div className='col-start-4 col-end-5 pl-5'>
-                                        <Card story={news[1]} className={cn(`font-bold`)} />
+                                    <div className='lg:col-start-4 lg:col-end-5 lg:pl-5'>
+                                        <Card story={news[1]} className={cn(`font-bold hidden lg:block`)} />
+                                        <List story={news[1]} className={cn(`lg:hidden flex`)}/>
                                     </div>
                                 </div>
                                 {/* Top section without add end */}

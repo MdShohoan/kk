@@ -16,6 +16,7 @@ import DistrictNavigator from "../components/common/DistrictNavigator/DistrictNa
 import toBengaliDigits from "../lib/toBanglaDigits"
 import toEnglishDigits from "../lib/toEnglishDigits"
 import { useEffect, useState } from "react"
+import ordinal from "../assets/data/ordinal"
 
 function DistrictInfoPage() {
   const [latestData, setLatestData] = useState({})
@@ -184,7 +185,7 @@ function DistrictInfoPage() {
                     <span
                       className="block absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/4"
                     >
-                      {toBengaliDigits(element.electionNo)}ম
+                      {ordinal[element?.electionNo]}
                       {console.log('election', element)}
                     </span>
                   </div>
