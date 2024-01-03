@@ -48,7 +48,7 @@ function Schedule() {
                                     `flex-1 relative
                                 before:w-1/2 before:h-[3px] before:bg-gray-500 before:block before:-z-10 before:absolute before:bottom-[1.25em] first:before:w-0
                                 after:right-0 after:w-1/2 after:h-[3px] after:bg-gray-500 after:block after:-z-10 after:absolute after:bottom-[1.25em] last:after:w-0
-                                `, currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'after:bg-primary'
+                                `, currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'after:bg-primary'
                                 )
                             }>
                                 {/* <div className="mb-2">
@@ -57,10 +57,10 @@ function Schedule() {
                                 </div> */}
                                 <div className={cn(
                                     'w-10 h-10 bg-white relative border-2 mx-auto border-gray-500 rounded-full',
-                                    currentDate.diff(data?.dateEn, 'days') >= 0 && 'border-primary'
+                                    currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'border-primary'
                                 )}>
                                     <span className={
-                                        cn('w-5 h-5 hidden rounded-full bg-primary mx-auto my-[25%]', currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'block')
+                                        cn('w-5 h-5 hidden rounded-full bg-primary mx-auto my-[25%]', currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'block')
                                     } />
                                 </div>
                                 <div className="absolute bottom-12 w-full">
@@ -81,15 +81,15 @@ function Schedule() {
                                     `h-full relative last:h-fit
                                 
                                 after:w-[3px] after:h-full after:bg-gray-500 after:block after:-z-10 after:absolute last:after:h-0 after:top-0 after:left-[1.25em]
-                                `, currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'after:bg-primary'
+                                `, currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'after:bg-primary'
                                 )
                             }>
                                 <div className={cn(
                                     'w-10 h-10 bg-white relative border-2 border-gray-500 rounded-full',
-                                    currentDate.diff(data?.dateEn, 'days') >= 0 && 'border-primary'
+                                    currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'border-primary'
                                 )}>
                                     <span className={
-                                        cn('w-5 h-5 hidden rounded-full bg-primary mx-auto my-[25%]', currentDate.diff(data?.dateEn, 'days') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'days') >= 0 && 'block')
+                                        cn('w-5 h-5 hidden rounded-full bg-primary mx-auto my-[25%]', currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'before:bg-primary', currentDate.diff(data?.dateEn, 'seconds') >= 0 && 'block')
                                     } />
                                     {/* <div className="mb-2 absolute left-[50px] top-0 w-[280px] bg-primary-light py-2 rounded">
                                         <p className="text-center text-primary font-bold text-xs">{data?.title}</p>
