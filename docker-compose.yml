@@ -3,5 +3,5 @@ services:
   kk-app:
     image: kk-app
     ports:
-      - "3001:5173"
+      - "3001:4173"
     restart: always
