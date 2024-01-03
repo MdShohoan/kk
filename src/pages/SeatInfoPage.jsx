@@ -24,13 +24,14 @@ import seatList from '../assets/data/seatsList/seatsList'
 import { useEffect, useState } from 'react'
 import toBengaliDigits from '../lib/toBanglaDigits'
 import cn from '../lib/cn'
+
 import candidatesData1 from '../assets/data/candidatesData1.json'
 import candidatesData2 from '../assets/data/candidatesData2.json'
-
+import candidatesData3 from '../assets/data/candidatesData3.json'
 import seatInfo1 from '../assets/data/seatInfo1.json'
 import seatInfo2 from '../assets/data/seatInfo2.json'
+import seatInfo3 from '../assets/data/seatInfo3.json'
 import ordinal from '../assets/data/ordinal'
-
 
 
 function SeatInfoPage() {
@@ -71,7 +72,7 @@ function SeatInfoPage() {
     }
 
     //Filter candidates by seat
-    const currentCandidates = [...candidatesData1.data, ...candidatesData2.data]?.filter((seat)=>seat?.seatName == seatNo)
+    const currentCandidates = [...candidatesData1.data, ...candidatesData2.data, ...candidatesData3.data]?.filter((seat)=>seat?.seatName == seatNo)
 
     const symbols = [
         {
@@ -114,7 +115,7 @@ function SeatInfoPage() {
         return ''
     }
 
-    const currentSeatInfo = [...seatInfo1.data, ...seatInfo2.data]?.find((seat)=>seat.seatNo == seatNo)
+    const currentSeatInfo = [...seatInfo1.data, ...seatInfo2.data, ...seatInfo3.data]?.find((seat)=>seat.seatNo == seatNo)
 
     const seatData = [
         { count: currentSeatInfo?.totalVoter || '০', title: 'মোট ভোটার', image: total_voter },
