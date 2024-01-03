@@ -183,7 +183,6 @@ function DistrictInfoPage() {
                       className="block absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/4"
                     >
                       {ordinal[element?.electionNo]}
-                      {console.log('election', element)}
                     </span>
                   </div>
                 </div>
@@ -192,6 +191,7 @@ function DistrictInfoPage() {
           </div>
         </div>
       </Section>
+
       <Section>
         <div className="container">
           <Title>

@@ -6,39 +6,6 @@ import Chart from "react-apexcharts";
 
 export default function ResultsHistory({data}) {
 
-    // const data = [
-    //     {
-    //         year: '২০১৪',
-    //         electionNo: '',
-    //         series: [293, 7]
-    //     },
-    //     {
-    //         year: '২০১৪',
-    //         electionNo: '',
-    //         series: [44, 55, 13, 43]
-    //     },
-    //     {
-    //         year: '২০০৮',
-    //         electionNo: '',
-    //         series: [44, 55, 13, 43]
-    //     },
-    //     {
-    //         year: '২০০১',
-    //         electionNo: '',
-    //         series: [44, 55, 13, 43]
-    //     },
-    //     {
-    //         year: '১৯৯৬',
-    //         electionNo: '',
-    //         series: [44, 55, 13, 43]
-    //     },
-    //     {
-    //         year: '১৯৯১',
-    //         electionNo: '',
-    //         series: [150, 100, 40, 10]
-    //     },
-    // ]
-
     const options = {
         chart: {
             type: 'pie',

@@ -44,7 +44,6 @@ function SeatInfoPage() {
         BASE_URL = 'https://superb-mandazi-0bd10a.netlify.app'
     }
 
-    console.log('import.meta.env.REACT_NODE_ENV', import.meta.env.VITE_REACT_NODE_ENV)
     useEffect(() => {
         setPreviousResult([...filterResultByIdAndElectionNineToLatest(), ...filterResultByNameAndElectionEightToPrevious()])
     }, [seatNo])
@@ -115,10 +114,7 @@ function SeatInfoPage() {
         return ''
     }
 
-    console.log([...seatInfo1.data, ...seatInfo2.data], 'seat info=========')
-
     const currentSeatInfo = [...seatInfo1.data, ...seatInfo2.data]?.find((seat)=>seat.seatNo == seatNo)
-    console.log('current seat info', currentSeatInfo)
 
     const seatData = [
         { count: currentSeatInfo?.totalVoter || '০', title: 'মোট ভোটার', image: total_voter },
