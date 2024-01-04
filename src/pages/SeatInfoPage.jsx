@@ -38,11 +38,11 @@ function SeatInfoPage() {
     const { seatNo } = useParams()
     const [previousResult, setPreviousResult] = useState([])
 
-    let BASE_URL = 'https://election.kalerkhanto.com/'
+    let BASE_URL = 'https://election.kalerkantho.com'
     
 
     if(import.meta.env.VITE_REACT_NODE_ENV === 'production'){
-        BASE_URL = 'https://election.kalerkhanto.com/'
+        BASE_URL = 'https://election.kalerkantho.com'
     }
 
     useEffect(() => {
