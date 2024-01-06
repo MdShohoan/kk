@@ -36,7 +36,7 @@ const LiveChart = () => {
         },
         grid: {
             padding: {
-                bottom: -170,
+                bottom: -190,
                 left: 0,
                 right: 0,
             }
@@ -52,13 +52,34 @@ const LiveChart = () => {
                 },
                 grid: {
                     padding: {
+                        bottom: -150,
+                        left: 0,
+                        right: 0,
+                    }
+                },
+            }
+        },
+
+        {
+            breakpoint: 400,
+            options: {
+                chart: {
+                    width: '100%'
+                },
+                legend: {
+                    position: 'bottom'
+                },
+                grid: {
+                    padding: {
                         bottom: -130,
                         left: 0,
                         right: 0,
                     }
                 },
             }
-        }],
+        },
+        
+    ],
         dataLabels: {
             enabled: true,
             textAnchor: "right",
@@ -183,8 +204,8 @@ const LiveChart = () => {
                         <div className='grid grid-cols-2 gap-4 p-4'>
                             {
                                 previousResult?.map((data, i)=>(
-                                    <div key={i} className='bg-primary-light rounded-md overflow-hidden'>
-                                        <p className='text-center bg-primary text-primary-light p-1 md:p-2'>সংসদ নির্বাচন {data?.year}</p>
+                                    <div key={i} className='bg-primary-light rounded-tl-md rounded-tr-md overflow-hidden'>
+                                        <p className='text-center bg-primary text-primary-light p-1 md:p-2 text-sm md:text-base'>সংসদ নির্বাচন {data?.year}</p>
                                         <div className='flex p-2 md:p-4'>
                                             <div className='basis-full'>
                                                 <p className='text-lg md:text-xl text-[#333] mb-1'>{data?.wonParty}</p>
