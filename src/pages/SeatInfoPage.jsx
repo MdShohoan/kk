@@ -121,7 +121,7 @@ function SeatInfoPage() {
         { count: currentSeatInfo?.totalVoter || '০', title: 'মোট ভোটার', image: total_voter },
         { count: currentSeatInfo?.maleVoter || '০', title: 'পুরুষ ভোটার', image: male_voter },
         { count: currentSeatInfo?.femaleVoter || '০', title: 'নারী ভোটার ', image: female_voter },
-        { count: currentSeatInfo?.hijraVoter || '০', title: 'হিজড়া ভোটার ', image: common_gender },
+        { count: currentSeatInfo?.hijraVoter || '০', title: 'তৃতীয় লিঙ্গ ভোটার ', image: common_gender },
         { count: currentSeatInfo?.totalCandidate || '০', title: 'মোট প্রার্থী', image: total_candidate },
     ]
 

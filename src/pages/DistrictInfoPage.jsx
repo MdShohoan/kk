@@ -49,7 +49,7 @@ function DistrictInfoPage() {
     { count: latestData?.totalVoter || '০', title: 'মোট ভোটার', image: total_voter },
     { count: latestData?.maleVoter || '০', title: 'পুরুষ ভোটার', image: male_voter },
     { count: latestData?.femaleVoter || '০', title: 'নারী ভোটার ', image: female_voter },
-    { count: latestData?.thirdGenderVoter || '০', title: 'হিজড়া ভোটার ', image: common_gender},
+    { count: latestData?.thirdGenderVoter || '০', title: 'তৃতীয় লিঙ্গ ভোটার', image: common_gender},
     { count: latestData?.totalSeat || '০', title: 'মোট আসন', image: total_candidate},
   ]
 

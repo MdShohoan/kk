@@ -15,7 +15,7 @@ export default function ElectionShortStatistics() {
     { count: '১১৯৬৯১৬৩৩', title: 'মোট ভোটার', image: total_voter },
     { count: '৬০৭৭১৫৭৯', title: 'পুরুষ ভোটার', image: male_voter },
     { count: '৫৮৯১৯২০২', title: 'নারী ভোটার ', image: female_voter },
-    { count: '৮৫২', title: 'হিজড়া ভোটার', image: common_voter },
+    { count: '৮৫২', title: 'তৃতীয় লিঙ্গ ভোটার', image: common_voter },
     { count: '১৯৭০', title: 'মোট প্রার্থী', image: total_candidate },
     { count: '৪৩৬', title: 'স্বতন্ত্র প্রার্থী', image: total_candidate },
     { count: '২৮', title: 'দল', image: political_parties },
