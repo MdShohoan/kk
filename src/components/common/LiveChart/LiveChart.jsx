@@ -52,7 +52,7 @@ const LiveChart = () => {
                 },
                 grid: {
                     padding: {
-                        bottom: -80,
+                        bottom: -130,
                         left: 0,
                         right: 0,
                     }
@@ -155,7 +155,7 @@ const LiveChart = () => {
         <Section>
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                    <div className="lg:col-start-1 lg:col-end-5 shadow-[0_0_12px_#0000009c] rounded-lg bg-primary-light">
+                    <div className="lg:col-start-1 lg:col-end-5 shadow-[0_0_12px_#0000009c] rounded-lg bg-primary-light overflow-hidden">
                         <Chart options={options} series={series} type="pie"/>
                         <div className="bg-white p-4 text-center">
         <div>
@@ -184,15 +184,15 @@ const LiveChart = () => {
                             {
                                 previousResult?.map((data, i)=>(
                                     <div key={i} className='bg-primary-light rounded-md overflow-hidden'>
-                                        <p className='text-center bg-primary text-primary-light p-2'>সংসদ নির্বাচন {data?.year}</p>
-                                        <div className='flex p-4'>
+                                        <p className='text-center bg-primary text-primary-light p-1 md:p-2'>সংসদ নির্বাচন {data?.year}</p>
+                                        <div className='flex p-2 md:p-4'>
                                             <div className='basis-full'>
                                                 <p className='text-lg md:text-xl text-[#333] mb-1'>{data?.wonParty}</p>
-                                                <p className='text-[#333]'>জয়ী দল</p>
+                                                <p className='text-[#333] text-xs md:text-base'>জয়ী দল</p>
                                             </div>
                                             <div className='basis-full'>
                                                 <p className='text-right ext-lg md:text-xl text-[#333] mb-1'>{data?.wonSeat}</p>
-                                                <p className='text-right text-[#333]'>প্রাপ্ত আসন</p>
+                                                <p className='text-right text-[#333] text-xs md:text-base'>প্রাপ্ত আসন</p>
                                             </div>
                                         </div>
                                     </div>
