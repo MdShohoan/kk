@@ -234,8 +234,8 @@ const LiveChart = () => {
                     </div>
                     <div className="lg:col-start-9 lg:col-end-13 shadow-[0_0_12px_#0000009c] rounded-lg p-3">
                         {
-                            loading ? (<Spinner className={'w-full h-full'}/>) : (<>
-                                <div className='flex flex-col gap-3'>
+                            loading ? (<Spinner className={'w-full h-full'} />) : (<>
+                                <div className='flex flex-col gap-3 mb-5'>
                                     {
                                         news?.slice(0, 4)?.map((story) => (
                                             <div
@@ -252,12 +252,13 @@ const LiveChart = () => {
                                             </div>
                                         ))
                                     }
-                                    <div
-                                        onClick={() => navigate('/news')}
-                                        className='col-span-full rounded-lg cursor-pointer text-center bg-primary text-primary-light p-1 flex justify-center items-center gap-1'
-                                    >
-                                        আরো<IoIosArrowForward size={16} />
-                                    </div>
+
+                                </div>
+                                <div
+                                    onClick={() => navigate('/news')}
+                                    className='col-span-full rounded-lg cursor-pointer text-center bg-primary text-primary-light p-1 flex justify-center items-center gap-1'
+                                >
+                                    আরো<IoIosArrowForward size={16} />
                                 </div>
                             </>)
                         }
