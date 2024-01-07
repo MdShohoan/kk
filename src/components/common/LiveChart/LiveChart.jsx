@@ -205,7 +205,7 @@ const LiveChart = () => {
                         </div>
                     </div>
 
-                    <div className="lg:col-start-5 lg:col-end-9 shadow-[0_0_12px_#0000009c] rounded-lg">
+                    <div className="lg:col-start-5 lg:col-end-9 shadow-xl rounded-lg">
                         <div className='grid grid-cols-2 gap-4 p-4'>
                             {
                                 previousResult?.map((data, i) => (
@@ -232,7 +232,7 @@ const LiveChart = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:col-start-9 lg:col-end-13 shadow-[0_0_12px_#0000009c] rounded-lg p-3">
+                    <div className="lg:col-start-9 lg:col-end-13 rounded-lg p-3 shadow-xl">
                         {
                             loading ? (<Spinner className={'w-full h-full'} />) : (<>
                                 <div className='flex flex-col gap-3 mb-5'>
