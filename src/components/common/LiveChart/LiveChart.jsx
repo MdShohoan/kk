@@ -6,13 +6,38 @@ import JatiyoPartyLogo from '../../../assets/partyLogo/JatioyoPartyLogo.webp'
 import toBengaliDigits from '../../../lib/toBanglaDigits';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Spinner from '../Spinner/Spinner';
 
 const LiveChart = () => {
     const navigate = useNavigate()
+    const [news, setNews] = useState([])
+    const [loading, setLoading] = useState(false)
+
+    const url = 'https://bn-api.kalerkantho.com/api/election?page=1'
+
+    const fetchData = async () => {
+        setLoading(true)
+        try {
+            const res = await axios.get(url)
+            setNews(res?.data?.data)
+        } catch (error) {
+            console.log(error)
+        }
+        finally {
+            setLoading(true)
+        }
+    }
 
     const openNewTab = (url) => {
         window.open(url, "_blank")
     }
+
+    useEffect(() => {
+        fetchData()
+    }, [])
+
     const colors = [
         { light: '#85ceb7', dark: '#66c2a5' },
         { light: '#a4b3d5', dark: '#8da0cb' },
@@ -206,30 +231,41 @@ const LiveChart = () => {
                                 বিস্তারিত <IoIosArrowForward size={16} />
                             </div>
                         </div>
-
                     </div>
-                    <div className="lg:col-start-9 lg:col-end-13 shadow-[0_0_12px_#0000009c] rounded-lg">
+                    <div className="lg:col-start-9 lg:col-end-13 shadow-[0_0_12px_#0000009c] rounded-lg p-3">
                         {
-                            []?.slice(10)?.map((story) => (
-                                <div
-                                    onClick={() => openNewTab(story?.detailsUrl)}
-                                    key={story?.n_id}
-                                    className='md:flex gap-4 hidden group cursor-pointer border-b pb-4 last:border-b-0'
-                                >
-                                    <div className='basis-2/5 rounded-lg overflow-clip' >
-                                        <img src={story.thumb_image} className='w-full group-hover:scale-105 transition-all duration-500' />
-                                    </div>
-                                    <div className='basis-3/5'>
-                                        <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333] group-hover:text-primary transition-all duration-500'>{story?.n_head}</h1>
-                                        <p className='text-sm text-[#333]'>{story?.n_details}</p>
+                            loading ? (<Spinner className={'w-full h-full'}/>) : (<>
+                                <div className='flex flex-col gap-3'>
+                                    {
+                                        news?.slice(0, 4)?.map((story) => (
+                                            <div
+                                                onClick={() => openNewTab(story?.detailsUrl)}
+                                                key={story?.n_id}
+                                                className='flex gap-4 group cursor-pointer border-b pb-2 last:border-b-0'
+                                            >
+                                                <div className='basis-1/3 rounded-lg overflow-clip' >
+                                                    <img src={story.thumb_image} className='w-full h-16 object-cover group-hover:scale-105 transition-all duration-500' />
+                                                </div>
+                                                <div className='basis-2/3'>
+                                                    <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333] group-hover:text-primary transition-all duration-500'>{story?.n_head}</h1>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                    <div
+                                        onClick={() => navigate('/news')}
+                                        className='col-span-full rounded-lg cursor-pointer text-center bg-primary text-primary-light p-1 flex justify-center items-center gap-1'
+                                    >
+                                        আরো<IoIosArrowForward size={16} />
                                     </div>
                                 </div>
-                            ))
+                            </>)
                         }
+
                     </div>
                 </div>
-            </div>
-        </Section>
+            </div >
+        </Section >
     );
 };
 
