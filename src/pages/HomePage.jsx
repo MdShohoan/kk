@@ -11,6 +11,7 @@ import Maps from '../components/Maps/Maps'
 import Schedule from '../components/common/Schedule/Schedule'
 // import Section from '../components/common/Section/Section'
 import result from '../assets/data/result.json'
+import LiveChart from '../components/common/LiveChart/LiveChart'
 
 function HomePage() {
     const chartData = result.data.map((item)=>{
@@ -21,6 +22,7 @@ function HomePage() {
             <ScrollRestoration />
             <Layout>
                 {/* <Sponsor /> */}
+                <LiveChart/>
                 <Schedule />
                 <ElectionShortStatistics />
                 {/* <div className='w-[300px] h-[250px] lg:h-[250px] lg:w-[970px] mx-auto bg-gray-200 mb-8 flex justify-center items-center font-extrabold text-[36px]'>

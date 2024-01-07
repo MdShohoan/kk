@@ -9,7 +9,6 @@ import { ScrollRestoration, useLocation } from "react-router-dom";
 import Section from "../components/common/Section/Section";
 import toBengaliDigits from "../lib/toBanglaDigits";
 import result from '../assets/data/result.json'
-import LiveChart from "../components/common/LiveChart/LiveChart";
 
 function ElectionResultPage() {
 
@@ -153,7 +152,6 @@ function ElectionResultPage() {
     return (
         <Layout>
             <ScrollRestoration />
-            <LiveChart/>
             <Section>
                 <div className="container mx-auto">
                     <Title>

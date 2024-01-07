@@ -10,12 +10,15 @@ import { useNavigate } from 'react-router-dom';
 const LiveChart = () => {
     const navigate = useNavigate()
 
+    const openNewTab = (url) => {
+        window.open(url, "_blank")
+    }
     const colors = [
         { light: '#85ceb7', dark: '#66c2a5' },
         { light: '#a4b3d5', dark: '#8da0cb' },
         { light: '#eca1cf', dark: '#e78ac3' },
         { light: '#b8e076', dark: '#a6d854' }
-      ]
+    ]
 
     const options = {
         chart: {
@@ -26,7 +29,7 @@ const LiveChart = () => {
         legend: {
             show: false
         },
-        labels: ["আওয়ামী লীগ", "জাতীয় পার্টি ", "স্বতন্ত্র ", "অন্যান্য"],
+        labels: ["আওয়ামী লীগ", "বিএনপি", "জাতীয় পার্টি ", "স্বতন্ত্র ", "অন্যান্য"],
         plotOptions: {
             pie: {
                 startAngle: -90,
@@ -78,8 +81,8 @@ const LiveChart = () => {
                 },
             }
         },
-        
-    ],
+
+        ],
         dataLabels: {
             enabled: true,
             textAnchor: "right",
@@ -103,41 +106,18 @@ const LiveChart = () => {
         fill: {
             type: 'solid',
         },
-        colors: colors.map(color=>color.dark)
+        colors: colors.map(color => color.dark)
     };
 
-    // const parties = [
-    //     {
-    //         partyName: 'আওয়ামী লীগ',
-    //         wonSeat: '২০০',
-    //         symbol: alSymbol,
-    //     },
-    //     {
-    //         partyName: 'জাতীয় পার্টি',
-    //         wonSeat: '২০০',
-    //         symbol: jpSymbol,
-    //     },
-    //     {
-    //         partyName: 'স্বতন্ত্র',
-    //         wonSeat: '২০০',
-    //         symbol: '',
-    //     },
-    //     {
-    //         partyName: 'অন্যান্য',
-    //         wonSeat: '২০০',
-    //         symbol: '',
-    //     },
-    // ]
-
-      const data = [
-        { name: 'আ. লীগ জোট', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২৬৬' },
+    const data = [
+        { name: 'আ. লীগ জোট', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২৬৭' },
         { name: 'বিএনপি জোট', logo: BNPLogo, totalSeat: '৩০০', won: '৭' },
         { name: 'জাতীয় পার্টি', logo: JatiyoPartyLogo, totalSeat: '৩০০', won: '২২' },
         { name: 'অন্যান্য', logo: '', totalSeat: '৩০০', won: '৪' },
-      ]
-      const series = [150, 25, 12, 100];
+    ]
+    const series = [267, 7, 22, 0, 4];
 
-      const previousResult = [
+    const previousResult = [
         {
             year: '২০১৮',
             wonParty: 'আ. লীগ',
@@ -168,65 +148,84 @@ const LiveChart = () => {
             wonParty: 'বিএনপি',
             wonSeat: '১৪২'
         },
-      ]
+    ]
 
-      const headingCellStyle = `text-sm leading-4 text-[#000] font-normal bg-[#f0f0ed] rounded py-2 border-b border-gray-300 mr-1`
+    const headingCellStyle = `text-sm leading-4 text-[#000] font-normal bg-[#f0f0ed] rounded py-2 border-b border-gray-300 mr-1`
 
     return (
         <Section>
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                     <div className="lg:col-start-1 lg:col-end-5 shadow-[0_0_12px_#0000009c] rounded-lg bg-primary-light overflow-hidden">
-                        <Chart options={options} series={series} type="pie"/>
+                        <Chart options={options} series={series} type="pie" />
                         <div className="bg-white p-4 text-center">
-        <div>
-          <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
-            <div className={"col-start-1 col-end-4 " + headingCellStyle}>দল / জোট</div>
-            <div className={headingCellStyle}>মোট আসন</div>
-            <div className={headingCellStyle}>জয়ী</div>
-          </div>
+                            <div>
+                                <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
+                                    <div className={"col-start-1 col-end-4 " + headingCellStyle}>দল / জোট</div>
+                                    <div className={headingCellStyle}>মোট আসন</div>
+                                    <div className={headingCellStyle}>জয়ী</div>
+                                </div>
 
-          {data?.map((party, i) => (
-            <div key={party?.name} className="grid grid-cols-5 mb-1 text-sm md:text-base font-semibold text-[#333] [&>*:last-child]:mb-0">
-              <div style={{ background: colors[i]?.light }} className="rounded-tl rounded-bl py-2 flex justify-center items-center">
-                <img src={party?.logo} className="h-7 mx-auto" />
-              </div>
-              <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
-              <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.totalSeat}</div>
-              <div style={{ background: colors[i]?.dark }} className="rounded flex justify-center items-center">{party?.won}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+                                {data?.map((party, i) => (
+                                    <div key={party?.name} className="grid grid-cols-5 mb-1 text-sm md:text-base font-semibold text-[#333] [&>*:last-child]:mb-0">
+                                        <div style={{ background: colors[i]?.light }} className="rounded-tl rounded-bl py-2 flex justify-center items-center">
+                                            <img src={party?.logo} className="h-7 mx-auto" />
+                                        </div>
+                                        <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
+                                        <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.totalSeat}</div>
+                                        <div style={{ background: colors[i]?.dark }} className="rounded flex justify-center items-center">{party?.won}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                    <div className="lg:col-start-5 lg:col-end-9 border"></div>
-                    <div className="lg:col-start-9 lg:col-end-13 shadow-[0_0_12px_#0000009c] rounded-lg">
+
+                    <div className="lg:col-start-5 lg:col-end-9 shadow-[0_0_12px_#0000009c] rounded-lg">
                         <div className='grid grid-cols-2 gap-4 p-4'>
                             {
-                                previousResult?.map((data, i)=>(
+                                previousResult?.map((data, i) => (
                                     <div key={i} className='bg-primary-light rounded-tl-md rounded-tr-md overflow-hidden'>
-                                        <p className='text-center bg-primary text-primary-light p-1 md:p-2 text-sm md:text-base'>সংসদ নির্বাচন {data?.year}</p>
-                                        <div className='flex p-2 md:p-4'>
+                                        <p className='text-center bg-primary text-primary-light p-1 text-sm'>সংসদ নির্বাচন {data?.year}</p>
+                                        <div className='flex px-2 py-3'>
                                             <div className='basis-full'>
-                                                <p className='text-lg md:text-xl text-[#333] mb-1'>{data?.wonParty}</p>
-                                                <p className='text-[#333] text-xs md:text-base'>জয়ী দল</p>
+                                                <p className='text-base text-[#333] mb-1 font-bold'>{data?.wonParty}</p>
+                                                <p className='text-[#333] text-xs md:text-sm'>জয়ী দল</p>
                                             </div>
                                             <div className='basis-full'>
-                                                <p className='text-right ext-lg md:text-xl text-[#333] mb-1'>{data?.wonSeat}</p>
-                                                <p className='text-right text-[#333] text-xs md:text-base'>প্রাপ্ত আসন</p>
+                                                <p className='text-right text-base text-[#333] mb-1 font-bold'>{data?.wonSeat}</p>
+                                                <p className='text-right text-[#333] text-xs md:text-sm'>প্রাপ্ত আসন</p>
                                             </div>
                                         </div>
                                     </div>
                                 ))
                             }
-                            <div 
-                            onClick={()=> navigate('/election-result')}
-                            className='col-span-full rounded-lg font-bold cursor-pointer text-center bg-primary text-primary-light p-2 flex justify-center items-center gap-1'
+                            <div
+                                onClick={() => navigate('/election-result')}
+                                className='col-span-full rounded-lg cursor-pointer text-center bg-primary text-primary-light p-1 flex justify-center items-center gap-1'
                             >
-                                বিস্তারিত <IoIosArrowForward size={16}/>
-                                </div>
+                                বিস্তারিত <IoIosArrowForward size={16} />
+                            </div>
                         </div>
-                        
+
+                    </div>
+                    <div className="lg:col-start-9 lg:col-end-13 shadow-[0_0_12px_#0000009c] rounded-lg">
+                        {
+                            []?.slice(10)?.map((story) => (
+                                <div
+                                    onClick={() => openNewTab(story?.detailsUrl)}
+                                    key={story?.n_id}
+                                    className='md:flex gap-4 hidden group cursor-pointer border-b pb-4 last:border-b-0'
+                                >
+                                    <div className='basis-2/5 rounded-lg overflow-clip' >
+                                        <img src={story.thumb_image} className='w-full group-hover:scale-105 transition-all duration-500' />
+                                    </div>
+                                    <div className='basis-3/5'>
+                                        <h1 className='text-lg mb-2 leading-[22px] font-bold text-[#333] group-hover:text-primary transition-all duration-500'>{story?.n_head}</h1>
+                                        <p className='text-sm text-[#333]'>{story?.n_details}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
