@@ -26,7 +26,7 @@ const LiveChart = () => {
             console.log(error)
         }
         finally {
-            setLoading(true)
+            setLoading(false)
         }
     }
 
