@@ -122,7 +122,7 @@ function Video() {
                                     videos?.slice(5, 8).map((info, i) => (
                                         <div
                                             key={i}
-                                            className={`flex gap-2 border-b last:border-0 ${i === 7 && 'border-0'} border-gray4 pb-2 cursor-pointer`}
+                                            className={`flex gap-2 border-b last:border-0 border-gray4 pb-2 cursor-pointer`}
                                             onMouseEnter={() => handleVideoHover(info)}
                                             onMouseLeave={() => setHoverElement(null)}
                                             onClick={() => openNewTab(info?.id)}
@@ -146,7 +146,7 @@ function Video() {
                                                 />
                                             </div>
                                             <div className='flex-1'>
-                                                <h1 className={`text-sm md:text-lg font-bold leading-[22px] line-clamp-2 'primary' : '[#333]'} transition-all duration-300`}>{info?.name}</h1>
+                                                <h1 className={`text-sm md:text-lg font-bold leading-[22px] line-clamp-2 transition-all duration-300 text-${hoverElement === info?.id ? 'primary' : '[#333]'}`}>{info?.name}</h1>
                                             </div>
                                         </div>
                                     ))
