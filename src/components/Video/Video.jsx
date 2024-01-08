@@ -4,9 +4,6 @@ import { GoPlay } from "react-icons/go";
 import Section from '../common/Section/Section';
 import axios from 'axios';
 import Spinner from '../common/Spinner/Spinner';
-import cn from '../../lib/cn';
-import { IoIosArrowRoundForward } from 'react-icons/io';
-import { colors } from '../../theme'
 
 function Video() {
     const [hoverElement, setHoverElement] = useState(null)
@@ -117,9 +114,9 @@ function Video() {
                             </div> */}
 
                             {/* Video List when there is no right sided add */}
-                            <div className='flex flex-col gap-4 lg:pl-4 [&>*:nth-child(3)]:border-0'>
+                            <div className='flex flex-col gap-4 lg:pl-4'>
                                 {
-                                    videos?.slice(5, 8).map((info, i) => (
+                                    videos?.slice(5, 9).map((info, i) => (
                                         <div
                                             key={i}
                                             className={`flex gap-2 border-b last:border-0 border-gray4 pb-2 cursor-pointer`}
@@ -151,18 +148,6 @@ function Video() {
                                         </div>
                                     ))
                                 }
-                                <div className='w-9 mx-auto'>
-                                    <button
-                                        onClick={()=>window.open('https://www.kalerkantho.com/video', "_blank")}
-                                        className={
-                                            cn(
-                                                `inline-flex items-center gap-1 border border-primary text-primary-light py-1 px-4 rounded cursor-pointer bg-primary`,
-                                            )
-                                        }>
-                                        আরো
-                                        <IoIosArrowRoundForward size={24} color={colors.primary.light} />
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     )
