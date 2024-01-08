@@ -183,7 +183,7 @@ const LiveChart = () => {
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                     <div className="lg:col-start-1 lg:col-end-5 shadow-[0_0_12px_#0000009c] rounded-lg bg-primary-light overflow-hidden">
-                        <h2 className='text-center p-4 text-[#333]'>দ্বাদশ নির্বাচনের বেসরকারি ফলাফল</h2>
+                        <h2 className='text-center p-4 text-[#333]'>দ্বাদশ জাতীয় সংসদ নির্বাচনের বেসরকারি ফলাফল</h2>
                         <Chart options={options} series={series} type="pie" />
                         <div className="bg-white p-4 text-center">
                             <div>
