@@ -183,6 +183,7 @@ const LiveChart = () => {
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                     <div className="lg:col-start-1 lg:col-end-5 shadow-[0_0_12px_#0000009c] rounded-lg bg-primary-light overflow-hidden">
+                        <h2 className='text-center p-4 text-[#333]'>দ্বাদশ নির্বাচনের বেসরকারি ফলাফল</h2>
                         <Chart options={options} series={series} type="pie" />
                         <div className="bg-white p-4 text-center">
                             <div>
@@ -205,7 +206,8 @@ const LiveChart = () => {
                     </div>
 
                     <div className="lg:col-start-5 lg:col-end-9 shadow-[0_0_12px_#0000009c] rounded-lg">
-                        <div className='grid grid-cols-2 gap-4 p-4'>
+                        <h2 className='text-center p-4 text-[#333]'>বিগত নির্বাচনে জয়ী দল</h2>
+                        <div className='grid grid-cols-2 gap-4 p-4 pt-0'>
                             {
                                 previousResult?.map((data, i) => (
                                     <div key={i} className='bg-primary-light rounded-tl-md rounded-tr-md overflow-hidden'>
@@ -231,7 +233,8 @@ const LiveChart = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:col-start-9 lg:col-end-13 rounded-lg p-3 shadow-[0_0_12px_#0000009c]">
+                    <div className="lg:col-start-9 lg:col-end-13 rounded-lg p-4 pt-0 shadow-[0_0_12px_#0000009c]">
+                        <h2 className='text-center p-4 text-[#333]'>নির্বাচনের সর্বশেষ সংবাদ</h2>
                         {
                             loading ? (<Spinner className={'w-full h-full'} />) : (<>
                                 <div className='flex flex-col gap-3 mb-5'>
