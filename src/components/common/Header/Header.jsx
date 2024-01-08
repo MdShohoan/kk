@@ -113,7 +113,7 @@ function Header() {
                 <nav className='hidden md:block'>
                     <ul className="flex justify-between items-center gap-7">
                         {
-                            navList?.slice(1, 5).map((item, i) => (
+                            navList?.slice(1, 6).map((item, i) => (
                                 <Link key={i} to={`/${item?.to}`}>
                                     <li className={cn(
                                         'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
@@ -128,10 +128,10 @@ function Header() {
                             onClick={() => openNewTab('https://www.kalerkantho.com')}
                             className={cn(
                                 'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
-                                currentPage === navList[5]?.page && 'text-primary'
+                                currentPage === navList[6]?.page && 'text-primary'
                             )}
                         >
-                            {navList[5]?.text}
+                            {navList[6]?.text}
                         </li>
 
                     </ul>
@@ -163,7 +163,7 @@ function Header() {
                     </div>
                     <ul className='px-4'>
                         {
-                            navList?.slice(0, 5)?.map((navItem, i) => (
+                            navList?.slice(0, 6)?.map((navItem, i) => (
                                 <Link key={i} to={`/${navItem?.to}`}>
                                     <li className={cn(
                                         'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
@@ -178,9 +178,9 @@ function Header() {
                             onClick={() => openNewTab('https://www.kalerkantho.com')}
                             className={cn(
                                 'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
-                                currentPage === navList[5]?.page && 'text-primary border-primary-contrast'
+                                currentPage === navList[6]?.page && 'text-primary border-primary-contrast'
                             )}>
-                            {navList[5]?.text}
+                            {navList[6]?.text}
                         </li>
                     </ul>
                 </div>

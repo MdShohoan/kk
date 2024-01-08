@@ -1,7 +1,6 @@
 import Chart from 'react-apexcharts';
 import Section from '../Section/Section';
 import AwamiLeagueLogo from '../../../assets/partyLogo/AwamiLeagueLogo.webp'
-import BNPLogo from '../../../assets/partyLogo/BNPLogo.webp'
 import JatiyoPartyLogo from '../../../assets/partyLogo/JatioyoPartyLogo.webp'
 import toBengaliDigits from '../../../lib/toBanglaDigits';
 import { IoIosArrowForward } from "react-icons/io";
@@ -39,10 +38,10 @@ const LiveChart = () => {
     }, [])
 
     const colors = [
-        { light: '#85ceb7', dark: '#66c2a5' },
-        { light: '#a4b3d5', dark: '#8da0cb' },
-        { light: '#eca1cf', dark: '#e78ac3' },
-        { light: '#b8e076', dark: '#a6d854' }
+        { light: '#85ceb7', dark: '#66c2a5' },//Al
+        { light: '#eca1cf', dark: '#e78ac3' },// Jp
+        { light: '#b8e076', dark: '#a6d854' }, // other party
+        { light: '#afc8e5', dark: '#739fd1' },//No party
     ]
 
     const options = {
@@ -54,7 +53,7 @@ const LiveChart = () => {
         legend: {
             show: false
         },
-        labels: ["আওয়ামী লীগ", "বিএনপি", "জাতীয় পার্টি ", "স্বতন্ত্র ", "অন্যান্য"],
+        labels: ["আওয়ামী লীগ", "জাতীয় পার্টি", "অন্যান্য", "স্বতন্ত্র"],
         plotOptions: {
             pie: {
                 startAngle: -90,
@@ -135,12 +134,14 @@ const LiveChart = () => {
     };
 
     const data = [
-        { name: 'আ. লীগ জোট', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২৬৭' },
-        { name: 'বিএনপি জোট', logo: BNPLogo, totalSeat: '৩০০', won: '৭' },
-        { name: 'জাতীয় পার্টি', logo: JatiyoPartyLogo, totalSeat: '৩০০', won: '২২' },
-        { name: 'অন্যান্য', logo: '', totalSeat: '৩০০', won: '৪' },
+        { name: 'আওয়ামী লীগ', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২২৪' },
+        { name: 'জাতীয় পার্টি', logo: JatiyoPartyLogo, totalSeat: '৩০০', won: '১১' },
+        { name: 'অন্যান্য', logo: '', totalSeat: '৩০০', won: '১' },
+        { name: 'স্বতন্ত্র', logo: '', totalSeat: '৩০০', won: '৬২' },
     ]
-    const series = [267, 7, 22, 0, 4];
+
+    //Al, jp, other party, no party
+    const series = [224, 11, 1, 62];
 
     const previousResult = [
         {
@@ -185,20 +186,18 @@ const LiveChart = () => {
                         <Chart options={options} series={series} type="pie" />
                         <div className="bg-white p-4 text-center">
                             <div>
-                                <div className="grid grid-cols-5 mb-1 [&>*:last-child]:mr-0">
+                                <div className="grid grid-cols-4 mb-1 [&>*:last-child]:mr-0">
                                     <div className={"col-start-1 col-end-4 " + headingCellStyle}>দল / জোট</div>
-                                    <div className={headingCellStyle}>মোট আসন</div>
                                     <div className={headingCellStyle}>জয়ী</div>
                                 </div>
 
                                 {data?.map((party, i) => (
-                                    <div key={party?.name} className="grid grid-cols-5 mb-1 text-sm md:text-base font-semibold text-[#333] [&>*:last-child]:mb-0">
+                                    <div key={party?.name} className="grid grid-cols-4 mb-1 text-sm md:text-base font-semibold text-[#333] [&>*:last-child]:mb-0">
                                         <div style={{ background: colors[i]?.light }} className="rounded-tl rounded-bl py-2 flex justify-center items-center">
                                             <img src={party?.logo} className="h-7 mx-auto" />
                                         </div>
                                         <div style={{ background: colors[i]?.dark }} className="col-start-2 col-end-4 mr-1 rounded-tr rounded-br flex justify-center items-center">{party?.name}</div>
-                                        <div style={{ background: colors[i]?.light }} className={`mr-1 rounded flex justify-center items-center`}>{party?.totalSeat}</div>
-                                        <div style={{ background: colors[i]?.dark }} className="rounded flex justify-center items-center">{party?.won}</div>
+                                        <div style={{ background: colors[i]?.light }} className="rounded flex justify-center items-center">{party?.won}</div>
                                     </div>
                                 ))}
                             </div>
