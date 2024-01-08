@@ -49,6 +49,9 @@ function Header() {
         else if (path.startsWith('/news')) {
             setCurrentPage('news')
         }
+        else if (path.startsWith('/videos')) {
+            setCurrentPage('videos')
+        }
         else {
             setCurrentPage('home')
         }
@@ -79,6 +82,11 @@ function Header() {
             text: 'খবর',
             to: 'news',
             page: 'news'
+        },
+        {
+            text: 'ভিডিও',
+            to: 'videos',
+            page: 'videos'
         },
         {
             text: 'ফলাফল',

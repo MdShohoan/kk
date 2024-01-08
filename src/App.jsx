@@ -11,6 +11,7 @@ import DistrictNavigationPage from "./pages/DistrictNavigationPage";
 import DistrictInfoPage from "./pages/DistrictInfoPage";
 import SeatNavigationPage from "./pages/SeatNavigationPage";
 import News from "./pages/News";
+import VideoPage from "./pages/VideoPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,12 @@ function App() {
       path: "/news",
       element: (
         <News />
+      ),
+    },
+    {
+      path: "/videos",
+      element: (
+        <VideoPage />
       ),
     },
     {

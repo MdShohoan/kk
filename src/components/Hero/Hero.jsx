@@ -25,7 +25,8 @@ function Hero() {
         seatDetails: 'seatDetails',
         seats: 'seats',
         results: 'results',
-        news: 'news'
+        news: 'news',
+        videos: 'videos',
     }
 
     useEffect(() => {
@@ -34,6 +35,9 @@ function Hero() {
         }
         else if (path.startsWith('/news')) {
             setPage(pages?.news)
+        }
+        else if (path.startsWith('/videos')) {
+            setPage(pages?.videos)
         }
         else if (path.startsWith('/districts') && districtNo) {
             setPage(pages?.districtDetails)
@@ -122,7 +126,8 @@ function Hero() {
                 page === 'seatDetails' && 'pt-0 pb-1 md:pb-12',
                 page === 'districtDetails' && 'pt-0 pb-1 md:pb-12',
                 page === 'home' && 'pb-4',
-                page === 'news' && 'hidden'
+                page === 'news' && 'hidden',
+                page === 'videos' && 'hidden',
             )
         }>
             <div className="container mx-auto text-center md:text-start md:px-8 xl:px-2">
