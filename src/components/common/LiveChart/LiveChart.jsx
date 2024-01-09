@@ -134,14 +134,14 @@ const LiveChart = () => {
     };
 
     const data = [
-        { name: 'আওয়ামী লীগ', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২২৪' },
+        { name: 'আওয়ামী লীগ', logo: AwamiLeagueLogo, totalSeat: '৩০০', won: '২২২' },
         { name: 'জাতীয় পার্টি', logo: JatiyoPartyLogo, totalSeat: '৩০০', won: '১১' },
-        { name: 'অন্যান্য', logo: '', totalSeat: '৩০০', won: '১' },
+        { name: 'অন্যান্য', logo: '', totalSeat: '৩০০', won: '৩'},
         { name: 'স্বতন্ত্র', logo: '', totalSeat: '৩০০', won: '৬২' },
     ]
 
     //Al, jp, other party, no party
-    const series = [224, 11, 1, 62];
+    const series = [222, 11, 3, 62];
 
     const previousResult = [
         {
