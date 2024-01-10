@@ -1,8 +1,10 @@
 import cn from '../../../lib/cn';
 function Card({ story, className }) {
+
     const openNewTab = (url) => {
         window.open(url, "_blank")
     }
+    
     return (
         <div
             className={cn('cursor-pointer group text-lg text-[#333] h-full', className)}

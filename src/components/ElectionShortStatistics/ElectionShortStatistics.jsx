@@ -11,6 +11,7 @@ import political_parties from '../../assets/election/political-parties.png'
 import Section from '../common/Section/Section';
 
 export default function ElectionShortStatistics() {
+
   const data = [
     { count: '১১৯৬৯১৬৩৩', title: 'মোট ভোটার', image: total_voter },
     { count: '৬০৭৭১৫৭৯', title: 'পুরুষ ভোটার', image: male_voter },
@@ -20,7 +21,6 @@ export default function ElectionShortStatistics() {
     { count: '৪৩৬', title: 'স্বতন্ত্র প্রার্থী', image: total_candidate },
     { count: '২৮', title: 'দল', image: political_parties },
     { count: '৩০০', title: 'আসনসংখ্যা', image: total_seat },
-
   ]
 
   return (

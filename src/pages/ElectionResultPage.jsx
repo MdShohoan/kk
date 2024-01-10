@@ -30,7 +30,8 @@ function ElectionResultPage() {
 
         if (state?.from === 'result') {
             scrollToSection(resultSectionRef);
-        } else if (state?.from === 'win-lose') {
+        }
+        else if (state?.from === 'win-lose') {
             scrollToSection(compareSectionRef);
         }
     }, [state]);

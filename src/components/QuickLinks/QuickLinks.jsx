@@ -23,6 +23,7 @@ function QuickLinks() {
         { id: 'result', link: 'election-result', title: 'ফলাফল', subtitle: ' নির্বাচনের  ফলাফল', icon: MdOutlineAddReaction },
         { id: 'win-lose', link: 'election-result', title: 'হার-জিত', subtitle: 'দেখুন কে কোথায় জিতেছিল', icon: IoMdGitCompare },
     ]
+    
     return (
         <Section>
             <div className="bg-primary-light px-0 py-6 md:p-8">

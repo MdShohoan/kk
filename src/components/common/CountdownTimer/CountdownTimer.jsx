@@ -13,7 +13,7 @@ const CountdownTimer = ({ electionDate }) => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // eslint-disable-line
 
   function getTimeRemaining() {
     const now = moment();

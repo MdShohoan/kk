@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import districtList from '../../../assets/data/districtsList/districtsList'
 import cn from '../../../lib/cn'
+
 function DistrictNavigator({ className }) {
     const navigate = useNavigate()
     const handleDivisionChange = (e) => {

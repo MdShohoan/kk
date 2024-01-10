@@ -54,7 +54,7 @@ function Hero() {
         else if (path.startsWith('/election-result')) {
             setPage(pages.results)
         }
-    }, [districtNo, path, seatNo])
+    }, [districtNo, path, seatNo]) // eslint-disable-line
 
     //Find seat by districtNo
     function findSeatNameById() {

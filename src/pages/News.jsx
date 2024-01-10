@@ -21,6 +21,10 @@ function News() {
 
     const url = 'https://bn-api.kalerkantho.com/api/election?page=1'
 
+    const openNewTab = (url) => {
+        window.open(url, "_blank")
+    }
+
     const fetchData = async () => {
         setLoading(true)
         try {
@@ -33,10 +37,6 @@ function News() {
         finally {
             setLoading(false)
         }
-    }
-
-    const openNewTab = (url) => {
-        window.open(url, "_blank")
     }
 
     useEffect(() => {
@@ -66,18 +66,11 @@ function News() {
             {
                 loading ? (<Spinner className={'h-[calc(100vh-62px)'} />) : (
                     <>
-                        {/* <Section className='mb-3 md:mb-3 lg:mb-6 mt-3'>
-                            <div className='container'>
-                                <div className='max-w-[970px] h-[90px] bg-slate-200 mx-auto flex justify-center items-center'>
-                                    ADS 970*90
-                                </div>
-                            </div>
-                        </Section> */}
                         {/* Spacing if not any add available */}
                         <div className='w-full h-6'></div>
                         <Section>
                             <div className='container'>
-                                {/* <----------Top section width add start-------------> */}
+                                {/* <----------Top section with add start-------------> */}
                                 {/* <div className='flex flex-col lg:flex-row gap-4 mb-8'>
                                     <div
                                         onClick={() => openNewTab(news[0]?.detailsUrl)}
@@ -128,7 +121,7 @@ function News() {
                                     </div>
                                     <div className='lg:col-start-4 lg:col-end-5 lg:pl-5'>
                                         <Card story={news[1]} className={cn(`font-bold hidden lg:block`)} />
-                                        <List story={news[1]} className={cn(`lg:hidden flex`)}/>
+                                        <List story={news[1]} className={cn(`lg:hidden flex`)} />
                                     </div>
                                 </div>
                                 {/* Top section without add end */}

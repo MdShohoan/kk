@@ -20,10 +20,11 @@ function UnofficialResult() {
   ]
 
   const headingCellStyle = `text-sm leading-4 text-[#000] font-normal bg-[#f0f0ed] rounded py-2 border-b border-gray-300 mr-1`
+
   return (
     <div>
       <Title>
-      একাদশ নির্বাচনের ফলাফল
+        একাদশ নির্বাচনের ফলাফল
       </Title>
       <div className="max-w-[300px] md:max-w-[500px] mx-auto bg-white p-4 text-center rounded-[10px] shadow-[0_0_16px_#0000009c]">
         <div>

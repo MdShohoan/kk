@@ -5,56 +5,6 @@ import { useEffect, useState } from 'react';
 const SeatMap = ({selectedParty, selectedYear}) => {
 	const [oneYearData, setOneYearData] = useState([])
 
-	// const colors = {bal: '#66c2a5', bnp: '#8da0cb', jp:'#e78ac3', ao: '#a6d854'}
-
-	// const data = [
-    //     {
-    //         seatNo: '1',
-    //         year: '2018',
-    //         win: 'al'
-    //     },
-    //     {
-    //         seatNo: '1',
-    //         year: '2014',
-    //         win: 'bnp'
-    //     },
-	// 	{
-    //         seatNo: '1',
-    //         year: '2001',
-    //         win: 'ao'
-    //     },
-    //     {
-    //         seatNo: '2',
-    //         year: '2018',
-    //         win: 'jp'
-    //     },
-    //     {
-    //         seatNo: '3',
-    //         year: '2018',
-    //         win: 'bnp'
-    //     },
-    //     {
-    //         seatNo: '4',
-    //         year: '2018',
-    //         win: 'al'
-    //     },
-    //     {
-    //         seatNo: '5',
-    //         year: '2018',
-    //         win: 'al'
-    //     },
-    //     {
-    //         seatNo: '6',
-    //         year: '2018',
-    //         win: 'al'
-    //     },
-    //     {
-    //         seatNo: '6',
-    //         year: '2014',
-    //         win: 'al'
-    //     },
-    // ]
-
 	const filter= ()=>{
 		let filtered
 		if(selectedParty){

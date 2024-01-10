@@ -47,7 +47,7 @@ function SeatInfoPage() {
 
     useEffect(() => {
         setPreviousResult([...filterResultByIdAndElectionNineToLatest(), ...filterResultByNameAndElectionEightToPrevious()])
-    }, [seatNo])
+    }, [seatNo]) // eslint-disable-line
 
     //Find seat by seatNo
     function findSeatById() {
@@ -125,6 +125,7 @@ function SeatInfoPage() {
         { count: currentSeatInfo?.totalCandidate || '০', title: 'মোট প্রার্থী', image: total_candidate },
     ]
 
+    //If seat not exist then navigate to the home
     if(!findSeatById()){
         return <Navigate to={'/'}/>
     }
