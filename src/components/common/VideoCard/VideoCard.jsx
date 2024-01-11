@@ -1,6 +1,9 @@
 import { GoPlay } from 'react-icons/go';
 import cn from '../../../lib/cn';
+import { useState } from 'react';
+
 function Card({ story, className }) {
+    const [hoverElement, setHoverElement] = useState('')
     const openNewTab = (id) => {
         window.open(`https://www.kalerkantho.com/video/${id}`, "_blank")
     }
@@ -8,8 +11,10 @@ function Card({ story, className }) {
     return (
         <div
             className={cn('cursor-pointer group text-lg text-[#333] h-full', className)}
-            key={story?.n_id}
+            key={story?.id}
             onClick={() => openNewTab(story?.id)}
+            onMouseEnter={()=> setHoverElement(story?.id)}
+            onMouseLeave={()=> setHoverElement('')}
         >
             <div className='overflow-clip rounded-lg relative'>
                 <img
@@ -17,8 +22,7 @@ function Card({ story, className }) {
                     src={story?.cover_photo}
                 />
                 <GoPlay
-                    // color={hoverElement === info?.id ? 'red' : 'white'}
-                    color='red'
+                    color={hoverElement === story?.id ? 'red' : 'white'}
                     style={{
                         transition: 'all 300ms',
                         position: 'absolute',

@@ -15,7 +15,7 @@ function VideoPage() {
     const [loading, setLoading] = useState(false)
     const [loadingMore, setLoadingMore] = useState(false)
     const [moreCount, setMoreCount] = useState(null)
-
+    const [hoverElement, setHoverElement] = useState('')
     const [page, setPage] = useState(1)
 
     const url = 'https://bn-api.kalerkantho.com/api/gallery_cat/3?page=1'
@@ -99,14 +99,15 @@ function VideoPage() {
                                             news?.slice(12)?.map((story) => (
                                                 <div
                                                     onClick={() => openNewTab(story?.id)}
+                                                    onMouseEnter={()=>setHoverElement(story.id)}
+                                                    onMouseLeave={()=>setHoverElement('')}
                                                     key={story?.n_id}
                                                     className='md:flex gap-4 hidden group cursor-pointer border-b pb-4 last:border-b-0'
                                                 >
                                                     <div className='basis-2/5 rounded-lg overflow-clip relative' >
                                                         <img src={story?.cover_photo} className='w-full group-hover:scale-105 transition-all duration-500' />
                                                         <GoPlay
-                                                            // color={hoverElement === info?.id ? 'red' : 'white'}
-                                                            color='red'
+                                                            color={hoverElement === story?.id ? 'red' : 'white'}
                                                             style={{
                                                                 transition: 'all 300ms',
                                                                 position: 'absolute',
@@ -126,7 +127,7 @@ function VideoPage() {
                                         }
                                     </div>
                                 </div>
-                                {/* Visible in mobile only */}
+                                    {/* Visible in mobile only */}
                                 <div className='flex lg:hidden flex-col gap-4 mt-4'>
                                     {
                                         news?.slice(12)?.map((story) => (
