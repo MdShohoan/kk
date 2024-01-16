@@ -12,6 +12,8 @@ const Anniversary = () => {
         window.innerHeight,
     ]);
 
+    console.log(isClose, '=========')
+
     useEffect(() => {
         const handleWindowResize = () => {
             setWindowSize([window.innerWidth, window.innerHeight]);
@@ -25,41 +27,26 @@ const Anniversary = () => {
     }, []);
 
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (!isClose) {
-    //             // Your logic for the first scroll
-    //             console.log('First scroll detected!');
-    //             setIsClose(true);
-    //         }
-    //     };
-
-    //     if (!isClose) {
-    //         // Add the event listener only if it's the first scroll
-    //         window.addEventListener('scroll', handleScroll);
-    //     }
-
-    //     // Remove the event listener when the component is unmounted
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [isClose]);
-
     useEffect(() => {
         const handleScroll = () => {
-            // Your logic for every scroll
-            console.log('Scroll detected!');
-            setIsClose(true);
+            if (!isClose) {
+                // Your logic for the first scroll
+                console.log('First scroll detected!');
+                setIsClose(true);
+            }
         };
-    
-        // Add the event listener for every scroll
-        window.addEventListener('scroll', handleScroll);
-    
+
+        if (!isClose) {
+            // Add the event listener only if it's the first scroll
+            window.addEventListener('scroll', handleScroll);
+        }
+
         // Remove the event listener when the component is unmounted
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isClose]);
+
 
     return (
         <>
@@ -67,7 +54,7 @@ const Anniversary = () => {
             {/* ----------------Main animation start here-------- */}
             <div
                 style={{
-                    transition:'height 400ms',
+                    transition: 'height 400ms',
                     transitionTimingFunction: 'ease-in-out',
                     width: '100%',
                     height: isClose ? '40px' : 'calc(80vh)',
@@ -104,14 +91,14 @@ const Anniversary = () => {
                 <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', display: isClose ? 'none' : 'block' }}>
                     <Solar />
                 </div>
+                <MouseAnimation />
+            </div>
                 {
-                    !isClose && <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2">
-                        <p className="text-white text-base">স্ক্রোল করুন</p>
+                    !isClose && <div className="flex justify-center items-center gap-2 py-3">
+                        <p className="text-[#000] font-bold text-base">স্ক্রোল করুন</p>
                         <div className={styles.arrow}></div>
                     </div>
                 }
-                <MouseAnimation/>
-            </div>
             {/* --------------Main animation end here---------- */}
         </>
 
