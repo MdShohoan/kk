@@ -52,7 +52,7 @@ const Anniversary = () => {
                 style={{
                     width: '100%',
                     height: isClose ? '40px' : 'calc(100vh - 100px)',
-                    background: '#000',
+                    backgroundColor: '#000',
                     position: 'relative',
                     overflow: 'hidden'
                 }}
@@ -68,8 +68,7 @@ const Anniversary = () => {
                                 justifyContent: 'center',
                                 alignItems: 'center',
                                 gap: '10px',
-                                marginTop: '8px',
-                                background: 'transparent'
+                                height:'100%'
                             }}
                         >
                             <p>
