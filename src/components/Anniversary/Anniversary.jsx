@@ -3,6 +3,7 @@ import { TbClick } from "react-icons/tb";
 import Confetti from "react-confetti";
 import MouseAnimation from './MouseAnimation/MouseAnimation'
 import Solar from './Solar/Solar'
+import styles from './Anniversary.module.css'
 
 const Anniversary = () => {
     const [isClose, setIsClose] = useState(true);
@@ -68,7 +69,7 @@ const Anniversary = () => {
                                 justifyContent: 'center',
                                 alignItems: 'center',
                                 gap: '10px',
-                                height:'100%'
+                                height: '100%'
                             }}
                         >
                             <p>
@@ -83,9 +84,15 @@ const Anniversary = () => {
                     <Confetti width={windowSize[0]} height={windowSize[1]}> </Confetti>
                 </div>
                 <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', display: isClose ? 'none' : 'block' }}>
-                    <Solar/>
+                    <Solar />
                 </div>
-                <MouseAnimation />
+                {
+                    !isClose && <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2">
+                        <p className="text-white text-base">স্ক্রোল করুন</p>
+                        <div className={styles.arrow}></div>
+                    </div>
+                }
+                <MouseAnimation/>
             </div>
             {/* --------------Main animation end here---------- */}
         </>
