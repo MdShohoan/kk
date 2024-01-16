@@ -5,6 +5,7 @@ import kkLogo from '../../../assets//kkLogo.png'
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 import cn from '../../../lib/cn';
+import Anniversary from "../../Anniversary/Anniversary"
 
 function Header() {
     const [isOpenNav, setIsOpenNav] = useState(false)
@@ -100,94 +101,99 @@ function Header() {
     ]
 
     return (
-        <header className={cn(
-            'py-4 px-2 bg-primary-light border-b border-primary-background transition-all duration-300',
+        <div className={cn('sticky top-0 left-0 right-0 z-[1000] translate-y-0')}>
             {
-                'fixed top-0 left-0 right-0 z-[1000] shadow-lg translate-y-0': isSticky === true,
+                currentPage === 'home' && <Anniversary />
             }
-        )}>
-            <div className='flex justify-between items-center container px-0'>
-                <Link to={'/'}>
-                    <img src={kkLogo} className='h-[30px] w-40' />
-                </Link>
-                <nav className='hidden md:block'>
-                    <ul className="flex justify-between items-center gap-7">
-                        {
-                            navList?.slice(1, 6).map((item, i) => (
-                                <Link key={i} to={`/${item?.to}`}>
-                                    <li className={cn(
-                                        'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
-                                        currentPage === item?.page && 'text-primary'
-                                    )}>
-                                        {item?.text}
-                                    </li>
-                                </Link>
-                            ))
-                        }
-                        <li
-                            onClick={() => openNewTab('https://www.kalerkantho.com')}
-                            className={cn(
-                                'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
-                                currentPage === navList[6]?.page && 'text-primary'
-                            )}
-                        >
-                            {navList[6]?.text}
-                        </li>
+            <header className={cn(
+                'py-4 px-2 bg-primary-light border-b border-primary-background transition-all duration-300',
+                {
+                    'shadow-lg': isSticky === true,
+                }
+            )}>
+                <div className='flex justify-between items-center container px-0'>
+                    <Link to={'/'}>
+                        <img src={kkLogo} className='h-[30px] w-40' />
+                    </Link>
+                    <nav className='hidden md:block'>
+                        <ul className="flex justify-between items-center gap-7">
+                            {
+                                navList?.slice(1, 6).map((item, i) => (
+                                    <Link key={i} to={`/${item?.to}`}>
+                                        <li className={cn(
+                                            'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                            currentPage === item?.page && 'text-primary'
+                                        )}>
+                                            {item?.text}
+                                        </li>
+                                    </Link>
+                                ))
+                            }
+                            <li
+                                onClick={() => openNewTab('https://www.kalerkantho.com')}
+                                className={cn(
+                                    'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                    currentPage === navList[6]?.page && 'text-primary'
+                                )}
+                            >
+                                {navList[6]?.text}
+                            </li>
 
-                    </ul>
-                </nav>
-                <span className='md:hidden'>
-                    <MdMenu size={32} onClick={() => setIsOpenNav(true)} />
-                </span>
+                        </ul>
+                    </nav>
+                    <span className='md:hidden'>
+                        <MdMenu size={32} onClick={() => setIsOpenNav(true)} />
+                    </span>
 
-                {/*------------Drawer start----------*/}
-                <div
-                    className={clsx(
-                        'fixed w-full h-screen bg-white z-50 ease-in duration-300',
-                        {
-                            'right-0 top-0': isOpenNav === true,
-                            'right-[-100%] top-0': isOpenNav === false,
-                        }
-                    )}
-                >
-                    <div className="flex justify-between items-center md:mb-24 p-4">
-                        <Link to={'/'}>
-                            <img
-                                src={kkLogo}
-                                className='h-[30px] w-40'
-                            />
-                        </Link>
-                        <span className='md:hidden'>
-                            <MdClose size={32} onClick={() => setIsOpenNav(false)} />
-                        </span>
+                    {/*------------Drawer start----------*/}
+                    <div
+                        className={clsx(
+                            'fixed w-full h-screen bg-white z-50 ease-in duration-300',
+                            {
+                                'right-0 top-0': isOpenNav === true,
+                                'right-[-100%] top-0': isOpenNav === false,
+                            }
+                        )}
+                    >
+                        <div className="flex justify-between items-center md:mb-24 p-4">
+                            <Link to={'/'}>
+                                <img
+                                    src={kkLogo}
+                                    className='h-[30px] w-40'
+                                />
+                            </Link>
+                            <span className='md:hidden'>
+                                <MdClose size={32} onClick={() => setIsOpenNav(false)} />
+                            </span>
+                        </div>
+                        <ul className='px-4'>
+                            {
+                                navList?.slice(0, 6)?.map((navItem, i) => (
+                                    <Link key={i} to={`/${navItem?.to}`}>
+                                        <li className={cn(
+                                            'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                            currentPage === navItem?.page && 'text-primary border-primary-contrast'
+                                        )}>
+                                            {navItem?.text}
+                                        </li>
+                                    </Link>
+                                ))
+                            }
+                            <li
+                                onClick={() => openNewTab('https://www.kalerkantho.com')}
+                                className={cn(
+                                    'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                    currentPage === navList[6]?.page && 'text-primary border-primary-contrast'
+                                )}>
+                                {navList[6]?.text}
+                            </li>
+                        </ul>
                     </div>
-                    <ul className='px-4'>
-                        {
-                            navList?.slice(0, 6)?.map((navItem, i) => (
-                                <Link key={i} to={`/${navItem?.to}`}>
-                                    <li className={cn(
-                                        'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
-                                        currentPage === navItem?.page && 'text-primary border-primary-contrast'
-                                    )}>
-                                        {navItem?.text}
-                                    </li>
-                                </Link>
-                            ))
-                        }
-                        <li
-                            onClick={() => openNewTab('https://www.kalerkantho.com')}
-                            className={cn(
-                                'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
-                                currentPage === navList[6]?.page && 'text-primary border-primary-contrast'
-                            )}>
-                            {navList[6]?.text}
-                        </li>
-                    </ul>
-                </div>
-                {/*------------Drawer end----------*/}
+                    {/*------------Drawer end----------*/}
 
-            </div>
-        </header>
+                </div>
+            </header>
+        </div>
     )
 }
 
