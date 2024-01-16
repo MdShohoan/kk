@@ -51,7 +51,7 @@ const Anniversary = () => {
             <div
                 style={{
                     width: '100%',
-                    height: isClose ? '40px' : 'calc(100vh - 100px)',
+                    height: isClose ? '40px' : 'calc(80vh)',
                     backgroundColor: '#000',
                     position: 'relative',
                     overflow: 'hidden'
