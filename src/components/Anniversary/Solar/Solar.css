@@ -1,0 +1,137 @@
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.transition{
+  display: block;
+  transition: all 2s;
+}
+
+.hidden{
+  display: none;
+}
+.center-circle{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  z-index: -5;
+  overflow: hidden;
+}
+
+.circle1 {
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  animation: rotating-anim 14s linear infinite;
+}
+.circle1 .circle1-inner{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background: url('../../../assets/anniversary/editor.JPG');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotating-anti 14s linear infinite;
+}
+.circle1 p{
+    position: absolute;
+    font-size: 10px;
+    top: 35px;
+    left: -8px;
+    text-align: center;
+}
+
+.circle2 {
+  height: 250px;
+  width: 250px;
+  border: 1px solid white;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: rotating-anim 12s linear infinite;
+}
+
+.circle2 .circle2-inner{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotating-anti 12s linear infinite;
+}
+
+.circle2 p{
+    position: absolute;
+    font-size: 8px;
+    top: 35px;
+}
+
+
+.circle3 {
+  height: 350px;
+  width: 350px;
+  border: 1px solid white;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: rotating-anim 11s linear infinite;
+}
+
+.circle3 .circle3-inner{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotating-anti 11s linear infinite;
+}
+
+.circle3 p{
+    position: absolute;
+    font-size: 10px;
+    top: 35px;
+}
+
+@keyframes rotating-anim {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotating-anti {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
