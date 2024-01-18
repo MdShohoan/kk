@@ -102,10 +102,10 @@ function Header() {
 
     return (
         <>
+            {
+                currentPage === 'home' && <Anniversary />
+            }
             <div className={cn('sticky top-0 left-0 right-0 z-[1000] translate-y-0')}>
-                {
-                    currentPage === 'home' && <Anniversary />
-                }
                 <header className={cn(
                     'py-4 px-2 bg-primary-light border-b border-primary-background transition-all duration-300',
                     {

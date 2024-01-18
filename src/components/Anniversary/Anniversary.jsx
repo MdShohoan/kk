@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { TbClick } from "react-icons/tb";
 import Confetti from "react-confetti";
-import MouseAnimation from './MouseAnimation/MouseAnimation'
+// import MouseAnimation from './MouseAnimation/MouseAnimation'
 import Solar from './Solar/Solar'
 import styles from './Anniversary.module.css'
 
@@ -11,8 +11,6 @@ const Anniversary = () => {
         window.innerWidth,
         window.innerHeight,
     ]);
-
-    console.log(isClose, '=========')
 
     useEffect(() => {
         const handleWindowResize = () => {
@@ -48,9 +46,9 @@ const Anniversary = () => {
     }, [isClose]);
 
 
+
     return (
         <>
-
             {/* ----------------Main animation start here-------- */}
             <div
                 style={{
@@ -91,14 +89,14 @@ const Anniversary = () => {
                 <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', display: isClose ? 'none' : 'block' }}>
                     <Solar />
                 </div>
-                <MouseAnimation />
+                {/* <MouseAnimation /> */}
             </div>
-                {
-                    !isClose && <div className="flex justify-center items-center gap-2 py-3">
-                        <p className="text-[#000] font-bold text-base">স্ক্রোল করুন</p>
-                        <div className={styles.arrow}></div>
-                    </div>
-                }
+            {
+                !isClose && <div className="flex justify-center items-center gap-2 py-3">
+                    <p className="text-[#000] font-bold text-base">স্ক্রোল করুন</p>
+                    <div className={styles.arrow}></div>
+                </div>
+            }
             {/* --------------Main animation end here---------- */}
         </>
 
