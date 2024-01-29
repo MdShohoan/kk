@@ -12,6 +12,7 @@ import DistrictInfoPage from "./pages/DistrictInfoPage";
 import SeatNavigationPage from "./pages/SeatNavigationPage";
 import News from "./pages/News";
 import VideoPage from "./pages/VideoPage";
+import Religion from "./pages/Religion";
 
 function App() {
   const router = createBrowserRouter([
@@ -58,6 +59,10 @@ function App() {
     {
       path: "/seats/:seatNo",
       element: <SeatInfoPage />,
+    },
+    {
+      path: "/religion",
+      element: <Religion/>,
     },
     {
       path: "/*",
