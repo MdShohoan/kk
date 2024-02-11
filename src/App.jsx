@@ -17,6 +17,7 @@ import UpazilaElectionHome from "./pages/UpazilaElectionHome";
 import UpazilaNews from "./pages/UpazilaNews";
 import UpazilaVideos from "./pages/UpazilaVideos";
 import UpazilaInfo from "./pages/UpazilaInfo";
+import UpazilaNavigation from "./pages/UpazilaNavigation";
 
 function App() {
   const router = createBrowserRouter([
@@ -79,6 +80,10 @@ function App() {
     {
       path: "/upazila-election/videos",
       element: <UpazilaVideos/>,
+    },
+    {
+      path: "/upazila-election/upazila-list",
+      element: <UpazilaNavigation/>,
     },
     {
       path: "/upazila-election/upazila/:id",

@@ -67,6 +67,9 @@ function Header() {
         else if (path.startsWith('/upazila-election/videos')) {
             setCurrentPage('upazilaVideos')
         }
+        else if (path.startsWith('/upazila-election/upazila-list')) {
+            setCurrentPage('upazilaNavigation')
+        }
         else if (path.startsWith('/upazila-election')) {
             setCurrentPage('upazilaElectionHome')
         }
@@ -83,13 +86,13 @@ function Header() {
     const navListUpazila = [
         {
             text: 'হোম',
-            to: '',
-            page: 'home'
+            to: 'upazila-election',
+            page: 'upazilaElectionHome'
         },
         {
             text: 'উপজেলা',
-            to: 'upazila',
-            page: 'upazila'
+            to: 'upazila-election/upazila-list',
+            page: 'upazilaNavigation'
 
         },
         {
@@ -163,7 +166,7 @@ function Header() {
                             <ul className="flex justify-between items-center gap-7">
                                 {
                                     currentSite === 'upazilaElection' ? (
-                                        navListUpazila?.slice(1).map((item, i) => (
+                                        navListUpazila?.map((item, i) => (
                                             <Link key={i} to={`/${item?.to}`}>
                                                 <li className={cn(
                                                     'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
@@ -228,16 +231,29 @@ function Header() {
                 </div>
                 <ul className='px-4'>
                     {
-                        navList?.slice(0, 6)?.map((navItem, i) => (
-                            <Link key={i} to={`/${navItem?.to}`}>
-                                <li className={cn(
-                                    'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
-                                    currentPage === navItem?.page && 'text-primary border-primary-contrast'
-                                )}>
-                                    {navItem?.text}
-                                </li>
-                            </Link>
-                        ))
+                        currentSite === 'upazilaElection' ? (
+                            navListUpazila?.map((navItem, i) => (
+                                <Link key={i} to={`/${navItem?.to}`}>
+                                    <li className={cn(
+                                        'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                        currentPage === navItem?.page && 'text-primary border-primary-contrast'
+                                    )}>
+                                        {navItem?.text}
+                                    </li>
+                                </Link>
+                            ))
+                        ) : (
+                            navList?.slice(0, 6)?.map((navItem, i) => (
+                                <Link key={i} to={`/${navItem?.to}`}>
+                                    <li className={cn(
+                                        'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                        currentPage === navItem?.page && 'text-primary border-primary-contrast'
+                                    )}>
+                                        {navItem?.text}
+                                    </li>
+                                </Link>
+                            ))
+                        )
                     }
                     <li
                         onClick={() => openNewTab('https://www.kalerkantho.com')}
