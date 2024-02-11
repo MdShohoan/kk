@@ -145,7 +145,8 @@ function Hero() {
                 {/* --------Hero start------- */}
                 <div className={clsx(
                     "flex md:flex-row flex-col justify-between items-center md:items-start md:gap-8 gap-0",
-                    page === 'home' && 'flex-col-reverse'
+                    page === 'home' && 'flex-col-reverse',
+                    page === 'upazilaElectionHome' && 'flex-col-reverse'
                 )}>
                     <div className={clsx(
                         'mt:0',
