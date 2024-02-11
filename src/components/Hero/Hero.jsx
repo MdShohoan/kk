@@ -27,6 +27,8 @@ function Hero() {
         results: 'results',
         news: 'news',
         videos: 'videos',
+        upazilaInfo: 'upazilaInfo',
+        upazilaElectionHome: 'upazilaElectionHome',
     }
 
     useEffect(() => {
@@ -49,10 +51,16 @@ function Hero() {
             setPage(pages?.seatDetails)
         }
         else if (path.startsWith('/seats')) {
-            setPage(pages.seats)
+            setPage(pages?.seats)
         }
         else if (path.startsWith('/election-result')) {
-            setPage(pages.results)
+            setPage(pages?.results)
+        }
+        else if (path.startsWith('/upazila-election')) {
+            setPage(pages?.upazilaElectionHome)
+        }
+        else if (path.startsWith('/upazila-election/upazila')) {
+            setPage(pages?.upazilaInfo)
         }
     }, [districtNo, path, seatNo]) // eslint-disable-line
 
@@ -87,7 +95,9 @@ function Hero() {
         seats: 'নিজ আসন সম্পর্কে জানুন',
         seatDetails: 'নিজ আসন সম্পর্কে জানুন',
         home: 'দ্বাদশ জাতীয় সংসদ নির্বাচন ২০২৪',
-        results: 'নির্বাচনের ফলাফল সম্পর্কে জানুন'
+        results: 'নির্বাচনের ফলাফল সম্পর্কে জানুন',
+        upazilaElectionHome: 'উপজেলা পরিষদ নির্বাচন ২০২৪',
+        upazilaInfo: 'নিজ উপজেলা সম্পর্কে জানুন',
     }
 
     const heroImage = {
@@ -96,7 +106,8 @@ function Hero() {
         seats: <></>,
         seatDetails: <div className='mt-2 md:mt-1'><DistrictMap /></div>,
         home: <img src={ECLogo} className='w-[220px] md:w-[300px] md:pb-12' />,
-        results: <></>
+        upazilaElectionHome: <img src={ECLogo} className='w-[220px] md:w-[300px]' />,
+        results: <></>,
     }
 
     const heading = (
@@ -144,7 +155,7 @@ function Hero() {
                         <p className={clsx(
                             'mb-3 text-base text-primary-contrast font-bold uppercase', (page === 'seatDetails' || page === 'districtDetails') && 'hidden md:block'
                         )}>
-                            জাতীয় সংসদ নির্বাচন
+                            {(page === pages?.upazilaElectionHome || page === pages?.upazilaInfo)? 'উপজেলা পরিষদ নির্বাচন': 'জাতীয় সংসদ নির্বাচন'}
                         </p>
                         <h3
                             className='text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-relaxed lg:leading-relaxed font-black tracking-[1.93px] mb-5'

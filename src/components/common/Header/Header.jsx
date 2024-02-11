@@ -53,6 +53,9 @@ function Header() {
         else if (path.startsWith('/videos')) {
             setCurrentPage('videos')
         }
+        else if (path.startsWith('/upazila-election')) {
+            setCurrentPage('upazilaElectionHome')
+        }
         else {
             setCurrentPage('home')
         }
