@@ -12,8 +12,16 @@ function Header() {
     const [isSticky, setSticky] = useState(false);
     const [currentPage, setCurrentPage] = useState()
 
+    const [currentSite, setCurrentSite] = useState('nationalElection')
+
     const currentLocation = useLocation()
     const path = currentLocation?.pathname
+
+    useEffect(() => {
+        if (path.startsWith('/upazila-election')) {
+            setCurrentSite('upazilaElection')
+        }
+    }, [path])
 
     //Apply style for the header when page scroll more then 62 pixel
     useEffect(() => {
@@ -53,6 +61,18 @@ function Header() {
         else if (path.startsWith('/videos')) {
             setCurrentPage('videos')
         }
+        else if (path.startsWith('/upazila-election/news')) {
+            setCurrentPage('upazilaNews')
+        }
+        else if (path.startsWith('/upazila-election/videos')) {
+            setCurrentPage('upazilaVideos')
+        }
+        else if (path.startsWith('/upazila-election/upazila-list')) {
+            setCurrentPage('upazilaNavigation')
+        }
+        else if (path.startsWith('/upazila-election')) {
+            setCurrentPage('upazilaElectionHome')
+        }
         else {
             setCurrentPage('home')
         }
@@ -62,6 +82,32 @@ function Header() {
         window.open(url, "_blank")
     }
 
+    //Navigation list for upazila election
+    const navListUpazila = [
+        {
+            text: 'হোম',
+            to: 'upazila-election',
+            page: 'upazilaElectionHome'
+        },
+        {
+            text: 'উপজেলা',
+            to: 'upazila-election/upazila-list',
+            page: 'upazilaNavigation'
+
+        },
+        {
+            text: 'খবর',
+            to: 'upazila-election/news',
+            page: 'upazilaNews'
+        },
+        {
+            text: 'ভিডিও',
+            to: 'upazila-election/videos',
+            page: 'upazilaVideos'
+        },
+    ]
+
+    //Navigation list for national election
     const navList = [
         {
             text: 'হোম',
@@ -119,16 +165,29 @@ function Header() {
                         <nav className='hidden md:block'>
                             <ul className="flex justify-between items-center gap-7">
                                 {
-                                    navList?.slice(1, 6).map((item, i) => (
-                                        <Link key={i} to={`/${item?.to}`}>
-                                            <li className={cn(
-                                                'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
-                                                currentPage === item?.page && 'text-primary'
-                                            )}>
-                                                {item?.text}
-                                            </li>
-                                        </Link>
-                                    ))
+                                    currentSite === 'upazilaElection' ? (
+                                        navListUpazila?.map((item, i) => (
+                                            <Link key={i} to={`/${item?.to}`}>
+                                                <li className={cn(
+                                                    'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                                    currentPage === item?.page && 'text-primary'
+                                                )}>
+                                                    {item?.text}
+                                                </li>
+                                            </Link>
+                                        ))
+                                    ) : (
+                                        navList?.slice(1, 6).map((item, i) => (
+                                            <Link key={i} to={`/${item?.to}`}>
+                                                <li className={cn(
+                                                    'text-lg capitalize hover:text-primary transition-all duration-300 text-gray1 cursor-pointer',
+                                                    currentPage === item?.page && 'text-primary'
+                                                )}>
+                                                    {item?.text}
+                                                </li>
+                                            </Link>
+                                        ))
+                                    )
                                 }
                                 <li
                                     onClick={() => openNewTab('https://www.kalerkantho.com')}
@@ -172,16 +231,29 @@ function Header() {
                 </div>
                 <ul className='px-4'>
                     {
-                        navList?.slice(0, 6)?.map((navItem, i) => (
-                            <Link key={i} to={`/${navItem?.to}`}>
-                                <li className={cn(
-                                    'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
-                                    currentPage === navItem?.page && 'text-primary border-primary-contrast'
-                                )}>
-                                    {navItem?.text}
-                                </li>
-                            </Link>
-                        ))
+                        currentSite === 'upazilaElection' ? (
+                            navListUpazila?.map((navItem, i) => (
+                                <Link key={i} to={`/${navItem?.to}`}>
+                                    <li className={cn(
+                                        'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                        currentPage === navItem?.page && 'text-primary border-primary-contrast'
+                                    )}>
+                                        {navItem?.text}
+                                    </li>
+                                </Link>
+                            ))
+                        ) : (
+                            navList?.slice(0, 6)?.map((navItem, i) => (
+                                <Link key={i} to={`/${navItem?.to}`}>
+                                    <li className={cn(
+                                        'text-left py-1 px-2 mb-3 text-base font-semibold border-b-2',
+                                        currentPage === navItem?.page && 'text-primary border-primary-contrast'
+                                    )}>
+                                        {navItem?.text}
+                                    </li>
+                                </Link>
+                            ))
+                        )
                     }
                     <li
                         onClick={() => openNewTab('https://www.kalerkantho.com')}

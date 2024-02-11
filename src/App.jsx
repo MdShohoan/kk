@@ -13,6 +13,11 @@ import SeatNavigationPage from "./pages/SeatNavigationPage";
 import News from "./pages/News";
 import VideoPage from "./pages/VideoPage";
 import Religion from "./pages/Religion";
+import UpazilaElectionHome from "./pages/UpazilaElectionHome";
+import UpazilaNews from "./pages/UpazilaNews";
+import UpazilaVideos from "./pages/UpazilaVideos";
+import UpazilaInfo from "./pages/UpazilaInfo";
+import UpazilaNavigation from "./pages/UpazilaNavigation";
 
 function App() {
   const router = createBrowserRouter([
@@ -63,6 +68,26 @@ function App() {
     {
       path: "/religion",
       element: <Religion/>,
+    },
+    {
+      path: "/upazila-election",
+      element: <UpazilaElectionHome/>,
+    },
+    {
+      path: "/upazila-election/news",
+      element: <UpazilaNews/>,
+    },
+    {
+      path: "/upazila-election/videos",
+      element: <UpazilaVideos/>,
+    },
+    {
+      path: "/upazila-election/upazila-list",
+      element: <UpazilaNavigation/>,
+    },
+    {
+      path: "/upazila-election/upazila/:id",
+      element: <UpazilaInfo/>,
     },
     {
       path: "/*",
