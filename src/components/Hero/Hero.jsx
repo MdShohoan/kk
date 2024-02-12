@@ -72,7 +72,6 @@ function Hero() {
         }
     }, [districtNo, path, seatNo]) // eslint-disable-line
 
-    console.log(page, '========')
     //Find seat by districtNo
     function findSeatNameById() {
         for (const division of seatList) {
