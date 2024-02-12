@@ -70,6 +70,9 @@ function Header() {
         else if (path.startsWith('/upazila-election/upazila-list')) {
             setCurrentPage('upazilaNavigation')
         }
+        else if (path.startsWith('/upazila-election/upazila')) {
+            setCurrentPage('upazilaInfo')
+        }
         else if (path.startsWith('/upazila-election')) {
             setCurrentPage('upazilaElectionHome')
         }

@@ -1,6 +1,9 @@
+import Layout from "../components/common/Layout/Layout"
 function UpazilaInfo() {
   return (
-    <div>UpazilaInfo</div>
+    <Layout>
+      
+    </Layout>
   )
 }
 
