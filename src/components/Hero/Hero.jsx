@@ -116,6 +116,16 @@ function Hero() {
         home: <img src={ECLogo} className='w-[220px] md:w-[300px] md:pb-12' />,
         upazilaElectionHome: <img src={ECLogo} className='w-[220px] md:w-[300px]' />,
         results: <></>,
+        upazilaInfo: (<div
+            className={cn(
+                'mt-6 md:mt-0 md:mr-12 h-[148px] w-[148px] rounded-full border-[4px] flex justify-center items-center text-primary font-semibold text-lg bg-[#f5f2fb] border-[#cbc3db]'
+            )}
+        >
+            <div>
+                <div className='text-center font-[600] text-lg'>আদাবর</div>
+                <div className='text-sm font-[600] text-center text-primary-contrast'>উপজেলা </div>
+            </div>
+        </div>)
     }
 
     const heading = (
