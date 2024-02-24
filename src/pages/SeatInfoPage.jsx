@@ -42,7 +42,7 @@ function SeatInfoPage() {
     
 
     if(import.meta.env.VITE_REACT_NODE_ENV === 'production'){
-        BASE_URL = 'https://election.kalerkantho.com'
+        BASE_URL = 'https://superb-mandazi-0bd10a.netlify.app'
     }
 
     useEffect(() => {
